@@ -1,0 +1,37 @@
+{
+  "insert-template": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "T"
+    }
+  ],
+  "backlink:toggle-backlinks-in-document": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "P"
+    }
+  ],
+  "outline:open-for-current": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "O"
+    }
+  ],
+  "obsidian-footnotes:insert-autonumbered-footnote": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "0"
+    }
+  ]
+}
