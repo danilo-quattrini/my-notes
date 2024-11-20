@@ -1,3 +1,7 @@
+---
+share_link: https://share.note.sx/ogoh8vwg#YrwnwHRe4ioRoI1p8Yn5/Bh7vqT7l53q8Rghey3YWyw
+share_updated: 2024-11-18T15:03:16+00:00
+---
 2024-10-14 10:38
 
 Status: #devoleped 
@@ -244,14 +248,45 @@ Quindi quello che dovremmo fare sarà **scegliere i concetti più interessanti**
 	-  **-**: [[Programming Knowledge#`private`|private]];
 	-  **~**: package[^4];
 	-  **#**: [[Programming Knowledge#`protected`|protected]];
-- **Parametri IN - OUT**: parametri che passiamo ad un metodo e quelli che ritornano, cioè quelli in output
-- **Metodo sottolineato**: sono metodi di classe cioè quelli che dichiariamo [[Programming Knowledge#`static`|static]]
+- **Parametri IN - OUT**: parametri che passiamo ad un metodo e quelli che ritornano, cioè quelli in output;
+- **Metodo sottolineato**: sono metodi di classe cioè quelli che dichiariamo [[Programming Knowledge#`static`|static]];
+- **Costruttore:** il costruttore nella notazione UML si scrive con il _create_ che poi dopo vengon sostituiti con il nome della classe.****
+>[!warning] Step to follow for namespaces
+>- **UpperCamelCase**
+>- **no special character or letters with accents**
+>- **name that explicit the scope of the class**
 ### 7.? Class driving 
 La navigabilità indica la possibilità di inviare messaggi(invocazione di un metodo) tra gli oggetti associati, i simboli usati per indicare la navigabilità sono questi due:
 - →: la freccia indica di poter navigare nella direzione della freccia 
 - x: indica che non si può navigare in quella direzione
 ### 7.? Association and Attribute 
 Per definire il concetto di associazione, lo definiamo come quell attributo che ha come tipo
+
+## 8.0 Interaction Diagrams
+Sono un tipo di diagramma comportamentale e dinamico, descrivono il comportamento delle classi, per poter raggiungere certi obbiettivi, aggiungendo informazioni al modello, cioè un metodo alla classe che reagisce ad un determinato messaggio dall'esterno.
+
+### 8.1 What are them?
+Sono dei diagrammi che servono a realizzare i [[UML#5.0 Use case base mechanism| casi d'uso]] e metterli in azione, cioè rappresentare ogni sequenza che fa un determinato durate la sua interazione con un'altro oggetto.
+
+Esempio di diagramma  di sequenza.
+![[SequenceDiagram Hotel.jpg]]
+Spieghiamo questo diagramma di sequenza:
+- **LifeLine**: oggetto di una classe di interesse 
+- **Linea trattegiata**: rappresenta il passare del tempo dell oggetto di una classe 
+- **Message →**: la lifeline che invia un messaggio (invoca un'altra lifeline per un azione).
+- **Creational Message**: concetto della new e stereotipato con il `«create / nome della classe o detto anche costruttore»`![[CreateMessage.png]]
+- **Self Message**: invocazione del metodo della stessa classe, cioè una chiamata interna ad un metodo interno ;
+- **Recursive Message**: stesso del self solo che il metodo chiamata internamente, richiama altri metodi al suo interno che fanno parte della stessa classe (ricorsione);
+>[!note] N.B
+>Alla fine del progetto togliere i numbers tasto destro > presentation option > message display option e poi selezionare show sequence number.
+
+**Frammento**, sono dei rettangoli che inseriamo in diversi segmenti di vita di una lifeline e possono avere dei comportamenti che possiamo specificare.
+![[FrameSquare.png]]
+
+**Frammento Combinato** cambiamento di comportamento in base al controllo che facciamo internamente nel messaggio (con delle condizioni, ma non è sempre usato per questo), si eseguono uno delle operazioni dell'alt non tutti in simultanea.
+![[FrammentiCombinatoriSequenziali.png]]
+
+
 # Reference
 --- 
  [UML](https://www.tutorialspoint.com/uml/index.html)
