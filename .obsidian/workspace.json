@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "66a74057b5bcaadd",
+        "id": "e32f16f8ad7e944f",
         "type": "tabs",
         "children": [
           {
-            "id": "061145bd33ab7602",
+            "id": "4599f95660a875bd",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "6 - The Real Notes/Mongo DB.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Mongo DB"
+              "title": "New tab"
             }
           }
         ]
@@ -93,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2 - Material/Ingegneria del software.md",
+                "file": "6 - The Real Notes/Mongo DB.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Ingegneria del software"
+              "title": "Backlinks for Mongo DB"
             }
           },
           {
@@ -112,12 +108,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2 - Material/Programming/HTML & CSS.md",
-                "linksCollapsed": false,
+                "file": "6 - The Real Notes/Mongo DB.md",
+                "linksCollapsed": true,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from HTML & CSS"
+              "title": "Outgoing links from Mongo DB"
             }
           },
           {
@@ -127,7 +123,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": false
               },
               "icon": "lucide-tags",
               "title": "Tags"
@@ -163,28 +159,31 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "061145bd33ab7602",
+  "active": "4599f95660a875bd",
   "lastOpenFiles": [
-    "7- Images/crud-annotated-collection.bakedsvg.svg",
-    "2 - Material/UML.md",
-    "2 - Material/Programming Knowledge.md",
-    "6 - The Real Notes/Mongo DB.md",
-    "7- Images/FrammentiCombinatoriSequenziali.png",
-    "7- Images/FrameSquare.png",
-    "7- Images/CreateMessage.png",
-    "Screenshot 2024-11-18 at 13.36.31.png",
-    "7- Images/SequenceDiagram Hotel.jpg",
-    "1 - Rough Notes/Welcome to the Rough Notes.md",
-    "7- Images/Groupthing.png",
-    "7- Images/NotazioneDiClasse.png",
-    "Sotto reti.pdf",
-    "7- Images/ObjectStructure.png",
-    "2 - Material/Programming/Design Pattern.md",
-    "7- Images/UML diagrams.png",
+    "2 - Material/Programming/NodeJS.md",
     "2 - Material/Ingegneria del software.md",
+    "7- Images/DifficultyOfRequirement.png",
+    "7- Images/QualitativeRequirement.png",
+    "7- Images/DefinitionOfRequirement.png",
+    "7- Images/List-of-problem.png",
+    "2 - Material/UML.md",
+    "7- Images/ObjectDiagram.png",
+    "Untitled.canvas",
+    "6 - The Real Notes/Mongo DB.md",
+    "2 - Material/Programming/SOLID Principals.md",
+    "2 - Material/Programming/Design Pattern.md",
+    "7- Images/Structure.png",
+    "7- Images/ButtonImage.png",
+    "7- Images/TerminalForMongoUpdate.png",
+    "2 - Material/Programming Knowledge.md",
+    "7- Images/Adapter-Example 1.png",
+    "Sotto reti.pdf",
+    "Trabalho_Pratico_Grupo_2024_2025_ISLA_EN.pdf",
+    "7- Images/Adapter-Internal.png",
+    "1 - Rough Notes/Welcome to the Rough Notes.md",
     "6 - The Real Notes/Binario conversione.md",
     "6 - The Real Notes/Sotto reti.md",
-    "7- Images/SingletonStructure.png",
     "5 - Templates/Full Note.md",
     "1 - Rough Notes/Sottoreti.md",
     "3 - Tags/Programming.md",
@@ -195,8 +194,6 @@
     "www.geeksforgeeks.org/difference-between-abstract-class-and-interface-in-java 1.md",
     "www.geeksforgeeks.org",
     "Untitled 1.canvas",
-    "Untitled.canvas",
-    "2 - Material/Programming/NodeJS.md",
     "6 - The Real Notes/Lezione 26-10.md",
     "6 - The Real Notes/^1.md",
     "6 - The Real Notes/Modelli diversi, ma stesso oggetto nel mondo reale.md",
@@ -206,12 +203,10 @@
     "6 - The Real Notes/JavaScript.md",
     "6 - The Real Notes/HTML.md",
     "5 - Templates/Reference.md",
-    "5 - Templates/Links.md",
     "6 - The Real Notes",
     "5 - Templates",
     "4 - Indexes",
     "3 - Tags",
-    "1 - Rough Notes",
-    "2 - Material"
+    "1 - Rough Notes"
   ]
 }

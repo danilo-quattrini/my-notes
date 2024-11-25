@@ -1,6 +1,6 @@
 ---
 share_link: https://share.note.sx/mlyeikio#KL/1j2iPkchuJXQszkeNjtdKFazHDjXiTEm6FafDpTw
-share_updated: 2024-11-15T13:30:36+00:00
+share_updated: 2024-11-20T11:58:39+00:00
 ---
 2024-10-07 11:20
 
@@ -16,71 +16,15 @@ Tags: [[Programming]] [[Software Engineering]]
 - [0.0 Index](#0.0%20Index)
 - [1.0 Introduction of OOP](#1.0%20Introduction%20of%20OOP)
 - [2.0 Class hierarchies](#2.0%20Class%20hierarchies)
-	- [2.1 Superclass & Subclasses](#2.1%20Superclass%20&%20Subclasses)
 - [3.0 OOP pillars](#3.0%20OOP%20pillars)
-	- [3.1 Abstraction](#3.1%20Abstraction)
-	- [3.2 Encapsulation](#3.2%20Encapsulation)
-	- [Encapsulate](#Encapsulate)
-	- [To encapsulate](#To%20encapsulate)
-	- [3.3 Inheritance (ereditarietà)](#3.3%20Inheritance%20(ereditariet%C3%A0))
-	- [3.4 Polymorphism](#3.4%20Polymorphism)
 - [4.0 Relation between objects](#4.0%20Relation%20between%20objects)
-	- [4.1 Association](#4.1%20Association)
-	- [4.2 Dipendence](#4.2%20Dipendence)
-	- [4.3 Composition](#4.3%20Composition)
-	- [4.4 Aggregation](#4.4%20Aggregation)
 - [5.0 SOLID principals](#5.0%20SOLID%20principals)
-	- [S - ingle responsibility](#S%20-%20ingle%20responsibility)
-	- [O - pen/ closed](#O%20-%20pen/%20closed)
-	- [L - iskov Substitution](#L%20-%20iskov%20Substitution)
-	- [I - nterface Segregation](#I%20-%20nterface%20Segregation)
-		- [Example](#Example)
-	- [D - ependecy inversion](#D%20-%20ependecy%20inversion)
 - [6.0 Design Pattern](#6.0%20Design%20Pattern)
-	- [6.1 What Problem we are talking about?](#6.1%20What%20Problem%20we%20are%20talking%20about?)
-		- [6.1.1 Generic Problems](#6.1.1%20Generic%20Problems)
-		- [6.1.2 Specific problems](#6.1.2%20Specific%20problems)
-	- [6.2 Structure of Design Pattern](#6.2%20Structure%20of%20Design%20Pattern)
 - [6.3 Category of Design pattern](#6.3%20Category%20of%20Design%20pattern)
-	- [Creational](#Creational)
-	- [Structural](#Structural)
-	- [Behavioral](#Behavioral)
-	- [Class pattern](#Class%20pattern)
-	- [Object pattern](#Object%20pattern)
 - [6.4 Creational pattern](#6.4%20Creational%20pattern)
-	- [6.4.1 Factory pattern](#6.4.1%20Factory%20pattern)
-		- [6.4.1.1 Factory method structure](#6.4.1.1%20Factory%20method%20structure)
-		- [6.4.1.2 When we use it?](#6.4.1.2%20When%20we%20use%20it?)
-		- [6.4.1.3 How we implement it?](#6.4.1.3%20How%20we%20implement%20it?)
-		- [6.4.1.4 Pros and Cons](#6.4.1.4%20Pros%20and%20Cons)
-	- [6.4.2 Abstract  Pattern](#6.4.2%20Abstract%20%20Pattern)
-		- [6.4.2.1 Abstract Factory Solution](#6.4.2.1%20Abstract%20Factory%20Solution)
-		- [6.4.2.2 Abstract Factory Structure](#6.4.2.2%20Abstract%20Factory%20Structure)
-		- [6.4.2.3 When we use it?](#6.4.2.3%20When%20we%20use%20it?)
-		- [6.4.2.3 How we implement it?](#6.4.2.3%20How%20we%20implement%20it?)
-		- [6.4.2.4 Pros and Cons](#6.4.2.4%20Pros%20and%20Cons)
-	- [6.4.3 Builder  Pattern](#6.4.3%20Builder%20%20Pattern)
-		- [6.4.3.1 Builder Solution](#6.4.3.1%20Builder%20Solution)
-		- [6.4.3.2 Builder Structure](#6.4.3.2%20Builder%20Structure)
-		- [6.4.3.3 Builder  when we use it?](#6.4.3.3%20Builder%20%20when%20we%20use%20it?)
-		- [6.4.3.4 Pros and Cons](#6.4.3.4%20Pros%20and%20Cons)
-	- [6.4.4 Prototype pattern](#6.4.4%20Prototype%20pattern)
-		- [6.4.4.1 Prototype Solution](#6.4.4.1%20Prototype%20Solution)
-		- [6.4.4.2 Prototype Structure](#6.4.4.2%20Prototype%20Structure)
-		- [6.4.4.3 Prototype registry Implementation](#6.4.4.3%20Prototype%20registry%20Implementation)
-		- [6.4.4.4 Prototype Example](#6.4.4.4%20Prototype%20Example)
-		- [6.4.4.5 Prototype  when we use it?](#6.4.4.5%20Prototype%20%20when%20we%20use%20it?)
-		- [6.4.4.5 Pro and Cons?](#6.4.4.5%20Pro%20and%20Cons?)
-	- [6.4.5 Singleton pattern](#6.4.5%20Singleton%20pattern)
-		- [6.4.5.1 Singleton Solution](#6.4.5.1%20Singleton%20Solution)
-		- [6.4.5.2 Singleton Structure](#6.4.5.2%20Singleton%20Structure)
-		- [6.4.5.3 Singleton when use it?](#6.4.5.3%20Singleton%20when%20use%20it?)
-		- [6.4.5.4 Singleton how implement it?](#6.4.5.4%20Singleton%20how%20implement%20it?)
-		- [6.4.5.5 Singleton how implement it?](#6.4.5.5%20Singleton%20how%20implement%20it?)
 - [7.0 Structural Design Patterns](#7.0%20Structural%20Design%20Patterns)
-	- [7.? Design Pattern Composite](#7.?%20Design%20Pattern%20Composite)
-		- [?.? Composite Structure](#?.?%20Composite%20Structure)
 - [8.0 Behavioral Design Patterns](#8.0%20Behavioral%20Design%20Patterns)
+
 ## 1.0 Introduction of OOP
 ---
 La **O**bject - **O**riented - **P**rogramming è un paradigma di programmazione che consiste nel raccogliere pezzi di informazione o dati e far in modo di creare dei gruppi, chiamati *objects* (oggetti in italiano), questi sono definiti in un'insieme di *blueprints*(regole in italiano) che sono create dal programmatore, queste son chiamate **classi**.
@@ -213,127 +157,12 @@ L'_aggregazione_ è una variante più leggera della composizione, questo vuol di
 ## 5.0 SOLID principals
 ---
 I principi solidi sono stati creati per rendere il software più flessibile, mantenibile nel tempo ed estendibile, ne sono ben 5 e si distinguono dal loro acronimo.
-### S - ingle responsibility
-
->[!quote] Definition 
->Una classe deve avere solo un singolo motivo per dover cambiare.
-
-Ogni classe possiede la propria responsabilità e si deve fare in modo che  gestisca le sue operazioni, senza andar a fare più del necessario, _la classe deve avere solo una ragione per cambiare_.
-
-Guardiamo questo esempio di classe `Employee` che non è gestita bene.
-![[ExampleOfSolidPrinciple.png]]
-In questo caso vediamo che possiede ben due _responsabilità_, una è quella della stampa dello `printTimeSheetReport()` e la seconda è quella di prendere i nomi dei dipendenti `getName()`, questo viola il principio quindi per risolvere tale situazione si farà così.
-![[SolutionOfSingleResponsibility.png]]
-### O - pen/ closed 
-
->[!quote] Definition 
->Le classi devono essere aperte ad estensioni, ma chiuse alle modifiche esterne.
-
-Una classe viene definita _Open_ nel caso si riesce ad aggiungerci nuovi attributi, metodi oppure [[Programming Knowledge#Overriding (sovrascritto)|sovrascrivere]] i metodi implementandone nuove funzionalità ecc.. In Java per rendere una classe _Closed_ si viene ad utilizzare il modificatori d'accesso [[Programming Knowledge#`final`|final]].
-
->[!tip] Programming Tip
->Se sai che una classe contiene un bug, non andare a creare una sottoclasse che ne vada a risolvere il problema, il figlio (sottoclasse) non è responsabile dei problemi del padre (superclasse).
-
-Guardiamo ora un'esempio di come possiamo applicare questo principio ad una classe `Order`, che nel nostro caso contiene tanti metodi per la gestione degli ordini ed è molto complicata la classe, tanto da rischiare di poter rompere l'intera app se si fanno delle modifiche.
-
-![[O-penClosexample.png]]
-La soluzione da applicare sarebbe quella di utilizzare un design patter chiamato _Strategy_ che vedremmo in seguito su questo documento come implementarlo nel dettaglio intanto vedremmo qui la risoluzione.
-![[Screenshot 2024-10-31 at 10.35.39.png]]
-Ora grazie all'interfaccia `Shipping` possiamo derivare le varie classi che implementeranno i metodi di spedizione, senza dover utilizzare la classe principale `Order`.
-### L - iskov Substitution 
-
->[!quote] Definition
->Quando una classe è estesa da una sua sottoclasse, la sottoclasse dovrebbe poter essere utilizzata al posto della classe genitore senza rompere o modificare il funzionamento del codice esistente.
-
-Ciò vuol dire che quando estendiamo una classe, la sottoclasse deve avere gli stessi comportamenti della classe genitore (superclasse), cioè quando si sovrascrive un metodo della superclasse, questo ultimo non deve essere sostituito interamente con qualcos'altro ma solo modificato in parte.
-
-Questo principio contiene delle checklist da rispettare  affinché venga rispettato pienamente (non possiede libera interpretazione), vediamoli insieme:
-
-1. Quando una sottoclasse sovrascrive (_override_) un metodo della superclasse, i **tipi di parametro** del metodo nella sottoclasse devono essere **uguali o più astratti** rispetto ai tipi di parametro usati nel metodo della superclasse.
-   
-   Questo cosa vuol dire:
-	-  Se nella superclasse il metodo accetta un parametro di un certo tipo, nella sottoclasse non possiamo restringere quel tipo.
-	  
-	-  Possiamo, però, usare un tipo più generico (cioè una superclasse del tipo originale) o lo stesso tipo. 
-	
-	In altre parole, il metodo della sottoclasse dovrebbe essere in grado di **accettare almeno gli stessi tipi di input** che il metodo della superclasse può accettare, se non di più
-
-2. Quando si sovrascrive un metodo di una superclasse in una sottoclasse, il **tipo di ritorno** del metodo sovrascritto Deve essere **lo stesso tipo** del metodo nella superclasse, oppure può essere un **sottotipo** (cioè una classe derivata) del tipo di ritorno della superclasse.
-   
-   Questo cosa vuol dire:
-	- Che ad esempio se nella sottoclasse si viene a sovrascrivere un metodo `buyCat(): BengalCat` il client riceverà un tipo di gatto che fa parte della famiglia gatti quindi è apposto.
-	  
-	  - Nel caso però si venga a sovrascrivere il metodo in questo modo `buyCat(): Animal`, il codice si romperebbe perché non si sa che tipo di animale sta ritornando il metodo della sottoclasse (un pesce? una scimmia?).
-	
-	Stesso esempio lo si può fare nel mondo della programmazione nell'esempio dei tipi dinamici, cioè non ha senso che il metodo base se ritorna una stringa allora il suo metodo esteso ritorni un numero. 
-
-3. Quando si crea una sottoclasse e si sovrascrive un metodo della superclasse, è importante che il metodo sovrascritto **non aggiunga nuove eccezioni** che il metodo originale (della superclasse) non prevede...
-
-_For more detail about other examples and rules read from page 57 to 60 of the book Dive into Design Patterns by Alexander Shvets_.
-### I - nterface Segregation 
-
->[!quote] Definition
->I client non devono obbligatoriamente dipendere da metodi che non utilizza
-
-Questo principio afferma che **è meglio avere diverse interfacce specifiche e più piccole piuttosto che un’unica interfaccia grande e generica**, cioè che ogni interfaccia dovrebbe essere **limitata** e **mirata** a un singolo ruolo o gruppo di funzionalità.
-
-Permettendo ad ogni classe di implementare solo le interfacce che realmente servono al suo comportamento. **Interfacce troppo grandi e generiche** possono creare problemi, poiché forzano le classi che le implementano a definire metodi inutili o che non hanno senso per la classe.
-#### Example
-
-Quando andremmo ad esempio a creare un interfaccia `Animal` che definiremmo così
-
-```java
-interface Animal {
-    void walk();
-    void fly();
-    void swim();
-}
-```
-
-Così facendo costringiamo alla classe che implementerà questa interfaccia come ad esempio `Dog` a dover utilizzare metodi che non gli si addicono, come il `fly()` or `swim()` (nella realtà un cane può nuotare, ma non tutti quindi non andrebbe bene comunque).
-
-Per risolvere questa problematica si cerca di creare interfacce più piccole e implementarle solo direttamente alle classi che ci interessa, eccone un esempio di interfaccia.
-
-```java
-interface walk {
-    void walking();
-}
-interface fly {
-    void flying();
-}
-interface swim {
-    void swimming();
-}
-```
-
-Ora, possiamo assegnare a ogni classe solo le interfacce che realmente utilizza:
-
-```java
-class Dog implements walk, swim {
-    public void walking() { /* implementazione */ }
-    public void swimming() { /* implementazione */ }
-}
-
-class Bird implements walk, fly {
-    public void walking() { /* implementazione */ }
-    public void flying() { /* implementazione */ }
-}
-```
-### D - ependecy inversion 
-
->[!quote] Definition
-> Il principio afferma che i **moduli di alto livello**  non dovrebbero dipendere direttamente dai **moduli di basso livello** , ma entrambi dovrebbero dipendere da astrazioni (_interfaces or abstract classes_). Inoltre, le astrazioni non devono dipendere dai dettagli concreti; al contrario, sono i dettagli che devono dipendere dalle astrazioni
-
-Ma cosa sono i moduli di alto e basso livello?
-
-- **Low-level classes**: che sarebbero i moduli di basso livello sono tutti quelle operazioni, che intaccano il trasferimento dei dati sulla rete, operazioni sul disco oppure la connessione a una base di dati.
-
--  **High-level classes:** che sarebbero i moduli di alto livello, contiene della logica che riguarda ordinare di fare qualcosa alle classi di basso livello? (che vuol dire non lo so, il libro lo spiega così penso lo vedremmo dopo)
-
-Il principio di inversione delle dipendenze ci suggerisce di lavorare prima con le classi di alto livello e poi con quelle inferiori con dei metodi che vedremmo qui:
-
-1. Per prima cosa, si creano delle _interfacce_ per le operazioni che verranno svolte nel livello inferiore, dove però quelle di alto livello dipenderanno Ad esempio, supponiamo che la logica di business abbia bisogno di aprire un report
-   invece di chiamare direttamente `openFile(x)`, `readBytes(n)`, `closeFile(x)`,possiamo definire un’interfaccia di alto livello con un metodo singolo chiamato `openReport(file)`, questo lo rende molto più semplice , dato che `openReport` descrive l’intento dell’operazione e non i dettagli tecnici.
+Li puoi trovare qui sulle note [[SOLID Principals]], oppure se vuoi in dettaglio eccoli qui ognuno di loro:
+- [[SOLID Principals#S - ingle responsibility|Singola responsabilità]]
+- [[SOLID Principals#O - pen/ closed|Open Close]]
+- [[SOLID Principals#I - nterface Segregation|Separazione interfacce]]
+- [[SOLID Principals#L - iskov Substitution|Sostituzione di Liskov]]
+- [[SOLID Principals#D - ependecy inversion|Inversione di dipendenza]]
 ## 6.0 Design Pattern
 --- 
 Il **design pattern** così chiamato, sono delle ==strutture ideate per risolvere dei problemi che si presentano==, sono aperti ed estendibili, nel senso che possono essere utilizzate per risolvere più problemi e si possono migliorare nel tempo, adattandoli ai problemi che riscontriamo, si possono incrociare multipli design patterns se si vuole.
@@ -488,7 +317,7 @@ Per implementare tale design pattern bisogna prima di tutto:
 
 > [!done] ## Pros
 > - **Disaccoppiamento**: crea una distanza e isola il _[[#^e3e396|creator]]_ con i suoi "figli" o detti anche sottoclassi.
-> - **Single responsibility**: rispetta il principio di [[#S - ingle responsibility|singola responsabilità]] dei SOLID.
+> - **Single responsibility**: rispetta il principio di [[SOLID Principals#S - ingle responsibility|singola responsabilità]] dei SOLID.
 > - **Open Closed**: ci permette di creare nuovi prodotti(quindi estendere il codice), senza però modificare il codice esistente. 
 
 >[!fail] ## Cons
@@ -535,7 +364,7 @@ Infine sostituire le chiamate dirette ai costruttori di prodotti, con chiamate h
 > [!done] ## Pros
 > - **Compatibility garanted**: cioè vuol dire che i prodotti creati da una factory sono sempre compatibili tra loro implementando interfacce simili.
 > - **Low dipendece**: cioè il codice del client non ha una relazione stretta legata ai prodotti concreti.
-> - **Single responsibility**: rispetta il principio di [[#S - ingle responsibility|singola responsabilità]] perché il codice di creazione dei prodotti è centralizzato ad una sola interfaccia che gestisce tale creazione.
+> - **Single responsibility**: rispetta il principio di [[SOLID Principals#S - ingle responsibility|singola responsabilità]] perché il codice di creazione dei prodotti è centralizzato ad una sola interfaccia che gestisce tale creazione.
 > - **Open/Closed**: principio rispettato perché si possono aggiungere varianti di prodotti senza modificare il codice esistente.
 
 >[!fail] ## Cons
@@ -588,7 +417,7 @@ Infine viene per la creazione di oggetti assai complessi, garantendo la complete
 > [!done] ## Pros
 > - **Flexible building**: ci permette di creare oggetti passo dopo passo, ritardare i passaggi o eseguirli in modo ricorsivo.
 > - **Reusable code**: ci permette di poter creare un codice riutilizzabile nel tempo, per rappresentare diversi tipi di prodotto.
-> - **Single responsibility**: rispetta il principio di singola responsabilità perché il codice di creazione dei prodotti è centralizzato ad una sola interfaccia che gestisce tale creazione.
+> - **Single responsibility**: rispetta il principio di [[SOLID Principals#S - ingle responsibility|singola responsabilità]] perché il codice di creazione dei prodotti è centralizzato ad una sola interfaccia che gestisce tale creazione.
 
 >[!fail] ## Cons
 >- **More complexity:** può introdurre più complessità, nel caso si andrebbe ad aggiungere sempre nuove classi ed interfaccie per ogni prodotto.
@@ -636,7 +465,7 @@ Oppure possiamo utilizzarlo quando vogliamo che non si creano troppe sottoclassi
 > 	
 
 ### 6.4.5 Singleton pattern
-Con il singleton risolviamo due comuni problemi nella programmazione, violando però il [[#S - ingle responsibility | principio di singola responsabilità]]:
+Con il singleton risolviamo due comuni problemi nella programmazione, violando però il [[SOLID Principals#S - ingle responsibility| principio di singola responsabilità]]:
 1. **Ensure that a class has a single instance**: perché controlliamo quante istanze ha una classe? Fondamentale controllare le istanze di una classe quando si parla di controllo degli accessi a delle risorse come i DB o i file, quindi ci assicuriamo che la classe ne possieda solo una. Permettendo a una sola istanza di esistere, si riduce la possibilità di duplicati non necessari, sprechi di memoria o problemi di sincronizzazione
 
 2. **Create an access point for that instance**: con il singleton possiamo svolgere lo stesso compito di una variabile globale, cioè renderla accessibile a  tutti, ma a differenza di quest'ultima, che può subire dei mutamenti se modificata da un esterno,  **con il Singleton la proteggiamo da potenziali sovrascritture accidentali da codici esterni**, offrendo un punto di accesso centralizzato. 
@@ -707,7 +536,7 @@ class Singleton{
 > - **Only required**: l'oggetto viene inizializzato solo quando viene richiesto.
 
 > [!danger] ## Cons
-> - **Violating the first principle**:  viola il [[#S - ingle responsibility| principio di singola responsabilità]], questo tramite:
+> - **Violating the first principle**:  viola il [[SOLID Principals#S - ingle responsibility| principio di singola responsabilità]], questo tramite:
 >   
 > 	-  Combinazione delle istanze (controllo della creazione e accesso) con il comportamento della classe.
 > 	  
@@ -726,7 +555,81 @@ Il _design pattern adapter_ ha la funzione di poter prendere in input una specif
 #### 7.1.1 Adapter solution
 Come funziona questo design? Come fa a rendere disponibile tali interfacce a classe che non sono compatibili?
 
-- Il nostro adapter prima di tutto 
+- Il nostro _adapter_ prima di tutto crea una interfaccia che sia compatibile con l'oggetto esistente.
+- Il nostro oggetto esistente(cioè quello che vogliamo passargli i file convertiti) chiama i metodi dell _adapter_.
+- l'adapter converte e inoltra le chiamate all'oggetto target nel formato previsto.
+![[7- Images/Adapter-Example.png]]
+In questo esempio vediamo che prima, l'app della borsa non riusciva a prendere i dati dalla banca perché non possedeva il file con il formato giusto.Con la creazione dell adapter ora i dati che prende in input l'XML li converte in formato JSON 
+
+#### 7.1.2 Adapter Structure
+La struttura del design pattern _adapter_  la composizione degli oggetti per gestire interfacce incompatibili.
+![[Adapter-Structure.png]]
+Spieghiamo nel dettaglio come funziona tale struttura:
+1. Il `Client` conterrà la logica business del programma.
+2. Il `«interface» Client interface` conterrà quelle interfacce che che le altre classi dovranno seguire al fine di poter collaborare con la classe client prima citata.
+3. La classe `Service` è una classe che viene utilizzata ed utile in alcune occasioni, ed è quella che il `Client` non può usare perché possiede  interfacce incompatibili con quest'ultima.
+4. Infine c'è la classe `Adapter` che implementa l’interfaccia del client(tramite l'interfaccia `«interface» Client interface`) e avvolge il service (si usa l'[[#4.4 Aggregation|aggregazione]]), traducendo le chiamate del client nel formato atteso dal service.
+
+Il vantaggio di utilizzare un approccio del genere consiste che il client non è legato alla classe concreta _adapter_ quindi si possono implementare diversi adapter senza modificare il codice sorgente, un'altro vantaggio è quello che se l'interfaccia della classe `Service` cambia non non c'è bisogno di cambiare tutto il codice ma si va a create un nuovo _adapter_.
+
+Come funziona la **classe adapter** internamente? Il Class `Adapter` utilizza l’ereditarietà per gestire interfacce incompatibili, ereditando le interfacce sia dal client che dal service.
+![[Adapter-Internal.png]]
+Che funzionalità possiede l'adapter?
+- Non avvolge oggetti: eredita direttamente comportamenti da entrambe le classi (client e service).
+- L’adattamento avviene tramite il metodo dell'**[[Programming Knowledge#Overriding (sovrascritto)|override]] dei metodi**.
+- Può essere utilizzato al posto di una classe client esistente.
+Con ==java però da come sappiamo non possiamo fare l'ereditarietà multipla==, questo è solo possibile tramite C++.
+#### 7.1.3 Adapter example
+![[Adapter-Example 1.png]]
+Qui abbiamo un problema di incompatibilità, dove la figura del rettangolo, non si adatta al foro che abbiamo in alto a sinistra, per sapere come il nostro parallelepipedo entra nel buco come facciamo?
+Possiamo **utilizzare il nostro adapter per calcolarci il raggio del parallelepipedo** e controllare se può oppure no entrare nel buco:
+- L’Adapter si comporta come un cilindro.
+- Imposta il raggio del cilindro pari a metà della diagonale del quadrato (calcolata dal metodo `getRadius()` che ritornerà un tipo per compatibile per la classe `RoundHole`).
+- Questo ==raggio rappresenta il cerchio minimo che può contenere la forma quadrata==.
+
+#### 7.1.4 When use the adapter?
+Quindi in definitiva quando possiamo utilizzare realmente questa classe all'interno del nostro programma?
+Lo possiamo usare quando:
+
+- **Interfacce Incompatibili**: si utilizza il pattern Adapter quando vuoi ==usare una classe esistente, ma la sua interfaccia non è compatibile con il resto del tuo codice==.
+  
+- **Classe che fa da traduttore**: L'Adapter crea una classe intermedia che ==agisce come traduttore tra il tuo codice e una classe legacy==, di terze parti, o con un'interfaccia inconsueta.
+  
+  - **Estendere funzionalità mancanti:** se diverse super classi mancano di funzionalità, non conviene fare una sottoclasse solo per implementarla, ma con ==l'adapter possiamo aggiungere funzionalità in modo dinamico==
+
+#### 7.1.5 How we can implement it?
+Per implementare il design pattern Adapter possiamo seguire i seguenti passi: 
+
+1. **Capire quali sono le classi incompatibili:**  
+   sono due gli attori che ci interessano trovare per creare il design, il primo sarà il **client che offrirà il servizio**(nell'esempio di prima la banca), quest'ultimo sarà immodificabile dal punto di vista del codice poi il client o i **client che vogliono usufruire di tale sevizio** (la classe che elabora solo i file JSON).
+   
+2. **Dichiarare l'interfaccia del client che offrirà il servizio**: 
+   dettare le regole al fine di far comprendere a chi utilizzerà tale client che servizio quest'ultimo offrirà, tramite apposita interfaccia.
+
+3. **Creare la classe Adapter**: 
+   cioè creare la classe, ma per ora lasciare i metodi di quest'ultima vuoti e non implementarli.
+
+4. **Aggiungi il Riferimento al Servizio**: 
+   cioè creare un campo all'interno della classe adapter che servirà in seguito a memorizzare il riferimento alla classe che offre il servizio (può essere inizializzato nel costruttore o nei metodi dell adapter). 
+
+5. **Implementare i metodi dell'interfaccia Client**: 
+   Fai in modo che l’adapter delega il lavoro reale alla classe di servizio, gestendo la conversione di interfacce o formati. 
+
+6. **Usa l'Adapter Tramite l’Interfaccia del Client**: 
+   I client dovrebbero interagire con l'adapter tramite l'interfaccia del client, permettendo modifiche all adapter senza influire sul codice del client.
+
+#### 7.1.6 Pros and Cons
+> [!done] ## Pros
+>- **Single Responsibility Principle:** Permette di separare il codice per la conversione di interfacce o dati dalla logica principale del programma.
+> 
+> - **Open/Closed Principle**: È possibile introdurre nuovi tipi di adapter senza modificare il codice client esistente, purché comunichino tramite l’interfaccia del client
+
+>[!fail] ## Cons
+>- **More complexity:** La complessità del codice aumenta per via dell’introduzione di nuove interfacce e classi. Talvolta è più semplice modificare direttamente la classe di servizio per renderla compatibile.
+
+### 7.2 Bridge Pattern
+Il _design pattern bridge_ prende in input una classe e lo ==divide in due insiemi di classi separate chiamate astrazione e implementazione== dove ognuno di loro sarà implementato in maniera differente.
+Vediamo un esempio di qu
 ### 7.? Design Pattern Composite
 Il pattern composite ci permette di gestire oggetti aggregati, con l'utilizzo di un interfaccia comune che sia applicabile su tutta la struttura.
 Con questo design pattern si va ad esplorare in profondità all'interno di un albero di oggetti, senza dover conoscere l'oggetto stesso ma li tratteremmo con lo stesso metodo indifferentemente dal tipo di metodo che abbiamo.
@@ -738,6 +641,20 @@ Con questo design pattern si va ad esplorare in profondità all'interno di un al
 4. **Client**:
 
 ## 8.0 Behavioral Design Patterns
+
+### 8.1 Command Pattern
+Il _design pattern command_ serve per gestire la parte della ridondanza del codice, facendo parte del principio di separazione di responsabilità o detto anche [[#S - ingle responsibility|single responsibilty]], creare ogni bottone per ogni operazione, che contengono i dettagli della richiesta, eliminando le sottoclassi e riducendo le ridondanze
+![[ButtonImage.png]]
+#### 8.1.1 Command Structure
+![[Structure.png]]
+1. **Sender (invoker)**: inizia la richiesta attivando il comando 
+2. **Interfaccia Command**
+3. **Concrete Command**: vanno ad implementare l'interfaccia `«interface» Command`
+4. **Receiver**:
+5. **Client**: Definisce il sender e l'invoker configurando i comandi concreti passando tutti i parametri.
+#### 8.1.2 Command where we use it?
+Lo utilizziamo per parametrizzare oggetti con azioni, serealizzare comandi trasformarle e salvarli come stringhe e mettendoli in coda, registrarli e inviarli per l'esecuzione remoto.
+Implementare operazioni annullabili conservando i backup di quest'ultimi.
 # Reference
 ---
  - Book: _Dive into Design Patterns by Alexander Shvets_ 

@@ -85,6 +85,7 @@ Questi si distinguono in base alla organizzazione delle differenti attività del
    
 5. ***Manutenzione:*** attività messe in atto sul software già rilasciato per dei motivi come interventi correttivi di problemi presenti, perfettivi per l’aggiunta di funzionalità e adattivi per la portabilità del software.
 ## ?.? Processo Unificato
+---
 Lo **Unified Process (UP)** è un ==processo iterativo standardizzato per lo sviluppo del
 software per la costruzione di sistemi orientati agli oggetti== questo è un 
 processo guidato sia dal rischio che dai casi d'uso ed incentrato sull'architettura (come [[UML|UML]]), la baseline sono gli artefatti prodotti da un processo di sviluppo.
@@ -153,6 +154,107 @@ Qui sono rappresentate nel dettaglio ogni fase di sviluppo dell'Unified Process 
 
 - **Test:** 
 **Business case**: capire come vendere il software e dove frutta denaro.
+
+## 3.0 Ingegneria dei requisiti
+--- 
+E' la disciplina che serve per **comprendere cosa il sistema debba fare**, con le sue **proprietà essenziali** e i vincoli che deve rispettare. La fase dello scoprire, analizzare, documentare, validare quello che facciamo interagendo con l'utente e  i requisiti sono attività della disciplina dell'**ingegneria dei requisiti**
+
+Le tecniche che utilizziamo li utilizziamo in base a quello che dobbiamo fare
+### 3.1 Software Intensive System
+Funzionalità offerte dai sistemi software, sono due macro categorie (ci concentreremmo più sulla prima):
+- **Information system**: sistemi gestionali che manipolano e erogano informazioni, dove il dato viene inserito e manipolato, computazione eseguito sui compilatori standard;
+  
+- **Embedded Software-intensive System**: interagisce con il mondo fisico, acquisendo dati da quest'ultimo, parte di questi sistemi non sono eseguiti su general purpose, ma su sistemi embedded. 
+### 3.2 Challenge in the SIS
+La complessità dei sistemi software è sempre crescente, necessitando sempre di nuovi approcci allo sviluppo, dove gli aspetti legati allo sviluppo.
+_to be completed_...
+
+### 3.3 Typical problems inside the SIS
+Questa è una lista dei tipici problemi che si possono scontrare tipicamente.
+![[List-of-problem.png]]
+
+### 3.4 What is a Requisite?
+>[!info] Definiton
+>![[DefinitionOfRequirement.png]]
+>
+
+### 3.5 Type of Requisite
+Questa dipende dal destinatario del requisito e dal focus che si persegue nell'analisi e sono:
+- Si concentrano su ==chi è il **destinatario del requisito**==:
+  
+	- **Requisiti utente**: saranno scritti in modo che l'utente lo possa capite, descrivendo cosa fa il sistema in modo comprensibile (come ad esempio l'accesso al sistema oppure che il sistema calcola l'iva ), alto livello di astrazione usando un linguaggio naturale;
+	
+	- **Requisiti di sistema**: passo ulteriore a quelli dell'utente, non sono più gli utenti i destinatari, ma i progettisti o programmatori, utilizzando termini tecnici e precisi, spiegando il meccanismo del sistema, come ad esempio dopo 3 volte di tentativo di login si blocca il sistema;
+	  
+- Altri tipi ==sono in base alle **carattere del requisito**== e sono:
+	- **Requisito funzionale**:  ha l'obbiettivo di descrivere una relazione input-output (fammi una somma di due numeri), chiede di creare una somma fra due numeri;
+	  
+	- **Requisito qualitativi**: descrive come il sistema soddisfa il **requisito funzionale** (fammi una somma di due numeri in due secondi), soddisfa la richiesta in un determinato tempo cioè due secondi.
+	
+	- **Vincolo**: sono un modo particolare per vincolare come deve essere sviluppato un software;
+
+- Altra categoria sono l'**origine dei requisiti** 
+
+### 3.6 How specify system requirements?
+Ci possono essere diverse tecniche e specifiche per definire i requisiti di sistema:
+- **Informale**: requisito di sistema con semantica ben definita, utilizzando un linguaggio naturale comprensibile all'utente;
+  
+- **Semi formale**: linguaggio formale, utilizzando delle grafiche per rappresentare concetti, con la semantica non sempre definita (ad esempio [[UML]] è un linguaggio semi-formale);
+
+- **Formali**: sintassi e semantica son ben definiti. 
+  
+L'uso di una tecnica invece che un'altra dipende dal metodo utilizzato e il contesto, più vado nel formale più mi costa di tempo e denaro, per poter riflettere su cosa fare o no, verificando delle proprietà che non sempre abbiamo tempo di verificarne tutte. 
+
+### 3.7 Ambiguity in the natural language
+Ci possono essere diverse ambiguità che sono presenti nel linguaggio che abbiamo, che posssono impattare la specifica dei requisiti:
+
+- **Lessicale**: termini che possono avere più significati, son polisemici, capire una cosa per un'altra.
+  
+- **Ambiguità sintattica**: la frase in questo caso ha più di un significato sintattico, errori di punteggiatura o di posizionamento di soggetto verbo e complemento.
+
+- **Ambiguità semantica**: la frase possiede più interpretazioni e non una singola.
+
+- **Pragmatica:** interpretazione che dipende dal contesto.
+### 3.8 Qualitative Requisite
+![[QualitativeRequirement.png]]
+### 3.8 Restriction Requisite
+
+>[!info] **Definition**
+>Un determinato vincolo è un requisito  organizzativo che restringe il campo **TODO**. 
+### 3.8 Requisite Domine
+
+>[!info] **Definition**
+>Un requisito di dominio è quello che deriva direttamente dallo specifico **dominio e o contesto applicativo**.
+
+Molto difficile da far emergere, e cercare di trovarli e specificarli all'interno dell'analisi.
+
+## 4.0 Engineering of requirement
+--- 
+TO-DO
+
+### 4.1 Factibility Study
+**Studio preliminare** per capire se il sistema è conveniente costruirlo oppure no, facendo emergere le necessità e capire se continuare o meno, ci sono delle domande che vengono poste per questa attività:
+%%METTERE LE DOMANDE%%
+
+### 4.2 Elicitation  of analysis of requirement
+Sbagliato chiedere all'utente cosa gli serve, il primo passo è identificare gli **"stakeholder"**
+![[DifficultyOfRequirement.png]]
+L'elicitazione viene influenzata alle caratteristica dei processi cognitivi umani, portando in considerazione i processi mentali di:
+- **rimozione**
+- **distorsione**: interpretazione errata di un concetto, distorta da preconcetti dell'utente;
+- **generalizzazione**: semplificare il sistema, riducendo le statistiche.
+Attenzione ai termini: **tutto, ogni, sempre, mai, nessuno, niente**.
+
+### 4.3 Find of the requirements
+Identificare i punti di vista, per capire e **classificare gli attori del nostro sistema** e possono essere 3 tipi **diretto**, **indiretto** e di **dominio**:
+
+- Punto di vista **diretto**: chi interagisce direttamente con il sistema;
+  
+- Punto di vista **indiretto**: chi non ci interagisce, ma è interessato al sistema e il suo comportamento;
+  
+- Punto di vista di **dominio**: persone/attori che sono esperti del dominio o detto sistema che stiamo creando.
+### 4.4 System and Actors
+Attore è il ruolo che un'entità assume quando interagisce con il sistema, un'entità può **possedere più ruoli contemporaneamente**
 # Reference
 ---
  [^1]: L’**elicitazione** è il processo di estrazione di **informazioni**, conoscenze o requisiti da una fonte, solitamente attraverso tecniche di intervista, osservazione o brainstorming, for more info go there [definizione elicitazione](https://www.edizionigoree.it/significato-elicitazione-definizione-etimologia/)

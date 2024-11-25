@@ -1,6 +1,6 @@
 ---
 share_link: https://share.note.sx/ogoh8vwg#YrwnwHRe4ioRoI1p8Yn5/Bh7vqT7l53q8Rghey3YWyw
-share_updated: 2024-11-18T15:03:16+00:00
+share_updated: 2024-11-25T13:05:31+00:00
 ---
 2024-10-14 10:38
 
@@ -239,29 +239,166 @@ Un buon progetto **Object Oriented**, deve partire da un buon modello concettual
 
 Quindi quello che dovremmo fare sarà **scegliere i concetti più interessanti** (cioè quelli più rilevanti della realtà), l'obbiettivo finale non è quello di disegnare classi, ma un diagramma per rappresentare un modello concettuale.
 
-### UML notation
+### 7.4 UML notation
 ![[NotazioneDiClasse.png]]
-- **Stereotipo**: data una tecnologia in input posso creare da quest'ultima uno stereotipo, che se dichiarato su una classe quest'ultima eredita dallo stereotipo le sue tecnologie.
+- **Stereotipo**: data una tecnologia in input posso creare da quest'ultima uno stereotipo, che se dichiarato su una classe quest'ultima eredita dallo stereotipo le sue tecnologie (esempio: qualcuno ha steriotipato il concetto di studente, con nome, cognome, matricola ecc.., cioè si porta dietro una serie di attributi di un'altra classe ).
 - **Valore etichettato:** Valori descrittivi di chi ha creato tale classe e descrizioni, non hanno influenza nella rappresentazione (tipo i commenti nel codice)
 - **Ornamento di visibilità**: sono 4  e possono stare nei metodi o attributi della classe:
 	-  **+**: [[Programming Knowledge#`public`|public]];
 	-  **-**: [[Programming Knowledge#`private`|private]];
 	-  **~**: package[^4];
 	-  **#**: [[Programming Knowledge#`protected`|protected]];
-- **Parametri IN - OUT**: parametri che passiamo ad un metodo e quelli che ritornano, cioè quelli in output;
-- **Metodo sottolineato**: sono metodi di classe cioè quelli che dichiariamo [[Programming Knowledge#`static`|static]];
-- **Costruttore:** il costruttore nella notazione UML si scrive con il _create_ che poi dopo vengon sostituiti con il nome della classe.****
->[!warning] Step to follow for namespaces
+- **Parametri IN - OUT**: parametri che passiamo ad un metodo **IN** e quelli che ritornano, cioè quelli in output (quelli output sono rappresentati fuori dal metodo esempio `getSaldo(): double` ritornerà un valore di tipo double in **OUT**);
+- **Metodo o Attributo sottolineato**: sono metodi o attributi di classe cioè quelli che dichiariamo [[Programming Knowledge#`static`|static]];
+- **Costruttore:** il costruttore nella notazione UML si scrive con il _create_ che poi dopo vengon sostituiti con il nome della classe nella scrittura del codice stesso
+  ****
+>[!warning] Step to follow for class namespaces
 >- **UpperCamelCase**
 >- **no special character or letters with accents**
 >- **name that explicit the scope of the class**
-### 7.? Class driving 
-La navigabilità indica la possibilità di inviare messaggi(invocazione di un metodo) tra gli oggetti associati, i simboli usati per indicare la navigabilità sono questi due:
-- →: la freccia indica di poter navigare nella direzione della freccia 
-- x: indica che non si può navigare in quella direzione
-### 7.? Association and Attribute 
-Per definire il concetto di associazione, lo definiamo come quell attributo che ha come tipo
 
+>[!warning] **Step to follow for attribute namespace**
+>- lowerCamelCase
+>- Visibilità (+,  - , #, ~)
+>- Tipo - tipi primitivi (Integer, UnlimitedNatural, Boolean, String)
+>- Molteplicità per rappresentare array con le parentesi quadre []
+>- Si posson mettere parametri di tipo _isQuery_[^5]
+
+### 7.5 Phase for create class diagram
+Ci sono due tipologie di diagrammi di classe che possiamo rappresentare in base alla fase di sviluppo del progetto e sono ben due: 
+
+- **Fase di analisi**: e si basano principalmente su _cosa dovrà fare_ il sistema, realizzando un modello concettuale delle classi quello che posso immaginare sarà il progetto e verrà rappresentato: 
+  
+	- **nome** della classe rappresenta concetti della realtà;
+	- **attributi fondamentali** che possono esser presenti;
+	- **operazioni fondamentali** come operazioni o azioni (no costruttori o distruttori), in sostanza tutte le _responsabilità che possiede_ cioè cosa l'oggetto sa fare non va messo **nessun attributo al suo interno**;
+	- **stereotipo** se lo definisco ed è richiesto in ambito business;
+	- la classe ha una corrispondenza nella realtà (non quella tangibile), **non posso riportare qui la soluzione**
+>[!quote] **N.B**
+	>Non possiedo all'interno di questo diagramma concetti tecnologici o che riguardano la user interface, niente persistenza (cioè un dato o un'azione che rimane presente nel sistema dopo il suo riavvio/reset) o come lo faccio tale sistema
+
+- **Fase di progetto:** spiega _come realizza_ tale sistema, ci troviamo nel mondo della soluzione del problema includendo i dettagli massimi che possiamo, aggiungendo al diagramma delle classi di analisi la:
+  
+	- **visibilità** degli attributi e metodi che abbiamo definito in precedenza;
+	- **parametri** che prima non avevamo messo all'interno delle operazioni che saranno nel codice 
+>[!tip] TODO:
+>Usare in visual paradigm il pulsante generate code, creando dei mock che possiamo rempire
+
+#### 7.5.1 Class Analysis
+Dobbiamo capire per prima cosa, **quali saranno quelle classi che ci permette di soddisfare i requisiti che il nostro sistema ci richiede?**
+
+Parliamo del concetto di **classe di analisi**, quest'ultima serve a rappresentare i concetti della realtà in modo da far si che il nostro sistema che andremmo a creare sarà capace di manipolare. Queste verranno infine perfezionate nelle classi di progetto, qui di seguito alcuni modelli che possiamo prenderne spunto:
+
+- Modello di business;
+- Modello dei requisiti;
+- Modello dei casi d'uso;
+- Descrizione dell'architettura;
+
+Per avere una buona classe di analisi bisogna rispettare il vincolo sul nome, essere riconducibile alla realtà o al concetto che che ci interessa, deve possedere un'insieme ridotto di responsabilità e coeso (cioè deve essere coerente con la realtà che rappresentiamo) e infine ma non per ultimo ridurre le **interdipendeze[^6] con le altre classi**.
+
+>[!error] **ERRORI DA EVITARE NEL PROGETTO**
+>- **Classi isolate** che non collabora con nessuno e che non partecipa a nessuna responsabilità;
+>- **Classi che rimandano a funzioni** cioè che possiede nomi di una funzione;
+>- **Alberi di ereditarietà** ci sono troppe ereditarietà in una singola classe, **codice poco struttura e meno comprensibile**
+#### 7.5.2 Technique to find Class
+Le tecniche principali identificare le classi analisi sono le presenti:
+
+- Analisi **Nome-Verbo**;
+- Classi **CRC** (C- Class, R- Responsibility, C- Collaborators);
+- Elenchi di categorie concettuali;
+- Modelli di dominio;
+##### 7.5.2.1 Analysis name-verb
+Si basa sul fatto di prendere un documento, in questo caso il nostro progetto, identificando prima di tutti due macro categorie: **Nomi** e **Verbi**, focalizzandoci sulla realtà che il documento descrive dove i primi rappresentano i **concetti** e i verbi sono le **attività**. 
+- Si andrà a **creare una lista dei nomi e dei pronomi nominali** che saranno i nostri canditati per classe e attributi;
+- Elenco dei **verbi e dei predicati verbali che abbiamo trovato** all'interno del nostro documento
+##### 7.5.2.1 Analysis CRC
+Attività di brainstorming, di team organizzata su due principale fasi, cioè oltre a scrivere classi e responsabilità si vengono anche a scrivere i **collaborator** queste sono delle ==classi che servono o sono necessarie ad altre classi per soddisfare una responsabilità collaborando nell'assolvere la responsabilità che la classe si è presa==.
+
+Come sono le fasi del CRC: 
+- **Commenti** ed **Analisi** sono raccolte durante gli incontri di "brainstorming";
+- Ognuno deve identificare tutte le cose che agiscono nel proprio domini;
+- ﻿Ognuna di queste "cose" viene annotata in un post-it insieme al nome ed alle responsabilità che si ritengono importanti per la classe;
+- Cercare di identificare le classi che potrebbero avere necessità di interagire ed annotare sul post-i
+  
+Nella seconda fase i ==post-it vengono riconsiderati per capire quali devono acquisire lo status di classe nel modello concettuale e quali invece di attributo==. Nel dubbio il concetto viene inserito come classe.
+
+### 7.6 Class Relations
+Le **relazioni** che andremmo a trattare saranno tra le classi e gli oggetti e sono di diversa natura, il ==collegamento semantico tra due oggetti che consente ai due di scambiarsi messaggi==, cioè che un oggetto conosce l'altro e viceversa (in Object Oriented vuol dire invocare semplicemente un'altro metodo) è comunque necessario che chi vuole inviare un messaggio possa recuperare un riferimento a chi lo deve ricevere.
+
+Questi collegamenti sono considerate delle connessioni dinamiche,  questo perché un **diagramma degli oggetti** che ==rappresenta un sistema in un certo momento, in un certo stato== che viene rappresentato dai **valori dei suoi parametri**, dove ci possono essere tra i suoi parametri riferimenti ad altri oggetti.
+![[ObjectDiagram.png]]
+Il diagramma in questione rappresenta un stato del sistema che noi vogliamo salvare (tipo una fotografia ad un'evento importante), questo esempio `Company` è collegato tramite un link a due `Department`,
+#### 7.6.1 Class Association
+Tra due classi esistono delle associazioni, quando queste classi hanno la possibilità di collaborare, **se esiste un collegamento tra oggetti deve esistere un associazione di qualche tipo tra le classi corrispondenti**.
+
+Le associazioni sono indicate in questo modo:
+- **nome dell'associazione**: che deve essere esplicativo (cioè con significato), letta in un solo verso da sinistra a destra 
+- nome dei **ruoli**
+- **molteplicità** (trucco per metterla leggere con il linguaggio naturale)
+- **navigabilità**
+
+#### 7.6.2 Class molteplicity 
+Indicano ==la quantità degli oggetti che partecipano ad una specifica relazione==, ponendo un vincolo sulla cardinalità della relazione, Viene definita attraverso specifiche stringhe, che **indicano minimo e massimo** (come in DB solo che non si ha più n ma * ), **poste al termine dei due lati del simbolo di associazione**:
+- 0...1 (min=0, max=1
+- ﻿1 (min=1, max=1)
+- 0...* oppure * (min=0, max=unbounded)
+- ﻿1...* (min=1, max=unbounded)
+- 1..6 (min=1, max=6)
+- 1...4,6...9,12...15,17...* (unione di intervalli
+La molteplicità può e dovrebbe essere indicata nei modelli di analisi.
+Nel caso non venga indicata si assume indefinita
+#### 7.6.3 Class driving 
+La navigabilità indica la possibilità di inviare messaggi(invocazione di un metodo) tra gli oggetti associati, i simboli usati per indicare la navigabilità sono questi due:
+
+- →: la freccia indica di poter navigare nella direzione della freccia;
+- x: indica che non si può navigare in quella direzione;
+#### 7.6.4 Association and Attribute 
+Per definire il concetto di associazione, lo definiamo come quell attributo che ha come tipo la classe di destinazione, quando si viene ad avere più di uno nella cardinalità si viene a creare un vettore o collezione di classi.
+
+#### 7.6.5 Association Class
+Sono delle classi che vengono utilizzate per dare semantica (cioè significato delle cose) alla relazione tra le classi,==cioè dare significato alla coppia delle classi che associamo==, tramite l'utilizzo di specifici attributi.
+
+Come ad esempio:
+- relazione azienda/lavoratore;
+- relazione reificate (sala/incassi/titolo)
+
+#### 7.6.6 Dependency
+Per rappresentare relazioni più deboli, cioè sono delle interazioni tra le classi che non si mantengono nel tempo, sono considerate passeggere, non rappresentano la realtà nella sua continuità, le dipendenze sono di diverse tipo:
+
+- [[#7.6.6.1 Use Dependency|Uso]]
+- [[#7.6.6.2 Abstraction Dependency|Astrazione]]
+- Servizio
+Queste dipendenze nel mondo delle classi di progetto sono presenti tra i seguenti elementi:
+
+- classe e classe;
+- package e package; 
+- oggetti e classi;
+- operazioni e classi;
+Usarlo in modo parsimonioso sporadico, per rappresentarla si usa una freccia con la linea tratteggiata invece che continua, vedere [[#4.2 Relation|qui]].
+##### 7.6.6.1 Use Dependency
+>[!info] Definition
+>Le dipendenze d'uso sono rese disponibili da un fornitore e vengono usate dai clienti per poter implementare un loro comportamento.
+
+Le dipendenze d'uso possono essere caratterizzate in diversi tipi:
+- **Usa**: 
+	- Un metodo della classe **A ha bisogno di un parametro della classe B**
+	- Un metodo della classe **A restituisce un valore della classe B**
+	- Un metodo di una classe che **usa un oggetto della classe B anche se non come parametro**
+	  
+- **Chiama**: tra le operazioni di una classe cioè metto le linee tratteggiate tra i metodi delle classi (molto raro);
+  
+- **Parametro:** parametri passati IN e OUT;
+
+- **Invio**: invocazione di un metodo di una classe in qualche modo;
+
+- **Istanza:** cioè un oggetto che viene richiamato da una classe diversa dalla propria;  
+##### 7.6.6.2 Abstraction Dependency
+>[!info] Definition
+>Una relazione che si crea tra il fornitore e il cliente, dove però il fornitore è più astratto del cliente.
+
+Possiamo trovare la relazione **traccia**, dove si vengono a segnare le modifiche che vengono svolte tra un modello vecchio a quello nuovo (esempio se dal vecchio modello al nuovo, si è cambiato il nome della classe si va a **tracciare il cambiamento**), 
+poi abbiamo anche le relazioni **raffina**, **sostituisci** e **deriva-da** che sono più dettagliate e non servono a noi per ora, ma servono per passare ad un modello più raffinato.
+##### 7.6.6.3 Service Dependency
 ## 8.0 Interaction Diagrams
 Sono un tipo di diagramma comportamentale e dinamico, descrivono il comportamento delle classi, per poter raggiungere certi obbiettivi, aggiungendo informazioni al modello, cioè un metodo alla classe che reagisce ad un determinato messaggio dall'esterno.
 
@@ -291,9 +428,14 @@ Spieghiamo questo diagramma di sequenza:
 --- 
  [UML](https://www.tutorialspoint.com/uml/index.html)
 
- [^1]: _Un requisito funzionale è un'affermazione di come un sistema deve comportarsi. Definisce cosa deve fare il sistema per soddisfare le esigenze o le aspettative dell'utente. I requisiti funzionali possono essere considerati come caratteristiche che l'utente rileva. [source](https://visuresolutions.com/it/blog/richieste-funzionali/)_
+[^1]: Un **requisito funzionale** è un'affermazione di come un sistema deve comportarsi. Definisce cosa deve fare il sistema per soddisfare le esigenze o le aspettative dell'utente. I requisiti funzionali possono essere considerati come caratteristiche che l'utente rileva. [source](https://visuresolutions.com/it/blog/richieste-funzionali/)
  
 [^2]: **metodologia** è la disciplina che studia l'evoluzione (teorico-pratica) del lavoro di ricerca sulla base del [metodo scientifico](https://it.wikipedia.org/wiki/Metodo_scientifico "Metodo scientifico")
 
 [^3]: **modello concettuale**: si chiama così perché nasce con lo scopo di rappresentare i concetti (classi e associazioni tra classi) ed ha lo scopo di esprimere il significato di termini e concetti usati dagli esperti del dominio per discutere il problema, e di trovare le giuste relazioni tra concetti differenti
+
 [^4]:  sono quei metodi che si possono condividere solo fra le classi che fanno parte della stesso gruppo o [[UML#Package|package]] 
+
+[^5]: parametro che non cambia il suo stato dopo la sua invocazione, cioè lo stato può essere vero prima e dopo la sua esecuzione
+
+[^6]: **interdipendènza**: Rapporto di intima connessione e di reciproca dipendenza tra più cose, fatti, fenomeni, ecc.:

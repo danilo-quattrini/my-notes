@@ -188,3 +188,27 @@ a different dependency.
 Run `npm audit` for details.
 ```
 In this case the fs module is necessary for handle file that are located in your system, for example the function fs.readFile().
+
+## Project for Advanced web 🚨
+---
+Habit Tracker
+**Description**: A platform for setting goals and tracking daily habits.
+
+**Features**:
+-  User authentication with personalized profiles CRUD for the user:
+	 - [ ] Create the user Sign-up page;
+	 - [ ] Create a way to save the datas (Preffered a external DB no MongoDB);
+  
+-  CRUD operations for habits (Create, Update, View, Delete).
+	- [ ] Create the page for the habit tracker; 
+	- [ ] Create a way to add, update, and delete the tracked habit
+  
+- MongoDB to store habits, progress logs, and user preferences.
+  
+-  Use Pug to create habit dashboards with daily progress charts.
+-  Notifications or reminders to log habits.
+
+**Advanced Add-ons**:
+-  Gamify the experience with streaks and badges.
+- Add calendar integration for habit scheduling.
+- Export habit data for analysis.

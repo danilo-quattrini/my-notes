@@ -138,8 +138,13 @@ The second parameter is an object defining the updated data
 
 So is gonna be like
 ```mongosh
-db.nameOfDB.updateOne({title: "Title of the document"}, {$set{name_date: value_to_change}})
+db.nameOfDB.updateOne({title: "Title of the document"}, {$set: {name_date: value_to_change}})
 ```
+
+with the operator `$set`we are going to edit the field, where the title  have  a title that we gave, for example the title: "Test 2" we edit the body from 'this is the body of this document' to "This is the second document inside the collection".
+![[TerminalForMongoUpdate.png]]
+### `updateMany()`
+we are 
 # Reference
 ---
  Tutorial from W3School here: [MongoDB](https://www.w3schools.com/mongodb/index.php)
