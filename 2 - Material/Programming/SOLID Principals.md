@@ -26,15 +26,15 @@ In questo caso vediamo che possiede ben due _responsabilità_, una è quella del
 Una classe viene definita _Open_ nel caso si riesce ad aggiungerci nuovi attributi, metodi oppure [[Programming Knowledge#Overriding (sovrascritto)|sovrascrivere]] i metodi implementandone nuove funzionalità ecc.. In Java per rendere una classe _Closed_ si viene ad utilizzare il modificatori d'accesso [[Programming Knowledge#`final`|final]].
 
 >[!tip] Programming Tip
->Se sai che una classe contiene un bug, non andare a creare una sottoclasse che ne vada a risolvere il problema, il figlio (sottoclasse) non è responsabile dei problemi del padre (superclasse).
+>Se sai che una classe contiene un bug, non andare a creare una sottoclasse che ne vada a risolvere il problema, ==il figlio (sottoclasse) non è responsabile dei problemi del padre (superclasse)==.
 
 Guardiamo ora un'esempio di come possiamo applicare questo principio ad una classe `Order`, che nel nostro caso contiene tanti metodi per la gestione degli ordini ed è molto complicata la classe, tanto da rischiare di poter rompere l'intera app se si fanno delle modifiche.
 
 ![[O-penClosexample.png]]
-La soluzione da applicare sarebbe quella di utilizzare un design patter chiamato _Strategy_ che vedremmo in seguito su questo documento come implementarlo nel dettaglio intanto vedremmo qui la risoluzione.
-![[Screenshot 2024-10-31 at 10.35.39.png]]
+La soluzione da applicare sarebbe quella di utilizzare un design pattern chiamato _Strategy_ %%mettere il link con il suo design pattern%%intanto vedremmo qui la risoluzione.
+![[Strategy-applied.png]]
 Ora grazie all'interfaccia `Shipping` possiamo derivare le varie classi che implementeranno i metodi di spedizione, senza dover utilizzare la classe principale `Order`.
-## L - iskov Substitution 
+## L - iskov Substitution [^1]
 
 >[!quote] Definition
 >Quando una classe è estesa da una sua sottoclasse, la sottoclasse dovrebbe poter essere utilizzata al posto della classe genitore senza rompere o modificare il funzionamento del codice esistente.
@@ -43,7 +43,7 @@ Ciò vuol dire che quando estendiamo una classe, la sottoclasse deve avere gli s
 
 Questo principio contiene delle checklist da rispettare  affinché venga rispettato pienamente (non possiede libera interpretazione), vediamoli insieme:
 
-1. Quando una sottoclasse sovrascrive (_override_) un metodo della superclasse, i **tipi di parametro** del metodo nella sottoclasse devono essere **uguali o più astratti** rispetto ai tipi di parametro usati nel metodo della superclasse.
+1. Quando una sottoclasse sovrascrive (_override_) un metodo della super classe, i **tipi di parametro** del metodo nella sottoclasse devono essere **uguali o più astratti** rispetto ai tipi di parametro usati nel metodo della super classe.
    
    Questo cosa vuol dire:
 	-  Se nella superclasse il metodo accetta un parametro di un certo tipo, nella sottoclasse non possiamo restringere quel tipo.
@@ -71,7 +71,7 @@ _For more detail about other examples and rules read from page 57 to 60 of the b
 
 Questo principio afferma che **è meglio avere diverse interfacce specifiche e più piccole piuttosto che un’unica interfaccia grande e generica**, cioè che ogni interfaccia dovrebbe essere **limitata** e **mirata** a un singolo ruolo o gruppo di funzionalità.
 
-Permettendo ad ogni classe di implementare solo le interfacce che realmente servono al suo comportamento. **Interfacce troppo grandi e generiche** possono creare problemi, poiché forzano le classi che le implementano a definire metodi inutili o che non hanno senso per la classe.
+Permettendo a ogni classe di implementare solo le interfacce che realmente servono al suo comportamento. **Interfacce troppo grandi e generiche** possono creare problemi, poiché forzano le classi che le implementano a definire metodi inutili o che non hanno senso per la classe.
 #### Example
 
 Quando andremmo ad esempio a creare un interfaccia `Animal` che definiremmo così
@@ -84,7 +84,7 @@ interface Animal {
 }
 ```
 
-Così facendo costringiamo alla classe che implementerà questa interfaccia come ad esempio `Dog` a dover utilizzare metodi che non gli si addicono, come il `fly()` or `swim()` (nella realtà un cane può nuotare, ma non tutti quindi non andrebbe bene comunque).
+Così facendo costringiamo alla classe che implementerà questa interfaccia come ad esempio `Dog` a dover utilizzare metodi che non gli si ad dicono, come il `fly()` or `swim()` (nella realtà un cane può nuotare, ma non tutti quindi non andrebbe bene comunque).
 
 Per risolvere questa problematica si cerca di creare interfacce più piccole e implementarle solo direttamente alle classi che ci interessa, eccone un esempio di interfaccia.
 
@@ -127,11 +127,10 @@ Ma cosa sono i moduli di alto e basso livello?
 Il principio di inversione delle dipendenze ci suggerisce di lavorare prima con le classi di alto livello e poi con quelle inferiori con dei metodi che vedremmo qui:
 
 1. Per prima cosa, si creano delle _interfacce_ per le operazioni che verranno svolte nel livello inferiore, dove però quelle di alto livello dipenderanno Ad esempio, supponiamo che la logica di business abbia bisogno di aprire un report
-   invece di chiamare direttamente `openFile(x)`, `readBytes(n)`, `closeFile(x)`,possiamo definire un’interfaccia di alto livello con un metodo singolo chiamato `openReport(file)`, questo lo rende molto più semplice , dato che `openReport` descrive l’intento dell’operazione e non i dettagli tecnici.
+   invece di chiamare direttamente `openFile(x)`, `readBytes(n)`, `closeFile(x)`, possiamo definire un’interfaccia di alto livello con un metodo singolo chiamato `openReport(file)`, questo lo rende molto più semplice, dato che `openReport` descrive l’intento dell’operazione e non i dettagli tecnici.
    
 _to continue..._
 
 # Reference
----
- 
-
+--- 
+[^1]: Example more easier to understand is there: [Liskov Sobstitution Principle](https://medium.com/@ahmedtahaelelemy/understanding-the-liskov-substitution-principle-a-deep-dive-into-solid-principles-b02ac6a18ee3)

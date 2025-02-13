@@ -189,26 +189,56 @@ Run `npm audit` for details.
 ```
 In this case the fs module is necessary for handle file that are located in your system, for example the function fs.readFile().
 
-## Project for Advanced web 🚨
+## Main Package 
+--- 
+- [[NodeJS#body-parser|body-parser]]
+- dotenv
+- express
+- http
+- mysql2
+- [[Mongo DB|mongodb]]
 ---
-Habit Tracker
-**Description**: A platform for setting goals and tracking daily habits.
+### body-parser
+`body-parser` is a library of Node.js, that allow to read the body of a HTTP request or also called request-body, when a client send data to the server, all these datas are inside the body of the HTTP request, Node.js is not capable to read data so `body-parser` is going to [[Programming Knowledge#^85c706|parse]] them.
+#### When use the body-parser?
+- for HTML modules from the POST
+- from AJAX calls with JSON format
+- for reading the body-request and read them easily
+#### Example of his use
+This is a html code example, a simple form that get informations, note of the POST method.
+```html
+<form action="/submit-form" method="POST">
+  <input type="email" name="email" />
+  <input type="password" name="password" />
+  <button type="submit">Submit</button>
+</form>
+```
+Here we are going to see how we are going to use the `body-parser`.
+```js
+const express = require('express');
+const bodyParser = require('body-parser');
 
-**Features**:
--  User authentication with personalized profiles CRUD for the user:
-	 - [ ] Create the user Sign-up page;
-	 - [ ] Create a way to save the datas (Preffered a external DB no MongoDB);
-  
--  CRUD operations for habits (Create, Update, View, Delete).
-	- [ ] Create the page for the habit tracker; 
-	- [ ] Create a way to add, update, and delete the tracked habit
-  
-- MongoDB to store habits, progress logs, and user preferences.
-  
--  Use Pug to create habit dashboards with daily progress charts.
--  Notifications or reminders to log habits.
+const app = express();
 
-**Advanced Add-ons**:
--  Gamify the experience with streaks and badges.
-- Add calendar integration for habit scheduling.
-- Export habit data for analysis.
+// Middleware di body-parser per leggere il body della richiesta in formato JSON o URL-encoded
+app.use(bodyParser.urlencoded({ extended: true })); // per dati di form (x-www-form-urlencoded)
+app.use(bodyParser.json()); // per dati in formato JSON
+
+app.post('/submit-form', (req, res) => {
+  const { email, password } = req.body;
+  console.log(`Email: ${email}, Password: ${password}`);
+  res.send('Dati ricevuti e processati!');
+});
+
+app.listen(3000, () => {
+  console.log('Server in ascolto su http://localhost:3000');
+});
+```
+
+1. We are going to require the module of `body-parser`, using the require and save into a variable, in that case `const bodyParser`.
+
+2. we are going to use the `bodyParser.urlencoded({extend: true})` for encode the datas that we are going to retrive from the HTTP request, let's see each of the part of the code what they do.
+   
+	-  The `urlencoded` is begin used for read the datas from the HTML modules sent with `application/x-www-form-urlencoded`.
+
+	- If the `extended:` is true is gonna read alla the datas in the correct way.

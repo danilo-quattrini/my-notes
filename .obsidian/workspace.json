@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e32f16f8ad7e944f",
+        "id": "552e475b1355cf24",
         "type": "tabs",
         "children": [
           {
-            "id": "4599f95660a875bd",
+            "id": "764f3f0795b36349",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "6 - The Real Notes/Game Design.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Game Design"
             }
           }
         ]
@@ -36,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -159,50 +164,51 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4599f95660a875bd",
+  "active": "764f3f0795b36349",
   "lastOpenFiles": [
-    "2 - Material/Programming/NodeJS.md",
+    "Pasted image 20250213135523.png",
+    "Pasted image 20250213131158.png",
+    "7- Images/Pasted image 20250211134536.png",
+    "7- Images/Pasted image 20250211134606.png",
+    "6 - The Real Notes/Game Design.md",
+    "Pasted image 20250213131121.png",
+    "7- Images/ENIAC-OXO.png",
+    "Screenshot 2025-02-11 at 13.43.59.png",
+    "3 - Tags/General Knowledge.md",
+    "6 - The Real Notes/Untitled 1.md",
+    "6 - The Real Notes/Untitled.md",
+    "3 - Tags/Graphic.md",
     "2 - Material/Ingegneria del software.md",
-    "7- Images/DifficultyOfRequirement.png",
-    "7- Images/QualitativeRequirement.png",
-    "7- Images/DefinitionOfRequirement.png",
-    "7- Images/List-of-problem.png",
+    "7- Images/waterfall-model.png",
     "2 - Material/UML.md",
-    "7- Images/ObjectDiagram.png",
-    "Untitled.canvas",
-    "6 - The Real Notes/Mongo DB.md",
     "2 - Material/Programming/SOLID Principals.md",
-    "2 - Material/Programming/Design Pattern.md",
-    "7- Images/Structure.png",
-    "7- Images/ButtonImage.png",
-    "7- Images/TerminalForMongoUpdate.png",
+    "7- Images/Strategy-applied.png",
     "2 - Material/Programming Knowledge.md",
-    "7- Images/Adapter-Example 1.png",
-    "Sotto reti.pdf",
-    "Trabalho_Pratico_Grupo_2024_2025_ISLA_EN.pdf",
-    "7- Images/Adapter-Internal.png",
+    "2 - Material/Programming/Design Pattern.md",
+    "2 - Material/Idea for the project.md",
+    "2 - Material/Market Place of the farming company.md",
+    "2 - Material/Programming/NodeJS.md",
+    "7- Images/componentRapresentatio.png",
+    "7- Images/ComponentDiagram.png",
     "1 - Rough Notes/Welcome to the Rough Notes.md",
+    "2 - Material/Programming/HTML & CSS.md",
+    "1 - Rough Notes/Sottoreti-VLSM.md",
+    "README.md",
+    "6 - The Real Notes/Mongo DB.md",
+    "Sotto reti.pdf",
+    "6 - The Real Notes/body-parser.md",
+    "3 - Tags/Software Engineering.md",
+    "Untitled.canvas",
+    "Trabalho_Pratico_Grupo_2024_2025_ISLA_EN.pdf",
     "6 - The Real Notes/Binario conversione.md",
     "6 - The Real Notes/Sotto reti.md",
     "5 - Templates/Full Note.md",
     "1 - Rough Notes/Sottoreti.md",
     "3 - Tags/Programming.md",
-    "6 - The Real Notes/Screenshot 2024-10-31 at 10.35.39.png.md",
-    "3 - Tags/Software Engineering.md",
-    "2 - Material/Programming/HTML & CSS.md",
-    "www.geeksforgeeks.org/difference-between-abstract-class-and-interface-in-java.md",
-    "www.geeksforgeeks.org/difference-between-abstract-class-and-interface-in-java 1.md",
     "www.geeksforgeeks.org",
     "Untitled 1.canvas",
-    "6 - The Real Notes/Lezione 26-10.md",
-    "6 - The Real Notes/^1.md",
-    "6 - The Real Notes/Modelli diversi, ma stesso oggetto nel mondo reale.md",
     " 1",
     "7- Images",
-    "3 - Tags/Web Programming.md",
-    "6 - The Real Notes/JavaScript.md",
-    "6 - The Real Notes/HTML.md",
-    "5 - Templates/Reference.md",
     "6 - The Real Notes",
     "5 - Templates",
     "4 - Indexes",
