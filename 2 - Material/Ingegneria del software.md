@@ -1,6 +1,6 @@
 ---
 share_link: https://share.note.sx/f9n2xdjq#y9OhafJT09gABPLqtR06sU/q+X6DDNx5yc02Ani0cCQ
-share_updated: 2025-02-07T13:17:30+00:00
+share_updated: 2025-02-19T11:37:00+00:00
 ---
 2024-10-10 10:28
 
@@ -46,11 +46,11 @@ Le quattro 4 o (detto in inglese per fare il figo four's P) sono un insieme di c
 
 - **Process – come procedere nella produzione di un software:** definisce quali sono le attività da mettere in atto nello sviluppo di un prodotto software e come organizzarle. L’Ingegneria del Software ha definito diversi processi dalle diverse qualità adatte più o meno bene ai diversi ambiti di sviluppo, che vedremmo durante questo documento uno ad uno.
 
-## 2.0 Ciclo di vita di un processo
+## 2.0 Ciclo di vita & processo di sviluppo
 ---
-Quando si parla di ciclo di vita di un processo, si va nel dettaglio e si parla prima della definizione di _ciclo di vita_ di un prodotto, esso ==viene definito come una serie di stati che sono stati compiuti da un ente(o prodotto) nella sua vita a partire dalla sua nascita, fino alla dimissione (o se vogliamo dire rimanendo in tema "morte")==.
+Quando si parla di ciclo di vita e di processo sviluppo, si va nel dettaglio e si parla prima della definizione di **_ciclo di vita_** di un prodotto, esso ==viene definito come una serie di stati che sono stati compiuti da un ente(o prodotto) nella sua vita a partire dalla sua nascita, fino alla dimissione (o se vogliamo dire rimanendo in tema "morte")==.
 
-Il _processo di sviluppo_ invece viene definito come tutti quei passi che vengono scelti ed adottati durante il ciclo di vita di un prodotto, ciò ==si intende che strategie si sono usate per compiere determinate azione== e chi deve fare cosa per poter raggiungere tali obbiettivi.
+Il **_processo di sviluppo_** invece viene definito come tutti quei passi che vengono scelti ed adottati durante il ciclo di vita di un prodotto, ciò ==si intende che strategie si sono usate per compiere determinate azione== e chi deve fare cosa per poter raggiungere tali obbiettivi.
 
 ### 2.1 Parti in causa
 Quando si viene a sviluppare o ad usare un software, ci sono molte persone che partecipano al loro concepimento ed è fondamentale tener conto dei loro ruoli, esigenze e rapporti reciproci all'interno della progettazione.
@@ -66,7 +66,15 @@ I ruoli che andremmo ad elencare sono principalmente 4:
 
 ### 2.2 Specifica e Implementazione
 Dal punto di vista del progettista, cioè colui che viene a svolgere un determinato progetto, ha diversi _requisiti_, che sono questi?
-Essi sono degli obblighi imposti dall’esterno (e quindi facente parte della specifica) mentre l’implementazione svoltasi è il risultato di una serie di scelte che vengono fatte ed applicate.
+
+Essi sono degli obblighi imposti dall’esterno (e quindi facente parte della specifica) mentre l’implementazione è il risultato di una serie di scelte che vengono svolte ed infine applicate.
+
+> [!info] **Che cos'è il progetto?**
+> Il **progetto** è inteso come una serie di documentazioni che servono a descrivere come andremmo a realizzare il nostro sistema.
+
+> [!quote] **Che cos'è il vincolo?**
+> Il **vincolo** viene inteso come quella condizione che un determinato sistema deve soddisfare, che sono imposte da esigenze dovute a cause di tipo ambientali (fisiche, economiche, sociali) oppure da limiti tecnologici
+> 
 
 >[!warning] N.B
 > La ***specifica*** sarebbe un insieme che contiene una serie di requisiti, questi ne descrive in dettaglio le sue caratteristiche, spiegandone il suo utilizzo e in che sistema fa parte.
@@ -149,10 +157,65 @@ Questo comporta a diverse conseguenze:
 
 Il nostro **prototipo** è una rappresentazione dell'ideale applicazione, che andremmo a creare, non sarà completa di tutte le funzionalità che dovremmo implementare, ma per l'analisi dei requisiti è importante valutare che fine farà il nostro prototipo:
 
-- Se il prototipo piace allora consideriamo l'opzione di lavorarci sopra ampliandolo e perfezionandolo nel tempo **prototipo evolutivo**
+- Se il prototipo piace allora consideriamo l'opzione di lavorarci sopra ampliandolo e perfezionandolo nel tempo chiamatosi questo, **prototipo evolutivo**.
 
-- Oppure possiamo optare di scartarlo e creare il prodotto da zero ex-nuovo (seguendo le tracce del prodotto scartato) **prototipo throw-away**
+- Oppure possiamo optare di scartarlo e creare il prodotto da zero ex-nuovo (seguendo le tracce del prodotto scartato) **prototipo throw-away**.
+
+Quest'ultimo avrà una struttura diversa alla fine quando si verrà a creare il prodotto finale, questo evitando problematiche in ambito di efficienza.
+
+Nel caso del prototipo evolutivo, non si avranno possibilità di scartare le scelte che si faranno nelle fasi successive del processo, ma verranno prese "seriamente", cioè non si potranno scartare, una volta decise, delle implementazioni al nostro prototipo, rendendo la realizzazione del sistema inadeguata al prodotto finale.
 #### 2.5.4 Modello  Iterativo
+In questo modello troviamo un mix di quello a cascata e quello evolutivo, prendendo da ognuno di loro le qualità positive togliendo a sua volta quelle negative.
+
+Nel modello iterativo consiste nella creazione di mini-progetti che vengono denominati **iterazioni**, ogni iterazione ha come risultato un sistema eseguibile, testato e integrato, ma parziale.
+Ogni iterazione possiede una propria analisi dei requisiti, progettazione e implementazione.
+
+>[!done]  **Obbiettivo**
+>Ogni iterazione che andremmo a svolgere dovrà **produrre delle versioni di lavoro software** e migliorarla gradualmente attraverso le varie iterazioni successive.
+
+Il modello iterativo possiede diversi approcci che possiamo implementare:
+- [[#2.5.4.1 Rilascio incrementale|rilascio incrementale]].
+- [[#2.5.4.1 Sviluppo a spirale|sviluppo a spirale]].
+
+In questo modello andremmo a ritrovarci con una serie di cicli strutturarti composti da **costruzione-feedback-adattamento** (cioè si passa da una fase di costruzione al ricevere il feedback da parte del cliente, fino a che non si adatta il lavoro sui feedback del cliente).
+
+Con l'evolversi del sistema, quest'ultimo converge fino a che non si raggiungono i requisiti desiderati dal cliente, creando un progetto appropriato riducendo di molto i cambiamenti finali dei vari requisiti.
+
+>[!done] **Vantaggi sviluppo Iterativo**
+>- Minor probabilità di fallire, migliora la produttività e riduce le percentuali dei difetti
+>- Riduzione dei rischi maggiore
+>- Si riceve un feedback anticipato del sistema che stiamo sviluppando coinvolgendo l'utente e adattandolo alle sue esigenze.
+>- Si gestiscono bene i casi complessi nella fase di sviluppo.
+>- Si ha un apprendimento attivo durante il processo iterativo, cioè quello che si impara durante un'iterazione può migliorare il processo di sviluppo.
+##### 2.5.4.1 Rilascio incrementale
+In questo processo andremmo ad utilizzare molti **mini-[[#2.5.2 Modello a Cascata|waterfall]] in sequenza**, cioè cosa viene inteso con questa affermazione?
+
+Significa che ad ogni **iterazione** verrà lasciata una **versione del sistema funzionante** che potrà essere utilizzata a sua volta dal cliente, ma non finisce qui, nel mentre che si mostra al cliente la versione del software funzionante, si **andrà anche a pianificare le varie iterazioni successive** in modo da introdurre nuove funzionalità.
+
+> [!warning] **Importante**
+> Ad ogni iterazione avviata, questa **deve essere conclusa senza nessuna interferenza**
+
+I vantaggi ad utilizzare un modello iterativo con un approccio a rilascio incrementale 
+consiste nel:
+- efficace nei **team di sviluppo molto piccoli**
+- Il cliente sarà sempre aggiornato sul sistema, dato che potrà provarlo, senza dover aspettare il rilascio finale.
+- **riduzione dei rischi di fallimento**
+- Si vengono a testare maggiormente le funzionalità più importanti.
+
+Non ci sono limiti in questo approccio, si possono ripetere quanto si vuole i vari *incrementi* in modo da ridurre il rischio di fallimento del sistema, ma non solo, si viene anche a produrre nuovo valore (inteso come qualità del prodotto finale che si andrà a creare) e questo fino a quando non si saranno soddisfatti tutti i requisiti richiesti.
+
+Questo sistema viene indicato maggiormente, quando si viene a trovare difficoltà nell'analisi dei requisiti, ed è difficile la sua stesura.
+
+##### 2.5.4.2 Sviluppo a spirale
+In queso metodo di sviluppo si viene ad introdurre il concetto di **gestione dei rischi** su ogni *iterazione*, importante perché, si verrà ad identificare di che tipo di pericolo si parla valutandolo e definendone i vari metodi per la sua gestione, optando se necessità o no di un'ulteriore iterazione.
+
+I punti chiavi di questo modello di sviluppo consistono in:
+- pianificare
+- analizzare i rischi
+- sviluppo 
+- verifica
+I tempi sono ristretti, si passa da una fase di testing a quella di pianificazione in caso si voglia apportare ulteriori modifiche e correzioni al risultato dello sviluppo.
+
 #### 2.5.5 Model Driven Development
 
 ## ?.? Processo Unificato

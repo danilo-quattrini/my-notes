@@ -18,7 +18,7 @@ Type ".help" for more information.
 node 'nome del file'.js
 ```
 In this case we are execute a code that is inside a file and not directly on the terminal
-**REPL and CLI**
+**REPL**  or  [[Programming Knowledge#^8182fc|CLI]]
 
 First one mean Read Evaluate Printable, the second one mean Executable.
 In the REPL one you're going to execute your code on the terminal. For going inside the REPL mode, just execute _node_ on your terminal , then whatever, you're going to write is going to be execute in the moment.
