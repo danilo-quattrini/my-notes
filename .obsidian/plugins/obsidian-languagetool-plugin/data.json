@@ -5,5 +5,7 @@
   "shouldAutoCheck": true,
   "autoCheckDelay": 3000,
   "pickyMode": false,
-  "motherTongue": "it"
+  "motherTongue": "it",
+  "staticLanguage": "auto",
+  "englishVeriety": "en-US"
 }

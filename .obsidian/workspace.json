@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c7ca73eb2ff42719",
+        "id": "7992d47d4198b4e5",
         "type": "tabs",
         "children": [
           {
-            "id": "7823d4fd6bac63d5",
+            "id": "9070024f85203a37",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -150,9 +150,19 @@
               "icon": "lucide-list",
               "title": "Outline of Git"
             }
+          },
+          {
+            "id": "d104f56b342e99df",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -166,27 +176,34 @@
       "daily-notes:Open today's daily note": false,
       "graph:Open graph view": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "7823d4fd6bac63d5",
+  "active": "9070024f85203a37",
   "lastOpenFiles": [
-    "2 - Material/Programming Knowledge.md",
-    "6 - The Real Notes/Game Design.md",
-    "3 - Tags/General Knowledge.md",
+    "7- Images/touring-machine.png",
     "6 - The Real Notes/Foundaments of Computer Science.md",
-    "6 - The Real Notes/Fondamenti di informatica.md",
-    "7- Images/MarioKartForNes.png",
-    "7- Images/Pasted image 20250224172249.png",
-    "7- Images/Pasted image 20250224172237.png",
-    "Pasted image 20250224172241.png",
-    "7- Images/Pasted image 20250224171439.png",
-    "7- Images/Pasted image 20250224131042.png",
-    "7- Images/Pasted image 20250224130038.png",
-    "7- Images/Pasted image 20250224125658.png",
-    "7- Images/Pasted image 20250224121725.png",
-    "7- Images/Indy4.png",
+    "6 - The Real Notes/Functions.md",
+    "6 - The Real Notes/Game Design.md",
+    "7- Images/global-game-value-market.png",
+    "7- Images/virtual-fighter3d.png",
+    "7- Images/wolfestein-3d.png",
+    "2 - Material/Programming Knowledge.md",
+    "3 - Tags/Programming.md",
+    "7- Images/identity-function.png",
+    "7- Images/bijective-function.png",
+    "1 - Rough Notes/Welcome to the Rough Notes.md",
+    "1 - Rough Notes/Sottoreti-VLSM.md",
+    "7- Images/surjective-function.png",
+    "7- Images/image-function-1.png",
+    "7- Images/function-imag.png",
+    "7- Images/second-function-definition.png",
+    "3 - Tags/Math.md",
+    "3 - Tags/Software Engineering.md",
     "2 - Material/Ingegneria del software.md",
+    "3 - Tags/General Knowledge.md",
+    "6 - The Real Notes/Fondamenti di informatica.md",
     "6 - The Real Notes/Git.md",
     "2 - Material/Programming/NodeJS.md",
     "2 - Material/UML.md",
@@ -198,18 +215,11 @@
     "2 - Material/Programming/SOLID Principals.md",
     "2 - Material/Idea for the project.md",
     "2 - Material/Market Place of the farming company.md",
-    "1 - Rough Notes/Welcome to the Rough Notes.md",
     "2 - Material/Programming/HTML & CSS.md",
-    "1 - Rough Notes/Sottoreti-VLSM.md",
     "README.md",
     "Sotto reti.pdf",
-    "6 - The Real Notes/body-parser.md",
-    "3 - Tags/Software Engineering.md",
     "Untitled.canvas",
     "Trabalho_Pratico_Grupo_2024_2025_ISLA_EN.pdf",
-    "6 - The Real Notes/Binario conversione.md",
-    "6 - The Real Notes/Sotto reti.md",
-    "1 - Rough Notes/Sottoreti.md",
     "www.geeksforgeeks.org",
     "Untitled 1.canvas",
     " 1",

@@ -8,6 +8,18 @@ Materials: *Carlo Cumo* [drive](https://drive.google.com/drive/folders/1gYV_iV4Z
 
 ---
 # 0.0 Index
+---
+- [1.1 Homo Ludens](#1.1%20Homo%20Ludens)
+- [1.2 Man, Play and Game](#1.2%20Man,%20Play%20and%20Game)
+- [1.3 Reality is broken](#1.3%20Reality%20is%20broken)
+- [1.4 MDA, Mechanism, Dynamics and Aesthetics](#1.4%20MDA,%20Mechanism,%20Dynamics%20and%20Aesthetics)
+- [2.1 The history of the videogame](#2.1%20The%20history%20of%20the%20videogame)
+- [2.2 Video games stars](#2.2%20Video%20games%20stars)
+- [2.3 Phases of the video games](#2.3%20Phases%20of%20the%20video%20games)
+- [2.4 Graphic Evolution](#2.4%20Graphic%20Evolution)
+	- [2.4.1 Prospective inside the videogames](#2.4.1%20Prospective%20inside%20the%20videogames)
+	- [2.4.2 Dynamics inside the videogames in the pixel era](#2.4.2%20Dynamics%20inside%20the%20videogames%20in%20the%20pixel%20era)
+	- [2.4.3 The born of the 3D era](#2.4.3%20The%20born%20of%20the%203D%20era)
 
 ---
 # 1.0 What's the Game?
@@ -47,7 +59,7 @@ Categorizza anche le tipologie di gioco, le forme che un gioco può assumere:
 - **Ilinix**: giochi che sono guidati dal rischio, cioè attivazione adrenalinica, giochi che mettono a repentaglio la nostra vita (roulette russa).
 
 ## 1.3 Reality is broken
-Si tratta di un libro scritto da Jane McGonigal,  che discute del concetto di gioco applicato nella vita quotidiana, creando divertimento e connessione nella società, affrontando anche di argomento come problem-solving e collaborazione con altre persone.
+Si tratta di un libro scritto da *Jane McGonigal*,  che discute del concetto di gioco applicato nella vita quotidiana, creando divertimento e connessione nella società, affrontando anche di argomento come problem-solving e collaborazione con altre persone.
 
 Fa notare principalmente anche questi aspetti nel suo libro:
 - **Obbiettivi** da raggiungere
@@ -199,7 +211,93 @@ Il concetto di shader avviene successivamente nel 1983 con il videogioco *I, Rob
 Agl'inizi degli anni '90 con la nascita di processori con potenze di calcolo maggiori, come il *Mode 7* nello [SNES](https://en.wikipedia.org/wiki/Super_Nintendo_Entertainment_System) (Super Nintendo Entertainment System), nasce il famosissimo [Super Mario Kart ](https://en.wikipedia.org/wiki/Super_Mario_Kart) - 1992.
 
 ![[MarioKartForNes.png]]
+Dove il mondo era in 3D e i personaggi erano delle sprite in 2D.
 
+Nel 1992 si cominciano con gli *sfondi pre-renderizzati*a, dove personaggi e mondo di gioco sono in 3D, ma lo sfondo degli oggetti sono già pre-renderizzati, questo perché non si era ancora arrivati al mondo 3D vero e proprio, sempre nello stesso anno però si comincia a utilizzare tecniche diverse per la creazione del 3D, questo tramite il **Ray-casting***, cioè non si veniva a caricare tutto il mondo per interno, ma quello che era presente davanti alla telecamera del giocatore.
+
+Troviamo come esempio di videogioco, *Wolfestein 3D* -1992
+![[wolfestein-3d.png]]
+
+Nel 1993 cominciano a nascere i veri giochi 3D, con l'avvento del primo picchia duro in 3D chiamato *Virtua Fighter*, dove nascono per la prima volta gli sfondi e i personaggi tutti in 3D.
+![[virtual-fighter3d.png]]
+# 3.0 Industry of the videogames
+---
+Nel mondo dei videogiochi oggi giorno la maggior parte delle industrie puntano sul mondo del mobile, quello che possiede il maggior fatturato, perché è il settore che influenza più persone (dato che oggi tutti abbiamo un telefono, normale che i videogiochi mobile sono più richiesti ed accessibili).
+
+Fatto interessante è che il mondo dei videogiochi oggi supera il fatturato del mondo del cinema, lo vediamo tramite il grafico qui presente.
+![[global-game-value-market.png]]
+Altro fattore interessante che vediamo qui presente, è che il maggior fatturato dei videogame avviene tramite il digitale e non più il fisico come una volta.
+
+> [!important] **Numero di videogiocatori nel mondo**
+> Oggi contiamo che su 8 miliardi di persone, ci sono 3,7 che sono videogiocatori, tra cui abbiamo il **53%** che sono uomini e il **47%** che sono donne, possiamo dire quasi il **38,75% della popolazione mondiale**.
+
+---
+## 3.1 Production cost of a videogame
+Per produrre un videogioco oggi la soglia di prezzo che si aggira, si trova tra i **10 milioni fino a 50 milioni di dollari**, ma ci sono alcune categorie di videogioco che superano oppure no questa soglia che abbiamo previsto:
+
+- I giochi **Indie** si aggirano sui 100.000 dollari
+- **B** 100.000+ dollari, fino a 500.000
+- **A** 500.000+ dollari, fino a 5 milioni
+- **AA** 5+ milioni di dollari, fino ai 60
+- **AAA** 60+ mln di dollari con titoli che hanno raggiunto anche i 200
+
+## 3.2 Who work in the videogame industry
+Nel mondo dello sviluppo video ludico oggi giorno anche se i numeri sono aumentati con il tempo, le persone che lavorano dentro un'industria video ludica possono aggirarsi tra le migliaia fino a poche unità, trovando però una maggioranza di genere maschile che femminile, 62% di uomini e 38% di donne.
+
+L'industria del gaming oggi è interconnessa con tante altre aziende, come ad esempio:
+
+- L'**industria della produzione software**, cioè sono coloro che producono la grafica del videogioco, la storia (chiamata anche storytelling) e l'engine (cioè un programma sul computer che esegue delle task).
+- L'**industria che si basa sulla produzione hardware**, cioè quelli che si occupano della produzione delle schede grafiche, periferiche e server.
+- L'**industria dell'Entertainment**, cioè collegano i videogiochi alle serie TV (come ad esempio *Arcane*), Film, Giochi da tavolo, Libri.
+- Anche l'industria del **Merchandising**, si creano i peluche, figurine, carte giocabili ecc..
+- Presente anche nell'industria del **Marketing** e negli **eSport**
+
+## 3.3 Agency and Professionals
+Le aziende che troviamo nel mondo del gaming sono composte da tre grandi categorie, quelle incentrate sullo **Sviluppo**, cioè quelle che producono il videogioco stesso, poi ci sono quelle che si concentrano sui **Servizi** che offrono alle aziende di sviluppo, come ad esempio:
+
+- CGI, Asset e Development
+- **Porting** (rendere il gioco utilizzabile su altre piattaforme)
+- QA[^4] e Testing 
+- Localizzazione e Doppiaggio
+- Marketing
+  
+Infine troviamo le azienda che si occupano di promuovere il videogioco chiamate, **Publisher and Founding**, cioè oltre al promuovere il videogioco stesso, offrono: fondi  e servizi come testing, doppiaggio, QA e la localizzazione, in cambio delle revenue[^5] sulle vendite e equity, che variano in base al servizio che offre, si può trovare una soglia del 30% fino a 70%.
+
+>[!warning] **Importante**
+>La differenza che c'è tra *Traduzione* e *Localizzazione* è che la prima, svolge una traduzione per filo e per segno di ogni parola/testo, invece la seconda si incentra più nel far in modo di poter tramutare una battuta, un modo di dire da una lingua ad un'altra, traducendola come un *local* della zona farebbe.
+>
+>**Esempio**: in inglese si dice "It's raining cats and dogs" in italiano diciamo "piove a catinelle" oppure "piove a dirotto" e non facciamo la traduzione di ogni parola, in tal caso sarebbe "piovono cani e gatti"
+
+--- 
+I professionisti che lavorano nel mondo dell'industria videoludica, si possono identificare in queste categorie:
+
+- **Producer**: inteso come il produttore, cioè colui che organizza tutto il progetto, coordinando i vari reparti dell'azienda.
+- **Creative Director**: direttore creativo, cioè colui che si occupa di dare la visione generale del videogioco, decidendo il tema principale, il tono del gioco, lo stile artistico e le meccaniche del gameplay.
+- **Game** e **Level Directory**: coloro che si occupano del design dei vari livelli del videogioco.
+- **Developers**: programmatori di varia natura, come ad esempio quelli che producono interfacce di gioco oppure le meccaniche di movimento del personaggio.
+- **Artist**: illustratori, concept artist, pixel artist e animatori 2D anche modellatori 3D
+- **Scriptwriter**: sono gli sceneggiatori del gioco, cioè coloro che creano la storia del videogioco.
+- **Audio Artist**: cioè coloro che si occupano della musica del gioco, e dei vari sound del gioco.
+  
+Non interni all'azienda troviamo invece il:
+- **QA Team**:
+- **Localization Team**:
+- **Marketing Team**:
+
+# 4.0 Game Design
+---
+>[!quote] **Definizione**
+>Il **Game Design** viene intesa come quell'abilità di creare i giochi, non connesso solamente al videogioco (carte da gioco, giochi da tavolo ecc..), ma ad una categoria più ampia, basandosi su teorie estetiche e principi del design, vanno a creare contenuti basati sull'entertainment e ambienti didattici, sociali e sperimentali o nel mondo dell'azienda.
+
+Il Game Design presenta 4 fasi, le prime due sono i preamboli dell'idea del gioco e gli ultimi due invece come coinvolgo il giocatore a interagire con il mio gioco principali:
+
+- L'**idea** che deve essere innovativa, competitiva nel mercato e sopratutto *fattibile*
+- Importante anche definire il **Sistema di Regole-Gameplay-Design**
+- Il sistema di **Engagement**, cioè come coinvolgere il giocatore, questo si divide in:
+	- **Flow**  cioè come introduco il giocate a rimanere concentrato per tanto tempo nel gioco.
+	- **Revenues** cioè che sistema di premi posso offrire al giocate in modo che possa rimanere soddisfatto del lavoro che ha compiuto .
+	- **Bilanciare Difficoltà/Capacità** rendere il gioco bilanciato.
+- Poi ci incentriamo nella parte del **Business Plan** cioè discutere dei costi e tempi di produzione e previsionale le vendite e il Marketing del gioco.
 # Reference
 ---
  
@@ -207,3 +305,5 @@ Agl'inizi degli anni '90 con la nascita di processori con potenze di calcolo mag
 [^1]: _Homo Ludens_: https://en.wikipedia.org/wiki/Homo_Ludens
 [^2]: _Man, Play and Games:_ https://en.wikipedia.org/wiki/Man,_Play_and_Games
 [^3]: MDA framework: https://en.wikipedia.org/wiki/MDA_framework
+[^4]: QA: l'acronimo sta per Quality Assurance, sono quelle aziende che controllano se sono presenti bug nel gioco, controllando la qualità e le performance del gioco.
+[^5]: revenue: viene tradotta dall'inglese all'italiano come entrate e sono i soldi che un governo o un azienda riceve regolarmente.
