@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7992d47d4198b4e5",
+        "id": "fb39404b27c6f224",
         "type": "tabs",
         "children": [
           {
-            "id": "9070024f85203a37",
+            "id": "511cd4d31c2341cc",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "6 - The Real Notes/Git.md",
+                "file": "6 - The Real Notes/Foundaments of Computer Science.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Git"
+              "title": "Outgoing links from Foundaments of Computer Science"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "6 - The Real Notes/Git.md",
+                "file": "6 - The Real Notes/Foundaments of Computer Science.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Git"
+              "title": "Outline of Foundaments of Computer Science"
             }
           },
           {
@@ -180,50 +180,50 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "9070024f85203a37",
+  "active": "511cd4d31c2341cc",
   "lastOpenFiles": [
-    "7- Images/touring-machine.png",
+    "7 - Images/Pasted image 20250318184720.png",
     "6 - The Real Notes/Foundaments of Computer Science.md",
+    "6 - The Real Notes/Git.md",
+    "7 - Images/example-numeration.png",
+    "7 - Images/example-instant-configuration.jpg",
+    "6 - The Real Notes/Mongo DB.md",
     "6 - The Real Notes/Functions.md",
-    "6 - The Real Notes/Game Design.md",
-    "7- Images/global-game-value-market.png",
-    "7- Images/virtual-fighter3d.png",
-    "7- Images/wolfestein-3d.png",
+    "7 - Images/enumeration-of-the-turing-functions.png",
+    "2 - Material/Ingegneria del software.md",
+    "7 - Images/enumeration-of-turing-machine.png",
+    "6 - The Real Notes/fdafd.md",
+    "6 - The Real Notes/calcolabiltà di una funzione secondo Turing.md",
+    "README.md",
+    "Pasted image 20250316162125.png",
+    "2 - Material/Programming/NodeJS.md",
+    "2 - Material/Game Design.md",
+    "2 - Material/UML.md",
     "2 - Material/Programming Knowledge.md",
+    "2 - Material/Market Place of the farming company.md",
+    "7 - Images/touring-machine.png",
+    "7 - Images/global-game-value-market.png",
+    "7 - Images/virtual-fighter3d.png",
+    "7 - Images/wolfestein-3d.png",
     "3 - Tags/Programming.md",
-    "7- Images/identity-function.png",
-    "7- Images/bijective-function.png",
     "1 - Rough Notes/Welcome to the Rough Notes.md",
     "1 - Rough Notes/Sottoreti-VLSM.md",
-    "7- Images/surjective-function.png",
-    "7- Images/image-function-1.png",
-    "7- Images/function-imag.png",
-    "7- Images/second-function-definition.png",
     "3 - Tags/Math.md",
     "3 - Tags/Software Engineering.md",
-    "2 - Material/Ingegneria del software.md",
     "3 - Tags/General Knowledge.md",
     "6 - The Real Notes/Fondamenti di informatica.md",
-    "6 - The Real Notes/Git.md",
-    "2 - Material/Programming/NodeJS.md",
-    "2 - Material/UML.md",
     "2 - Material/Programming/Design Pattern.md",
     "5 - Templates/Full Note.md",
-    "6 - The Real Notes/Mongo DB.md",
     "6 - The Real Notes/Untitled 1.md",
     "3 - Tags/Graphic.md",
     "2 - Material/Programming/SOLID Principals.md",
-    "2 - Material/Idea for the project.md",
-    "2 - Material/Market Place of the farming company.md",
-    "2 - Material/Programming/HTML & CSS.md",
-    "README.md",
     "Sotto reti.pdf",
     "Untitled.canvas",
     "Trabalho_Pratico_Grupo_2024_2025_ISLA_EN.pdf",
     "www.geeksforgeeks.org",
     "Untitled 1.canvas",
     " 1",
-    "7- Images",
+    "7 - Images",
     "6 - The Real Notes",
     "5 - Templates",
     "4 - Indexes",

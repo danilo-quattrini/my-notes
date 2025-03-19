@@ -559,7 +559,7 @@ Come funziona questo design? Come fa a rendere disponibile tali interfacce a cla
 - Il nostro _adapter_ prima di tutto crea una interfaccia che sia compatibile con l'oggetto esistente.
 - Il nostro oggetto esistente(cioè quello che vogliamo passargli i file convertiti) chiama i metodi dell _adapter_.
 - l'adapter converte e inoltra le chiamate all'oggetto target nel formato previsto.
-![[7- Images/Adapter-Example.png]]
+![[Adapter-Example.png]]
 In questo esempio vediamo che prima, l'app della borsa non riusciva a prendere i dati dalla banca perché non possedeva il file con il formato giusto.Con la creazione dell adapter ora i dati che prende in input l'XML li converte in formato JSON 
 
 #### 7.1.2 Adapter Structure

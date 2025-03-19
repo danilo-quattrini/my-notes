@@ -298,6 +298,13 @@ Il Game Design presenta 4 fasi, le prime due sono i preamboli dell'idea del gioc
 	- **Revenues** cioè che sistema di premi posso offrire al giocate in modo che possa rimanere soddisfatto del lavoro che ha compiuto .
 	- **Bilanciare Difficoltà/Capacità** rendere il gioco bilanciato.
 - Poi ci incentriamo nella parte del **Business Plan** cioè discutere dei costi e tempi di produzione e previsionale le vendite e il Marketing del gioco.
+## 4.1 How develop a Video Game
+Per sviluppare un videogioco si devono seguire questi punti importanti:
+- **Idea**: cioè creare un'idea di gioco che vogliamo sviluppare.
+- **Game Design e Level Design**: considerate come le meccaniche di gioco, le dinamiche e i livelli di gioco (esempio prima o terza persona, livelli a strati, oppure scenari che cambiano ecc..).
+- **Script Writing**: tipologie di dialoghi che vogliamo inserire nel gioco, come anche le sceneggiature.
+- **Design**: intesa come la parte relativa al Concept, Character l'Enviornment le armi, L'UI (User Interface), Layout ecc.
+- **Storyboard e Animatics**
 # Reference
 ---
  
