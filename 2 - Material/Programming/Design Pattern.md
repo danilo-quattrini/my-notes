@@ -34,14 +34,14 @@ Questo sopra illustrato è un esempio di classe, con nome *Cat*,troviamo qui sul
 Nel libro viene fatto un'esempio che spiega la differenza tra classe ed istanza, questo tramite l'utilizzo di due gatti _Oscar_ e _Luna_ che saranno le **istanze** della classe Gatto, hanno gli stessi **stati** (Fields nel libro) e **comportamenti** o detti anche **metodi** della classe (Methods nel libro), insieme questi due sono detti _membri_ della loro classe.
 
 > [!tip]
-> Quello che viene salvato all'interno di un campo di una classe o di un'istanza di essa viene chiamato *state* (stato in italiano), invece tutti i metodi definiti in una classe sono chiamati *behavior* (comportamenti in italiano).
+> Quello che viene salvato all'interno di un campo di una classe o di un'istanza di essa viene chiamato ***state*** (stato in italiano), invece tutti i metodi definiti in una classe sono chiamati ***behavior*** (comportamenti in italiano).
 ## 2.0 Class hierarchies
 ---
 Prendiamo d'esempio che il nostro vicino abbia un cane che è  un genere di animale come il gatto, possiede quasi gli stessi comportamenti di quest'ultimo.
 Si conosce il suo nome, razza, età e colore, proprietà che sono comuni anche nel gatto, quindi cosa si fa? 
 Due classi diverse con gli stessi metodi e attributi, ma aggiungendo solo un singolo comportamento diverso?
 
-La cosa migliore da fare senza rendere il codice *complesso* e *ripetuto* sarebbe quella di creare una **classe astratta**, ==questo perché si hanno metodi e stati in comune tra i due animali che potranno essere condivisi tra le due classi o detti anche==  [[#3.3 Inheritance (ereditarietà)|ereditati]] da come vedremmo dopo dalla classe `Animal` .
+La cosa migliore da fare senza rendere il codice *complesso* e *ripetuto* sarebbe quella di creare una **[[Programming Knowledge#Abstract class|classe astratta]]**, ==questo perché si hanno metodi e stati in comune tra i due animali che potranno essere condivisi tra le due classi o detti anche==  [[#3.3 Inheritance (ereditarietà)|ereditati]] da come vedremmo dopo dalla classe `Animal` .
 
 >[!info]
 >`Animal`  nel libro sarà in grassetto ma per rappresentare una classe astratta si fa con il font in *italics*
@@ -60,9 +60,9 @@ La sottoclasse `Cat` e `Dog` sono quelle che possono, ampliare e modificare comp
 ## 3.0 OOP pillars
 ---
 In the context of **_OOP_** there are 4 mains pillars: 
--  [[#3.1 Abstraction|Abstraction]]
+- [[#3.1 Abstraction|Abstraction]]
 - [[#3.2 Encapsulation  |Encapsulation]]
-- [[#3.3 Inheritance  |Inheritance(ereditarietà)]]
+- [[#3.3 Inheritance (ereditarietà)|Inheritance(ereditarietà)]]
 - [[#3.4 Polymorphism |Polymorphism]]
 ### 3.1 Abstraction
 Significa che ogni qualvolta si va a rappresentare un'oggetto del mondo reale in un programma, difficilmente (molto spesso non richiesto), si riesce a descrivere tutte le caratteristiche nel dettaglio di tale oggetto al suo interno.
@@ -103,7 +103,7 @@ Ora vediamo un'esempio di come si comporta un'interfaccia  in questo caso partic
 
 ![[IncapsulationExample.png]]
 
-Qui si vede che la classe `Airport` dipenda dall'interfaccia `FlyngTransport` che prenderà a sua volta il metodo di tale interfaccia `fly(origin, deestination, passenger)`, tale metodo dichiarato nell'interfaccia ed implementato nelle classi `Helicopter`, `Airplane`, `Domesticated Gryphon`  può variare quello presente al suo interno, ma mantenendo sempre la [[Programming Knowledge#Method signature |firma del metodo]]
+Qui si vede che la classe `Airport` dipenda dall'interfaccia `FlyingTransport` che prenderà a sua volta il metodo di tale interfaccia `fly(origin, deestination, passenger)`, tale metodo dichiarato nell'interfaccia ed implementato nelle classi `Helicopter`, `Airplane`, `Domesticated Gryphon`  può variare quello presente al suo interno, ma mantenendo sempre la [[Programming Knowledge#Method signature |firma del metodo]]
 ### 3.3 Inheritance (ereditarietà)
 Con ereditarietà si intende come, l'abilità di una classe di poter estendere se stessa, in modo di poter evitare di creare codice duplicato, riutilizzando metodi e i suoi attributi (solo se sono protected).
 
@@ -151,6 +151,7 @@ La _dipendenza_ è una variante di associazione, la sua caratteristica è quella
 ### 4.3 Composition
 ![[ComposizioneExample.png]]
 La _composizione_ significa che un oggetto avrà il ruolo di contenitore (whole in inglese) che sarà un insieme composto da una o più istanze un altro oggetto (chiamato componente part in inglese), questo vuol dire che ==il componente non può esistere da solo senza il suo contenitore.==
+In UML il nostro _contenitore_ sarà quello che avrà il diamante pieno, il _componente_ invece sarà dove punta la freccia.
 ### 4.4 Aggregation
 ![[AggregationRelation.png]]
 L'_aggregazione_ è una variante più leggera della composizione, questo vuol dire che il contenitore non controlla pienamente il ciclo di vita del suo componente, ==in sostanza il componente può esistere anche senza la necessità di un suo contenitore, collegandosi anche a più contenitori alla volta!==
@@ -215,7 +216,7 @@ Ultimo ma non meno importante, **il design pattern permette di rendere il codice
 > [!help]
 > **Refactoring**: stravolgere il progetto e il codice nel caso non si possa fare niente per risolvere un determinato problema già in uno stato avanzato.
 
-Questo lo si può fare tramite sempre l'utilizzo di design pattern ben studiati solo per il refactoring.
+Questo lo si può fare tramite sempre l'utilizzo di design pattern ben studiati solo per il refactoring (_for see more [refactoring.guru](https://refactoring.guru/refactoring)_).
 
 ## 6.3 Category of Design pattern
 ---
@@ -558,7 +559,7 @@ Come funziona questo design? Come fa a rendere disponibile tali interfacce a cla
 - Il nostro _adapter_ prima di tutto crea una interfaccia che sia compatibile con l'oggetto esistente.
 - Il nostro oggetto esistente(cioè quello che vogliamo passargli i file convertiti) chiama i metodi dell _adapter_.
 - l'adapter converte e inoltra le chiamate all'oggetto target nel formato previsto.
-![[7- Images/Adapter-Example.png]]
+![[Adapter-Example.png]]
 In questo esempio vediamo che prima, l'app della borsa non riusciva a prendere i dati dalla banca perché non possedeva il file con il formato giusto.Con la creazione dell adapter ora i dati che prende in input l'XML li converte in formato JSON 
 
 #### 7.1.2 Adapter Structure
@@ -640,7 +641,7 @@ Con questo design pattern si va ad esplorare in profondità all'interno di un al
 3. **Composite**:
 4. **Client**:
 
-## 8.0 Behavioral Design Patterns
+****## 8.0 Behavioral Design Patterns
 
 ### 8.1 Command Pattern
 Il _design pattern command_ serve per gestire la parte della ridondanza del codice, facendo parte del principio di separazione di responsabilità o detto anche [[#S - ingle responsibility|single responsibilty]], creare ogni bottone per ogni operazione, che contengono i dettagli della richiesta, eliminando le sottoclassi e riducendo le ridondanze

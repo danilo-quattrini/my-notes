@@ -3,11 +3,17 @@
   "newFileFolderPath": "6 - The Real Notes",
   "alwaysUpdateLinks": true,
   "pdfExportSettings": {
-    "includeName": true,
+    "includeName": false,
     "pageSize": "A4",
     "landscape": false,
     "margin": "0",
     "downscalePercent": 100
   },
-  "promptDelete": false
+  "promptDelete": false,
+  "spellcheckDictionary": [
+    "Definition",
+    "Algorithm",
+    "of",
+    "semidicidible"
+  ]
 }

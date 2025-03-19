@@ -1,8 +1,8 @@
 ---
 share_link: https://share.note.sx/ogoh8vwg#YrwnwHRe4ioRoI1p8Yn5/Bh7vqT7l53q8Rghey3YWyw
-share_updated: 2024-11-25T13:05:31+00:00
+share_updated: 2025-01-23T10:42:53+00:00
 ---
-2024-10-14 10:38
+ 2024-10-14 10:38
 
 Status: #devoleped 
 
@@ -223,7 +223,7 @@ Si viene ad utilizzare un approccio metodologico[^2] e vedremo qui nel dettaglio
 Il concetto di _identità_ è definito come il riferimento a quell ==oggetto che si distingue da altri oggetti della sua stessa natura (stessa natura inteso che possiedono lo stesso puntatore)==, con la presenza di due concetti differenti e sono:
 - **Stato:** valori dei suoi attributi e connessione ad altri oggetti
 - **Comportamento**: azioni che possono essere richieste all'oggetto.   
-È in genere utile distinguere tra le azioni che posson causare un cambiamento di stato e quelle che invece lasciano immutato lo stato interno dell'oggetto stesso
+È in genere utile distinguere tra le azioni che possono causare un cambiamento di stato e quelle che invece lasciano immutato lo stato interno dell'oggetto stesso
 
 ### 7.2 Object structure 
 Fondamentale anche nella rappresentazione UML di seguire il concetto di [[Design Pattern#3.2 Encapsulation|incapsulamento]] , con il _diagramma degli oggetti_ possiamo rappresentare il nome dei suoi attributi e i valori che la compongono internamente. 
@@ -344,9 +344,9 @@ Indicano ==la quantità degli oggetti che partecipano ad una specifica relazione
 - 0...* oppure * (min=0, max=unbounded)
 - ﻿1...* (min=1, max=unbounded)
 - 1..6 (min=1, max=6)
-- 1...4,6...9,12...15,17...* (unione di intervalli
+- 1...4,6...9,12...15,17...* (unione di intervalli)
 La molteplicità può e dovrebbe essere indicata nei modelli di analisi.
-Nel caso non venga indicata si assume indefinita
+Nel caso **non venga indicata si assume indefinita**
 #### 7.6.3 Class driving 
 La navigabilità indica la possibilità di inviare messaggi(invocazione di un metodo) tra gli oggetti associati, i simboli usati per indicare la navigabilità sono questi due:
 
@@ -367,14 +367,15 @@ Per rappresentare relazioni più deboli, cioè sono delle interazioni tra le cla
 
 - [[#7.6.6.1 Use Dependency|Uso]]
 - [[#7.6.6.2 Abstraction Dependency|Astrazione]]
-- Servizio
+- [[#7.6.6.3 Permit Dependency|Permesso]]
 Queste dipendenze nel mondo delle classi di progetto sono presenti tra i seguenti elementi:
 
 - classe e classe;
 - package e package; 
 - oggetti e classi;
 - operazioni e classi;
-Usarlo in modo parsimonioso sporadico, per rappresentarla si usa una freccia con la linea tratteggiata invece che continua, vedere [[#4.2 Relation|qui]].
+  
+Usarlo in modo parsimonioso e non sporadico, per rappresentarla si usa una freccia con la linea tratteggiata invece che continua, vedere [[#4.2 Relation|qui]].
 ##### 7.6.6.1 Use Dependency
 >[!info] Definition
 >Le dipendenze d'uso sono rese disponibili da un fornitore e vengono usate dai clienti per poter implementare un loro comportamento.
@@ -398,12 +399,63 @@ Le dipendenze d'uso possono essere caratterizzate in diversi tipi:
 
 Possiamo trovare la relazione **traccia**, dove si vengono a segnare le modifiche che vengono svolte tra un modello vecchio a quello nuovo (esempio se dal vecchio modello al nuovo, si è cambiato il nome della classe si va a **tracciare il cambiamento**), 
 poi abbiamo anche le relazioni **raffina**, **sostituisci** e **deriva-da** che sono più dettagliate e non servono a noi per ora, ma servono per passare ad un modello più raffinato.
-##### 7.6.6.3 Service Dependency
+##### 7.6.6.3 Permit Dependency
+>[!info] Definition
+>Il fornitore assegna diritti di accesso al proprio contenuto: in questo
+modo il fornitore limita e controlla gli accessi al proprio contenuto.
+
+Avendo in questo caso due tipologie di dipendenze una che riguarda l'**accesso** ed una che invece riguarda l' **importa** dove si ha una relazione transitiva (queste due sono riferite ai package)
+
+### 7.7 Inheritance relations (Relazioni di ereditarietà)
+Relazioni che vengono usate spesso sono quelle di **Generalizzazione** e **Specializzazione**, che coesistono tra due classi. (la prima spesso viene intesa anche come ereditarietà)
+
+>[!tip] Example
+>La **Generalizzazione**, si può rappresentare come studente concetto generico e studente magistrale come sotto insieme degli studenti.
+
+La freccia per la generalizzazione la puoi vedere [[#4.2 Relation|qui]], questa relazione è molto vincolata, viene usata il verbo **"essere"**, esempio _studente essere anche studente magistrale_.
+
+#### 7.7.1 Inheritance (Ereditarietà)
+Prima di dover cercare le classi che vengono estese è buona norma cercare le classi generiche, per poi proseguire con la specializzazioni, tutte le sottoclassi specializzate ereditano:
+- attributi
+- operazioni
+- relazioni
+- vincoli
+  
+Le sottoclassi possono poi ridefinire ([[Programming Knowledge#Overriding (sovrascritto)|overriding]]) quanto definito nella superclasse. In molti casi non ha senso definire comportamento di un metodo direttamente nella superclasse. D'altra parte in alcuni casi il comportamento è generale per tutte le classi che possono essere ridefinite a partire dalla superclasse (caso delle operazioni astratte)
+
+>[!danger] **IMPORTANTE**
+>Cercare di non utilizzare il concetto di [[Design Pattern#3.3 Inheritance (ereditarietà)|ereditarietà]] su c**lassi che non conosciamo il loro ciclo di vita**.
+
+
+![[ExampleOfEredity.png]]
+
+>[!important] **N.B**
+>Importante dover usare i concetti allo stesso livello d'astrazione, cioè i concetti devono essere coerenti con la realtà che ci troviamo, evitando di mischiare le astrazioni.
+
+#### 7.7.2 Meta-models and Model
+Per quanto riguarda l'astrazione è fondamentale distinguere tra modelli e meta-modelli.
+![[ModelAndMetaModel.png]]
+Sono composti da ben 4 livelli:
+- **MOF** (Model Object Facilities): abbiamo come entità la `Class` che possiede degli attributi, creandoci dei costrutti di programmazione.
+
+- **UML** : che possiede la `Generalization` che sarebbe una relazione tra due classi una generale una più specifica.
+
+- **User Model** (M2): noi stiamo modellando in questo livello che rappresenta la realtà 
+
+Dove c'è `«instanceOf»` vuol dire che quel determinato oggetto è un'istanza di un altro oggetto, cioè DVD è istanza di classe che vuol dire? Cioè che DVD è una classe oppure `name:String «instanceOf» Attribure` sta a significare che è un'attributo.
+
+#### 7.7.3 Polymorphism concept
+>[!quote] Definiton
+>Etimologicamente risulta un composto di "poli-" e "morphe" dal significato di "dalle molte forme". 
+
+Nel nostro contesto indica la capacità di assumere differenti comportamenti dipendentemente dal contesto, per vedere più nel dettaglio consultarsi [[Design Pattern#3.4 Polymorphism|qui]].
+
 ## 8.0 Interaction Diagrams
+---
 Sono un tipo di diagramma comportamentale e dinamico, descrivono il comportamento delle classi, per poter raggiungere certi obbiettivi, aggiungendo informazioni al modello, cioè un metodo alla classe che reagisce ad un determinato messaggio dall'esterno.
 
 ### 8.1 What are them?
-Sono dei diagrammi che servono a realizzare i [[UML#5.0 Use case base mechanism| casi d'uso]] e metterli in azione, cioè rappresentare ogni sequenza che fa un determinato durate la sua interazione con un'altro oggetto.
+Sono dei diagrammi che servono a realizzare i [[UML#5.0 Use case base mechanism|casi d'uso]] e metterli in azione, cioè rappresentare ogni sequenza che fa un determinato durate la sua interazione con un'altro oggetto.
 
 Esempio di diagramma  di sequenza.
 ![[SequenceDiagram Hotel.jpg]]
@@ -423,7 +475,41 @@ Spieghiamo questo diagramma di sequenza:
 **Frammento Combinato** cambiamento di comportamento in base al controllo che facciamo internamente nel messaggio (con delle condizioni, ma non è sempre usato per questo), si eseguono uno delle operazioni dell'alt non tutti in simultanea.
 ![[FrammentiCombinatoriSequenziali.png]]
 
+## 9.0 Activity Diagram
+--- 
+Diagramma comportamentale che posso rappresentare come il sistema evolve nel tempo.
+### 9.1 Petri Nets
+Ci permette di rappresentare sistemi concorrenti, **asincroni**, **distribuiti**, **paralleli**, **non deterministici**, e/o stocastici, composta da una tupla < P, T, F, W, M0>
 
+## 10.0 Component diagram
+---
+Vengono riportate informazioni sulle macro componenti del software.
+Si vengono a creare da un sistema principale in **sottosistemi**, che sono indipendenti tra di loro e che hanno obbiettivi ben definiti.
+
+Ogni interazione tra i **sottosistemi** avvengono tramite l'utilizzo di interfacce, che vengono definite sulla base della composizione scelta che se stanno implementando un'interfaccia dovranno mantenere fede al loro scopo.
+
+### 10.1 Interface
+
+Le interfacce seguono il concetto della programmazione ad oggetti, ma in UML possiede una semantica a differenza della **OOP**, le informazioni semantiche sono come ad esempio descrizioni testuali o linguaggi che forniscono costruttori per la logica.
+
+- Operazioni 
+- Attributi
+- Associazioni
+- Vincoli
+- Stereotipo
+- Valori Etichettati
+- Specifica del **Protocollo**
+![[InterfaceView.png]]
+
+### 10.2 Interface and Inheritance
+![[interfaceEreditary.png]]
+
+### 10.3 Component
+Identifica un'insieme di funzionalità molto coese e specifica precisi servizi offerti e richiesti (interfacce). In generale una granularità tale per cui l'elemento non potrebbe costruire sistemi a se stante i.e un componente è fatto per essere **composto**, rappresentando il **sistema in macro componenti**.
+![[ComponentDiagram.png]]
+é possibile mostrare l'interno di un componente e gli elementi responsabili dei servizi offerti e richiesti.
+![[componentRapresentatio.png]]
+### 10.4 Advantages and Disadvantages of the interfaces
 # Reference
 --- 
  [UML](https://www.tutorialspoint.com/uml/index.html)
@@ -438,4 +524,4 @@ Spieghiamo questo diagramma di sequenza:
 
 [^5]: parametro che non cambia il suo stato dopo la sua invocazione, cioè lo stato può essere vero prima e dopo la sua esecuzione
 
-[^6]: **interdipendènza**: Rapporto di intima connessione e di reciproca dipendenza tra più cose, fatti, fenomeni, ecc.:
+[^6]: **interdipendenza**: Rapporto di intima connessione e di reciproca dipendenza tra più cose, fatti, fenomeni, ecc.:

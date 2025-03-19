@@ -4,5 +4,8 @@
   "obsidian-orthography",
   "obsidian-footnotes",
   "share-note",
-  "obsidian-plugin-toc"
+  "obsidian-plugin-toc",
+  "obsidian-languagetool-plugin",
+  "obsidian-latex-suite",
+  "table-editor-obsidian"
 ]
