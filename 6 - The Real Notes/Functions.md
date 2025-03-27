@@ -71,7 +71,7 @@ Ora che sappiamo che cosa significa immagine di un elemento, possiamo introdurre
  >$$\mathrm{Im(f)} = \{f(a):a\in A\}$$
  >"Quello all'interno dell'insieme arancione"
 
-Ora che abbiamo il concetto necessario per discutere dell'argomento, ora possiamo parlare del concetto di funzione suriettiva.
+Ora che abbiamo il concetto necessario per discutere dell'argomento, ora possiamo parlare di funzione suriettiva.
 
 >[!quote] **Funzione suriettiva**
 >Definiamo una funzione $suriettiva$, se l'immagine degli elementi del dominio, coincide con l'intero insieme del co-dominio.
@@ -114,6 +114,9 @@ Altra funzione che introdurremmo sarà la $funzione \ indefinita$.
 
 >[!quote] **Funzione Indefinita**
 >Una funzione che viene denominata come $funzione \ indefinita$ con il simbolo $\emptyset$, cioè che per ogni input della funzione $\forall x\in\mathbb N$ questa diverge $\emptyset(x)\uparrow$.
+>
+>Dove L'immagine della funzione (che per [[Foundaments of Computer Science|fondamenti dell'informatica]] va da $\mathbb N \to \mathbb N$) sarà un insieme vuoto.
+>$$Img(\emptyset) = \emptyset$$
 
 Cioè in parole povere è una funzione parziale che non viene definita in nessun input, avendo sia il dominio che la sua immagine che sono vuoti.
 
@@ -124,6 +127,10 @@ Infine parleremmo della $funzione \ constante$.
 >$$\forall x \in \mathbb N,\ c_{k}(x)=k$$
 
 Ad esempio se abbiamo come funzione $c_{1}(x)=1$ è una $funzione \ constante$ che ridarrà sempre 1.
+
+>[!quote] **Funzione Successore**
+>Funzione della quale per ogni input del dominio ti ridà il suo valore incrementato di +1.
+>$$Succ:\mathbb N \to \mathbb N \qquad Succ(x) = x+1$$
 # Reference
 ---
 [^1]: **monotonico**: in terminologia matematica una funzione è monotona se il grafico di una funzione aumenta e diminuisce al variare di una delle variabili, di tale funzione.

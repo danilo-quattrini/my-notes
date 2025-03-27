@@ -157,8 +157,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ],
@@ -176,19 +176,25 @@
       "daily-notes:Open today's daily note": false,
       "graph:Open graph view": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "command-palette:Open command palette": false
     }
   },
   "active": "511cd4d31c2341cc",
   "lastOpenFiles": [
-    "7 - Images/Pasted image 20250318184720.png",
+    "7 - Images/dove-tail.png",
     "6 - The Real Notes/Foundaments of Computer Science.md",
+    "7 - Images/other-enumeration-with-string.png",
+    "7 - Images/enumeration-finale.png",
+    "7 - Images/enumeration-turing-machines.png",
+    "6 - The Real Notes/Basics of Math.md",
+    "6 - The Real Notes/🇬🇧 CAE Preparation.md",
+    "6 - The Real Notes/Functions.md",
+    "6 - The Real Notes/Mongo DB.md",
+    "2 - Material/Programming/Design Pattern.md",
     "6 - The Real Notes/Git.md",
+    "7 - Images/Pasted image 20250318184720.png",
     "7 - Images/example-numeration.png",
     "7 - Images/example-instant-configuration.jpg",
-    "6 - The Real Notes/Mongo DB.md",
-    "6 - The Real Notes/Functions.md",
     "7 - Images/enumeration-of-the-turing-functions.png",
     "2 - Material/Ingegneria del software.md",
     "7 - Images/enumeration-of-turing-machine.png",
@@ -201,10 +207,6 @@
     "2 - Material/UML.md",
     "2 - Material/Programming Knowledge.md",
     "2 - Material/Market Place of the farming company.md",
-    "7 - Images/touring-machine.png",
-    "7 - Images/global-game-value-market.png",
-    "7 - Images/virtual-fighter3d.png",
-    "7 - Images/wolfestein-3d.png",
     "3 - Tags/Programming.md",
     "1 - Rough Notes/Welcome to the Rough Notes.md",
     "1 - Rough Notes/Sottoreti-VLSM.md",
@@ -212,11 +214,8 @@
     "3 - Tags/Software Engineering.md",
     "3 - Tags/General Knowledge.md",
     "6 - The Real Notes/Fondamenti di informatica.md",
-    "2 - Material/Programming/Design Pattern.md",
     "5 - Templates/Full Note.md",
     "6 - The Real Notes/Untitled 1.md",
-    "3 - Tags/Graphic.md",
-    "2 - Material/Programming/SOLID Principals.md",
     "Sotto reti.pdf",
     "Untitled.canvas",
     "Trabalho_Pratico_Grupo_2024_2025_ISLA_EN.pdf",

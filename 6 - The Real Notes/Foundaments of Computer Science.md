@@ -1,6 +1,6 @@
 ---
-share_link: https://share.note.sx/x55z3eyu#SFVgtoBmnCXdpbKyaR8bKF6HApBqtzbx8i2+TwLIjJQ
-share_updated: 2025-03-18T09:25:41+01:00
+share_link: https://share.note.sx/kpt7zdpy#SFVgtoBmnCXdpbKyaR8bKF6HApBqtzbx8i2+TwLIjJQ
+share_updated: 2025-03-27T11:31:25+01:00
 ---
 2025-03-04 16:26
 
@@ -12,11 +12,15 @@ Other notes: *[click here](https://francescopalozzi.notion.site/Appunti-39bc6581
 
 Formulario: *[click here](https://francescopalozzi.notion.site/Formulario-Fondamenti-efd19dff3ff94e488d24661e0fd325d7)*
 
-Esercizi: [click here](https://097475.github.io/computazione-calcolabilita/excercises.html)
+Esercizi: [click  here](https://097475.github.io/computazione-calcolabilita/excercises.html)
 
 ---
 > [!warning] **N.B**
 > In questi appunti ci sono solo le parti che ritengo necessarie per la comprensione dei concetti, ci saranno immagini e formule, ma per altri chiarimenti, leggere il libro nel capitolo/parte che viene citata nelle *footnotes*
+
+>[!danger] **Importante per le definizioni**
+>Per le dimostrazioni a memoria bisogna scriverle ognuna di loro a mano, per allenare la mano e la mente per ricordarsele a memoria.
+>
 # Index
 ---
 
@@ -112,10 +116,11 @@ L'ordine che ne deriva sui naturali, intesi come stringhe in $A^{*}$ non è il l
 Chiarito ora il concetto di $lessicografia$ ora passiamo alla definizione di $linguaggio$
 
 >[!quote] **Definizione**
->Dato un determinato alfabeto $A$, da cui possiamo generare delle stringhe che faranno poi parte dell'insieme $A^{*}$, il $linguaggio$ che definiamo con la notazione $L$ è un sottoinsieme di $A^{*}$.
+>Dato un determinato alfabeto $A$, da cui possiamo generare delle stringhe che faranno poi parte dell'insieme $A^{*}$, il $linguaggio$ che definiamo con la notazione $L$ è un sottoinsieme di $A^{*}$.$$L\subset A^{*}$$
+>
+>Questo sarebbe un vincoli che andremmo a dare all'insieme delle stringhe che genereremmo da un'alfabeto $A$ ^1490ed
 
-Cioè con il $linguaggio$ andremmo a definire dei vincoli nell'insieme delle stringhe che andremmo a generare da un'alfabeto $A$, ad esempio:
-
+Vediamo degli esempi di Linguaggio $L$
 - L'*insieme dei numeri primi è un linguaggio* su $D = \{0,1,2,..., 9\}$ (e su qualunque altro alfabeto per i naturali). 
 - L'insieme delle parole della lingua italiana è un linguaggio sull'alfabeto S delle lettere latine.
 - L'insieme dei numeri binari palindromi[^1] è un linguaggio sull'alfabeto $B = \{0, 1\}$ delle cifre binarie.
@@ -364,11 +369,11 @@ Quindi identifichiamo la coppia $(q,a)$ la posizione e il simbolo che sta leggen
 Prendiamo come esempio una semplice lettura di una stringa **01**, definendo prima di tutto l'alfabeto $A=\{ 0,1,\star \}$ i suoi stati $Q=\{ q_{0},q_{1},\dots,q_{n} \}$ e lo spostamento destra o a sinistra.
 
 |         | $0$           | $1$           | $\star$            |
-| ------- | ------------- | ------------- | ------------------ |
+|:-------:| ------------- | ------------- | ------------------ |
 | $q_{0}$ | $(q_{1},0,1)$ |               |                    |
 | $q_{1}$ |               | $(q_{2},1,1)$ |                    |
 | $q_{2}$ |               |               | $(q_{2},\star,-1)$ |
-| ...     |               |               |                    |
+|   ...   |               |               |                    |
 Nello stato $q_{2}$ la macchina termina la sua esecuzione, quindi non svolge più alcuna operazione.
 
 Ora diamo una definizione formale di macchina di Turing.
@@ -383,9 +388,9 @@ Per identificare che una MdT svolge una determinata operazione, lo facciamo desc
 $$(q,a){\to}(q',a',x)$$
 La nostra MdT che abbiamo appena citato, viene definita $deterministica$ cioè che la terna $(q',a',x)$ sopra se $\exists$ è **unica nel suo genere ed è assegnata a una sola funzione di transizione** $(q,a)$.
 
-Altro concetto importante nella MdT è quello delle $configurazione \ istantanea$, cioè un frame o fotografia dello stato attuale in cui si trova la macchina durante la sua computazione.
+Altro concetto importante nella MdT è quello delle $configurazione \ istantanea$, che denotiamo con la lettera $C$ cioè un frame o fotografia dello stato attuale in cui si trova la macchina durante la sua computazione.
 
-Questa è rappresentata tramite una quadrupla:
+Questa è rappresentata tramite una quadrupla
 
 >[!info] **Descrizione configurazione Istantanea** 
 >$$(\xi,q,a,\eta)$$
@@ -417,7 +422,10 @@ Alla fine di tutte le computazioni, cioè la macchina di Turing non ha più ness
 $$\not\vdash_{M}$$
 Con la barra che identifica la fine delle operazioni.
 
-Alla fine diremmo che la macchina di Turing $M\downarrow w$ converge sull'input $w$ se esiste una configurazione finale $C_{i}=(\xi,q_{i},a_{i},\eta)$, in caso contrario diverge e si scrive $M\uparrow w$ cioè ci saranno configurazioni infinite.
+>[!info] **Converge & Diverge**
+>Alla fine diremmo che la macchina di Turing $M\downarrow w$ converge sull'input $w$ se esiste una configurazione finale $C_{i}=(\xi,q_{i},a_{i},\eta)$, in caso contrario diverge e si scrive $M\uparrow w$ cioè ci saranno configurazioni infinite.
+
+^5a55fe
 
 Il resto della spiegazione di questo capitolo veditela sul libro a pagina 31-35, che stranamente è spiegato bene.
 
@@ -435,17 +443,23 @@ Prendiamo un qualsiasi alfabeto $A$, che come abbiamo detto in precedenza è un 
 >
 >In conclusione diciamo che una funzione si dice $calcolabile\ secondo\ Turing$, se esiste una MdT che riesce a calcolarla, altrimenti non è $calcolabile$.
 
+>[!warning] **Domanda d'esame**
+>In un esame ha chiesto di creare una macchina di Turing che diverge per qualsiasi alfabeto $A$ a nostra scelta, creare un esempio del genere
+>$$(q_{0},\star)\to(q_{0},\star,+1) \qquad (q_{0},1)\to(q_{0},\star,+1)$$
+>
+>$$\def\arraystretch{1.5} \begin{array}{c|c|} & \star & 1\\\hline q_0 & (q_{0},\star,+1) & (q_{0},\star,+1 \end{array}$$
+
 Parte del libro poi fa un esempio di come una macchina di Turing, faccia la somma tra due naturali, esempio da vedere a pagina 36.
 
 ## 4.2 Decide if a function is calculable or not.
-In questo caso il titolo non aiuta molto, ma questo capitolo parlerà se la MdT converge oppure no su un determinato linguaggio $L$ che decidiamo su un dato alfabeto $A$, cioè come la macchina identifica un linguaggio in un determinato alfabeto.
+In questo caso il titolo non aiuta molto, ma questo capitolo parlerà se la MdT converge oppure no su un determinato [[#^1490ed|linguaggio]] $L$ che decidiamo su un dato alfabeto $A$, cioè come la macchina identifica un linguaggio in un determinato alfabeto.
 
 Allora abbiamo la nostra macchina $M$, che conterrà lo stesso alfabeto del linguaggio che utilizzeremmo, cioè che $M=(Q,A,\delta,q_{0})$, quindi avremmo in questione due casi in cui la macchina $M$ andrà a gestire il linguaggio $L$:
 
 >[!info] **Decidibilità**
 >Nel primo caso andremmo a dire senza contare il linguaggio utilizzato, che la macchina avrà due output possibili, "SI" e "NO", cioè che per ogni stringa $w\in A^{*}$, presa in input dalla macchina $M$, può assumere due comportamenti:
->- la macchina convergerà sul "SI" se la stringa presa in input apparterrà al linguaggio, cioè $w\in L$.
->- caso in cui la stringa presa in input non appartenga al linguaggio, convergerà sul "NO", quindi sarà $w\not\in L$.
+>- la macchina convergerà sul "SI" (numero 1)se la stringa presa in input apparterrà al linguaggio, cioè $w\in L$. (scrivendo sul nastro 1 oppure "SI")
+>- caso in cui la stringa presa in input non appartenga al linguaggio, convergerà sul "NO" (numero 0), quindi sarà $w\not\in L$. (scrivendo sul nastro 0 oppure "NO")
 >  
 >  Allora diremmo che la nostra macchina $M \ decide \ L$.
 
@@ -463,9 +477,13 @@ Diamo ora nel dettaglio le definizioni che abbiamo citato precedentemente.
  1\space \space se \space w\in L\\ 0\space \space se \space w\not\in L
 \end{cases}$$
 
+^273abf
+
 >[!quote] **Semi-decidible**
 >Un linguaggio $L$, si definisce $semi-decidibile$ se esiste una macchina di Turing che $accetta$ tale linguaggio, oppure possiamo dire, $M \ accetta \ L$, la funzione che viene calcolata dalla MdT viene chiamata, $funzione\ semi-caratteristica$, ed è rappresentata in questo modo.
 >$$\chi_{L}'=\begin{cases} 1\space \space se \space w\in L\\ \uparrow \space se\space w\not\in L \end{cases}$$
+
+^7d770f
 
 Questi due concetti si collegano molto al capitolo [[Foundaments of Computer Science#4.2 Decide if a function is calculable or not.|vedere se una funzione è calcolabile secondo Turing]], perché se le funzioni prima citate non sono calcolabili, allora non possiamo dire che tale linguaggio sia decidibile oppure no.
 
@@ -480,12 +498,27 @@ In questo capitolo andiamo ad introdurre il concetto che la macchina di Turing �
 Vediamo ora un esempio di enumerazione di Gödel.
 ![[enumeration-of-turing-machine.png]]
 
-Diremmo che i numeri $0,1,2,3,\dots$ corrispondono a una macchina di Turing MdT$_{0}$, MdT$_{1}$, MdT$_{2}$, MdT$_{3}$, cioè l'$i-esima$ macchina di Turing $MdT_{i}$ che corrisponde al numero naturale $i$.
+Diremmo che i numeri $0,1,2,3,\dots$ corrispondono a una macchina di Turing MdT$_{0}$, MdT$_{1}$, MdT$_{2}$, MdT$_{3}$, cioè l'$i-esima$ macchina di Turing $MdT_{i}$ che corrisponde al numero naturale $i\in \mathbb N$.
 
 Diciamo anche che le funzioni dalla macchina di Turing  può essere enumerata allo stesso modo.
 ![[enumeration-of-the-turing-functions.png]]
-Però a differenza di prima non ci sarà una corrispondenza biunivoca, perché più MdT possono calcolare la stessa funzione $\varphi$, quindi diremmo che la $i-esima$ MdT calcolerà la $i-esima$ funzione $\varphi_{i}$, diremmo che la funzione è definita su un input $w$ se la MdT $M$ converge sull'input $w$ cioè che le funzione $\varphi(w)\downarrow$, in caso contrario $\varphi(w)\uparrow$.
+Però a differenza di prima non ci sarà una corrispondenza biunivoca, perché più MdT possono calcolare la stessa funzione $\varphi$, quindi diremmo che la $i-esima$ MdT calcolerà la $i-esima$ funzione $\varphi_{i}$, diremmo che la funzione è definita su un input $w$ se la MdT $M$  [[#^5a55fe|converge]] sull'input $w$ cioè che le funzione $\varphi(w)\downarrow$, in caso contrario $\varphi(w)\uparrow$.
+![[enumeration-turing-machines.png]]
+Possiamo rappresentare la enumerazione in questo modo, con a sinistra una biiezione, tra numeri naturali, $\mathbb N$ e le macchine di Turing $M$, e dalla macchina alla funzione (quella a destra), non diremmo la funzione sarà [[Functions#1.2 Injective function|iniettiva]], questo perché, una macchina di Turing come detto prima, può calcolare diverse funzioni $\varphi$ e non solo una singola funzione (come la definizione di iniettività dimostra.)
+![[enumeration-finale.png]]
 
+Ci sono anche le relazioni che si possono creare tra un alfabeto. $A=\{ s_{2},s_{2},s_{3},\dots,s_{n} \}$ e i numeri naturali, da questi si possono generare un'insieme di stringhe che salviamo da come sapremmo su un'insieme $A^{*}=\{\lambda , s_{0}, s_{1},\dots,s_{0}s_{1},\dots  \}$. 
+
+Supponiamo di impostare un [[#^f2e44b|ordinamento lessicografico]], quindi ad esempio $A=\{ s_{0}<s_{1}<\dots \}$, andiamo a creare una relazione tra i simboli dell'alfabeto $A$ e i numeri naturali $\mathbb N$.
+
+![[other-enumeration-with-string.png]]
+
+## ?.? Dove tail (Coda di Colomba)
+
+>[!warning] **Inof**
+>Non so perché a lezione ha cominciato a spiegare il concetto della coda di colomba, ma questo concetto ci serve per spiegare altre cose sicuramente.
+
+![[dove-tail.png]]
 ### 4.3.1 Decode Turing Machines
 Allora definiamo una macchina di Turing $M$ e un alfabeto $A$ fissato che appartiene a tale macchina, poi l'insieme degli stati della macchina $Q$, e la sua funzione di transizione $\delta$.
 
@@ -505,20 +538,150 @@ Per le altre funzioni vedere il libro a pagina 41-49, gli argomenti trattati non
 ## 4.4 Not deterministic Turing Machines
 Andremmo ora a trattare di una macchina di Turing definita come "non deterministica", che servirà in seguito per comprendere alcune dimostrazioni di teoremi importanti, ma alla fine vedremmo che equivale in definitiva alla macchina di Turing tradizionale.
 
-Ricordiamo sempre che la macchina di Turing è una quaterna $M=(Q,A,\delta,q_{0})$, dove abbiamo l'insieme dei simboli dell'alfabeto $a\in A \cup{\{\star  \}}$, l'insieme dei suoi stati $Q$ e  la funzione di transizione $\delta$, su quest' ultima è importante denotare una cosa.
+Ricordiamo sempre che la macchina di Turing è una quadruple $M=(Q,A,\delta,q_{0})$, dove abbiamo l'insieme dei simboli dell'alfabeto $a\in A \cup{\{\star  \}}$, l'insieme dei suoi stati $Q$ e  la funzione di transizione $\delta$, su quest' ultima è importante denotare una cosa.
 
-Sappiamo che la funzione ha come dominio $(q_{i},a_{i})$ e come co-domionio la terna $(q_{i}',a_{i}',x)$ dove con $x$ denotiamo la posizione in cui la testina si deve muovere, oppure esiste anche il caso in cui la funzione esclude il suo dominio dominio  $(q_{i},a_{i})$ cioè la macchina di Turing $M$ si ferma non appena incontra la coppia $(q_{i},a_{i})$.
+Sappiamo che la funzione ha come dominio $(q_{i},a_{i})$ e come co-domionio la terna $(q_{i}',a_{i}',x)$ dove con $x$ denotiamo la posizione in cui la testina si deve muovere, oppure esiste anche il caso in cui la funzione esclude il suo dominio dominio  $(q_{i},a_{i})$ cioè la macchina di Turing $M$ si ferma non appena incontra la coppia $(q_{i},a_{i})$ [[#^5a55fe|diverge]].
 
-Nel caso di una macchina di Turing non deterministica abbiamo che la nostra coppia $(q,a)$ potrà scegliere più terne $(q',a',x)$ e non solamente una.
+Nel caso di una macchina di Turing non deterministica abbiamo che la nostra coppia $(q,a)$ potrà scegliere più terne $(q',a',x)$ e **non solamente una.**
 
 In questo modo rendiamo la nostra funzione $\delta$ da una relazione che andava dall'insieme $Q\times (A\cup\{\star  \})$ (cioè il nostro $(q,a)$) alla terna $Q\times(A\cup\{\star  \}\times \{ -1,+1 \}$  (cioè la terna $(q',a',x)$)si comporrà dell unione di questi due insiemi, formando una 5-utpla.
 $$Q\times (A\cup\{\star  \})\times Q\times(A\cup\{\star  \}\times \{ -1,+1 \}$$
 Diamo una definizione formale di MdT non deterministica.
 
 >[!quote] **Definizione**
->Una macchina di Turing "non deterministica" è una quadrupla $M=(Q,A,\delta,q_{0})$ (come nella definizione di macchina di Turing classica), solo che la sua $funzione\ di\ transizione$ cambia in così.
+>Una macchina di Turing "**non deterministica**" è una quadrupla $M=(Q,A,\delta,q_{0})$ (come nella definizione di macchina di Turing classica), solo che la sua $funzione\ di\ transizione$ cambia in così.
 >$$Q\times (A\cup\{\star  \})\times Q\times(A\cup\{\star  \}\times \{ -1,+1 \}$$
 
-# Reference
+Possiamo dire che la macchina di Turing "deterministica" rientra nell insieme di quelle "non deterministiche", questo perché possiamo definire che la prima è una forma più rigida della "non deterministica", avendo solo un coppia che genera una terna $(q,a)\to(q',a',x)$ non vuol dire che contraddice o influisce sulla definizione prima citata, ma ne è una restrizione[^2].
+
+Questa definizione ci porta a dire che la macchina potrà avere più risultati per lo stesso input, quindi diremmo che la Macchina di Turing $M$ converge su un dato input $w$, cioè $M\downarrow w$ se almeno una delle computazioni (calcoli fatti dalla macchina) termina, in caso contrario diremmo che divergerà $M\uparrow w$  se nessuna delle computazioni porta ad un risultato.
+
+Facciamo un esempio per capire bene il concetto, sul libro è spiegato alla stessa maniera.
+
+>[!example] **Esempio**
+>Prendiamo una macchina $M$ che avrà solo due stati che saranno $q_{0},q_{1}$, l'alfabeto che è composto solo dal simbolo $\{ 1 \}$ le seguenti funzioni di transizione.
+>$$1)\ (q_{0},\star)\to(q_{1},1,+1)\qquad 2)\ (q_{0},\star)\to(q_{0},\star,+1)$$
+>Vediamo che in tutte e due abbiamo lo stesso dominio della funzione di transizione $\delta$ che però porta a due risultati, sul secondo (quello segnato da $2)$ ) la macchina diverge perché se analizziamo che cosa fa la terna $(q_{0},\star,+1)$ ritorna sempre allo stato iniziale e scrive sempre blanco andando sempre in un ciclo infinito e non terminando mai.
+>
+>Nel primo caso (quello segnato con il numero $1)$) invece abbiamo che la testina andrà a scrivere il simbolo $1$  a posto del "blanco" $\star$ e si conclude  allo stato $q_{1}$ facendo in modo che non ripetano altre operazioni, la macchina $M$ converge.
+
+Poi non so perché, ma nel libro comincia a parlare di questo concetto.
+
+Dice che un Linguaggio $L$ viene [[#^7d770f|accettato]] da una macchina di Turing se i suoi elementi coincidono con i valori in input di tale macchina $M$ e almeno una computazione di tale macchina su questo input viene a [[#^5a55fe|convergere]].
+Una macchina $M$ invece [[#^273abf|decide]] un linguaggio $L$ se per ogni stringa del linguaggio $x\in L$ c'è almeno una di queste che convergerà su "SI" e dovrà convergere sempre su "NO" per ogni stringa che non appartiene al linguaggio $x \not\in L$
+
+> [!quote] **Definizione**
+> Per ogni macchina di Turing non deterministica che denoteremmo con $M$, un linguaggio $L$ viene accettato o deciso se sia $M$(macchina non deterministica) e la macchina deterministica che denotiamo con $M'$ accettano o decidono lo stesso linguaggio $L$.
+
+## 4.5 Church-Turing Thesis
+La tesi è nata perché con gli anni si è cercato di trovare un modello di calcolo che sia diverso da quello teorizzato da Turing, alla fine però si è rilevato che ognuno di questi modelli, erano sempre equivalenti alla macchina di Turing.
+
+Ecco perché abbiamo questa tesi, nota come $tesi\ di \ Church-Turing$, afferma che non importa che procedimento algoritmo si sviluppa e in un quale modello di calcolo si andrà ad utilizzare tale, esisterà sempre una macchina di Turing che si potrà ricavare.
+
+Formalmente diciamo
+
+>[!quote] **Tesi di Church-Turing**
+>Una funzione viene definita calcolabile, se e solamente se, esiste una macchina di Turing che la calcola, cioè se la funzione è calcolabile secondo Turing.
+
+Si esprime poi la differenza che c'è tra il dire che se una funzione è calcolabile secondo Turing, allora non esiste, o meglio è difficile capire l'inverso, cioè se tale funzione può essere riconducibile ad una macchina di Turing, in seguito si dice che tra il concetto di "**algoritmo**" e "**funzione calcolabile**" sono concetti legati, ma non definiti formalmente e che la tesi è presa come una congettura[^3], ma che ci servirà fondamentalmente nel libro per semplificarci la vita e quindi i vantaggi di usare questa tesi è che:
+
+1. Possiamo dire funzione calcolabile, senza dover specificare macchine di Turing.
+2. Prendere per assunzione una macchina di Turing che sarà sempre la stessa per ogni algoritmo anche se non viene espresso in maniera formale.
+
+Illustriamo un esempio di come la tesi si potrebbe mettere in atto.
+>[!example] **Esempio**
+>Prendiamo dei valori che fanno parte dell'insieme dei naturali $x,y,z \in \mathbb N$, un alfabeto casuale che li rappresenta e la funzione definita in questo modo:
+>$$f(x,y,z)=\begin{cases}1\space \space se \space l'x-esima \space macchina \space M_{x} \space converge \space in \space z \ passi \ sull'input \ y \\ \\ 0 \ altrimenti \end{cases}$$
+
+Con la tesi ora citata possiamo dire che la funzione è calcolabile senza dover dire secondo Turing, oppure che prendiamo la macchina di Turing e la facciamo computare a quest'ultima.
+
+Basta semplicemente andare a rappresentare un algoritmo che calcoli tale funzione, prendendo anche operazioni di alto livello. In questo esempio (e anche in altri che andremmo a vedere) se la macchina $M_{x}$ che prende in input un numero $y$ e termina in $z$ passi, ci possono essere 3 casi:
+1.  Prendendo un contatore $C$ (che assegniamo a quest'ultimo 0) ed incrementa ad ogni passo che svolge l'algoritmo se arriva allo stesso numero di passi di $z$ allora diremmo che termina cioè [[#^5a55fe|converge]].
+2. L'algoritmo si ferma prima di arrivare al numero di passi predisposto $z$ , termina la sua esecuzione, quindi converge anche in questo caso.
+3. L'algoritmo supera il numero dei passi $z$  ed $M_{x}$ non si ferma diremmo in automatico che [[#^5a55fe|diverge]], cioè non termina mai e ridà come risultato 0.
+
+>[!question] **Question**
+>CHIEDERE SE LA FUNZIONE È DECIDIBILE OPPURE NO
+
+### 4.5.1 Algorithm notation
+La notazione che andremmo a dare sarà spiegata più nel dettaglio quando andremmo a spiegare il linguaggio WHILE, ma per ora possiamo identificare tre aspetti fondamentali per la descrizione di un algoritmo: **sequenza**, **selezione**, **iterazione**.
+
+- **Sequenza:** intesa come la possibilità di eseguire un programma uno dietro all'altro.
+- **Selezione**: capacità di poter scegliere di eseguire un programma che un'altro in base ad una condizione, vera o falsa (semplicemente `if(condizion){true}else{false}`, non è difficile).
+- **Iterazione**: l'abilità di un programma di eseguirsi più volte finche non si arriva alla condizione che si verifica come vera (ciclo `while(condizione){passo1,passo2...}`).
+
+Andremmo ad elencare le varie operazioni che possiamo fare:
+
+- `begin`: indica l'inizio del nostro algoritmo, inizio della sequenza di comandi che andranno ad essere eseguiti fino ad arrivare ad `end`.
 ---
+- Ogni comando deve terminare con il punto e virgola `;`, in questo modo li mettiamo in sequenza.
+---  
+- `True` and `False`: sono le variabile booleana che indicano "vero" e "falso".
+---  
+- Definiamo le lettere $x,y,z,...$ le variabili del nostro programma.
+---  
+- `input(x)`: così facendo creiamo l'input che verrà salvato all'interno della variabile che è denotata all'interno delle parentesi rotonde (`input(y)`, mettiamo il valore inserito dall'utente/macchina all'interno della variabile $y$).
+---  
+- `x = e` allora questo significa che all'interno della variabile $x$ andremmo a salvare l'operazione che viene svolta dall'espressione `e`, ad esempio prendiamo come espressione `e = 4 + 5`, il risultato di `e` andrà salvato in `x`.
+---  
+- `if c then s else s' ` semplicemente se la condizione `c` viene a porsi come vera allora eseguiamo il programma `s` caso la condizione è falsa, il programma `s'` verrà eseguito.
+---
+- `while c do s` semplice ciclo while, dove andremmo ad eseguire il programma dopo il `do`, che in questo caso è `s`, solo se la condizione `c` è falsa, caso contrario, terminiamo il ciclo.
+---
+- `skip` indica un'azione che non avrà nessun effetto all'interno del codice, esempio di divergenza `while True do skip`, essendo sempre falsa la condizione e non andando mai al `True`, questa [[#^5a55fe|diverge]].
+---
+- L'algoritmo finisce quando non abbiamo più passi da dover far eseguire.
+
+Esempio di algoritmo per il calcolo del McD (Massimo comun Divisore):
+```js
+begin
+	input (x);
+	input (y) ;
+	while y != 0 do
+		begin
+			z = x mod y;
+			x = У ;
+			y = z
+		end
+	output (x)
+end
+```
+
+## 4.6 Some functions that cannot be calculated
+In questo capitolo andremmo a presentare esempi di funzioni che non potranno essere calcolate da una MdT, applicheremmo anche la tecnica che abbiamo visto in precedenza, cioè la [[#4.5 Church-Turing Thesis|tesi di Church-Turing]].
+
+>[!example] **Esempio di funzione non calcolabile**
+>Data una funzione che chiameremmo $f$ che possiede come dominio e co-dominio $\mathbb N$, da come sapremmo in precedenza andremmo solo a lavorare con l'insieme dei naturali (se non si sa vedere associazione tra MdT e naturali [[#4.3 Numbering the Turing's Machines with Gödel method.|enumerazioni macchine turing]]).
+>>$$f(x,)=\begin{cases}1\space \space se \ \varphi_{x}(x)\downarrow \space \ \\ \\ \uparrow \ altrimenti \end{cases}$$
+
+Come facciamo se ci presenta una funzione così all'esame? Piangiamo?
+
+NO, semplicemente come abbiamo visto con i due capitoli in precedenza possiamo vedere se la funzione che abbiamo qui, la possiamo calcolare oppure no.
+
+Useremmo il [[#4.5.1 Algorithm notation|linguaggio]] che abbiamo definito prima, mischiandolo con la tesi di Church-Turing.
+```java
+1 begin 
+2	input(x)
+3	decodifica x per ottenere l'x-esima MdT Mx;
+4	esegui Mx sull'input x
+5	if (termina Mx) then output(1)
+6 end
+```
+
+Allora partiamo con il dire che se non avete letto la parte della enumerazione, non è che non capite un cazzo, però non saprete cosa vuol dire questa parte.
+
+`2`Partiamo dalla seconda riga di "codice" dicendo che prende in input `x` che sarebbe il dominio della funzione $f:\mathbb N\to\mathbb N$, qui non ci piove.
+
+`3`Terza riga, cosa succede qui, **al compito dobbiamo scrivere proprio com'è nell'esempio**, significa che il valore preso in input della riga precedente, come penso dovremmo sapere, essendo un numero naturale si può associare ad una macchina di Turing $M_{x}$, la riga dice semplicemente che il valore $x$ viene "decodificato", **cioè va a trovare tramite i calcoli che abbiamo visto nella godelizzazione, [[#4.3 Numbering the Turing's Machines with Gödel method.|enumerazione MdT]] la macchina di Turing** $M_{x}$
+
+`4` Quarto comando easy-peasy, solamente prende la macchina che abbiamo tradotto come numero $M_{x}$, e va a calcolare il valore di $x$.
+
+In conclusione diremmo che la funzione è calcolabile perché va a soddisfare i due casi che abbiamo definito, cioè che da come output 1 se la macchina riesce a calcolare il valore di $x$, il caso contrario si verifica quando il valore di $x$ non riesce a trovare la macchina $M_{x}$, in questo modo diverge $\uparrow$, cioè il secondo caso.
+
+# Reference
+
 [^1]: **palindromo**: viene definito palindromo quelle parole, numeri o sequence di lettere che possono essere lette da entrambi i versi, sia da sinistra a destra, che da destra fino a sinistra ad esempio: 3663, radar, 12321, ecc..
+
+[^2]: Direi personalmente che sarebbe un sotto-insieme delle possibili quintuple, questa è una mia supposizione, da prendere come vera o falsa sta a voi. 
+
+[^3]: **congettura**: supposizione di un idea, basata su apparenze probabili, in parole povere si può tradurre in "ipotesi". 
