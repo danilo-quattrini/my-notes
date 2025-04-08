@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "fb39404b27c6f224",
+        "id": "9e6f529d424bcc17",
         "type": "tabs",
         "children": [
           {
-            "id": "511cd4d31c2341cc",
+            "id": "efa9f46bdc329874",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "6 - The Real Notes/Foundaments of Computer Science.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Foundaments of Computer Science"
+              "title": "New tab"
             }
           }
         ]
@@ -157,8 +153,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           }
         ],
@@ -176,46 +172,48 @@
       "daily-notes:Open today's daily note": false,
       "graph:Open graph view": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "511cd4d31c2341cc",
+  "active": "efa9f46bdc329874",
   "lastOpenFiles": [
+    "6 - The Real Notes/Fundamentals of Computer Science.md",
+    "6 - The Real Notes/Church-Turing.md",
+    "7 - Images/Pasted image 20250407222138.png",
+    "6 - The Real Notes/Politecnico Master Degree.md",
+    "7 - Images/tailoring-to-be-admitted.png",
+    "7 - Images/table-of-coinstraint.png",
+    "7 - Images/mandatory-courses.png",
+    "3 - Tags/School.md",
+    "7 - Images/base-of-the-master-degree-rules.png",
+    "7 - Images/choice-of-the-course.png",
+    "5 - Templates/Full Note.md",
+    "2 - Material/Programming Knowledge.md",
+    "6 - The Real Notes/Git.md",
+    "2 - Material/Digitalization and Valorization of a local farming company..md",
+    "2 - Material/Game Design.md",
+    "2 - Material/Ingegneria del software.md",
+    "2 - Material/UML.md",
+    "6 - The Real Notes/🇬🇧 CAE Preparation.md",
+    "2 - Material/Idea for the project.md",
+    "7 - Images/absurd-thesisi.png",
+    "2 - Material/Programming/Design Pattern.md",
     "7 - Images/dove-tail.png",
-    "6 - The Real Notes/Foundaments of Computer Science.md",
     "7 - Images/other-enumeration-with-string.png",
     "7 - Images/enumeration-finale.png",
-    "7 - Images/enumeration-turing-machines.png",
     "6 - The Real Notes/Basics of Math.md",
-    "6 - The Real Notes/🇬🇧 CAE Preparation.md",
     "6 - The Real Notes/Functions.md",
     "6 - The Real Notes/Mongo DB.md",
-    "2 - Material/Programming/Design Pattern.md",
-    "6 - The Real Notes/Git.md",
-    "7 - Images/Pasted image 20250318184720.png",
-    "7 - Images/example-numeration.png",
-    "7 - Images/example-instant-configuration.jpg",
-    "7 - Images/enumeration-of-the-turing-functions.png",
-    "2 - Material/Ingegneria del software.md",
-    "7 - Images/enumeration-of-turing-machine.png",
     "6 - The Real Notes/fdafd.md",
     "6 - The Real Notes/calcolabiltà di una funzione secondo Turing.md",
     "README.md",
-    "Pasted image 20250316162125.png",
     "2 - Material/Programming/NodeJS.md",
-    "2 - Material/Game Design.md",
-    "2 - Material/UML.md",
-    "2 - Material/Programming Knowledge.md",
-    "2 - Material/Market Place of the farming company.md",
     "3 - Tags/Programming.md",
     "1 - Rough Notes/Welcome to the Rough Notes.md",
     "1 - Rough Notes/Sottoreti-VLSM.md",
     "3 - Tags/Math.md",
     "3 - Tags/Software Engineering.md",
-    "3 - Tags/General Knowledge.md",
-    "6 - The Real Notes/Fondamenti di informatica.md",
-    "5 - Templates/Full Note.md",
-    "6 - The Real Notes/Untitled 1.md",
     "Sotto reti.pdf",
     "Untitled.canvas",
     "Trabalho_Pratico_Grupo_2024_2025_ISLA_EN.pdf",

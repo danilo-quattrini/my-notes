@@ -115,7 +115,7 @@ Altra funzione che introdurremmo sarà la $funzione \ indefinita$.
 >[!quote] **Funzione Indefinita**
 >Una funzione che viene denominata come $funzione \ indefinita$ con il simbolo $\emptyset$, cioè che per ogni input della funzione $\forall x\in\mathbb N$ questa diverge $\emptyset(x)\uparrow$.
 >
->Dove L'immagine della funzione (che per [[Foundaments of Computer Science|fondamenti dell'informatica]] va da $\mathbb N \to \mathbb N$) sarà un insieme vuoto.
+>Dove L'immagine della funzione (che per [[Fundamentals of Computer Science|fondamenti dell'informatica]] va da $\mathbb N \to \mathbb N$) sarà un insieme vuoto.
 >$$Img(\emptyset) = \emptyset$$
 
 Cioè in parole povere è una funzione parziale che non viene definita in nessun input, avendo sia il dominio che la sua immagine che sono vuoti.

@@ -110,6 +110,29 @@ M  lib/simplegit.rb
 
 There are two columns, the left hand column indicate that the file is staged, the right hand column indicate that is modified (edited from the previous commit) and not staged.
 
+Previously we have been working with `git status` to saw which files have been saved in the staging area or no, but we don't know which type of changes we made, for this reason, we use `git diff` that helps us to know what did we do before.
+
+Let's say for example we made a change inside the file `CONTRIBUTING.md`
+```
+$ git diff 
+diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md
+index 8ebb991..643e24f 100644
+--- a/CONTRIBUTING.md
++++ b/CONTRIBUTING.md
+@@ -65,7 +65,8 @@ branch directly, things can get messy.
+ Please include a nice description of your changes when you submit your PR;
+ if we have to read the whole diff to figure out why you're contributing
+ in the first place, you're less likely to get feedback and have your change
+-merged in.
++merged in. Also, split your changes into comprehensive chunks if you patch is
++longer than a dozen lines.
+
+ If you are starting to work on a particular area, feel free to submit a PR
+ that highlights your work in progress (and note in the PR title that it's
+```
+With this command we have a (short) vision of  what did inside the file, whereas before with just the `git status` we were not able to see what we did previously.
+
+Furthermore if we want to see which changes we made in the staged area, we can use the same prompt, but we just add the `--staged` flag
 # .gitignore
 
 The `.gitignore` is a default file, that's used to ignore (like the name says) in the staging area, the directory/files that are written inside of it, following a specific pattern.
@@ -133,9 +156,39 @@ There are different type of pattern that are important to remember.
 >- `*` the asterisk means that includes zero or more characters.
 >- `[abc]` match all the character inside the bracket (in this case is a, b, c).
 >- The question mark `?` means that is going to match a single character.
+>- Square brackets within numbers separate by the [[Programming Knowledge#^860ddc|hypen]] like this `[0-9]` means that we are any character between them (in this case 0 though 9)
+
+Here there others example of others lines of `.gitignore`
+```
+# no .a files
+*.a
+
+# but do track lib.a, even though you're ignoring .a files above
+!lib.a
+
+# only ignore the root TODO file, not subdir/TODO
+/TODO
+
+# ignore all files in the build/ directory
+build/
+
+# ignore doc/notes.txt, but not doc/server/arch.txt
+doc/*.txt
+
+# ignore all .txt files in the doc/ directory
+doc/**/*.txt
+```
+
+# Branching
+
+To see all the branches that you have in the project, you should use this command:
+```console
+$ git branch -a 
+```
 
 
 # Reference
 ---
 Book: https://git-scm.com/book/it/v2 
 
+[^1]: hype

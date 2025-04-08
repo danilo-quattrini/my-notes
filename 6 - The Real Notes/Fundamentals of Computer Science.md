@@ -1,6 +1,6 @@
 ---
 share_link: https://share.note.sx/kpt7zdpy#SFVgtoBmnCXdpbKyaR8bKF6HApBqtzbx8i2+TwLIjJQ
-share_updated: 2025-03-27T11:31:25+01:00
+share_updated: 2025-04-04T14:58:25+02:00
 ---
 2025-03-04 16:26
 
@@ -14,6 +14,8 @@ Formulario: *[click here](https://francescopalozzi.notion.site/Formulario-Fondam
 
 Esercizi: [click  here](https://097475.github.io/computazione-calcolabilita/excercises.html)
 
+*made by Danilo Quattrini ©* check me out on [GitHub](https://github.com/danilo-quattrini)
+
 ---
 > [!warning] **N.B**
 > In questi appunti ci sono solo le parti che ritengo necessarie per la comprensione dei concetti, ci saranno immagini e formule, ma per altri chiarimenti, leggere il libro nel capitolo/parte che viene citata nelle *footnotes*
@@ -24,8 +26,7 @@ Esercizi: [click  here](https://097475.github.io/computazione-calcolabilita/exce
 # Index
 ---
 
-
-# 1.0 Stringhe e Linguaggi
+# 1.0 Strings and Languages
 ---
 Prima di tutto partiamo con due concetti fondamentali, il primo è quello di *Alfabeto*, il secondo è quello di *Stringa*.
 
@@ -463,6 +464,8 @@ Allora abbiamo la nostra macchina $M$, che conterrà lo stesso alfabeto del ling
 >  
 >  Allora diremmo che la nostra macchina $M \ decide \ L$.
 
+^21c197
+
 >[!info] **Semi-decidibilità**
 >Il secondo caso a differenza del primo abbiamo che la macchina non convergerà su degli output, ma sulla stringa $w\in A^{*}$ se questa stringa appartiene al linguaggio $L$, allora diremmo:
 >- la macchina $M\downarrow w$ se quest'ultima appartiene al linguaggio $L$, cioè $w\in L$.
@@ -485,9 +488,9 @@ Diamo ora nel dettaglio le definizioni che abbiamo citato precedentemente.
 
 ^7d770f
 
-Questi due concetti si collegano molto al capitolo [[Foundaments of Computer Science#4.2 Decide if a function is calculable or not.|vedere se una funzione è calcolabile secondo Turing]], perché se le funzioni prima citate non sono calcolabili, allora non possiamo dire che tale linguaggio sia decidibile oppure no.
+Questi due concetti si collegano molto al capitolo [[Fundamentals of Computer Science#4.2 Decide if a function is calculable or not.|vedere se una funzione è calcolabile secondo Turing]], perché se le funzioni prima citate non sono calcolabili, allora non possiamo dire che tale linguaggio sia decidibile oppure no.
 
-Possiamo anche dire che un linguaggio se è decidibile, sarà anche semi-dicidible, basterebbe solo sostituire l'output della $funzione \  caratteristica$ che quando la stringa appartiene al linguaggio $L$ allora risponderà $SI$ e quando non appartiene dire di $NO$, quando una macchina di Turing $M$ converge su tale stringa dichiarerà "SI" e quando diverge "NO".
+Possiamo anche dire che un linguaggio se è decidibile, sarà anche semi-dicidible, basterebbe solo sostituire l'output della $funzione \  caratteristica$ che quando la stringa appartiene al linguaggio $L$ allora risponderà $SI$ e quando non appartiene dire di $NO$, quando una macchina di Turing $M$ converge su tale stringa dichiarerà "SI" e quando diverge "NO". ^863ec9
 
 Vedere esempio del libro a pagina 38 per capire meglio l'esempio.
 
@@ -496,7 +499,7 @@ Vedere esempio del libro a pagina 38 per capire meglio l'esempio.
 In questo capitolo andiamo ad introdurre il concetto che la macchina di Turing è messa in corrispondenza biunivoca con in numeri naturali, cioè che ogni numero naturale è assegnato a una e una sola MdT, quindi possiamo utilizzare i numeri naturali sia come input che come denotazione della macchina.
 
 Vediamo ora un esempio di enumerazione di Gödel.
-![[enumeration-of-turing-machine.png]]
+![[enumeration-of-turing-machine.png]] ^d0a6c0
 
 Diremmo che i numeri $0,1,2,3,\dots$ corrispondono a una macchina di Turing MdT$_{0}$, MdT$_{1}$, MdT$_{2}$, MdT$_{3}$, cioè l'$i-esima$ macchina di Turing $MdT_{i}$ che corrisponde al numero naturale $i\in \mathbb N$.
 
@@ -513,12 +516,22 @@ Supponiamo di impostare un [[#^f2e44b|ordinamento lessicografico]], quindi ad es
 
 ![[other-enumeration-with-string.png]]
 
-## ?.? Dove tail (Coda di Colomba)
+# ?.? Dove tail (Coda di Colomba)
+La coda di colomba viene spiegata in questo capitolo, ma in seguito vedremmo dove sarà applicato più nel dettaglio, sappiamo che esiste una funzione che chiameremmo $r:\mathbb N^{2}\to\mathbb N$, cioè prende una coppia di naturali e ci ritorna un singolo numero.
+$$r(x,y)=z$$
+Prenderemmo in input due valori naturali che abbiamo scritto come $x\in \mathbb N$ e $y\in \mathbb N$, è ci ridà come output un numero naturale $z$, questa la useremmo molto poco, però sono importanti quando faremmo gli algoritmi, la funzione $\pi:\mathbb N \to \mathbb N$ pi-greco che ci decodifica la $z$ e ci trova le due variabili $x$ e $z$.
 
->[!warning] **Inof**
->Non so perché a lezione ha cominciato a spiegare il concetto della coda di colomba, ma questo concetto ci serve per spiegare altre cose sicuramente.
+$$
+\pi_{1}(z) = x
+\qquad \pi_{2}(z)=y
+$$
+
+La funzione $r$ che abbiamo prima mostrato, si può rappresentare tramite una matrice.
+![[Pasted image 20250407222138.png]]
+Come vedete rappresenta una coda di colomba (la parte rossa dell'immagine), quindi sotto rappresentato c'è la funzione $r$ e la sua associazione alla matrice sopra vista.
 
 ![[dove-tail.png]]
+Quindi avremmo che $r(0,0)=0$, $r(1,0)=1$ e così via come segue l'ordine sopra.
 ### 4.3.1 Decode Turing Machines
 Allora definiamo una macchina di Turing $M$ e un alfabeto $A$ fissato che appartiene a tale macchina, poi l'insieme degli stati della macchina $Q$, e la sua funzione di transizione $\delta$.
 
@@ -599,10 +612,6 @@ Basta semplicemente andare a rappresentare un algoritmo che calcoli tale funzion
 1.  Prendendo un contatore $C$ (che assegniamo a quest'ultimo 0) ed incrementa ad ogni passo che svolge l'algoritmo se arriva allo stesso numero di passi di $z$ allora diremmo che termina cioè [[#^5a55fe|converge]].
 2. L'algoritmo si ferma prima di arrivare al numero di passi predisposto $z$ , termina la sua esecuzione, quindi converge anche in questo caso.
 3. L'algoritmo supera il numero dei passi $z$  ed $M_{x}$ non si ferma diremmo in automatico che [[#^5a55fe|diverge]], cioè non termina mai e ridà come risultato 0.
-
->[!question] **Question**
->CHIEDERE SE LA FUNZIONE È DECIDIBILE OPPURE NO
-
 ### 4.5.1 Algorithm notation
 La notazione che andremmo a dare sarà spiegata più nel dettaglio quando andremmo a spiegare il linguaggio WHILE, ma per ora possiamo identificare tre aspetti fondamentali per la descrizione di un algoritmo: **sequenza**, **selezione**, **iterazione**.
 
@@ -632,7 +641,7 @@ Andremmo ad elencare le varie operazioni che possiamo fare:
 ---
 - L'algoritmo finisce quando non abbiamo più passi da dover far eseguire.
 
-Esempio di algoritmo per il calcolo del McD (Massimo comun Divisore):
+Esempio di algoritmo per il calcolo del McD (Massimo comune Divisore):
 ```js
 begin
 	input (x);
@@ -647,16 +656,31 @@ begin
 end
 ```
 
+>Per rappresentare la divergenza nel linguaggio che abbiamo appena citato, facciamo così:
+```js
+begin 
+	input(x);
+	calcola h(x) e salvalo in z
+	if z = 1 then while True do skip
+	if z = 0 output 0
+end
+```
+La parte che fa la divergenza $\uparrow$ sarebbe la riga `while True do skip`
+
 ## 4.6 Some functions that cannot be calculated
 In questo capitolo andremmo a presentare esempi di funzioni che non potranno essere calcolate da una MdT, applicheremmo anche la tecnica che abbiamo visto in precedenza, cioè la [[#4.5 Church-Turing Thesis|tesi di Church-Turing]].
 
 >[!example] **Esempio di funzione non calcolabile**
 >Data una funzione che chiameremmo $f$ che possiede come dominio e co-dominio $\mathbb N$, da come sapremmo in precedenza andremmo solo a lavorare con l'insieme dei naturali (se non si sa vedere associazione tra MdT e naturali [[#4.3 Numbering the Turing's Machines with Gödel method.|enumerazioni macchine turing]]).
->>$$f(x,)=\begin{cases}1\space \space se \ \varphi_{x}(x)\downarrow \space \ \\ \\ \uparrow \ altrimenti \end{cases}$$
+>>$$f(x)=\begin{cases}1\space \space se \ \varphi_{x}(x)\downarrow \space \ \\ \\ \uparrow \ altrimenti \end{cases}$$
 
 Come facciamo se ci presenta una funzione così all'esame? Piangiamo?
 
 NO, semplicemente come abbiamo visto con i due capitoli in precedenza possiamo vedere se la funzione che abbiamo qui, la possiamo calcolare oppure no.
+
+**Prima bisogna assumerla come calcolabile**, la funzione verrà calcolata dal seguente algoritmo, risolviamo la funzione che abbiamo sopra per un ipotetico input, vedendo se cade in entrambi i casi, cioè se va a dare come output 1 oppure diverge in caso contrario.
+
+Se entrambi i casi vengono soddisfatti allora possiamo dire che la funzione è calcolabile, caso contrario, cioè non si viene ad eseguire uno dei due casi **allora non è calcolabile**.
 
 Useremmo il [[#4.5.1 Algorithm notation|linguaggio]] che abbiamo definito prima, mischiandolo con la tesi di Church-Turing.
 ```java
@@ -672,12 +696,110 @@ Allora partiamo con il dire che se non avete letto la parte della enumerazione, 
 
 `2`Partiamo dalla seconda riga di "codice" dicendo che prende in input `x` che sarebbe il dominio della funzione $f:\mathbb N\to\mathbb N$, qui non ci piove.
 
-`3`Terza riga, cosa succede qui, **al compito dobbiamo scrivere proprio com'è nell'esempio**, significa che il valore preso in input della riga precedente, come penso dovremmo sapere, essendo un numero naturale si può associare ad una macchina di Turing $M_{x}$, la riga dice semplicemente che il valore $x$ viene "decodificato", **cioè va a trovare tramite i calcoli che abbiamo visto nella godelizzazione, [[#4.3 Numbering the Turing's Machines with Gödel method.|enumerazione MdT]] la macchina di Turing** $M_{x}$
+`3`Terza riga, cosa succede qui, **al compito dobbiamo scrivere proprio com'è nell'esempio**, significa che il valore preso in input della riga precedente, come penso dovremmo sapere, essendo un numero naturale si può associare ad una macchina di Turing $M_{x}$, la riga dice semplicemente che il valore $x$ viene "decodificato", **cioè va a trovare tramite i calcoli che abbiamo visto nella godelizzazione, [[#4.3 Numbering the Turing's Machines with Gödel method.|enumerazione MdT]] la macchina di Turing** $M_{x}$, svolgendo la biiezione tra numero naturale e MdT. ^6752db
+
+> [!warning] **N.B**
+> Nella riga `3` la decodifica **non diverge mai**, perché il calcolo verrà fatto sempre e convergerà sempre per ogni $x$ che avremmo in input.
 
 `4` Quarto comando easy-peasy, solamente prende la macchina che abbiamo tradotto come numero $M_{x}$, e va a calcolare il valore di $x$.
+(Cioè prendere l'input $x$ e metterla sul nastro, simbolo per simbolo, far partire la testina sul primo carattere della stringa), in questa parte la macchina può divergere $\downarrow$ o convergere **cioè potrebbe non arrivare ad eseguire il passo successivo**
 
 In conclusione diremmo che la funzione è calcolabile perché va a soddisfare i due casi che abbiamo definito, cioè che da come output 1 se la macchina riesce a calcolare il valore di $x$, il caso contrario si verifica quando il valore di $x$ non riesce a trovare la macchina $M_{x}$, in questo modo diverge $\uparrow$, cioè il secondo caso.
 
+> [!example] **Esempio del libro 4.14**
+> Prendiamo una funzione che va da $\mathbb N$ in $\mathbb N$, che chiameremmo $g$, cioè $g:\mathbb N\to\mathbb N$, e svolgiamo le sue possibilità.
+> $$g(x)=\begin{cases}1\space \space se \ sull'espansione \ decimale \ di \ \pi \ esiste \ almeno \ x \ 5 \ consecutivi\ \space \ \\ \\ 0\ altrimenti \end{cases}$$
+> 
+
+La funzione prende in input un valore naturale cioè sarebbe $x\in \mathbb N$, e dovresti trovare nell'espansione del $\pi$ (cioè i valori che sono dopo la virgola mobile) che si trovi $x$ volte il valore $5$.
+
+> [!info] **Spiegazione esempio**
+> Ad esempio prendiamo come valore in Input $x=3$, cioè $g(3)$, allora dobbiamo vedere se si ripete all'interno dell'espansione $3$ volte il valore $5$ e se la troviamo allora andremmo a dare come output $1$ altrimenti $0$.
+
+Questa funzione è calcolabile, perché si presentano due casi, cioè o esiste un limite superiore fissato,   $\exists k\in \mathbb N$ che tutte le stringhe di 5 consecutive hanno lunghezza $\le k$, che delimita la lunghezza delle stringhe dei $5$ $x$ consecutivi.
+
+Il secondo caso è che non esiste $k\in\mathbb N$ che comporterebbe a stringhe di x $5$ consecutivi a non limitarne la sua lunghezza che sicuramente durante l'espansione troverò una stringa più lunga di $x$ .
+
+```js
+begin
+	input(x);
+	if(x ≤ k) then
+		output(1);
+	else
+		output(0);
+end
+```
+questo algoritmo nel caso esistesse $k$.
+
+Nel caso invece il valore $k\not\exists$ allora la funzione è constantemente 1 $g(x)=1$, l'algoritmo che la calcola sarebbe semplicemente.
+```js
+begin
+	input(x);
+	output(1);
+end
+```
+## 4.7 Universal Turing Machine
+Per come sappiamo fino ad ora le macchine di Turing vanno a calcolare solamente una funzione che viene data/decisa da noi , che abbiamo chiamato come $funzione \ di \ transizione$ che si rappresenta come ricordiamo dal simbolo greco delta $\delta$.
+
+Esiste però un modo per far si che la macchina di Turing possa calcolare non solo quella funzione, ma dati due input, cioè coppie di naturali $\mathbb N \times \mathbb N$, questi potranno essere utilizzati per ogni funzione di transizione che definiremmo.
+
+Magia nera, NO, si chiama macchina di Turing universale, rappresentata con il simbolo $\mathcal U$ , sarebbe una funzione che prende come coppia due numeri naturali $x,y\in \mathbb N$ e ridà come risultato la funzione calcolata dalla  Macchina di Turing x-esima che avrà come input $y$.
+
+In formalismi matematici diremmo che la coppia la definiremmo all'inizio come $(\mathit M_{x}, y)$, dove però sappiamo come abbiamo visto prima, vi aiuto io è [[#^6752db|qui]] e anche sulle [[#^d0a6c0|enumerazioni delle macchine]], sapremmo che possiamo sostituire la $\mathit M_{x}$ con la $x$ cioè che siccome, il numero $x$ verrà decodificato in una macchina di Turing x-esima, allora scriveremmo $(x,y)$ e la $y$ sarebbe l'input che daremmo alla x-esima $\mathit M_{x}$ che andremmo a decodificare.
+
+Tutto sto bordello per dire che l'output della macchina di Turing Universale $\mathcal U$, ci ridà la funzione che andrà a calcolare.
+
+>[!quote] **Macchina di Turing Universale**
+>Si dice che una macchina di Turing ($MdT$) sia universale $\mathcal U$ se calcola la funzione $g:\mathbb N^{2} \to \mathbb N$, definita ponendo per ogni $x,y\in\mathbb N$.
+>$$g(x,y) = \varphi_{x}(y)$$
+>è calcolabile dal nostro amico Turing.
+
+Questo per dire anche che esiste questa è una macchina che simula i calcoli di tutte le macchine di Turing possibili.
+
+In pseu-codifica possiamo scrivere in questo modo.
+```js
+begin
+	input(y);
+	input(x);
+	decodifo x per ottenere la x-esima macchima di Turing Mx;
+	esegui Mx sull'input (y);
+end
+```
+To be completed with more example....
+
+## 4.8 Halting Problem
+In questa parte del programma andremmo ad illustrare un importantissima funzione che non è calcolabile dalla macchina di Turing, cioè che se ammettiamo la tesi di [[#4.5 Church-Turing Thesis|Church-Turing]], non troveremmo nessun algoritmo che la risolve.
+
+Alla base del problema diciamo che $\not\exists$MdT che viene a decidere la funzione $k$, per dimostrare una **non esistenza** (rappresentato con questo simbolo $\not\exists$), si usa l'**assurdo** (perché il $\not\exists=\forall$).
+
+Di cosa si tratta questo problema?
+>[!question] **Problema**
+>Il problema dell'arresto consiste nel dire se dato un determinato input $y\in \mathbb N$ la macchina x-esima $\mathit M_{x}\downarrow y$ (cioè converge sull'input) oppure caso contrario diverge $\mathit M_{x}\uparrow y$.
+
+Scomponiamo questo problema, dicendo che, quello sopra citato è come dire che noi dobbiamo [[#^21c197|decidere]] l'insieme $K'$, cioè:
+$$K'=\{ (x,y)\in\mathbb N^{2} \ |\  M_{x}\downarrow y \}$$
+
+Che come abbiamo visto dire che un insieme è decidile significherebbe calcolare la sua [[#^273abf|funzione caratteristica]], cioè in questo caso avremmo il nostro insieme che sarebbe $K'$ e avremmo come risposte "SI" con l'uno e "NO" con lo zero.
+$$\chi_{K'}=h'(x,y)=\begin{cases} 
+ 1\space \space se \space \varphi_{x}(y)\downarrow\\ \space \ \\  0\space \space se  \ \varphi_{x}(y)\uparrow
+\end{cases}$$
+Se $h'$ e calcolabile allora esiste una data una funzione dai naturali ai naturali $h:\mathbb N \to \mathbb N$, che è mostrata in questo modo:
+$$h(x)=\begin{cases}1\space \space se \  \varphi_{x}(x)\downarrow\space \ \\ \\ 0\ se \ \varphi_{x}(x)\uparrow \end{cases}$$
+Questa **funzione non è calcolabile**, non esiste alcun algoritmo in grado di decidere che preso in input qualsiasi algoritmo, questo riesca a decidere se si fermerà o no, insegnandoci che il **loop non è decidibile**.
+
+> [!info] **Dimostrazione**
+> Assumiamo per assurdo, che $h$ sia calcolabile, allora $\exists$MdT che la calcola.
+> 
+> Consideriamo la funzione:
+> $$k(x)=\begin{cases}\uparrow\space \space se \  h(x)=1\space (cioè \ \space se \  \varphi_{x}(x)\downarrow) \ \\ \\ 0\ se \ h(x)=0 \ (cioè \ \space se \  \varphi_{x}(x)\uparrow)\end{cases}$$
+> 
+> Cioè che se $h(x)$ converge allora lo facciamo divergere il $k$, caso in cui $h(x)$ diverge allora facciamo $k$ lo facciamo convergere, rendendo così non solo $h$ calcolabile, ma anche la funzione $k$.
+> 
+> Ma se $k$ è calcolabile allora da come sappiamo che $\exists$MdT che definiremmo come $M_{j}$ con $j\in \mathbb N$ vuol dire che la macchina calcolerà la funzione $k$ che ridarrà la funzione $\varphi_{j}$.
+> 
+![[absurd-thesisi.png]]
+
+---
 # Reference
 
 [^1]: **palindromo**: viene definito palindromo quelle parole, numeri o sequence di lettere che possono essere lette da entrambi i versi, sia da sinistra a destra, che da destra fino a sinistra ad esempio: 3663, radar, 12321, ecc..
@@ -685,3 +807,4 @@ In conclusione diremmo che la funzione è calcolabile perché va a soddisfare i 
 [^2]: Direi personalmente che sarebbe un sotto-insieme delle possibili quintuple, questa è una mia supposizione, da prendere come vera o falsa sta a voi. 
 
 [^3]: **congettura**: supposizione di un idea, basata su apparenze probabili, in parole povere si può tradurre in "ipotesi". 
+- [ ] 
