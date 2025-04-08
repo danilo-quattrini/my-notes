@@ -33,6 +33,10 @@ I'm struggling to remember all the name in english of all the characters but now
 | ]          | Close Square Bracket |
 | ,          | Comma                |
 | &          | Ampersand or And     |
+| -          | hypen                |
+
+^860ddc
+
 ## Computer science definitions
 --- 
 - **Parsing**: transform and interpretate information thought different programming language or format.

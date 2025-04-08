@@ -2,5 +2,7 @@
   "cssTheme": "",
   "baseFontSize": 18,
   "baseFontSizeAction": false,
-  "enabledCssSnippets": []
+  "enabledCssSnippets": [
+    "style"
+  ]
 }
