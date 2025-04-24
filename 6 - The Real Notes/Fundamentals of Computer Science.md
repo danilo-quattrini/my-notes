@@ -1,6 +1,6 @@
 ---
 share_link: https://share.note.sx/kpt7zdpy#SFVgtoBmnCXdpbKyaR8bKF6HApBqtzbx8i2+TwLIjJQ
-share_updated: 2025-04-04T14:58:25+02:00
+share_updated: 2025-04-24T11:01:56+02:00
 ---
 2025-03-04 16:26
 
@@ -52,9 +52,11 @@ Per rappresentare la *stringa vuota* si usa il lambda $\lambda$.
 ---
 Per la nostra stringa possiamo rappresentare ora il concetto di *lunghezza*, che viene espressa dalla funzione $l(\alpha)$ dove $\alpha$ viene a indicare la stringa che utilizziamo.
 
-> [!important] **Esempio**
+> [!important] **Lunghezza di una stringa**
 > Prendiamo come esempio questa stringa:
 > $$\alpha=adfal$$ la lunghezza di $\alpha$ sarà il numero dei simboli che contiene la stringa, quindi: $$l(\alpha) = 5$$
+
+^becc02
 
 Come possiamo pensare giustamente anche la nostra lamba avrà una lunghezza che sarà 0, dato che è una stringa vuota, non possiede nessun simbolo.
 $$l(\lambda )=0$$
@@ -171,7 +173,7 @@ Partiamo dall'esistenza di questo insieme che chiameremmo $S$, dove troveremmo u
 
 Semplicemente in questo capitolo vedremmo che ci saranno problemi che non sono algoritcamente risolvibili, qualsiasi sia il nostro insieme $S$ di partenza, cioè che non ci saranno sempre soluzioni per la sua risoluzioni.
 
-Facciamo esempi di due algormi che sono differenti, ma che calcolano la stessa funzione
+Facciamo esempi di due algoritmi che sono differenti, ma che calcolano la stessa funzione
 ```js
 begin
 	input(x);
@@ -327,10 +329,11 @@ Ora andremmo a dimostrare che esiste un sottoinsieme che non è presente nell'in
 |  3  |             1              |                  0                  |
 |  4  |             0              |                  1                  |
 | ... |            ...             |                 ...                 |
-Come vediamo la sequenza che abbiamo creato tramite il complemento della diagonale esiste all'interno della tabella $D=01001$ ed è un sottoinsieme di $\mathbb N$, ma non è presente in nessuna riga della tabella (intesa come sottoinsieme) cioè non uò essere associata a nessun numero naturale $i$.
+Come vediamo la sequenza che abbiamo creato tramite il complemento della diagonale esiste all'interno della tabella $D=01001$ ed è un sottoinsieme di $\mathbb N$, ma non è presente in nessuna riga della tabella (intesa come sottoinsieme) cioè non può essere associata a nessun numero naturale $i$.
 
 Leggere per più dettaglio del concetto della non cardinalità dei numeri naturali, pag 25-26
 
+Spiegazione della tecnica al capitolo [[#5.3.2 Diagonalisation technique|5.3.2.]]
 # 4.0 Turing Machine
 ---
 Ora vediamo come è la struttura di una macchina di Turing in forma illustrativa.
@@ -471,6 +474,8 @@ Allora abbiamo la nostra macchina $M$, che conterrà lo stesso alfabeto del ling
 >- la macchina $M\downarrow w$ se quest'ultima appartiene al linguaggio $L$, cioè $w\in L$.
 >- caso contrario la macchina $M\uparrow w$ se non appartiene al linguaggio $L$, cioè $w\not\in L$.
 
+^991019
+
 Nell ultimo caso che abbiamo visto, quando la macchina di Turing $M\downarrow w$ converge sulla stringa e il linguaggio $L$ si compone delle parole che vengono accettate, allora diremmo che il linguaggio $L$ viene $riconsciuto$ dalla macchina $M$
 
 Diamo ora nel dettaglio le definizioni che abbiamo citato precedentemente.
@@ -516,22 +521,6 @@ Supponiamo di impostare un [[#^f2e44b|ordinamento lessicografico]], quindi ad es
 
 ![[other-enumeration-with-string.png]]
 
-# ?.? Dove tail (Coda di Colomba)
-La coda di colomba viene spiegata in questo capitolo, ma in seguito vedremmo dove sarà applicato più nel dettaglio, sappiamo che esiste una funzione che chiameremmo $r:\mathbb N^{2}\to\mathbb N$, cioè prende una coppia di naturali e ci ritorna un singolo numero.
-$$r(x,y)=z$$
-Prenderemmo in input due valori naturali che abbiamo scritto come $x\in \mathbb N$ e $y\in \mathbb N$, è ci ridà come output un numero naturale $z$, questa la useremmo molto poco, però sono importanti quando faremmo gli algoritmi, la funzione $\pi:\mathbb N \to \mathbb N$ pi-greco che ci decodifica la $z$ e ci trova le due variabili $x$ e $z$.
-
-$$
-\pi_{1}(z) = x
-\qquad \pi_{2}(z)=y
-$$
-
-La funzione $r$ che abbiamo prima mostrato, si può rappresentare tramite una matrice.
-![[Pasted image 20250407222138.png]]
-Come vedete rappresenta una coda di colomba (la parte rossa dell'immagine), quindi sotto rappresentato c'è la funzione $r$ e la sua associazione alla matrice sopra vista.
-
-![[dove-tail.png]]
-Quindi avremmo che $r(0,0)=0$, $r(1,0)=1$ e così via come segue l'ordine sopra.
 ### 4.3.1 Decode Turing Machines
 Allora definiamo una macchina di Turing $M$ e un alfabeto $A$ fissato che appartiene a tale macchina, poi l'insieme degli stati della macchina $Q$, e la sua funzione di transizione $\delta$.
 
@@ -783,7 +772,7 @@ Che come abbiamo visto dire che un insieme è decidile significherebbe calcolare
 $$\chi_{K'}=h'(x,y)=\begin{cases} 
  1\space \space se \space \varphi_{x}(y)\downarrow\\ \space \ \\  0\space \space se  \ \varphi_{x}(y)\uparrow
 \end{cases}$$
-Se $h'$ e calcolabile allora esiste una data una funzione dai naturali ai naturali $h:\mathbb N \to \mathbb N$, che è mostrata in questo modo:
+Se $h'$ e calcolabile allora esiste una data una funzione dai naturali ai naturali $h:\mathbb N \to \{ 0,1 \}$, che è mostrata in questo modo:
 $$h(x)=\begin{cases}1\space \space se \  \varphi_{x}(x)\downarrow\space \ \\ \\ 0\ se \ \varphi_{x}(x)\uparrow \end{cases}$$
 Questa **funzione non è calcolabile**, non esiste alcun algoritmo in grado di decidere che preso in input qualsiasi algoritmo, questo riesca a decidere se si fermerà o no, insegnandoci che il **loop non è decidibile**.
 
@@ -798,13 +787,447 @@ Questa **funzione non è calcolabile**, non esiste alcun algoritmo in grado di d
 > Ma se $k$ è calcolabile allora da come sappiamo che $\exists$MdT che definiremmo come $M_{j}$ con $j\in \mathbb N$ vuol dire che la macchina calcolerà la funzione $k$ che ridarrà la funzione $\varphi_{j}$.
 > 
 ![[absurd-thesisi.png]]
+La tecnica utilizzata è quella della **diagonalizazzione**
+
+L'algoritmo che utilizzeremmo per verificare che  $h$ sia calcolabile lo definiamo come:
+```js
+begin
+	input(x);
+	if h(x) = 0 then output(0);
+	else if h(x) = 1 then while True do skip;
+end
+```
+Essendo in conclusione una contraddizione, non si riuscirà mai a capire se dato un determinato algoritmo con il suo input, possiamo sapere già dall'inizio se andrà in loop o no, l'unico modo per vedere se si ferma o no, bisogna vedere i suoi output.
+
+>[!example] **Esempio**
+>Questo esempio possiamo trovarlo a pagina 60 del libro, ci da una funzione $f:\mathbb N^{3} \to \{ 0,1 \}$, dobbiamo dire se è calcolabile o no.
+>$$f(x,y,z)=\begin{cases}1\qquad se \  M_{x}\ sull'input\ y \ converge \ in \ z \ passi \space \ \\ \\ 0 \qquad  altrimenti \end{cases}$$
+>
+>Questa funzione è calcolabile, perché il numero di passi è finito ed è deciso dalla $z$, quindi possiamo vedere tramite la $z$ se si ferma prima o precisamente alla $z$ allora diamo $1$ come output, se lo sorpassa la $z$ allora diamo come output lo $0$.
+```js
+begin
+	input(x);
+	input(y);
+	input(z);
+	c := 0
+	decodifico x per ottenere l'x-esima MdT;
+	if c != z then
+		begin
+			calcolo Mx sull'input y;
+			incremeto c;
+		end
+	else
+		output(1)
+	if c > z then output(0)
+end
+```
+
+In questo caso a differenza di prima abbiamo dei limiti imposti dai passi, cioè $z$, cosa che prima non potevamo sapere con un input generico che in questo caso era solo una $y$.
+# 5.0 Calculable of sets
+Dobbiamo riprendere i concetti di [[#^21c197|decidibilià]]  e [[#^991019|semi-decidibiltà]] che abbiamo precedentemente visto, per poter capir meglio questo capitolo, prima fa una spiegazione precedente delle macchine di Turing e delle sue funzioni.
+
+Andremmo a dire che una funzione è strettamente collegata al concetto di insieme e che sono collegate tra loro, spendo anche che tra macchine di Macchine di Turin $n-esime$ c'è una relazione **biettiva**, cioè che ad ogni macchina $M_{n}$ si viene ad associare 1 o più funzioni calcolabili $\varphi_{n}$.
+## 5.1 Sets and Functions
+Detto ciò allora possiamo illustrare il teorema qui sotto.
+>[!quote] **Teorema**
+>Prendiamo l'insieme $L \subseteq \mathbb N$ cioè sottoinsieme dei numeri naturali $\mathbb N$ sono equivalenti queste seguenti preposizioni (da sapere a memoria):
+>- (a) $L$ è  [[#^991019|semi-decidibile]] 
+>- (b) $L$ è il dominio di una funzione calcolabile (cioè converge su tutti e solo gli elementi del dominio $L$)
+>- (c) $L$ o è vuoto oppure è l'[[Functions#^037966|immagine]] di una [[Functions#^db29ec|funzione totale]] e calcolabile $f:\mathbb N \to \mathbb N$ 
+
+^ab4bc3
+
+Noi vogliamo testare tutti gl'input della MdT in qualsiasi caso, sia quando diverge che non, avendo in questo caso una terna di naturali $\mathbb N^{3}$ cioè detto anche come: 
+$$\mathbb N^{3}=\mathbb  N \times \mathbb N \times\mathbb N$$
+dove il primo $\mathbb N$ equivale alla macchina di Turing , la seconda $\mathbb N$ sarebbe l'input che diamo alla macchina l'ultimo $\mathbb N$ sarebbero il numero dei passi.
+(l'$x$-esima macchina di Turing, prende come input $y$ e converge o no in $z$ passi).
+![[other-image.png]]
+
+Il primo e il secondo concetto sono collegati tra loro, cioè se l'insieme è semi-decidibile, allora quest'ultimo sarà il dominio di una funzione calcolabile e totale, che abbiamo visto essere $\chi_{L}'$ cioè la [[Fundamentals of Computer Science#^7d770f|funzione semi-caratteristica]].
+
+**(a) $\implies$ (b)**: $L$ è semi-decidibile se e soltanto se la [[#^7d770f|funzione semi-caratteristica]] è calcolabile.
+$$f_{L}(x)=\begin{cases} 
+ 1\space \space se \space x\in L\\ \uparrow\space \space se \space x\not\in L
+\end{cases}$$
+
+^3fa921
+
+Cioè in questo caso avremmo che il $Dom(f_{L})=L$.
+
+**(b) $\implies$ (a)**: Cioè vuol dire che esiste una funzione $g:\mathbb N \to \mathbb N$, dove il dominio della funzione sarebbe così $Dom(g)=L$ e $g$ è calcolabile allora sarebbe.
+$$g(x)=\begin{cases} 
+ y\space \space se \space x\in L\\ \uparrow\space \space se \space x\not\in L
+\end{cases}$$
+
+
+**(a) $\implies$ (c)**: se $L$ è semi-decidibile allora significa che $L=\emptyset   \ \lor \ L=\mathrm{Im}(f)$, cioè che è o vuoto oppure l'[[Functions#^037966|immagine di una funzione]], per dimostrare l'implicazione, dobbiamo definire una funzione $f:\mathbb N \to \mathbb N$ tale che $Dom(f) = L$, in parole povere.
+$$\forall x \in \mathbb N \qquad f(x) = 1 \iff x \in L$$
+```js
+begin
+	n := 0;
+	while n > 0 do
+		begin
+			scomponi n nella coppia (n1,n2);
+			esegui ML con input n1 con n2 passi;
+			if ML n1 ⬇︎ in n2 passi
+				then output(n1);
+			n := n + 1;
+		end
+end
+```
+Con $M_{L}$ che sarebbe la macchina di Turing che calcola la funzione semi-caratteristica, così facendo abbiamo detto che l'immagine della funzione $\mathrm{Im}(f) = L$ ed è una [[Functions#^db29ec|funzione totale]].
+
+Il concetto che il libro vuole spiegare è che **(a)** $\implies$ **(c)** in due casi, il primo è che dato il nostro insieme $L$, possiamo vedere i casi in cui la macchina di Turing si ferma  oppure no, sfortunatamente non riusciamo a controllare tutti i casi possibili se non applichiamo la regola della [[#?.? Dove tail (Coda di Colomba)|coda di colomba]], perché questo, dato l'insieme dei natura $\mathbb N={\{  0,1,2,3,4,\dots\}}$, se diverge al secondo valore $f(1)\downarrow$, non possiamo controllare i numeri successivi, se questi appartengono oppure no al nostro linguaggio $L$.
+
+**(c) $\implies$ (a)**: cioè in questo caso abbiamo $L=\emptyset   \ \lor \ L=\mathrm{Im}(f)$, cioè ci sarà una funzione calcola<bile che se il primo caso è vero allora è già semi-decidibile, assumiamo il caso $L\not=\emptyset$, dobbiamo dimostrare che $L$ è semidecidibile, cioè che vale la seguente affermazione, cioè $\exists$Mdt che notiamo con la convenzione $M_{L}$ che accetta $L$.
+```js
+begin
+	input(x);
+	flag := true;
+	count := 0;
+	while flag do
+		begin
+			if f(count) = x //(se la funzione calcolata dalla macchina di turing mi da l'x che sto cercando)
+			then 
+				begin
+					output(1);
+					flag := false;
+				end
+			else 
+				count = count + 1;
+		end
+end
+```
+
+Nella riga 7 possiamo inserire qualsiasi funzione che vogliamo, in questo caso cerchiamo il valore che ritornerà la funzione $f(count)$ se è uguale al valore di input $x$.
+
+>[!example] **Esempio**
+>Semplificandolo di moltissimo, facciamo conto che il linguaggio sia una regola che imponiamo, cioè in modo verbale diremmo *il nostro linguaggio* $L$ *deve contenere solo numeri pari*, siccome $L$ è un insieme, nel linguaggio insiemistico diremmo così la regola:$$L=\{ x\in \mathbb N \ | \  x \bmod 2 = 0 \}$$
+>Se non lo sapete studiatevi gli insiemi, più di così non so come dirlo, però è semplice, noi adesso dobbiamo mettere a priori che questo insieme è semi-decibile, questo perché, la MdT si ferma su "SI" cioè converge se $x$ è pari (viene accettato), se invece è "NO", cioè diverge è va in loop infinito.
+>
+>La funzione semi-caratteristica sarebbe questa:
+>$$\chi_{L}(x)'=\begin{cases}1\qquad se \ \varphi_{x}(x) = 0 \space \ \\ \\ \uparrow \qquad  altrimenti \end{cases}$$
+>
+>Ok speriamo fin qui, ci siamo, essendo che non possiamo valutare tutti i casi in cui andremmo a divergere oppure no solamente, mettendo un valore in input $x$, questo perché se mettessimo $3$ che è dispari, allora diverge $\uparrow$, quindi non sapremmo mai se $4,5,6,\dots$ sono pari o dispari, quindi entra in gioco la coda di colomba, che ci fa vedere tutti i casi possibili.
+>
+>``` js
+>begin
+>	input(x);
+>	decodifico x per ottenere l'x-esima macchina di Turing Mx;
+>	flag := True;
+>	c := 0;
+>	while flag do
+>		begin
+>			y := 𝜋1(c); z := 𝜋2(c);
+>			eseguo Mx su input y per z passi;
+>			if Mx è in configurazione finale con OUTPUT(0) then
+>				OUTPUT(1);
+>				flag := false;
+>			else
+>				c := c + 1;
+>		end
+>end
+>
+
+Per rappresentare la semi-decidibilità di un insieme oltre ad utilizzare il
+metodo della [[#?.? Dove tail (Coda di Colomba)|coda di colomba]] si può semplicemente scrivere un algoritmo di questo tipo.
+
+Prendiamo l'insieme $K,$ che definiamo in questo modo:
+$$K=\{ x\in\mathbb N\ | \ M_{x} \downarrow x \}$$
+definiamo prima di tutto il l'insieme semi-decidibile, poi facciamo l'algoritmo per dimostrare che sia semi-decidibile:
+```js
+begin
+	input(x);
+	ottieni Mx tramite x
+	esegui Mx sull'input x
+	if Mx converge su x then
+		OUTPUT("SI");
+end
+```
+Si avverano tutti e due i casi della [[#^7d770f|funzione semi-caratteristica]], nella riga `4`  possiamo vedere se la macchina divergerà $\downarrow$ oppure se convergerà passa all'if della riga 5.
+
+## 5.2 Post Theorem 
+
+Cominciamo dicendo che prendiamo l'insieme $L\subset \mathbb N$ che conterrà i elementi/valori $x\in \mathbb N$ , possiamo anche dire che il suo [[Basics of Math#1.2 Complement of a Set|complemento]] $\overline L$ , saranno gli elementi che non appartengono ad $L$ , cioè $x\not\in L$, possiamo dire che se $L$ è decidibile **se e soltanto se** se stesso anche il suo complemento sono **semi-decidibili**, stessa regola vale a vice versa (il suo complemento $\overline L$ è decidibile se e solo se lo è il suo **non complemento** $L$ e se stesso lo sono), rappresentato in forma di equivalenza.
+$$L \ è \ decidibile \iff L ,\overline L \ semi-decidibile $$
+Proviamo a dimostrare questa doppia implicazione:
+
+$L \Rightarrow L ,\overline L \ semi-decidibile$ :
+
+allora vuol dire che calcola la funzione caratteristica di $L$ è:
+$$f_{L}(n)=\begin{cases} 
+ 1\space \space se \space n\in L\\ 0\space \space se \space n\not\in L \ cioè \ (n \in \overline L)
+\end{cases}$$
+
+^f0a6c7
+
+Quindi $L$ e $\overline L$ sono semi-decidibili con la funzione semi-caratteristica qui di seguito:
+$$g_{L}(n)=\begin{cases} 
+ 1\space \space se \space n\in L\\ \uparrow\space \space altrimenti
+\end{cases}$$
+dobbiamo dire che la funzione $g_{L}(n)$ è **calcolabile** con il suo algoritmo:
+```js
+begin
+	input(n);
+	if fL(n) = 1 then 
+		OUTPUT(1);
+	else
+		while true do skip
+end
+```
+Lo si può fare anche con il suo complemento $\overline L$ che è semi-decidibile lo fare con la stessa funzione sopra mostrato:
+$$g_{\overline L}(n)=\begin{cases} 
+ 1\space \space se \space n\in L\\ \uparrow\space \space altrimenti
+\end{cases}$$
+Con il suo algoritmo:
+```js
+begin
+	input(n);
+	if fL(n) = 0 then 
+		OUTPUT(1);
+	else
+		while true do skip
+end
+```
+
+$L ,\overline L \ semi-decidibile \Rightarrow L \ decidibile$:
+
+Per dimostrare che $L$ è decidibile, usiamo la stessa [[#^f0a6c7|funzione di prima]], però in questo caso l'algoritmo sarà diverso:
+``` js
+begin
+	input(n);
+	z := 1; (numero passi)
+	flag := true;
+	MdT che calcola la gL
+	MdT che calcola la gL complemento
+	while flag do
+		begin
+			if MdT nell'input n su gL converge
+			su z passi then
+				begin
+					OUTPUT(1);
+					flag := false;
+				end
+			else if MdT nell'input n su gL complemento converge
+			su z passi then
+				begin
+					OUTPUT(0);
+					flag := false;
+				end
+			else
+				z := z + 1;
+		end
+end
+```
+
+>[!warning] **N.B**
+>Bisogna sempre mettere in `begin` e l'`end` dentro all'`if` .... `then` se abbiamo più righe di operazioni, come nell'esempio sopra dalla riga `11` fino `14`.
+
+Sia l'insieme $K$:
+$$K=\{ n\in\mathbb N \ |\ \varphi_{n}(n)\downarrow \}$$
+Sappiamo che non è **decidibile** perché se lo fosse risolverebbe il [[#4.8 Halting Problem|problema dell'arresto]], cosa che non è possibile, cosa possiamo dire però, questo insieme è **semi-decidibile**?
+Cioè in questo caso il nostro complemento di $\overline K$ che sarebbe:
+$$\overline K = \{ n \in \mathbb N \ | \ \varphi_{n}(n)\uparrow\}$$
+sapendo che il $\overline K$ non riporta degl'indici della macchina di turing e non ci da dei risultati, in output, allora diremmo che $K$ è **semi-decidibile** e invece $\overline K$ non è **semi-decidible**, allora la sua funzione:
+$$f_{K}(x)=\begin{cases} 
+ 1\space \space se \space \varphi_{x}(x)\downarrow \\ \uparrow\space altrimenti
+\end{cases}$$
+Cioè non rispettando il [[#^24cca3|teorema di post]] cioè l'insieme $K$ ha il suo complemento $\overline K$ che non è decidibile allora diremmo per esclusione che sarà semi-decidibile.
+facciamone un algoritmo
+```js
+begin
+	input(x);
+	decodifico x nella MdT per ottenere Mx
+	esguo Mx sull'input x
+	if Mx↓x then 
+		OUTPUT(1);
+end
+```
+
+Possiamo mostrare la **semi-decidibilità** di $K$ come insieme vuoto $\emptyset$ oppure anche  che $K = \mathrm{Im}(g)$, con $g$ totale e calcolabile, (come abbiamo visto in [[#^ab4bc3|questa parte]] ) dobbiamo dimostrare che $K$ è l'immagine di una funzione totale e calcolabile $g$, però dobbiamo convincerci che $K$ non è $\emptyset$ .
+
+- $K \not= \emptyset$ se $\exists x\in  \mathbb N$ tale che $M_{x}(x)\downarrow$:
+Per mostrare che non è vuoto prendiamo la funzione $id(x) = x$ che è totale e calcolabile, $\forall x\in\mathbb N$, definiamo la funzione $g: \mathbb N \to \mathbb N$ dove avrà come $g(x) =$ x-esimo valore di output dell'algoritmo $A$
+```js
+A := begin
+	n := 0;
+	while n ≥ do
+		begin
+			scompongo n nella coppia (𝜋1(n),𝜋2(n))
+			decompongo 𝜋1(n) nella MdT M𝜋1(n) sull'input 𝜋1(n) nella MdT M.
+			eseguo M𝜋1(n) su input 𝜋1(n) per  𝜋2(n) passi
+			if M↓𝜋1(n) per 𝜋2(n) passi then
+				OUTPUT(1)
+			else
+				n := n + 1;
+		end
+end
+```
+
+>[!quote] **Teorema di Post**
+>Sia $L\subseteq\mathbb N$ possiamo dire che $L$ è decidibile se e soltanto se sia se stesso e il suo complemento $\overline L$ sono entrambi semi-decidibili.
+
+^24cca3
+
+Prendiamo come insieme $L$ se questo è decidibile sarà anche semi-decidibile da rivedere [[#^863ec9|qui]], come abbiamo detto prima se $L$ è decidibile lo sarà anche il suo complemento $\overline L$, che quest'ultimo essendo decidibile sarà anche semi-decidibile
+
+## 5.3 Tips and Trick to use when we study sets
+Andremmo a vedere delle tecniche che verranno utilizzate sempre e quando dico sempre sarà sempre, durante il nostro studio di insiemi, queste categorie sono:
+1. Tecnica della [[#5.3.1 Dove tail (Coda di Colomba)|coda di colomba]], che ci serve in modo che possiamo eseguire diverse macchine di Turing su diversi input, in modo che possiamo verificare anche casi in cui se la macchina diverge su un input possiamo anche vedere se non divergono su gl'input successivi.
+2. Tecnica della [[#5.3.2 Diagonalisation technique|diagonalizzazione]], che possiamo generare una funzione non calcolabile da una lista(tabella) di funzioni che sono calcolabili.
+3. Tecnica della [[#5.3.3 Reduction|riduzione]], che ci permette di dire che un determinato insieme $I$ non è decidibile, dimostrando che
+
+### 5.3.1 Dove tail (Coda di Colomba)
+Sappiamo che esiste una funzione che chiameremmo $r:\mathbb N^{2}\to\mathbb N$, cioè prende una coppia di naturali e ci ritorna un singolo numero.
+$$r(x,y)=z$$
+Prenderemmo in input due valori naturali che abbiamo scritto come $x\in \mathbb N$ e $y\in \mathbb N$, è ci ridà come output un numero naturale $z$, questa la useremmo molto poco, però sono importanti quando faremmo gli algoritmi, la funzione $\pi:\mathbb N \to \mathbb N$ pi-greco che ci decodifica la $z$ e ci trova le due variabili $x$ e $z$.
+
+$$
+\pi_{1}(z) = x
+\qquad \pi_{2}(z)=y
+$$
+
+La funzione $r$ che abbiamo prima mostrato, si può rappresentare tramite una matrice.
+![[Pasted image 20250407222138.png]]
+Come vedete rappresenta una coda di colomba (la parte rossa dell'immagine), quindi sotto rappresentato c'è la funzione $r$ e la sua associazione alla matrice sopra vista.
+
+![[dove-tail.png]]
+Quindi avremmo che $r(0,0)=0$, $r(1,0)=1$ e così via come segue l'ordine sopra.
+### 5.3.2 Diagonalisation technique
+Questa tecnica fu introdotta per dimostrare che ci sono alcuni insiemi che non possono essere enumerati, questa tecnica la possiamo applicare anche con le nostre funzioni calcolabili, **creando un oggetto dello stesso tipo, ma diverso da tutti gli altri**, questa tecnica è stata già applicate in questa parte (da rivedere il capitolo [[#3.1 Algorithm that cannot solve all the functions|3.1]]), vediamo una rappresentazione generale.
+$$\begin{array}{c|cccccc}
+
+\alpha  \backslash \mathbb N & 0 & 1 & 2 &\dots \\
+
+\hline
+
+\alpha_{0} &   \mathbf{d_{00}} & d_{01} & d_{02} & \dots \quad \\
+
+\alpha_{1} & d_{10} & \mathbf{d_{11}} & d_{12} & \dots \quad \\
+
+\alpha_{2}& d_{20} & d_{21} & \mathbf{d_{22}} & \dots \quad \\
+
+\vdots & \vdots & \vdots & \vdots & \vdots 
+
+\end{array}$$
+Prendiamo questa tabella con le colonne che rappresentano un numero naturale, le righe invece sono l'oggetto che andremmo a enumerare (come potrebbe essere un insieme o una funzione), noi dalla tabella prendiamo solo in considerazione la diagonale (quelle in grassetto), cioè la coppia $(\alpha_{n},n)$,  La prova consiste nel costruire un oggetto diverso da ognuno dei valori sulla diagonale.
+
+Vedere esempio a pagina 70
+### 5.3.3 Reduction
+Utilizziamo questa tecnica quando vogliamo dimostrare l'**indecibilità** o la **non semi-decidibilità**, cioè allora possiamo dire che esiste questa definizione che possiamo applicare:
+> [!quote] **Definizione**
+> Prendiamo due insiemi $A,B\subset  \mathbb N$, possiamo dire che $A$ è $riducibile$ "$molti-uno$" a $B$, e si scrive $A≤_{m} B$, se esiste una funzione $f: \mathbb N \to \mathbb N$ che sarà totale e calcolabile se per ogni $x\in\mathbb N$ si ha che:
+> $$x\in A\iff f(x)\in B$$
+> Che si può anche scrivere come:
+> $$x\in A \iff f(x)\in B$$
+> $$x\not\in A \iff f(x)\not\in B$$
+> 
+> Caso avessimo una funzione $f$ che è [[Functions#1.2 Injective function|iniettiva]] allora diremmo che l'insieme $A$ è $riducibile$ "$uno-uno$" a  $B$ e scriveremmo $A≤_{1}B$
+
+Possiamo anche formalizzare questo concetto in questo modo, in modo che capiamo cosa intendiamo con quello scritto sopra:
+>[!info] **Teorema**
+>Dati due insiemi $A,B\subset \mathbb N$ tali che $A≤_{m}B$ attraverso una funzione totale e calcolabile $f$, allora:
+>1. Se l'insieme $A$ non è decidibile neppure $B$ lo è.
+>2. Se l'insieme $A$ non è semi-decidibile neppure $B$ lo è.
+
+Facciamo una dimostrazione a questo teorema che abbiamo appena citato.
+
+Prendiamo per assurdo in questo caso che il nostro insieme $B$ sia **decidibile**, allora vuol dire che esiste una funzione caratteristica $\chi_{B}$ che è calcolabile. Allora possiamo dire che è in grado di riconoscere , per ogni $y\in\mathbb N$ se questa $y\in B$ oppure no, il nostro algoritmo sarebbe:
+```js
+begin
+	input(x);
+	y = f(x)
+	output(X_B(y))
+end
+```
+
+Per la tesi di Church-Turing è in grado di decidere $A$, questo perché se la funzione $f(x)$ ci restituisse un valore che in questo caso sarebbe $y$, vale a dire che  $y\in B$ e analogamente anche $x \in A$, stessa cosa per il contrario se $y\not\in B$ allora vuol dire anche che $x\not\in A$, ma l'ipotesi di prima abbiamo detto che $A$ non è decidibile allora è un assurdo.
+
+Prendiamo il caso in cui abbiamo per ipotesi che l'insieme $B$ è semi-decibiile, allora esiste una funzione semi-caratteristica calcolata che chiameremmo $\chi_{B}'$ e converge solamente quando appartiene all'insieme cioè che $y\in\mathbb N$ ed appartiene a $B$.
+```js
+begin
+	input(x);
+	y = f(x)
+	output(X'_B(y))
+end
+```
+
+Secondo Church-Turing, sarebbe in grado anche di accettare l'insieme $A$, dove alla terza riga se la funzione $f(x)$ ridà come risultato $y$ che  questo valore converge sulla funzione semi-caratteristica $\chi_{B}'$, allora la $x\in A$ cioè quella che prende la funzione $f(x)$ converge correttamente , restituisce un valore. Cosa impossibile, perché $A$ abbiamo detto per ipotesi che è semi-decidibile.
+
+Per dimostrare tale teorema, abbiamo bisogno prima di tutto di trattarne un altro molto importante, cioè quello del parametro.
+
+Prendiamo una funzione con due parametri $x,y$ questi due parametri possono essere anche identificati come $m,n$ che hanno tutti e due come valore $1$ e fanno parte dei naturali, quindi $\forall x,y\in \mathbb N$  allora esisterà una funzione che prende due parametri $f:\mathbb N^{2}\to \mathbb N$ che sarà totale e calcolabile, esisterà un'altra funzione totale e calcolabile che chiameremmo $s:\mathbb N \to \mathbb N$, di questa forma:
+$$\varphi_{s(x)}(y)= f(x,y)$$
+Cioè che farebbe in questa parte? Lo spieghiamo in maniera molto semplice:
+>[!example] **Spiegazione del teorema del parametro**
+>Cominciamo con il dire che la funzione di destra è calcolata da una macchina di Turing che chiameremmo $M_{e}$ quindi la funzione diventerebbe $\varphi_{e}(x,y)$, descriviamo la computazione che farà questa funzione.
+>
+>Prenderà il valore di $y$ e lo inseriremmo nel nastro, ora siccome dovremmo pure inserire il valore di $x$ allora che facciamo, spostiamo la testina a sinistra del nastro  nella posizione della lunghezza del valore di $l(x)+1$ (la lunghezza di una stringa  se non ti ricordi sta a capitolo [[#^becc02|1.0 Lungezza di una stringa]]) e da quella posizione cominciamo a scrivere la $x$ verso destra, dove in questo caso la testina della macchina $M_{e}$ avrà la posizione sul primo simbolo della stringa $x$, questa operazione la descriviamo tramite la funzione $s(x)$, dove indica la posizione della testina alla lunghezza del parametro $x$ che prende in input $y$, cioè $\varphi_{s(x)}(y)$, permettendoci quindi di includere dei parametri fissi nella nostra funzione, come ad esempio:
+>$$f(x,y)=x•y$$
+>possiamo riscrivere la funzione fissando il parametro $x=5$ e la nuova funzione possiamo rinominarlo $g_x$, in questo modo:
+>$$g_{5}(y)=5•y$$
+>in questo caso la funzione $g_{x}(y)$ fa la stessa cosa della funzione che ha due parametri $f(x,y)$ solo che il valore di $x$ lo fissiamo ed è già noto.
+## 5.4 Equivalence of Turing Machines
+%%TODO: WRITE BEFORE THE THEOREM%%
+Questo che andremmo ad illustrare è un'altro problema che non è risolvibile algoritichamente, cioè non esiste una soluzione algoritmicamente 
+
+Prendiamo l'insieme delle macchine di Turing che calcolano le funzioni totali.
+$$T=\{ x\in \mathbb N \ | \ \varphi_{x} \ è \ totale \}$$
+Non è decidibile,  e nemmeno semi-decidibile, tenendoci i loop che sono presenti al suo interno, vediamo la dimostrazione per la decidibilità.
+Per dimostrarlo dobbiamo **supporre per assurdo** che allora il nostro $T$ sia decidibile, allora possiamo numerare le funzioni che vengono ad essere generate dalle macchine di tale insieme, potendo enumerare tutte le funzioni che sono totali e calcolabili nell'insieme dei numeri naturali. ($\varphi_{0},\varphi_{1},\varphi_{2},\dots$).
+
+Allora esiste una funzione $f$ tale che, per ogni $x\in \mathbb N$.
+
+$f(x)$ = indice della ($x+1$)-esima funzione totale nell'enumerazione della MdT.
+
+Così ogni funzione totale e calcolabile è della forma $\varphi_{f(x)}$ al variare del naturale $x$. Creiamo un'altra funzione che chiameremmo $g$, tale che per ogni $x\in \mathbb N$, questa prende la funzione di prima e gli diamo il suo successivo.
+$$g(x) = \varphi_{f(x)}(x) + 1$$
+Questa funzione prende per ogni $x$, la funzione $g$ va ad aggiungere $1$ all'output di $\varphi_{f(x)}$ calcola su $x$, che convergerà sicuramente perché $f$ per supposizione per assurdo, essendo totale, ridà gli indici i funzioni totali , quindi in corrispondenza sarà anche $g$ sarà calcolabile e totabile.
+%% TODO: COMPLETE THIS PART AT PAGE 74%%
+
+Problema dell'equivalenza, cioè non esistono due programmi (MdT) che ridaranno lo stesso risultato, non esiste alcun algoritmo che presi due programmi qualsiasi, se ridanno $1$ se calcolano la stessa funzione altrimenti $0$.
+$$I=\{ i\in \mathbb N \ |\ \varphi_{i} = id  \}$$
+
+Se fosse così calcolabile
+
+## 5.5 Kleene Theorem 
+
+Per ogni, qualsiasi funzione casuale calcolabile e totale $t: \mathbb N \to \mathbb N$, esiste un indice che chiameremmo $e\in \mathbb N$, tale che: 
+$$\varphi_{e} = \varphi_{t(e)}$$
+La funzione $t$ è totale e calcolabile 
+%%TODO: COMPLETE THIS PART TOO%%
+## 5.6 Rice Theorem
+Sia $F$ una famiglia di funzioni calcolabili (mettiamo le funzioni $\varphi_{x},\dots$), prendiamo anche un insieme $S \subset \mathbb N$ che è l'insieme degli indici di $F$ lo rappresentiamo come:
+$$S=\{ x\in \mathbb N \ | \ \varphi_{x} \in F \}$$
+%%TODO: COMPLETE WITH THE OTHER PART%%
+
+> [!quote] **Teorema di Rice**
+> Sia $F$ una famiglia di funzioni calcolabili come abbiamo detto prima. L'insieme dei suoi indici $S$ è decidibili se e solamente se $F=\emptyset$ oppure se $F$ coincide con l'intera classe delle funzioni calcolabili, cioè l'insieme dei suoi indici non è decidibile ($S = \emptyset$ oppure $S= \mathbb N$)
+
+Dimostriamo questo teorema che abbiamo detto, $S=\emptyset$ oppure $S=\mathbb N$ faremmo una **dimostrazione per assurdo**, dove abbiamo $S\not= \emptyset \ \cap S\not= \mathbb N$, allora prendiamo che $S$ è **decidibile** allora mostriamo qui sotto:
+- $i$ sia il primo indice per. cui $\varphi_{i}\in F$
+- $j$ sia il primo indice della funzione $\varphi_{j}\not\in F$
+Cioè possiamo vedere dall'insieme $S$ se i suoi indici stanno in $F$ oppure no cioè calcola la [[#^273abf|funzione caratteristica]], allora possiamo dire che esiste questa funzione $g: \mathbb N \to \mathbb N$, allora:
+$$g(x)=\begin{cases} 
+ i\space \space se \space x \not\in S \\ j \ se \space x \in S
+\end{cases}$$
+[[Functions#1.1 Partial and total function|funzione totale]] e calcolabile, allora abbiamo che $\forall x \in \mathbb N$ allora abbiamo che:
+$$g(x) \in S \iff x \not\in S$$
+cioè in questo caso avremmo che la sua funzione.
+$$\varphi_{g(x)}\in F \iff \varphi_{x} \not\in F$$
+Siccome $g$ è totale e calcolabile per il teorema di Kleene. $\exists$ un indice tale che: 
+$$\varphi_{e} = \varphi_{g(e)}$$
+cioè che la sua funzione con la sua trasformata siano identici, ma sopra abbiamo visto un'assurdo perché %% TODO: COMPLETE WITH THE REASON%%
+Prendiamo come esempio l'insieme $T$:
+$$T=\{x \in \mathbb N \ | \ \varphi_{x}=id \}$$
+Non è decidibile per il teorema di Rice:
+- $I \not= \emptyset$
+- $I\not= \mathbb N$
 
 ---
 # Reference
-
 [^1]: **palindromo**: viene definito palindromo quelle parole, numeri o sequence di lettere che possono essere lette da entrambi i versi, sia da sinistra a destra, che da destra fino a sinistra ad esempio: 3663, radar, 12321, ecc..
 
 [^2]: Direi personalmente che sarebbe un sotto-insieme delle possibili quintuple, questa è una mia supposizione, da prendere come vera o falsa sta a voi. 
 
 [^3]: **congettura**: supposizione di un idea, basata su apparenze probabili, in parole povere si può tradurre in "ipotesi". 
-- [ ] 

@@ -13,7 +13,9 @@ Tags: [[Programming]] [[Programming Knowledge]] [[Web Programming]]
 *Git* viene considerato come il più famoso [[Programming Knowledge#VCS (Version Control System)|VCS]] (Version Control System), utilizzato da tutti i programmatori, sia quando lavorano in team, sia quando devono svolgere dei lavori per conto loro.
 
 Lavorare con *Git* e il tuo codice si possono paragonare hai progressi di un videogame, semplicemente cominciamo con una versione di base, che in questo caso sarà l'inizio del gioco, fino a dover salvare ripetutamente gli stati/livelli del gioco in cui vogliamo che un determinato momento venga memorizzato. 
-
+# Working tree
+---
+After we did the `git init` to initialize the git [[Programming Knowledge#^21112b|repository]],  we have this hidden [[Programming Knowledge#^c955d3|directory]] added to our project, its name is `.git`, anything we add to our repository file, folder ecc.., that's outside the directory `.git` we are going to call **workin tree**, the folder `.git` is not part of the working tree but we have all the files, folders and changes have been track by the workin tree.  
 # Git main commands
 --- 
 Ogni comando che andremmo a vedere avrà bisogno prima di tutto di inserire il prefisso `git <comando della lista>` non va scritto da solo.
@@ -178,6 +180,181 @@ doc/*.txt
 # ignore all .txt files in the doc/ directory
 doc/**/*.txt
 ```
+
+# View your changes in git
+---
+We can use a more specific command to see the changes we made on our file, through `git status -s` we only see if we delete, modified or  create a new file, but with `git diff` we will see all the changes we didn't staged yet (means that we didn't execute the command `git add`), and how can we see the changes that we are going to commit.
+
+First of all we are going to edit the file `README` and staged it, even thought for the `CONTRIBUTING.md` will be edited, but not staged for now.
+
+For instance let's see what we have there with the command `git diff`:
+```console
+$ git diff
+
+diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md
+index 8ebb991..643e24f 100644
+--- a/CONTRIBUTING.md
++++ b/CONTRIBUTING.md
+@@ -65,7 +65,8 @@ branch directly, things can get messy.
+ Please include a nice description of your changes when you submit your PR;
+ if we have to read the whole diff to figure out why you're contributing
+ in the first place, you're less likely to get feedback and have your change
+-merged in.
++merged in. Also, split your changes into comprehensive chunks if your patch is
++longer than a dozen lines.
+
+ If you are starting to work on a particular area, feel free to submit a PR
+ that highlights your work in progress (and note in the PR title that it's
+```
+
+We should look after the @@, we can see all the changes we have made, but wait we have either the `README` file that we want to see its changes, how can we do that? 
+
+Besides the command `git diff`, we will add the flag `--staged` , to ask to git only the changes we made in the staged area.
+```console
+$ git diff --staged
+
+diff --git a/README b/README
+new file mode 100644
+index 0000000..03902a1
+--- /dev/null
++++ b/README
+@@ -0,0 +1 @@
++My Project
+```
+A synonymous of `--staged` we can even use the flag `--cached`
+
+# Commit
+--- 
+After you staged all the file that you want to be included in the next commit, we are ready to use the command `git commit`, like this without no flag we are going to open your editor (could be vim, visual studio code, ecc..), and you can write your message there:
+``` vim
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   README
+#	modified:   CONTRIBUTING.md
+#
+~
+~
+~
+".git/COMMIT_EDITMSG" 9L, 283C
+```
+This code upon is an example the editor vim all the line where we can find the  `#` hashtags symbol, they are just comments.  
+
+Nevertheless to say that there's a specific format we should follow or not to create a good commit message, so everyone in our team must be able to understand the changes you made (for more about it read [[#Rule to follow when we are create our commit]]).
+
+Alternatively you can write the message inline, you just need to add the flag `-m` after the `git commit` and then under the double quotation mark `"<write your message here>"`, consider the command illustrate below:
+```
+$ git commit -m "my first commit here"
+```
+
+Every time you create a commit is like create a snapshot of your code, file or anything you did up to now.
+
+>[!warning] **REMEMBER**
+>Every time you are commit if you have not added to the stage area the file/s, this file will not appear in your commit, regardless it will stay in your directory.
+
+Besides of the commit command and its flag `-m` we can either use the flag `-a`, when we want to **skip the staged area**, in this case we have several file that we delete/change or rename, we want to include all of them in the next commit, even though we have the `git add .` we can avoid to use it instead we are able to use this command below:
+```console
+$ git commit -a -m "message we want to write"
+```
+
+## Remove file inside the dir/staged area
+We can remove the file we add to the staging area and either that one we have in our working directory at the same time with the command `git rm <file_name>`, this way is better than remove the file before with `rm <file_name>`and after that we are going to add the changed we made with `git add`, that's is:
+
+```console
+$ git rm <file_name>
+```
+
+Now we are going to see an example form the first way i said to the second one (the easiest one):
+```console
+$ rm PROJECTS.md
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    PROJECTS.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+In the other hand we have the `git rm` that skip the command `git add`:
+```console
+$ git rm PROJECTS.md
+rm 'PROJECTS.md'
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+    deleted:    PROJECTS.md
+```
+
+Another useful trick we could use with the `git rm` command is that, we can remove the file we added to the staging area and save it in our [[#Working tree|working tree]], in other words we save the file in our hard drive but not in Git, ==in this case==: 
+```
+$ git rm --cached <file_name>
+```
+
+To ignore or remove several file with the same extension, we can use the command below:
+```
+$ git rm [directory_name]/\*.[extension_name]
+```
+We should use the backslash `\` to use the asterix `*`
+## How to unstaged file(s)
+To unstage, meas that we are undo the action of the `git add` command, means that if we add a file in the staged area that we didn't want it, for instance we add a in the staged area the `.gitingore` file that already exists and we don't want to include it in the next commit, so we are going to write:
+``` console
+$ git reset HEAD <file_name>
+```
+Furthermore if we want to unstaged all the file we added we can use the same command, but we don't specify the file_name:
+```
+$ git reset HEAD
+```
+With the new version of git we can even use the command below, without the HEAD reference:
+```console
+$ git restore <file_name>
+```
+## Rule to follow when we are create our commit
+
+First and foremost we must create **ATOMIC COMMIT**, that's means we are not going to include in our commit several changes, but every change should be reserved for its commit.
+
+``` console
+git commit -m "feat(api): added endpoint for order creation" 
+
+git commit -m "fix(ui): corrected footer layout"
+```
+
+After that we need to define the change we made, in this case we cannot only write "fix" or “fixed“, but we need a big explanation for that.
+
+💡 **Tip:** A brief description of the issue and solution saves time for you and your team.
+
+```console
+git commit -m "fix: resolve login freeze on weak connections"
+```
+
+Here in the image below we have the commit structure.
+![[commit-structure.png]]
+The **header** is composed by the following part:
+- The **tag** should be one the list here below or decided with the team we are work on it:
+	- **feat**:  we implement a new feature
+	- **update**: we change something that before wasn't there
+	- **fix**: we fix a problem or a bug (must to refer the commit we fix with its own hash).
+	- **refactor**: we restructuring the code.
+	- **test**: we test a change we made inside our code.
+	- **docs**: documentation update
+	- **style**: change in the code formatting
+	- **perf**: improve the performance of our code
+	- **config**: change the configuration file
+	- **security**: changes that improve the security of the codebase
+	- **revert**: undo or revert previous changes.
+- The **message** shouldn't surpass the limit of 50 words.
+
+The **body** should be descriptive and under the 72 characters, need to be clear and write with a proper grammar.
+
+The **Metadata** is useful when we are making changes inside the [[Programming Knowledge#^8837ca|codebase]], we can use the word **Fixes  and the commit's hash**, when we made a change on that specific commit 
 
 # Branching
 

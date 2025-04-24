@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9e6f529d424bcc17",
+        "id": "f8403807077bbb97",
         "type": "tabs",
         "children": [
           {
-            "id": "efa9f46bdc329874",
+            "id": "6ddb4cdf6a238c7b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "6 - The Real Notes/Fundamentals of Computer Science.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Fundamentals of Computer Science"
             }
           }
         ]
@@ -156,9 +160,189 @@
               "icon": "spreadsheet",
               "title": "Advanced Tables"
             }
+          },
+          {
+            "id": "247301e4fc7daf3b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "25bf9c6023a1a1d9",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "1290135f6eae5653",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "6f431c07f383da2d",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "af149fe718164e1a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "2e7251862db3e35b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "1b571b0362079bfc",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "a1c30534d82be9f8",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "bf2ba8f9f1faf2f4",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "749c0c60e6b3e146",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "fbff2ca895d00b1b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "af32a65826ee2151",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "15037d1fd330fb3c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "7a6bc5ebbca1a984",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "a6ed833de3a01caf",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "e6912d4112162340",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "a22ab098db4e3c16",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "44c4bfa8ef44638a",
+            "type": "leaf",
+            "state": {
+              "type": "Saved Queries View",
+              "state": {},
+              "icon": "feather-mouse-pointer",
+              "title": "Saved Queries"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 22
       }
     ],
     "direction": "horizontal",
@@ -176,9 +360,23 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "efa9f46bdc329874",
+  "active": "6ddb4cdf6a238c7b",
   "lastOpenFiles": [
     "6 - The Real Notes/Fundamentals of Computer Science.md",
+    "6 - The Real Notes/🇬🇧 CAE Preparation.md",
+    "6 - The Real Notes/Basics of Math.md",
+    "6 - The Real Notes/Git.md",
+    "7 - Images/commit-structure.png",
+    "2 - Material/Programming Knowledge.md",
+    "5 - Templates/Full Note.md",
+    "1 - Rough Notes/Risposte alle domande..md",
+    "2 - Material/Digitalization and Valorization of a local farming company..md",
+    "2 - Material/UML.md",
+    "3 - Tags/Software Engineering.md",
+    "6 - The Real Notes/Functions.md",
+    "7 - Images/other-image.png",
+    "7 - Images/partial-function.png",
+    "7 - Images/total-function.png",
     "6 - The Real Notes/Church-Turing.md",
     "7 - Images/Pasted image 20250407222138.png",
     "6 - The Real Notes/Politecnico Master Degree.md",
@@ -188,22 +386,10 @@
     "3 - Tags/School.md",
     "7 - Images/base-of-the-master-degree-rules.png",
     "7 - Images/choice-of-the-course.png",
-    "5 - Templates/Full Note.md",
-    "2 - Material/Programming Knowledge.md",
-    "6 - The Real Notes/Git.md",
-    "2 - Material/Digitalization and Valorization of a local farming company..md",
     "2 - Material/Game Design.md",
     "2 - Material/Ingegneria del software.md",
-    "2 - Material/UML.md",
-    "6 - The Real Notes/🇬🇧 CAE Preparation.md",
     "2 - Material/Idea for the project.md",
-    "7 - Images/absurd-thesisi.png",
     "2 - Material/Programming/Design Pattern.md",
-    "7 - Images/dove-tail.png",
-    "7 - Images/other-enumeration-with-string.png",
-    "7 - Images/enumeration-finale.png",
-    "6 - The Real Notes/Basics of Math.md",
-    "6 - The Real Notes/Functions.md",
     "6 - The Real Notes/Mongo DB.md",
     "6 - The Real Notes/fdafd.md",
     "6 - The Real Notes/calcolabiltà di una funzione secondo Turing.md",
@@ -211,9 +397,6 @@
     "2 - Material/Programming/NodeJS.md",
     "3 - Tags/Programming.md",
     "1 - Rough Notes/Welcome to the Rough Notes.md",
-    "1 - Rough Notes/Sottoreti-VLSM.md",
-    "3 - Tags/Math.md",
-    "3 - Tags/Software Engineering.md",
     "Sotto reti.pdf",
     "Untitled.canvas",
     "Trabalho_Pratico_Grupo_2024_2025_ISLA_EN.pdf",

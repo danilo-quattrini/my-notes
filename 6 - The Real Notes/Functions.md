@@ -30,12 +30,16 @@ La condizione che deve soddisfare affinché una funzione, venga chiamata tale è
 > 
 > ![[second-function-definition.png]]
 ## 1.1 Partial and total function
-Ora però definiamo due diverse tipologie di funzioni che troviamo all'interno del libro e sono la funzione $totale$ e $parizale$.
+Ora però definiamo due diverse tipologie dxi funzioni che troviamo all'interno del libro e sono la funzione $totale$ e $parizale$.
 
 > [!quote] **Funzione parziale & totale**
 > Data una funzione con dominio $X$ e co-dominio $Y$, diciamo che la funzione è $parziale$ se il dominio di definizione è sottoinsieme di $X$.
-> 
+> ![[partial-function.png]]
 > Caso in cui il dominio di definizione coincida con $X$ allora diciamo che la funzione è anche $totale$.
+> ![[total-function.png]]
+> come vediamo il dominio converge con tutto l'insieme di definizione.
+
+^db29ec
 
 Abbiamo tutte le funzioni che sono $parziali$, cioè abbiamo che ogni insieme è sottoinsieme di se stesso e viene inteso che la funzione $parziale$ contiene parte degli elementi dell'insieme del dominio $X$ se nel caso tale sotto-insieme possiede tutti gli elementi di $X$ allora diciamo che questa funzione diventa $totale$.
 
@@ -70,6 +74,8 @@ Ora che sappiamo che cosa significa immagine di un elemento, possiamo introdurre
 >![[function-imag.png]]
  >$$\mathrm{Im(f)} = \{f(a):a\in A\}$$
  >"Quello all'interno dell'insieme arancione"
+
+^037966
 
 Ora che abbiamo il concetto necessario per discutere dell'argomento, ora possiamo parlare di funzione suriettiva.
 
