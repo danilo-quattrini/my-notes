@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f8403807077bbb97",
+        "id": "0f73bc1b3f3d4572",
         "type": "tabs",
         "children": [
           {
-            "id": "6ddb4cdf6a238c7b",
+            "id": "4bf59fb5d70f259a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -335,6 +335,476 @@
             "id": "44c4bfa8ef44638a",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "edce4d10643880fb",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "fd090e136ac5396c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "5887e46a7a7c9d2d",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "92478baacc946652",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "4d4de9e87f2c76ae",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "bcc2efa941b4e9cd",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "86a3071bb82e053e",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "4a164923fb5e0645",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "7419a7eaf582f68a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "27a49c861716a329",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "42958d647a643804",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "a0aa71fbf2c36a87",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "2b67503371899d86",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "54b4a61402bf7f09",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "b65707be22a49683",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "3916f418f4570160",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "adb986c2b7214aeb",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "b6a0771946d6573c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "1e3ac99571a20e94",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "c820d79e6cff4ca0",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "196d7803c259da0e",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "c406a619b651a190",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "c1c87d37f4112a83",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "ff05bfaddb0b5879",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "33789494195885a1",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "e57098f5b00b9c31",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "97d98b9a3ff61870",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "7aaec8f0a571dca4",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "d7769f0b83744333",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "03e82bcdd41a077d",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "2e4576d0034fb004",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "64fb5d2d13826193",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "4c3deab996902cad",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "0d8967af18993099",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "e4fd2ba3fb55ac41",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "63af40abcd0dcfaf",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "876bc6cd359a8a00",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "ccaac7b2697ef2f4",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "ce0be7269acdcec3",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "757674b3dfeffa02",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "ac57bfabb9a43187",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "6b6e885ab4451b63",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "87f95ca7ec17988b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "12fdcbb3ea8bf437",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "67b5ce0980b7ea4b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "aff34468f8e16442",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "9c59a7b48a4dfe1d",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
@@ -342,7 +812,7 @@
             }
           }
         ],
-        "currentTab": 22
+        "currentTab": 69
       }
     ],
     "direction": "horizontal",
@@ -360,43 +830,43 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "6ddb4cdf6a238c7b",
+  "active": "4bf59fb5d70f259a",
   "lastOpenFiles": [
+    "2 - Material/Game Design.md",
     "6 - The Real Notes/Fundamentals of Computer Science.md",
-    "6 - The Real Notes/🇬🇧 CAE Preparation.md",
-    "6 - The Real Notes/Basics of Math.md",
-    "6 - The Real Notes/Git.md",
-    "7 - Images/commit-structure.png",
+    "6 - The Real Notes/Functions.md",
+    "7 - Images/Screenshot 2025-06-04 at 19.58.25.png",
+    "7 - Images/Pasted image 20250604194137.png",
+    "Pasted image 20250604195814.png",
+    "7 - Images/Screenshot 2025-05-27 at 10.54.36.png",
+    "2 - Material/Programming/Design Pattern.md",
+    "2 - Material/Ingegneria del software.md",
+    "7 - Images/Software-Life-Cycle.png",
     "2 - Material/Programming Knowledge.md",
-    "5 - Templates/Full Note.md",
-    "1 - Rough Notes/Risposte alle domande..md",
     "2 - Material/Digitalization and Valorization of a local farming company..md",
     "2 - Material/UML.md",
-    "3 - Tags/Software Engineering.md",
-    "6 - The Real Notes/Functions.md",
-    "7 - Images/other-image.png",
-    "7 - Images/partial-function.png",
-    "7 - Images/total-function.png",
-    "6 - The Real Notes/Church-Turing.md",
-    "7 - Images/Pasted image 20250407222138.png",
-    "6 - The Real Notes/Politecnico Master Degree.md",
-    "7 - Images/tailoring-to-be-admitted.png",
-    "7 - Images/table-of-coinstraint.png",
-    "7 - Images/mandatory-courses.png",
-    "3 - Tags/School.md",
-    "7 - Images/base-of-the-master-degree-rules.png",
-    "7 - Images/choice-of-the-course.png",
-    "2 - Material/Game Design.md",
-    "2 - Material/Ingegneria del software.md",
-    "2 - Material/Idea for the project.md",
-    "2 - Material/Programming/Design Pattern.md",
-    "6 - The Real Notes/Mongo DB.md",
-    "6 - The Real Notes/fdafd.md",
-    "6 - The Real Notes/calcolabiltà di una funzione secondo Turing.md",
-    "README.md",
-    "2 - Material/Programming/NodeJS.md",
-    "3 - Tags/Programming.md",
+    "7 - Images/Screenshot 2025-05-27 at 10.46.40.png",
+    "1 - Rough Notes/VLSM (NON ESISTONO LE CLASSI).md",
+    "1 - Rough Notes/Risposte alle domande..md",
     "1 - Rough Notes/Welcome to the Rough Notes.md",
+    "6 - The Real Notes/Politecnico Master Degree.md",
+    "6 - The Real Notes/Mongo DB.md",
+    "6 - The Real Notes/Git.md",
+    "6 - The Real Notes/🇬🇧 CAE Preparation.md",
+    "6 - The Real Notes/Untitled 1.md",
+    "6 - The Real Notes/Untitled.md",
+    "7 - Images/Screenshot 2025-05-13 at 10.25.30.png",
+    "7 - Images/Screenshot 2025-05-13 at 12.25.28.png",
+    "7 - Images/Screenshot 2025-05-13 at 10.29.50.png",
+    "7 - Images/Screenshot 2025-05-13 at 11.09.15.png",
+    "6 - The Real Notes/Untitled 3.md",
+    "6 - The Real Notes/Untitled 2.md",
+    "6 - The Real Notes/GERUND.md",
+    "6 - The Real Notes/Basics of Math.md",
+    "5 - Templates/Full Note.md",
+    "3 - Tags/Software Engineering.md",
+    "6 - The Real Notes/Church-Turing.md",
+    "3 - Tags/School.md",
     "Sotto reti.pdf",
     "Untitled.canvas",
     "Trabalho_Pratico_Grupo_2024_2025_ISLA_EN.pdf",
