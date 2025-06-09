@@ -52,7 +52,7 @@ MongoDB stores documents in collections. Collections are analogous to tables in 
 ![[crud-annotated-collection.bakedsvg.svg]]
 
 >[!warning] N.B
->Every time you are going to create a collection or a db is not created until you are not going to get is contenct.
+>Every time you are going to create a collection or a db is not created until you are not going to get is content.
 
 ## 2.0 Insert Documents
 In mongo DB exist 2 methods for creating documents inside a collection.

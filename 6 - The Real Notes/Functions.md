@@ -30,7 +30,7 @@ La condizione che deve soddisfare affinché una funzione, venga chiamata tale è
 > 
 > ![[second-function-definition.png]]
 ## 1.1 Partial and total function
-Ora però definiamo due diverse tipologie dxi funzioni che troviamo all'interno del libro e sono la funzione $totale$ e $parizale$.
+Ora però definiamo due diverse tipologie di funzioni che troviamo all'interno del libro e sono la funzione $totale$ e $parizale$.
 
 > [!quote] **Funzione parziale & totale**
 > Data una funzione con dominio $X$ e co-dominio $Y$, diciamo che la funzione è $parziale$ se il dominio di definizione è sottoinsieme di $X$.

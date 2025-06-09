@@ -1,4 +1,4 @@
-	2025-03-25 19:40
+2025-03-25 19:40
 
 Status: #baby 
 
@@ -58,6 +58,18 @@ We use preposition when we are talking about relationship about time, space or l
 - _It was difficult to sleep **during** the flight._
 - _It was the worst storm **since** the 1980s._
 - _Give that **to** me._
+# Gerund
+---
+A gerund is a verb that ends with the *-ing* form and we use it, when we want to transform a verb into a noun, whereas a verb + "-ing" form during present continues is used as an action to describe what we are doing in that specific moment, in the other hand gerund is acting as a **subject**  or a **direct object** for instance:
+
+**Subject**:
+- ***Eating*** is something that we cannot avoid, it's necessary for our body to survive.
+  
+**Object**:
+- She enjoys to reading books
+  
+**Complement**:
+- Her hobby is **hiking**.
 # ❌ Errors I made & ✅ Correction
 ---
 ❌ *Into people's head*  / ✅ **In all people's mind**
@@ -239,19 +251,21 @@ We use **from** when we are referring about the distance from an object to the o
 
 >[!tips] Instead of "**I agree**" you can say **"We see eye to eye on that!"**
 
+- there **is a little question** -> means there is doubt that (non c'è. dubbio che questa cosa si vera)
+- **take into account** -> means to consider something when we judging a situation.
 ---
 # Phrasal verbs general
 ---
 There are different types of phrasal verbs, but first and foremost, we are gonna look the skeleton of a phrasal verb.
 > [!quote] **How is form the phrasal verb?**
-> *verb* + **preposition/adverb
+> *verb* + **preposition/adverb**
 > 
 >for instance we can say:
 > *turn* + **off**
 
 We can say that a phrasal verb is categorize in:
 - [[#Separable Phrasal Verb|Separable]]
-- [[#Unseparable Phrasal Verb|inseparable]]
+- [[#Inseparable Phrasal Verb|Inseparable]]
 - [[#Transitive Verb|Transitive]]
 - [[#Intransitive Verb|Intransitive]]
 ## Separable Phrasal Verb
@@ -282,7 +296,7 @@ We can apply this rule to all of the verb we are going to encounter during our s
 
 For example the phrasal verb:
 
-*turn* **on** -> to give power/energy to a device 
+*turn* **on** -> to give power/energy to a device  ^6b38e9
 
 We CANNOT say for example:
 ❌ - I turn on ... (we must put the object we are refer to)
@@ -307,18 +321,153 @@ However it could be possible that turn up is intransitive and inseparable, and i
 *turn* **up** 
 - increase volume.  [[#Separable Phrasal Verb|separable]] and [[#Transitive Verb|transitive]]
 - to appear or arrive, often unexpectedly here is. [[#Intransitive Verb|intransitive]] and  [[#Inseparable Phrasal Verb|inseparable]].
+  
 *turn* **down**
 - decrease volume / reduce volume  [[#Separable Phrasal Verb|separable]] and [[#Transitive Verb|transitive]].
 - reject an offer or an invitation here is  [[#Separable Phrasal Verb|separable]] and [[#Transitive Verb|transitive]].
+  
 *turn* **on**
 - give electricity do devices  [[#Separable Phrasal Verb|separable]] and [[#Transitive Verb|transitive]]
 - begin aggressive physically or verbally, here is [[#Transitive Verb|transitive]]  and [[#Inseparable Phrasal Verb|inseparable]].
+*turn* **off**
+- to stop supply energy to a device **separable** and **transitive**
+- to lose someone interest or attraction in something **separable** and **transitive**
+
+*turn* **out**
+- the result of something that was unexpected **inseparable** and **intransitive**
+  
+*turn* **away**
+- to be rejected by a location it's **transitive**a and **inseparable**
+## Phrasal Verb with "GO"
+
+to *go* **after**
+- to chase or pursue somebody **separable** and **transitive**.
+  *"Somebody go after to that man, he took my phone"*
+- to pursue a goal or a dream **inseparable** and **transitive**.
+
+ to *go* **along**
+ - when we agree to someone for something **inseparable** and **transitive**.
+   
+ to *go* **ahead**
+ - means that we are going to proceed with the action we propose it's **inseparable** and **transitive**
+   *"I went ahead and prepare the dinner for you"*
+   *"I'm going ahead with this new software, I need some help, are you down for it?"*
+- It means either when we are giving permission to someone, it's **inseparable** and **intransitive**.
+ 
+to *go* **away**
+- when we leave or disappear it's **inseparable** and **intransitive**
+  *"I planned with Barking to go away and stay for the weekend with my friend Enrico in Bologna"*
+  
+to *go* **back**
+- to return it's **inseparable** and **intransitive**
+  
+to *go* **by**
+- to pass is **inseparable** and **intransitive**
+  *"time goes by"*, *"the days go by"*, *"life goes by"*
+
+to *go* **down**
+- to reduce or decrease **inseparable** and **intransitive**
+  *"The air pollution will go down in the next few years as they said on TV"*
+  *"We need to go down with all the expenses, we should reduce the consumption of energy"*
+- to descent **inseparable** and **intransitive**
+  
+to *go* **for**
+- to choose something **inseparable** and **transitive**
+  *"Between going to the cinema or staying at home I am going for the first choice"*
+- to attack something or somebody **inseparable** and **transitive**
+	*"Although I had not provoked the dog, he went for me"*
+  
+to *go* **off**
+- to make a loud noise or to explode **intransitive** and **inseparable**
+	*"The dinamite goes off"*, *"Firework is going off"*
+- to leave without a warning **inseparable**  and **intransitive**
+  *"I have not seen Giovanni for a long, maybe he went off to buy cigarets"*
+- to stop like something **inseparable** and **transitive**
+  *"I have been learning english since I was in primary school then I went off for a period because I had a really bad teacher"*
+  
+to *go* **on**
+- means that we continue to do something **MUST BE FOLLOW BY A [[#Gerund|GERUND]]!**  it's **inseparable** and **intransitive**
+  *"The teacher is going on with this topic for a while and I need a coffe break!"*
+  
+- when we want **to procede** with an argument or something else **MUST BE FOLLOW BY INFINITIVE** it's **inseparable** and **intransitive**.
+  *"I want to go on with this new chapter, I don't want to remain in the same one"*
+
+- to happen **inseparable**  and **intransitive**
+  *"What's going on, it has been a while that you and Monica are arguing"*
+
+to *go*  **out**: ^516ef1
+- To leave a place, in this case your house to go somewhere else, it's **intransitive** and **inseparable**
+
+- When a light is going to become dark **inseparable** and **intransitive**
+  *"The light could go out"*, *"A candle could go out"*
+
+to *go* **over**:
+- means that we examine something carefully, **transitive** **inseparable**.
+  *"Okay guys let's go over this exercise, are there any mistakes or not?"*
+
+to *go* **up**:
+- to increase or rise **intransitive** and **separable**
+  *"price could go up"*, "battery life could go up"
+
+to *go* **with**
+- to agree with something **inseparable** and **transitive**
+  *"That's a great point of view I'm going with that either"*
+to *go* **across**:
+	- when we pass through from a place to another one, or we can say to traverse something.
+## Phrasal Verb with "PUT"
+
+to *put* **away**
+- means that we are leave an object away from us in its usual place **separable** and **transitive**
+  *"Put the guitar away no-one need to hear your song."*
+
+to *put* **aside**
+- to save something to use it later. **separab** and **intrans**
+	*"put money aside"*, *"put time aside"*, *"we can put the argument aside (means that we are pause it for a moment and return back to it later)"*
+
+to *put* **back**
+- it has the same meaning of put away the only difference is that in **put back** we can see the object we are returning to its original place, in the other hand with **put away** we cannot.
+	  *"Put the sweet back Toby, you have a lot of them at home (here we are referring that the sweet must be visibile to the place where we took it.)"*
+- to pospone something **S** and **T**
+	*"Me and my fiancee argued this last period, therefore we need to put back our wedding."*
+	*"Can we put back the interview, I'm very busy right now"*
+
+to *put* **down**
+- to leave something on a surface, place it **S** and **T**
+	*"Put down the beer"*, *"Put the book down to the table"*
+- to insult someone **S** and **T**
+- to decrease *"Put the volume down"*, *"Put the price of smth down"*
+
+to *put* **off**
+- to make someone not like something anymore, or to make someone not want to do something anymore, (discourage someone for something to do). **S** and **T**.
+- to **postpone something** *"I was so tired that I decided to put off my homework"*. (it's different from **put back**, because here we have something we postponed for our laziness, whereas in the first example we cannot did that thing because we had been blocked by something such as weather conditions or our schedules).
+
+to *put* **on**
+- to wear something **S** and **T**
+- mean that we are giving power supply to something.
+  (Its different from [[#^6b38e9|turn on]], because here we can say to put on something that doesn't require electrical supply, for instance we can **put on** the music, video, film or either we can say **put on** some weight).
+- to organise an event. **S** and **T** *"Put on a dinner party"*, *"Put on a wedding"*.
+  
+to *put* **up**
+- to accomodate *"When i visited my cousin, they put me up"* in the guest room.
+- to propose or suggest an idea for other people to discuss.
+- to suggest or present somebody as a candidate for a job or position.
+
+to *put*  **up** with
+ - to tolerate something *"I cannot put up with the fact that now they are gonna leave with our money"*
+
+to *put* **out**
+- to stop something burning **S** and **T** (different from **[[#^516ef1|go out]]** because the first one is intransitive, instead this one is **transitive**)
+  *"The fire went out"* different from *"I put out the fire "*.
+- to produce information for the people to hear or watch, **S** and **T** 
+  *"The news paper put out a bad new about the death of the famous rapper A$AP Rocky"*
+- to leave or place something out from your house **S** and **T**
+  *"Put the trash out"*
+
+to *put* **together**
+- to combine things to make something new **S** and **T**.
 
 ---
-- **put off**: means discourage or lose interest.
-- **put back**: to postpone or to do something in late.
 - **getting a promotion**: prendere una promozione.
-- **turn down**: reject a position offered in a company.
 - **carry to much weight**: to be influential or more important.
 - **appear on the surface**: appear visually from the outside.
 - **take part in (sth)**: to participate and involved in something.
@@ -333,7 +482,7 @@ However it could be possible that turn up is intransitive and inseparable, and i
 - **factor in**: consider to include something when we are doing calculation or understand something.
 - **come across**: ==find something accidentally.== 
 ## 'Make' Phrasal verbs
-- ** to make for:** means to help make something possible (rendere qualcosa possibile da fare).
+- **to make for:** means to help make something possible (rendere qualcosa possibile da fare).
 - **to make out**: create a false impression (creare una falsa impressione)
 
 # Grammar basics
@@ -380,6 +529,9 @@ Besides, we can use **in** , when we specify the year, as an example:
 - I thought that all of them finished the CAE before me.
 
 **ALL**: we use is in all the other cases, where we don't need to put an object pronoun before of it, in all the other cases.
+
+## SOME vs ANY
+%%To complete with the differences between some and any%%
 ## ABOUT TO vs DUE/SCHEDULE TO
 
 **ABOUT TO**: we use it when something is happening in a restricted fraction of time, it's imminent, it's about to happen within few second, for example:
@@ -403,6 +555,5 @@ My recommendations: „
 [^2]: **rather than**: It's the same meaning of **instead of** doing something we want to do something else.
 
 [^3]: **willing**: in this case is not refer to desire to do (smt), but we are saying that we are ready to do (smt).
-w
 
 [^4]: *WH*: What, Where, When, Which, Who, Where, ecc..
