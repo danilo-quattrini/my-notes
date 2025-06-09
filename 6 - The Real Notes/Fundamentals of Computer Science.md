@@ -1,10 +1,10 @@
 ---
 share_link: https://share.note.sx/kpt7zdpy#SFVgtoBmnCXdpbKyaR8bKF6HApBqtzbx8i2+TwLIjJQ
-share_updated: 2025-04-04T14:58:25+02:00
+share_updated: 2025-06-02T11:23:04+02:00
 ---
 2025-03-04 16:26
 
-Status: #baby 
+Status: #completed
 
 Tags: [[Programming]], [[General Knowledge]], [[Math]]
 
@@ -14,17 +14,28 @@ Formulario: *[click here](https://francescopalozzi.notion.site/Formulario-Fondam
 
 Esercizi: [click  here](https://097475.github.io/computazione-calcolabilita/excercises.html)
 
+Old Tests: [click here](https://nukleo.me/uni/old/fondamenti/index.html) "*P.S mi distacco completamente da quello che potreste trovare all'interno del sito*"
+
 *made by Danilo Quattrini ©* check me out on [GitHub](https://github.com/danilo-quattrini)
+
+# Index
+---
+-  [[#1.0 Strings and Languages|1.0 Strings and Languages]]
+- [[#2.0 Funzioni|2.0 Funzioni]]
+- [[#3.0 Definition of Algorithm|3.0 Definition of Algorithm]]
+- [[#4.0 Turing Machine|4.0 Turing Machine]]
+- [[#5.0 Calculable of sets|5.0 Calculable of sets]]
+- [[#6.0 Grammars and Automa|6.0 Grammars and Automa]]
+- [[#7.0 Linguaggio WHILE|7.0 Linguaggio WHILE]]
+- [[#Reference|Reference]]
 
 ---
 > [!warning] **N.B**
-> In questi appunti ci sono solo le parti che ritengo necessarie per la comprensione dei concetti, ci saranno immagini e formule, ma per altri chiarimenti, leggere il libro nel capitolo/parte che viene citata nelle *footnotes*
+> In questi appunti ci sono solo le parti che ritengo necessarie per la comprensione dei concetti, ci saranno immagini e formule, ma per altri chiarimenti, leggere il libro nel capitolo/parte che viene citata nei 
 
 >[!danger] **Importante per le definizioni**
 >Per le dimostrazioni a memoria bisogna scriverle ognuna di loro a mano, per allenare la mano e la mente per ricordarsele a memoria.
 >
-# Index
----
 
 # 1.0 Strings and Languages
 ---
@@ -34,6 +45,8 @@ Prima di tutto partiamo con due concetti fondamentali, il primo è quello di *Al
 > ***Alfabeto***: viene definito come quell'insieme, non vuoto, di elementi che non posseggono interpretazione.
 > 
 > $$ A = \{ a, b, c, \dots , x, y, z \} $$
+
+^d91590
 
 Invece abbiamo anche il concetto di *Stringa* che viene inteso come:
 
@@ -47,14 +60,16 @@ Per rappresentare la *stringa vuota* si usa il lambda $\lambda$.
 
 > [!important] **Usato spesso** 
 > 
-> $$\lambda \implies striga vuota$$
+> $$\lambda \implies striga \  vuota$$
 
 ---
 Per la nostra stringa possiamo rappresentare ora il concetto di *lunghezza*, che viene espressa dalla funzione $l(\alpha)$ dove $\alpha$ viene a indicare la stringa che utilizziamo.
 
-> [!important] **Esempio**
+> [!important] **Lunghezza di una stringa**
 > Prendiamo come esempio questa stringa:
 > $$\alpha=adfal$$ la lunghezza di $\alpha$ sarà il numero dei simboli che contiene la stringa, quindi: $$l(\alpha) = 5$$
+
+^becc02
 
 Come possiamo pensare giustamente anche la nostra lamba avrà una lunghezza che sarà 0, dato che è una stringa vuota, non possiede nessun simbolo.
 $$l(\lambda )=0$$
@@ -171,7 +186,7 @@ Partiamo dall'esistenza di questo insieme che chiameremmo $S$, dove troveremmo u
 
 Semplicemente in questo capitolo vedremmo che ci saranno problemi che non sono algoritcamente risolvibili, qualsiasi sia il nostro insieme $S$ di partenza, cioè che non ci saranno sempre soluzioni per la sua risoluzioni.
 
-Facciamo esempi di due algormi che sono differenti, ma che calcolano la stessa funzione
+Facciamo esempi di due algoritmi che sono differenti, ma che calcolano la stessa funzione
 ```js
 begin
 	input(x);
@@ -327,10 +342,11 @@ Ora andremmo a dimostrare che esiste un sottoinsieme che non è presente nell'in
 |  3  |             1              |                  0                  |
 |  4  |             0              |                  1                  |
 | ... |            ...             |                 ...                 |
-Come vediamo la sequenza che abbiamo creato tramite il complemento della diagonale esiste all'interno della tabella $D=01001$ ed è un sottoinsieme di $\mathbb N$, ma non è presente in nessuna riga della tabella (intesa come sottoinsieme) cioè non uò essere associata a nessun numero naturale $i$.
+Come vediamo la sequenza che abbiamo creato tramite il complemento della diagonale esiste all'interno della tabella $D=01001$ ed è un sottoinsieme di $\mathbb N$, ma non è presente in nessuna riga della tabella (intesa come sottoinsieme) cioè non può essere associata a nessun numero naturale $i$.
 
 Leggere per più dettaglio del concetto della non cardinalità dei numeri naturali, pag 25-26
 
+Spiegazione della tecnica al capitolo [[#5.3.2 Diagonalisation technique|5.3.2.]]
 # 4.0 Turing Machine
 ---
 Ora vediamo come è la struttura di una macchina di Turing in forma illustrativa.
@@ -471,6 +487,8 @@ Allora abbiamo la nostra macchina $M$, che conterrà lo stesso alfabeto del ling
 >- la macchina $M\downarrow w$ se quest'ultima appartiene al linguaggio $L$, cioè $w\in L$.
 >- caso contrario la macchina $M\uparrow w$ se non appartiene al linguaggio $L$, cioè $w\not\in L$.
 
+^991019
+
 Nell ultimo caso che abbiamo visto, quando la macchina di Turing $M\downarrow w$ converge sulla stringa e il linguaggio $L$ si compone delle parole che vengono accettate, allora diremmo che il linguaggio $L$ viene $riconsciuto$ dalla macchina $M$
 
 Diamo ora nel dettaglio le definizioni che abbiamo citato precedentemente.
@@ -516,22 +534,6 @@ Supponiamo di impostare un [[#^f2e44b|ordinamento lessicografico]], quindi ad es
 
 ![[other-enumeration-with-string.png]]
 
-# ?.? Dove tail (Coda di Colomba)
-La coda di colomba viene spiegata in questo capitolo, ma in seguito vedremmo dove sarà applicato più nel dettaglio, sappiamo che esiste una funzione che chiameremmo $r:\mathbb N^{2}\to\mathbb N$, cioè prende una coppia di naturali e ci ritorna un singolo numero.
-$$r(x,y)=z$$
-Prenderemmo in input due valori naturali che abbiamo scritto come $x\in \mathbb N$ e $y\in \mathbb N$, è ci ridà come output un numero naturale $z$, questa la useremmo molto poco, però sono importanti quando faremmo gli algoritmi, la funzione $\pi:\mathbb N \to \mathbb N$ pi-greco che ci decodifica la $z$ e ci trova le due variabili $x$ e $z$.
-
-$$
-\pi_{1}(z) = x
-\qquad \pi_{2}(z)=y
-$$
-
-La funzione $r$ che abbiamo prima mostrato, si può rappresentare tramite una matrice.
-![[Pasted image 20250407222138.png]]
-Come vedete rappresenta una coda di colomba (la parte rossa dell'immagine), quindi sotto rappresentato c'è la funzione $r$ e la sua associazione alla matrice sopra vista.
-
-![[dove-tail.png]]
-Quindi avremmo che $r(0,0)=0$, $r(1,0)=1$ e così via come segue l'ordine sopra.
 ### 4.3.1 Decode Turing Machines
 Allora definiamo una macchina di Turing $M$ e un alfabeto $A$ fissato che appartiene a tale macchina, poi l'insieme degli stati della macchina $Q$, e la sua funzione di transizione $\delta$.
 
@@ -783,7 +785,7 @@ Che come abbiamo visto dire che un insieme è decidile significherebbe calcolare
 $$\chi_{K'}=h'(x,y)=\begin{cases} 
  1\space \space se \space \varphi_{x}(y)\downarrow\\ \space \ \\  0\space \space se  \ \varphi_{x}(y)\uparrow
 \end{cases}$$
-Se $h'$ e calcolabile allora esiste una data una funzione dai naturali ai naturali $h:\mathbb N \to \mathbb N$, che è mostrata in questo modo:
+Se $h'$ e calcolabile allora esiste una data una funzione dai naturali ai naturali $h:\mathbb N \to \{ 0,1 \}$, che è mostrata in questo modo:
 $$h(x)=\begin{cases}1\space \space se \  \varphi_{x}(x)\downarrow\space \ \\ \\ 0\ se \ \varphi_{x}(x)\uparrow \end{cases}$$
 Questa **funzione non è calcolabile**, non esiste alcun algoritmo in grado di decidere che preso in input qualsiasi algoritmo, questo riesca a decidere se si fermerà o no, insegnandoci che il **loop non è decidibile**.
 
@@ -798,13 +800,844 @@ Questa **funzione non è calcolabile**, non esiste alcun algoritmo in grado di d
 > Ma se $k$ è calcolabile allora da come sappiamo che $\exists$MdT che definiremmo come $M_{j}$ con $j\in \mathbb N$ vuol dire che la macchina calcolerà la funzione $k$ che ridarrà la funzione $\varphi_{j}$.
 > 
 ![[absurd-thesisi.png]]
+La tecnica utilizzata è quella della **diagonalizazzione** da vedere [[#5.3.2 Diagonalisation technique|qui]]
 
+L'algoritmo che utilizzeremmo per verificare che  $h$ sia calcolabile lo definiamo come:
+```js
+begin
+	input(x);
+	if h(x) = 0 then output(0);
+	else if h(x) = 1 then while True do skip;
+end
+```
+Essendo in conclusione una contraddizione, non si riuscirà mai a capire se dato un determinato algoritmo con il suo input, possiamo sapere già dall'inizio se andrà in loop o no, l'unico modo per vedere se si ferma o no, bisogna vedere i suoi output.
+
+>[!example] **Esempio**
+>Questo esempio possiamo trovarlo a pagina 60 del libro, ci da una funzione $f:\mathbb N^{3} \to \{ 0,1 \}$, dobbiamo dire se è calcolabile o no.
+>$$f(x,y,z)=\begin{cases}1\qquad se \  M_{x}\ sull'input\ y \ converge \ in \ z \ passi \space \ \\ \\ 0 \qquad  altrimenti \end{cases}$$
+>
+>Questa funzione è calcolabile, perché il numero di passi è finito ed è deciso dalla $z$, quindi possiamo vedere tramite la $z$ se si ferma prima o precisamente alla $z$ allora diamo $1$ come output, se lo sorpassa la $z$ allora diamo come output lo $0$.
+```js
+begin
+	input(x);
+	input(y);
+	input(z);
+	c := 0
+	decodifico x per ottenere l'x-esima MdT;
+	if c != z then
+		begin
+			calcolo Mx sull'input y;
+			incremeto c;
+		end
+	else
+		output(1)
+	if c > z then output(0)
+end
+```
+
+In questo caso a differenza di prima abbiamo dei limiti imposti dai passi, cioè $z$, cosa che prima non potevamo sapere con un input generico che in questo caso era solo una $y$.
+# 5.0 Calculable of sets
+Dobbiamo riprendere i concetti di [[#^21c197|decidibilià]]  e [[#^991019|semi-decidibiltà]] che abbiamo precedentemente visto, per poter capir meglio questo capitolo, prima fa una spiegazione precedente delle macchine di Turing e delle sue funzioni.
+
+Andremmo a dire che una funzione è strettamente collegata al concetto di insieme e che sono collegate tra loro, spendo anche che tra macchine di Macchine di Turing $n-esime$ c'è una relazione **biettiva**, cioè che ad ogni macchina $M_{n}$ si viene ad associare 1 o più funzioni calcolabili $\varphi_{n}$.
+## 5.1 Sets and Functions
+Detto ciò allora possiamo illustrare il teorema qui sotto.
+>[!quote] **Teorema**
+>Prendiamo l'insieme $L \subseteq \mathbb N$ cioè sottoinsieme dei numeri naturali $\mathbb N$ sono equivalenti queste seguenti preposizioni (da sapere a memoria):
+>- (a) $L$ è  [[#^991019|semi-decidibile]] 
+>- (b) $L$ è il dominio di una funzione calcolabile (cioè converge su tutti e solo gli elementi del dominio $L$)
+>- (c) $L$ o è vuoto oppure è l'[[Functions#^037966|immagine]] di una [[Functions#^db29ec|funzione totale]] e calcolabile $f:\mathbb N \to \mathbb N$ 
+
+^ab4bc3
+
+Noi vogliamo testare tutti gl'input della MdT in qualsiasi caso, sia quando diverge che non, avendo in questo caso una terna di naturali $\mathbb N^{3}$ cioè detto anche come: 
+$$\mathbb N^{3}=\mathbb  N \times \mathbb N \times\mathbb N$$
+dove il primo $\mathbb N$ equivale alla macchina di Turing , la seconda $\mathbb N$ sarebbe l'input che diamo alla macchina l'ultimo $\mathbb N$ sarebbero il numero dei passi.
+(l'$x$-esima macchina di Turing, prende come input $y$ e converge o no in $z$ passi).
+![[other-image.png]]
+
+Il primo e il secondo concetto sono collegati tra loro, cioè se l'insieme è semi-decidibile, allora quest'ultimo sarà il dominio di una funzione calcolabile e totale, che abbiamo visto essere $\chi_{L}'$ cioè la [[Fundamentals of Computer Science#^7d770f|funzione semi-caratteristica]].
+
+**(a) $\implies$ (b)**: $L$ è semi-decidibile se e soltanto se la [[#^7d770f|funzione semi-caratteristica]] è calcolabile.
+$$f_{L}(x)=\begin{cases} 
+ 1\space \space se \space x\in L\\ \uparrow\space \space se \space x\not\in L
+\end{cases}$$
+
+^3fa921
+
+Cioè in questo caso avremmo che il $Dom(f_{L})=L$.
+
+**(b) $\implies$ (a)**: Cioè vuol dire che esiste una funzione $g:\mathbb N \to \mathbb N$, dove il dominio della funzione sarebbe così $Dom(g)=L$ e $g$ è calcolabile allora sarebbe.
+$$g(x)=\begin{cases} 
+ y\space \space se \space x\in L\\ \uparrow\space \space se \space x\not\in L
+\end{cases}$$
+
+
+**(a) $\implies$ (c)**: se $L$ è semi-decidibile allora significa che $L=\emptyset   \ \lor \ L=\mathrm{Im}(f)$, cioè che è o vuoto oppure l'[[Functions#^037966|immagine di una funzione]], per dimostrare l'implicazione, dobbiamo definire una funzione $f:\mathbb N \to \mathbb N$ tale che $Dom(f) = L$, in parole povere.
+$$\forall x \in \mathbb N \qquad f(x) = 1 \iff x \in L$$
+```js
+begin
+	n := 0;
+	while n > 0 do
+		begin
+			scomponi n nella coppia (n1,n2);
+			esegui ML con input n1 con n2 passi;
+			if ML n1 ⬇︎ in n2 passi
+				then output(n1);
+			n := n + 1;
+		end
+end
+```
+Con $M_{L}$ che sarebbe la macchina di Turing che calcola la funzione semi-caratteristica, così facendo abbiamo detto che l'immagine della funzione $\mathrm{Im}(f) = L$ ed è una [[Functions#^db29ec|funzione totale]].
+
+Il concetto che il libro vuole spiegare è che **(a)** $\implies$ **(c)** in due casi, il primo è che dato il nostro insieme $L$, possiamo vedere i casi in cui la macchina di Turing si ferma  oppure no, sfortunatamente non riusciamo a controllare tutti i casi possibili se non applichiamo la regola della [[#?.? Dove tail (Coda di Colomba)|coda di colomba]], perché questo, dato l'insieme dei natura $\mathbb N={\{  0,1,2,3,4,\dots\}}$, se diverge al secondo valore $f(1)\downarrow$, non possiamo controllare i numeri successivi, se questi appartengono oppure no al nostro linguaggio $L$.
+
+**(c) $\implies$ (a)**: cioè in questo caso abbiamo $L=\emptyset   \ \lor \ L=\mathrm{Im}(f)$, cioè ci sarà una funzione calcolabile che se il primo caso è vero allora è già semi-decidibile, assumiamo il caso $L\not=\emptyset$, dobbiamo dimostrare che $L$ è semidecidibile, cioè che vale la seguente affermazione, cioè $\exists$Mdt che notiamo con la convenzione $M_{L}$ che accetta $L$.
+```js
+begin
+	input(x);
+	flag := true;
+	count := 0;
+	while flag do
+		begin
+			if f(count) = x //(se la funzione calcolata dalla macchina di turing mi da l'x che sto cercando)
+			then 
+				begin
+					output(1);
+					flag := false;
+				end
+			else 
+				count = count + 1;
+		end
+end
+```
+
+Nella riga 7 possiamo inserire qualsiasi funzione che vogliamo, in questo caso cerchiamo il valore che ritornerà la funzione $f(count)$ se è uguale al valore di input $x$.
+
+>[!example] **Esempio**
+>Semplificandolo di moltissimo, facciamo conto che il linguaggio sia una regola che imponiamo, cioè in modo verbale diremmo *il nostro linguaggio* $L$ *deve contenere solo numeri pari*, siccome $L$ è un insieme, nel linguaggio insiemistico diremmo così la regola:$$L=\{ x\in \mathbb N \ | \  x \bmod 2 = 0 \}$$
+>Se non lo sapete studiatevi gli insiemi, più di così non so come dirlo, però è semplice, noi adesso dobbiamo mettere a priori che questo insieme è semi-decibile, questo perché, la MdT si ferma su "SI" cioè converge se $x$ è pari (viene accettato), se invece è "NO", cioè diverge è va in loop infinito.
+>
+>La funzione semi-caratteristica sarebbe questa:
+>$$\chi_{L}(x)'=\begin{cases}1\qquad se \ \varphi_{x}(x) = 0 \space \ \\ \\ \uparrow \qquad  altrimenti \end{cases}$$
+>
+>Ok speriamo fin qui, ci siamo, essendo che non possiamo valutare tutti i casi in cui andremmo a divergere oppure no solamente, mettendo un valore in input $x$, questo perché se mettessimo $3$ che è dispari, allora diverge $\uparrow$, quindi non sapremmo mai se $4,5,6,\dots$ sono pari o dispari, quindi entra in gioco la coda di colomba, che ci fa vedere tutti i casi possibili.
+>
+>``` js
+>begin
+>	input(x);
+>	decodifico x per ottenere l'x-esima macchina di Turing Mx;
+>	flag := True;
+>	c := 0;
+>	while flag do
+>		begin
+>			y := 𝜋1(c); z := 𝜋2(c);
+>			eseguo Mx su input y per z passi;
+>			if Mx è in configurazione finale con OUTPUT(0) then
+>				OUTPUT(1);
+>				flag := false;
+>			else
+>				c := c + 1;
+>		end
+>end
+>
+
+Per rappresentare la semi-decidibilità di un insieme oltre ad utilizzare il
+metodo della [[#?.? Dove tail (Coda di Colomba)|coda di colomba]] si può semplicemente scrivere un algoritmo di questo tipo.
+
+Prendiamo l'insieme $K,$ che definiamo in questo modo:
+$$K=\{ x\in\mathbb N\ | \ M_{x} \downarrow x \}$$
+definiamo prima di tutto il l'insieme semi-decidibile, poi facciamo l'algoritmo per dimostrare che sia semi-decidibile:
+```js
+begin
+	input(x);
+	ottieni Mx tramite x
+	esegui Mx sull'input x
+	if Mx converge su x then
+		OUTPUT("SI");
+end
+```
+Si avverano tutti e due i casi della [[#^7d770f|funzione semi-caratteristica]], nella riga `4`  possiamo vedere se la macchina divergerà $\downarrow$ oppure se convergerà passa all'if della riga `5`.
+
+## 5.2 Post Theorem 
+
+>[!quote] **Teorema di Post**
+>Sia $L\subseteq\mathbb N$ possiamo dire che $L$ è decidibile se e soltanto se sia se stesso e il suo complemento $\overline L$ sono entrambi semi-decidibili.
+
+^24cca3
+Cominciamo dicendo che prendiamo l'insieme $L\subset \mathbb N$ che conterrà i elementi/valori $x\in \mathbb N$ , possiamo anche dire che il suo [[Basics of Math#1.2 Complement of a Set|complemento]] $\overline L$ , saranno gli elementi che non appartengono ad $L$ , cioè $x\not\in L$, possiamo dire che se $L$ è decidibile **se e soltanto se** se stesso anche il suo complemento sono **semi-decidibili**, stessa regola vale a vice versa (il suo complemento $\overline L$ è decidibile se e solo se lo è il suo **non complemento** $L$ e se stesso lo sono), rappresentato in forma di equivalenza.
+$$L \ è \ decidibile \iff L ,\overline L \ semi-decidibile $$
+Proviamo a dimostrare questa doppia implicazione:
+
+$L \Rightarrow L ,\overline L \ semi-decidibile$ :
+
+allora vuol dire che calcola la funzione caratteristica di $L$ è:
+$$f_{L}(n)=\begin{cases} 
+ 1\space \space se \space n\in L\\ 0\space \space se \space n\not\in L \ cioè \ (n \in \overline L)
+\end{cases}$$
+
+^f0a6c7
+
+Quindi $L$ e $\overline L$ sono semi-decidibili con la funzione semi-caratteristica qui di seguito:
+$$g_{L}(n)=\begin{cases} 
+ 1\space \space se \space n\in L\\ \uparrow\space \space altrimenti
+\end{cases}$$
+dobbiamo dire che la funzione $g_{L}(n)$ è **calcolabile** con il suo algoritmo:
+```js
+begin
+	input(n);
+	if fL(n) = 1 then 
+		OUTPUT(1);
+	else
+		while true do skip
+end
+```
+Lo si può fare anche con il suo complemento $\overline L$ che è semi-decidibile lo fare con la stessa funzione sopra mostrato:
+$$g_{\overline L}(n)=\begin{cases} 
+ 1\space \space se \space n\in L\\ \uparrow\space \space altrimenti
+\end{cases}$$
+Con il suo algoritmo:
+```js
+begin
+	input(n);
+	if fL'(n) = 0 then 
+		OUTPUT(1);
+	else
+		while true do skip
+end
+```
+
+$L ,\overline L \ semi-decidibile \Rightarrow L \ decidibile$:
+
+Per dimostrare che $L$ è decidibile, usiamo la stessa [[#^f0a6c7|funzione di prima]], però in questo caso l'algoritmo sarà diverso:
+``` pascal
+begin
+	input(n);
+	z := 1; // (numero passi)
+	flag := true;
+	MdT che calcola la gL
+	MdT che calcola la gL complemento
+	while flag do
+		begin
+			if MdT nell'input n su gL converge
+			su z passi then
+				begin
+					OUTPUT(1);
+					flag := false;
+				end
+			else if MdT nell'input n su gL complemento converge
+			su z passi then
+				begin
+					OUTPUT(0);
+					flag := false;
+				end
+			else
+				z := z + 1;
+		end
+end
+```
+
+>[!warning] **N.B**
+>Bisogna sempre mettere in `begin` e l'`end` dentro all'`if` .... `then` se abbiamo più righe di operazioni, come nell'esempio sopra dalla riga `11` fino `14`.
+
+Sia l'insieme $K$:
+$$K=\{ n\in\mathbb N \ | \ \varphi_{n}(n)\downarrow \}$$
+Sappiamo che non è **decidibile** perché se lo fosse risolverebbe il [[#4.8 Halting Problem|problema dell'arresto]], cosa che non è possibile, cosa possiamo dire però, questo insieme è **semi-decidibile**?
+Cioè in questo caso il nostro complemento di $\overline K$ che sarebbe:
+$$\overline K = \{ n \in \mathbb N \ | \ \varphi_{n}(n)\uparrow\}$$
+sapendo che il $\overline K$ non riporta degl'indici della macchina di turing e non ci da dei risultati, in output, allora diremmo che $K$ è **semi-decidibile** e invece $\overline K$ non è **semi-decidible**, allora la sua funzione:
+$$f_{K}(x)=\begin{cases} 
+ 1\space \space se \space \varphi_{x}(x)\downarrow \\ \uparrow\space altrimenti
+\end{cases}$$
+Cioè non rispettando il [[#^24cca3|teorema di post]] cioè l'insieme $K$ ha il suo complemento $\overline K$ che non è decidibile allora diremmo per esclusione che sarà semi-decidibile.
+facciamone un algoritmo
+```js
+begin
+	input(x);
+	decodifico x nella MdT per ottenere Mx
+	esguo Mx sull'input x
+	if Mx↓x then 
+		OUTPUT(1);
+end
+```
+
+Possiamo mostrare la **semi-decidibilità** di $K$ come insieme vuoto $\emptyset$ oppure anche  che $K = \mathrm{Im}(g)$, con $g$ totale e calcolabile, (come abbiamo visto in [[#^ab4bc3|questa parte]] ) dobbiamo dimostrare che $K$ è l'immagine di una funzione totale e calcolabile $g$, però dobbiamo convincerci che $K$ non è $\emptyset$ .
+
+- $K \not= \emptyset$ se $\exists x\in  \mathbb N$ tale che $M_{x}(x)\downarrow$:
+Per mostrare che non è vuoto prendiamo la funzione $id(x) = x$ che è totale e calcolabile, $\forall x\in\mathbb N$, definiamo la funzione $g: \mathbb N \to \mathbb N$ dove avrà come $g(x) =$ x-esimo valore di output dell'algoritmo $A$
+```js
+A := begin
+	n := 0;
+	while n ≥ do
+		begin
+			scompongo n nella coppia (𝜋1(n),𝜋2(n))
+			decompongo 𝜋1(n) nella MdT M𝜋1(n) sull'input 𝜋1(n) nella MdT M.
+			eseguo M𝜋1(n) su input 𝜋1(n) per  𝜋2(n) passi
+			if M↓𝜋1(n) per 𝜋2(n) passi then
+				OUTPUT(1)
+			else
+				n := n + 1;
+		end
+end
+```
+
+
+## 5.3 Tips and Trick to use when we study sets
+Andremmo a vedere delle tecniche che verranno utilizzate sempre e quando dico sempre sarà sempre, durante il nostro studio di insiemi, queste categorie sono:
+1. Tecnica della [[#5.3.1 Dove tail (Coda di Colomba)|coda di colomba]], che ci serve in modo che possiamo eseguire diverse macchine di Turing su diversi input, in modo che possiamo verificare anche casi in cui se la macchina diverge su un input possiamo anche vedere se non divergono su gl'input successivi.
+2. Tecnica della [[#5.3.2 Diagonalisation technique|diagonalizzazione]], che possiamo generare una funzione non calcolabile da una lista(tabella) di funzioni che sono calcolabili.
+3. Tecnica della [[#5.3.3 Reduction|riduzione]], che ci permette di dire che un determinato insieme $I$ non è decidibile, dimostrando che
+
+### 5.3.1 Dove tail (Coda di Colomba)
+Sappiamo che esiste una funzione che chiameremmo $r:\mathbb N^{2}\to\mathbb N$, cioè prende una coppia di naturali e ci ritorna un singolo numero.
+$$r(x,y)=z$$
+Prenderemmo in input due valori naturali che abbiamo scritto come $x\in \mathbb N$ e $y\in \mathbb N$, è ci ridà come output un numero naturale $z$, questa la useremmo molto poco, però sono importanti quando faremmo gli algoritmi, la funzione $\pi:\mathbb N \to \mathbb N$ pi-greco che ci decodifica la $z$ e ci trova le due variabili $x$ e $z$.
+
+$$
+\pi_{1}(z) = x
+\qquad \pi_{2}(z)=y
+$$
+
+La funzione $r$ che abbiamo prima mostrato, si può rappresentare tramite una matrice.
+![[Pasted image 20250407222138.png]]
+Come vedete rappresenta una coda di colomba (la parte rossa dell'immagine), quindi sotto rappresentato c'è la funzione $r$ e la sua associazione alla matrice sopra vista.
+
+![[dove-tail.png]]
+Quindi avremmo che $r(0,0)=0$, $r(1,0)=1$ e così via come segue l'ordine sopra.
+### 5.3.2 Diagonalisation technique
+Questa tecnica fu introdotta per dimostrare che ci sono alcuni insiemi che non possono essere enumerati, questa tecnica la possiamo applicare anche con le nostre funzioni calcolabili, **creando un oggetto dello stesso tipo, ma diverso da tutti gli altri**, questa tecnica è stata già applicate in questa parte (da rivedere il capitolo [[#3.1 Algorithm that cannot solve all the functions|3.1]]), vediamo una rappresentazione generale.
+$$\begin{array}{c|cccccc}
+
+\alpha  \backslash \mathbb N & 0 & 1 & 2 &\dots \\
+
+\hline
+
+\alpha_{0} &   \mathbf{d_{00}} & d_{01} & d_{02} & \dots \quad \\
+
+\alpha_{1} & d_{10} & \mathbf{d_{11}} & d_{12} & \dots \quad \\
+
+\alpha_{2}& d_{20} & d_{21} & \mathbf{d_{22}} & \dots \quad \\
+
+\vdots & \vdots & \vdots & \vdots & \vdots 
+
+\end{array}$$
+Prendiamo questa tabella con le colonne che rappresentano un numero naturale, le righe invece sono l'oggetto che andremmo a enumerare (come potrebbe essere un insieme o una funzione), noi dalla tabella prendiamo solo in considerazione la diagonale (quelle in grassetto), cioè la coppia $(\alpha_{n},n)$,  La prova consiste nel costruire un oggetto diverso da ognuno dei valori sulla diagonale.
+
+Vedere esempio a pagina 70
+### 5.3.3 Reduction
+Utilizziamo questa tecnica quando vogliamo dimostrare l'**indecibilità** o la **non semi-decidibilità**, cioè allora possiamo dire che esiste questa definizione che possiamo applicare:
+> [!quote] **Definizione**
+> Prendiamo due insiemi $A,B\subset  \mathbb N$, possiamo dire che $A$ è $riducibile$ "$molti-uno$" a $B$, e si scrive $A≤_{m} B$, se esiste una funzione $f: \mathbb N \to \mathbb N$ che sarà totale e calcolabile se per ogni $x\in\mathbb N$ si ha che:
+> $$x\in A\iff f(x)\in B$$
+> Che si può anche scrivere come:
+> $$x\in A \iff f(x)\in B$$
+> $$x\not\in A \iff f(x)\not\in B$$
+> 
+> Caso avessimo una funzione $f$ che è [[Functions#1.2 Injective function|iniettiva]] allora diremmo che l'insieme $A$ è $riducibile$ "$uno-uno$" a  $B$ e scriveremmo $A≤_{1}B$
+
+Possiamo anche formalizzare questo concetto in questo modo, in modo che capiamo cosa intendiamo con quello scritto sopra:
+>[!info] **Teorema**
+>Dati due insiemi $A,B\subset \mathbb N$ tali che $A≤_{m}B$ attraverso una funzione totale e calcolabile $f$, allora:
+>1. Se l'insieme $A$ non è decidibile neppure $B$ lo è.
+>2. Se l'insieme $A$ non è semi-decidibile neppure $B$ lo è.
+
+Facciamo una dimostrazione a questo teorema che abbiamo appena citato.
+
+Prendiamo per assurdo in questo caso che il nostro insieme $B$ sia **decidibile**, allora vuol dire che esiste una funzione caratteristica $\chi_{B}$ che è calcolabile. Allora possiamo dire che è in grado di riconoscere , per ogni $y\in\mathbb N$ se questa $y\in B$ oppure no, il nostro algoritmo sarebbe:
+```js
+begin
+	input(x);
+	y = f(x)
+	output(X_B(y))
+end
+```
+
+Per la tesi di Church-Turing è in grado di decidere $A$, questo perché se la funzione $f(x)$ ci restituisse un valore che in questo caso sarebbe $y$, vale a dire che  $y\in B$ e analogamente anche $x \in A$, stessa cosa per il contrario se $y\not\in B$ allora vuol dire anche che $x\not\in A$, ma l'ipotesi di prima abbiamo detto che $A$ non è decidibile allora è un assurdo.
+
+Prendiamo il caso in cui abbiamo per ipotesi che l'insieme $B$ è semi-decibiile, allora esiste una funzione semi-caratteristica calcolata che chiameremmo $\chi_{B}'$ e converge solamente quando appartiene all'insieme cioè che $y\in\mathbb N$ ed appartiene a $B$.
+```js
+begin
+	input(x);
+	y = f(x)
+	output(X'_B(y))
+end
+```
+
+Secondo Church-Turing, sarebbe in grado anche di accettare l'insieme $A$, dove alla terza riga se la funzione $f(x)$ ridà come risultato $y$ che  questo valore converge sulla funzione semi-caratteristica $\chi_{B}'$, allora la $x\in A$ cioè quella che prende la funzione $f(x)$ converge correttamente , restituisce un valore. Cosa impossibile, perché $A$ abbiamo detto per ipotesi che è semi-decidibile.
+
+Per dimostrare tale teorema, abbiamo bisogno prima di tutto di trattarne un altro molto importante, cioè quello del parametro.
+#### 5.3.3.1 Paramater Theorem
+Prendiamo una funzione con due parametri $x,y$ questi due parametri possono essere anche identificati come $m,n$ che hanno tutti e due come valore $1$ e fanno parte dei naturali, quindi $\forall x,y\in \mathbb N$  allora esisterà una funzione che prende due parametri $f:\mathbb N^{2}\to \mathbb N$ che sarà totale e calcolabile, esisterà un'altra funzione totale e calcolabile che chiameremmo $s:\mathbb N \to \mathbb N$, di questa forma:
+$$\varphi_{s(x)}(y)= f(x,y)$$
+Cioè che farebbe in questa parte? Lo spieghiamo in maniera molto semplice:
+
+>[!example] **Spiegazione del teorema del parametro**
+>Cominciamo con il dire che la funzione di destra è calcolata da una macchina di Turing che chiameremmo $M_{e}$ quindi la funzione diventerebbe $\varphi_{e}(x,y)$, descriviamo la computazione che farà questa funzione.
+>
+>Prenderà il valore di $y$ e lo inseriremmo nel nastro, ora siccome dovremmo pure inserire il valore di $x$ allora che facciamo, spostiamo la testina a sinistra del nastro  nella posizione della lunghezza del valore di $l(x)+1$ (la lunghezza di una stringa  se non ti ricordi sta a capitolo [[#^becc02|1.0 Lungezza di una stringa]]) e da quella posizione cominciamo a scrivere la $x$ verso destra, dove in questo caso la testina della macchina $M_{e}$ avrà la posizione sul primo simbolo della stringa $x$, questa operazione la descriviamo tramite la funzione $s(x)$, dove indica la posizione della testina alla lunghezza del parametro $x$ che prende in input $y$, cioè $\varphi_{s(x)}(y)$, permettendoci quindi di includere dei parametri fissi nella nostra funzione, come ad esempio:
+>$$f(x,y)=x•y$$
+>possiamo riscrivere la funzione fissando il parametro $x=5$ e la nuova funzione possiamo rinominarlo $g_x$, in questo modo:
+>$$g_{5}(y)=5•y$$
+>in questo caso la funzione $g_{x}(y)$ fa la stessa cosa della funzione che ha due parametri $f(x,y)$ solo che il valore di $x$ lo fissiamo ed è già noto.
+
+Vedere libro a pagina 72-73 dove viene applicato il teorema del parametro per il concetto della riduzione, che fa come esempio dell'insieme $I=\{ x\in \mathbb N \ | \ \varphi_{x}(x)=x^{2} \}$ tramite l'insieme $K=\{ x\in\mathbb N \ | \ \varphi_{x}(x)\downarrow \}$, cioè la funzione del [[#4.8 Halting Problem|problema dell'arresto]].
+## 5.4 Equivalence of Turing Machines
+Oltre al problema dell'arresto che abbiamo prima citato durante il capitolo precedente, se ne presenta un altro di problema dell'informatica, che non presenta una soluzione algoritmica, questo problema prende il nome del **Problema dell'equivalenza tra MdT**.
+
+Cosa intendiamo come equivalenza tra MdT? Vediamo il teorema cosa ci dice.
+
+>[!quote] **Equivalenza tra MdT**
+>Presi in input due numeri naturali $x$ ed $y$ determinare se esiste un algoritmo che determina se $M_{x}$  e $M_{y}$  calcola o no la stessa funzione. cioè se $\varphi_{x}=\varphi_{y}$ oppure no.
+
+Cioè in altre parole se esiste un algoritmo che secondo la tesi di Church Turing, sappia decidere oppure no l'insieme:
+$$E=\{ (x,y)\in\mathbb N \ | \ \varphi_{x} = \varphi_{y} \}$$Cioè che $\varphi_{x}$ e $\varphi_{y}$ sono la stessa funzione oppure no? Sfortunatamente non esiste una soluzione, quindi questo problema è indecidibile, perché se lo fosse saremmo in grado di creare un algoritmo unico che verifica la correttezza automatica dei programmi.
+Le uniche tecniche che possiamo utilizzare per verificare la correttezza di un programma è tramite **model checking** o **testing**.
+
+Per dimostrare l'indecidibilità di tale insieme andremmo per 3 passi:
+1. Dimostriamo da subito che non si può sapere a priori se una funzione calcolabile sarà totale o meno (cioè converge su tutti gli input) o meno.
+   
+2. Poi andremmo a mostrare che non è possibile vedere se ci sono funzioni calcolabili che coincidano con l'identità $id$ cioè non si può sapere se una funzione $f:\mathbb N \to\mathbb N$ lascia inalterato ogni suo input, cioè che il valore in output è uguale al suo input.
+
+3. Infine mostreremmo l'indecidibilità dell'equivalenza tra MdT 
+
+### 5.4.1 Dimostrate that a total function is not calculable
+Prendiamo l'insieme delle macchine di Turing che calcolano le [[Functions#1.1 Partial and total function|funzioni totali]].
+$$T=\{ x\in \mathbb N \ | \ \varphi_{x} \ è \ totale \}$$
+Non è decidibile,  e nemmeno semi-decidibile, tenendoci i loop che sono presenti al suo interno, vediamo la dimostrazione per la decidibilità.
+Per dimostrarlo dobbiamo **supporre per assurdo** che allora il nostro $T$ sia decidibile, allora possiamo numerare le funzioni che vengono ad essere generate dalle macchine di tale insieme, potendo enumerare tutte le funzioni che sono totali e calcolabili nell'insieme dei numeri naturali. ($\varphi_{0},\varphi_{1},\varphi_{2},\dots$).
+
+Allora esiste una funzione $f$ tale che, per ogni $x\in \mathbb N$.
+
+$f(x)$ = indice della ($x+1$)-esima funzione totale nell'enumerazione della MdT.
+
+Così ogni funzione totale e calcolabile è della forma $\varphi_{f(x)}$ al variare del naturale $x$. Creiamo un'altra funzione che chiameremmo $g$, tale che per ogni $x\in \mathbb N$, questa prende la funzione di prima e gli diamo il suo successivo.
+$$g(x) = \varphi_{f(x)}(x) + 1$$
+Questa funzione prende per ogni $x$, la funzione $g$ va ad aggiungere $1$ all'output di $\varphi_{f(x)}$ calcola su $x$, che convergerà sicuramente perché $f$ per supposizione per assurdo, essendo totale, ridà gli indici i funzioni totali , quindi in corrispondenza sarà anche $g$ sarà calcolabile e totale.
+
+Ma se abbiamo che la nostra $g$ e calcolabile allora esisterà un naturale $x_{0}\in\mathbb N$ tale che avremmo $\varphi_{f(x_{0})}=g$, cioè che il risultato della funzione $\varphi_{f(x_{0})}$  dovrà essere uguale per un qualsiasi naturale al risultato della funzione $g$ non si sa quando però potrà essere uguale, ma adesso vedremmo:
+$$\varphi_{f(x_{o})}(x_{0})= g(x_{0}) = \varphi_{f(x_{0})}(x_{0}) + 1 $$
+Che risulterà un assurdo perché il risultato della funzione di sinistra non è uguale a quella della destra.
+
+### 5.4.2 Dimostrate that the identity function is not calculate
+Problema dell'equivalenza, cioè non esistono due programmi (MdT) che ridaranno lo stesso risultato, non esiste alcun algoritmo che presi due programmi qualsiasi, se ridanno $1$ se calcolano la stessa funzione altrimenti $0$.
+$$I=\{ i\in \mathbb N \ |\ \varphi_{i} = id  \}$$
+
+Se fosse così calcolabile allora tramite la riduzione saremmo anche in grado di decidere l'insieme $T$ sopra mostrato prima non essere decidibile.
+
+Prendiamo una funzione che chiameremmo $f:\mathbb N^{2} \to \mathbb N$, dove prenderemmo a scelta due naturali $x,y$, la funzione sarà mostrata così:
+$$f(x,y)=\begin{cases} 
+ y\space \space se \space \varphi_{x}(y)\downarrow\ \\ \\ \uparrow altrimenti
+\end{cases}$$
+
+Vediamo da qui che la funzione è calcolabile, ora prendiamo per ogni $x$ la utilizziamo in una funzione calcolabile $g_{x}$ che va da $\mathbb N \to \mathbb N$, abbiamo utilizzato il [[#5.3.3.1 Paramater Theorem|teorema del parametro]].
+$$g_{x}(y)=\begin{cases} 
+ y\space \space se \space \varphi_{x}(y)\downarrow\ \\ \\ \uparrow altrimenti
+\end{cases}$$
+Cioè andremmo a fissare una $x$ nella nostra funzione $g_{x}$ allora possiamo semplicemente dire che la $g_{x}$ sarebbe uguale alla funzione $s: \mathbb N \to \mathbb N$
+## 5.5 Kleene Theorem 
+
+Per ogni, qualsiasi funzione casuale calcolabile e totale $t: \mathbb N \to \mathbb N$, esiste un indice che chiameremmo $e\in \mathbb N$, tale che: 
+$$\varphi_{e} = \varphi_{t(e)}$$
+La funzione $t$ è totale e calcolabile, per ogni trasformazione di $e$, cioè dell'indice, c'è un indice della MdT e la sua trasformata, non fa niente.
+Non la chiede vedetevela sul libro se volete
+
+## 5.6 Rice Theorem
+Per utilizzare il teorema di Rice, lo si utilizza solo con gli insiemi di indici, che definiremmo in questo modo:
+
+>[!warning] **Insieme di indici**
+>L'insieme $I\subset \mathbb N$ è un insieme di indici se  e solamente se:
+$$\forall x,y\in \mathbb N \ | \ (\varphi_{x}=\varphi_{y})\to(x \in I \iff y \in I)$$
+Ci serve sopratutto per dimostrare che un insieme non è decidibile e poi mostrare dopo un algoritmo che lo semi-decide (ad esempio quella della [[Fundamentals of Computer Science#5.3.1 Dove tail (Coda di Colomba)|coda di colomba]])
+
+Vediamo un esempio pratico di questa applicazione.
+>[!example] **Esempio**
+>Prendiamo l'insieme in questione:
+>$$A=\{ x\in \mathbb N \ | \ \varphi_{x}(x) = 0 \ se \ converge \ in \ x \ passi \}$$
+>Per controllare se il nostro insieme è un insieme di indici o no applichiamo il teorema sopra citato, cioè se è un insieme di indici allora $\forall i,j \in \mathbb N$ dove avremmo che i due indici sono diversi $i\not=j$ $i\in A$ sarebbe uguale a scrivere $\varphi_{i}(i) = 0 \ in \ i \ passi$ allora per il concetto sopra citato anche la funzione $\varphi_{j}$ deve calcolare la stessa funzione, cioè $\varphi_{j}(i) = 0 \ in \ i \ passi$, allora anche la nostra $j$ può fare la stessa cosa di $i$, che sfortunatamente non è così
+>$$\varphi_{j}(i)=0 \ in \ i \ passi \not\to \varphi_{j}(j) = 0 \ in \ j \ passi$$
+>Questo perché abbiamo che $i\not=j$, cioè che in questo caso:
+>$$j\not\in A$$
+
+
+>[!quote] **Teorema insieme di indici**
+Sia $F$ una famiglia di funzioni calcolabili (mettiamo le funzioni $\varphi_{x},\dots$), prendiamo anche un insieme $S \subset \mathbb N$ che è l'insieme degli indici di $F$ lo rappresentiamo come:
+$$S=\{ x\in \mathbb N \ | \ \varphi_{x} \in F \}$$ 
+> In generale possiamo dire che per qualsiasi insieme che andremmo a studiare, questo viene considerato insieme di indici se e solamente se:
+> 
+> per ogni $i,j\in\mathbb N$ si avrà il primo indice $i\in S$ allora vuol dire che $\varphi_{i}=\varphi_{j}$ cioè  che $\varphi_{j}$   calcola la stessa funzione di $\varphi_{i}$, allora vuol dire che anche l'indice $j\in S$ farà parte di S
+
+
+> [!quote] **Teorema di Rice**
+> Sia $F$ una famiglia di funzioni calcolabili come abbiamo detto prima. L'insieme dei suoi indici $S$ è decidibili se e solamente se $F=\emptyset$ oppure se $F$ coincide con l'intera classe delle funzioni calcolabili, cioè l'insieme dei suoi indici non è decidibile ($S = \emptyset$ oppure $S \equiv \mathbb N$)
+
+Dimostriamo questo teorema che abbiamo detto, $S=\emptyset$ oppure $S\equiv\mathbb N$ faremmo una **dimostrazione per assurdo**, dove abbiamo $S\not= \emptyset \ \cap S\not= \mathbb N$, allora prendiamo che $S$ è **decidibile** allora mostriamo qui sotto:
+- $i$ sia il primo indice per. cui $\varphi_{i}\in F$
+- $j$ sia il primo indice della funzione $\varphi_{j}\not\in F$
+Cioè possiamo vedere dall'insieme $S$ se i suoi indici stanno in $F$ oppure no cioè calcola la [[#^273abf|funzione caratteristica]], allora possiamo dire che esiste questa funzione $g: \mathbb N \to \mathbb N$, allora:
+$$g(x)=\begin{cases} 
+ i\space \space se \space x \not\in S \\ j \ se \space x \in S
+\end{cases}$$
+[[Functions#1.1 Partial and total function|funzione totale]] e calcolabile, allora abbiamo che $\forall x \in \mathbb N$ allora abbiamo che:
+$$g(x) \in S \iff x \not\in S$$
+cioè in questo caso avremmo che la sua funzione.
+$$\varphi_{g(x)}\in F \iff \varphi_{x} \not\in F$$
+Siccome $g$ è totale e calcolabile per il teorema di Kleene. $\exists$ un indice tale che: 
+$$\varphi_{e} = \varphi_{g(e)}$$
+cioè che la sua funzione con la sua trasformata siano identici, ma sopra abbiamo visto un'assurdo perché %% TODO: COMPLETE WITH THE REASON%%
+Prendiamo come esempio l'insieme $T$:
+$$T=\{x \in \mathbb N \ | \ \varphi_{x}=id \}$$
+Non è decidibile per il teorema di Rice:
+- $I \not= \emptyset$ (cioè esiste un indice che appartiene all'insieme dei naturali $i \not\in \mathbb N$ ) detta in parole povere dimostrare l'esistenza di una funzione che **possiede le proprietà dell'insieme**, oppure anche detta che esiste un indice della funzione che analizziamo, che appartiene all'insieme che stiamo studiando, ad esempio $I$.
+- $I\not\equiv \mathbb N$ (cioè esiste un indice che non appartiene all'insieme dei naturali $i\not\in \mathbb N$ ) o detta in parole povere che non rispetta l'insieme che stiamo studiando.
+# 6.0 Grammars and Automa
 ---
-# Reference
+In questo capitolo andremmo a collegare il concetto di linguaggio e computabilità, come ad esempio dire che una stringa appartiene ad un linguaggio oppure no, come ad esempio la funzione $f$ che va da $\mathbb N$ a $\mathbb N$ lo riduciamo ad un problema nell'insieme $\{ (n,f(n)) \ | \ n \in \mathbb N \}$.
 
+Per definire un linguaggio ci sono diversi metodi, si possono distinguere come:
+
+- Utilizzare un approccio di tipo $generativo$, nel quale le stringhe del linguaggio, sono generate da **un insieme di regole predefinite** che chiameremmo **grammatiche**, come possiamo vedere nella lingua che studiamo o che utilizziamo tutti i giorni.
+---
+- Utilizzo un approccio di tipo $riconoscitivo$ cioè capire che la stringa che abbiamo scritto tramite un alfabeto (riguardare il concetto di  [[#^d91590|alfabeto]] se non lo si ricorda), appartiene oppure no al nostro linguaggio che consideriamo, utilizzeremmo delle macchine astratte che verificano tale stringa, che sono chiamate $automi \ riconoscitivi$.
+
+In questo capitolo concentreremo l'attenzione sulle grammatiche generative e
+sugli automi riconoscitori. Le prime generano linguaggi, i secondi li riconoscono.
+## 6.1 Generative grammars
+Quando parliamo di grammatiche generative, come detto prima, dobbiamo fissare delle regole con la quale si possono generare delle frasi di senso compiuto.
+Per esempio se noi avremmo $soggetto$,$verbo$,$complemento \ oggetto$ come nella regola della composizione della frase nella lingua italiana, la frase sarebbe come esempio $maria \ canta \ una \ canzone$, abbiamo seguito la regola sopra citata, ma non abbiamo posto dei vicoli su ognuno delle parti, come ad esempio prendiamo anche la frase $maria \ canta \ maria$ , sarebbe una frase senza senso, quindi c'è bisogno di fissare delle regole.
+
+Passiamo ad un esempio di come una grammatica regola, in modo formale, una frase da generare in questi due punti:
+1) Prendiamo dei simboli che definiscono le regole che andremmo a dare, $A,V,B$, per definire l'ordine con cui andiamo a ordinare la nostra frase $soggetto,verbo, complemento \ oggetto$ e il simbolo per **poter iniziare la frase che sarebbe** la $S$.
+2) Dobbiamo poi fare in modo, di poter prendere le lettere del nostro alfabeto $a,b,c,\dots$, per costruire un dato oggetto o un dato verbo e poi magari il simbolo "-" per indicare lo spazio vuoto.
+Prendiamo due lettere due simboli, che rappresenteremmo in questo modo: $T,N$, poi vedremmo in dettaglio che significato avranno, però il primo simbolo sta per i simboli dell'alfabeto con la lettera minuscola $a,b,c,d,\dots$, invece la seconda rappresenta l'insieme dei simboli con la lettera maiuscola $A,B,C,D,\dots$
+$$\begin{gather}
+S\to AVB \\\ \\
+ A \to P-,\ A \to un-M-, \ A \to una-F- \\  \\
+B \to un-M, B \to una-F  \\  \\
+P \to maria \\
+\\ M \to orecchio \\
+\\ F \to romanza \\
+\\ V \to canta
+\end{gather}\\ $$
+Nelle prime due operazioni andiamo a creare delle regole che impostiamo noi personalmente, in questo caso, sarebbe: $$soggetto + verbo + complemento$$
+>[!quote] **Grammatica a struttura di frase**
+>Una $grammatica \ a \ struttura \ di \ frase$ sarebbe una quadrupla, che chiameremmo $G=(N,T,P,S)$ dove avremmo:
+>-  $N$ è un insieme finito non vuoto di simboli **non terminali** (che sono le categoria sintattica come $verbo$,$soggetto$ rappresentate come $(S,A,B,C,\dots)$)
+>  
+>- $T$ definito come l'insieme non vuoto finito di simboli **terminali** (cioè i simboli dell'alfabeto $T=\{ a,b,c,d,\dots \}$)
+>  
+>- $S$ è un simbolo che appartiene all'insieme $N$, cioè $S\in N$ viene definito come il simbolo iniziale, indica l'inizio dell'insieme.
+>  
+>- $P$ è un **insieme finito di produzioni**.
+>  
+
+Ma cosa sono le produzioni??
+>[!info] **Produzione**
+> Le produzioni sono una rappresentazioni di $T$ e $N$ che avremmo tipo ad esempio $\gamma \to \gamma'$, dove $\gamma,\gamma'\in(N\cup T)^{*}$:
+> - Che la nostra prima gamma $\gamma\not=\lambda$ contiene almeno un simbolo non terminale
+> - $P$ sarebbe la produzione di un $G$ 
+
+In breve:
+- $T$ **terminali**: lettere simboli piccoli dell'alfabeto $\{ a,b,c,d,\dots \}$.
+- $N$ **non terminali** lettere grandi dell'alfabeto $\{ S,A,B,C,D,\dots \}$, compresa anche il simbolo $S$, che sarebbe come detto prima, l'inizio della stringa.
+Vediamo anche una convenzione
+>[!warning] **Convenzioni**
+>Per scrivere quando abbiamo la gamma di sinistra che è sempre la stessa per ogni parte della sinistra, ad esempio come:
+>$$\gamma \to \gamma_{1},\dots,\gamma\to \gamma_{n}$$
+>Possiamo scrivere in una maniera molto più semplicemente come:
+>$$\gamma\to \gamma_{1}\ | \ \gamma_{2} \  | \ \dots \ | \ \gamma_{n}$$
+
+>[!info] **Struttura di una Grammatica**
+>Prendiamo come esempio una grammatica $G$ di questo tipo $(N=\{ S \}, T=\{ a,b \})$, i primi due sono i nostri simboli che andremmo ad utilizzare, passiamo ora alle nostre produzioni $P=\{ S\to aSb, \ S\to\lambda  \}$, questa è una **grammatica di tipo 0**, cosa che invece non sarebbe stata se avremmo avuto invece produzioni di questo tipo $P=\{S\to aSb, S\to ab, \lambda\to b  \}$, essendo che la terza produzione è una stringa vuota, non facente parte della grammatica.
+
+
+Vediamo ora un esempio di questa cosa che abbiamo spiegato
+>[!example] **Parantesi bilanciate**
+>Scrivere una grammatica per generare tutte e sole le parentesi bilanciate, come ad esempio:
+>$$\{ (), ()(),(()()),((())),\dots \}$$
+>Cioè da una parantesi  aperta $($ deve essere presente una parentesi chiusa $)$, cioè dove c'è un `begin` e c'è una `end`.
+>
+>Partiamo sempre dal simbolo iniziale, cioè $S$, in questo modo:
+>$$P= \{S \to () \ | \ SS \ | \ (S)\}$$
+>La stringa più piccola che possiamo generare sarebbe le $()$ oppure possiamo generare le parantesi due volte con $SS$ (che sarebbe uguale a dire $()()$) e infine la $(S)$ sarebbe come dire $(())$, quello che andiamo a dare per primo è come una variabile, la possiamo riutilizzare quando ci pare anche dopo.
+>
+ Per induzione possiamo dire che il caso base è verificato, cioè che la stringa genera la stringa più piccola di **parentesi bilanciate**.
+ 
+ Per stampare ad esempio invece la produzione $(()())$ è generabile dalla nostra grammatica $S$?
+ $S\to(S),\ S\to(()S),\ S\to(SS)$
+ 
+ >[!quote] **Definizione di Linguaggio generato da G**
+ >Prendiamo un linguaggio $L\subset T^{*}$ (compreso anche di $\lambda$), bisogna scrivere un grammatica $G$ che "genera" $L=L(G)$ , dove avremmo che. $L(G)$ chiameremmo come il **linguaggio generato da una grammatica** che chiameremmo $G$, che sono deriviabili dal simobolo iniziale $S$ in $G$:$$L(G)=\{w\in T^{*} \ | \ S \to^{*}_{G} w \}$$
+ >
+ >Ci sono un numero finito di riscritture che porterà ad un $w$ cioè la stringa generata dai simboli **terminali** $T^{*}$
+
+## 6.4 Chomsky Grammars Classification
+
+- La $tipo \ 0$ viene chiamata **Grammatica a struttura di frase** ^7ab7d8
+- La $tipo \ 1$ viene definito come **Grammatiche Dipendenti dal Contesto**
+- La $tipo \ 2$ viene definita come **Grammatiche Libere dal Contesto**
+- Le $tipo \ 3$ si chiamano **Grammatiche Regolari**
+$$\def\arraystretch{1.5} 
+\begin{array}{c|c|}\\\hline  \\
+tipo \ 0 & \gamma \to \gamma', \gamma\not= \lambda, \qquad \gamma,\gamma'\in(N\cup T)^{*} \\ \\\hline  \\
+\ tipo  \ 1  & \alpha A\beta \to \alpha \gamma \beta \qquad A \in N \ \qquad  \alpha,\beta,\gamma\in( N\cup T)^{*} \\ \\
+\hline \\ tipo \ 2 & A \to \gamma \qquad A\in N \qquad  \gamma \in (N\cup T)^{+} \\ \\\hline \\
+\ tipo \ 3 &  A \to \alpha \ | \ \alpha B \qquad A,B \in N \qquad \alpha\in T\\
+\\\hline
+\end{array}$$
+
+$$L_{3}\subset L_{2}\subset L_{1}\subset L_{0}$$
+Ci sono poi grammatiche che sono considerate **Dipendenti dal Contesto**, in cui abbiamo nella parte sinistra di una produzione $parte \ sinistra \to parte\ destra$, dove abbiamo solitamente i non-terminali ($N=\{ A,B,C,\dots \}$), che possiedono altri non-terminali o altri terminali al suo interno, oppure stringa vuota.
+>[!quote] **Grammatica Dipendenti dal Contesto**
+>Le $grammatiche \ di \ tipo \ 1$ o dette anche **Dipendenti dal Contesto**, sono una derivazione delle grammatiche a struttura di frase, che è l'insieme $G=(N,T,P,S)$, solamente che hanno una diversa tipologia di produzioni $P$, sono del tipo $\gamma A \delta\to \gamma\beta\delta$ con $\gamma,\delta\in(N\cup T)^{*}$ $A\in N$ e $\beta\in (N\cup T)^{+}$ (il simbolo non terminale $A$ può essere sostituito da una stringa $\beta$, cioè l'unione tra terminali, purché questa stringa è nel contesto della forma $\gamma$_$\delta$ ) 
+
+**Libere dal contesto** posso mettere il simbolo non terminale in relazione con un terminale, facendoci capire che la nostra $A$ non dipende da nessun terminale 
+>[!quote] **Grammatica Libere dal Contesto**
+>Le $grammatiche \ di \ tipo \ 2$ o dette anche **Libere dal Contesto**, sono una derivazione delle grammatiche a struttura di frase, che è l'insieme $G=(N,T,P,S)$, solamente che hanno una diversa tipologia di produzioni $P$, sono del tipo $A\to \beta$ con $A\in N$ e $\beta\in (N\cup T)^{+}$ (il simbolo non terminale $A$ può contenere una stringa $\beta$, cioè l'unione tra terminali o non, senza dover dipendere dal contesto in cui si trova ) 
+
+Le **Grammatiche Regolari** servono nella prima fase di controllo, che rappresentano tutti i token dei nostri linguaggi di programmazione, cioè le parole chiave, `while`, `if`, `begin`, `end`, dandoci una base di analisi lessicale dei linguaggi di programmazione (cioè se abbiamo scritto bene oppure no i nostri token).
+>[!quote] **Grammatica regolari**
+>Le $grammatiche \ regolari$, oppure anche dette $di \ tipo \ 3$, sono una derivazione delle grammatiche a strutture di fase, che abbiamo visto essere l'insieme $G=(N,T,P,S)$, solo che in questo caso avremmo una differenza nelle produzioni, $P$, di questo tipo:
+>- $A\to aB$ 
+>- $A\to a$
+>Con il corrispettivi simboli non terminali $N=\{ A,B \}$ e il simbolo terminali $T=\{ a \}$.
+>La regola è che **un simbolo terminale se viene ad essere seguito da uno non Terminale**
+
+La parte sintattica non la fa la Grammatica di tipo tre, ma lo fanno le grammatiche a struttura di fase, cioè ci controllano se dopo un `begin` abbiamo messo un `end` per concludere il programma.
+
+Il contesto della variabile, lo si fa con il tipo 1 **Dipendenti dal Contesto**, cioè vedere se una variabile è assegnata al giusto contesto, la variabile `cane` prenderà come valore `abbaia` non `miagolare`, non tutti i linguaggi di programmazione sono tipati (cioè possiedono un tipo che viene definito da noi `int`,`float`,`double`,ecc..), questa grammatica serve a questo.
+
+Dal **tipo 3°** fino al **1°** abbiamo linguaggi che sono decidibili, ma il **tipo 0** abbiamo le macchine di Turing.
+
+Prendiamo ogni grammatica che abbiamo appena citato, possiamo generare da ognuna di loro un $linguaggio$.
+
+>[!danger] **Esempio di esame**
+>prendiamo una grammatica:
+>$$G=(\{ S,A \},\{ a,b \},P,S)$$
+>Prendiamo anche il linguaggio:
+>$$L(G)=\{ a^{n}b^{m} \ | \ n,m ≥ 1 \}$$
+>Il professore chiede di identificare di che livello nella gerarchia di Chomsky appartiene tale linguaggio generato dalla grammatica generata da sopra, cioè la classe dove si posiziona tale linguaggio (solitamente sarà di tipo 2 o tipo 1) perché nella dimostrazione alla fine possiamo dire che quello sotto non è del tipo detto precedentemente.
+>
+>Vediamo che stringhe possiamo generare:
+>$$L=\{ ab,aab,abb,aabb,aaabb,aabbb,aaabbb,\dots \}$$
+>Quindi le produzioni come:
+>$S\to aS \ | \ aA$
+>$A \to b \ | \ bA$
+>Questa è una **grammatica di tipo 3**
+
+>[!example]  **Esempio con il tipo 2**
+>Prendiamo un linguaggio di questo prima però cambiamo i parametri:
+>$$L(G')=\{ a^{n}b^{n} \ | \ n ≥ 1 \}$$
+>essendo che possiamo generare solo tipologie di stringhe di questo tipo:
+>$$L=\{ ab,aabb,aaabbb, aaaabbbb\}$$
+>
+>La sua produzione sarà diversa di quella di prima:
+>$S\to aSb \ | \ ab$
+>
+>Questa è **libera dal contesto** e **non regolare** e ci sarà un teorema che vedremmo per dimostrarlo.
+
+Prendiamo come esempio un **linguaggio di tipo 1**
+$$L=\{a^{n},b^{n},c^{n} \ | \ n ≥ 1  \}$$
+Possiamo generare insiemi di questo tipo: 
+$$L\{ abc,aabbcc,aaabbbccc,\dots \}$$
+La produzione che che genereremmo da questo linguaggio sarà
+$S \to aSBC \ | \ aBC$
+$CB\to CX$
+$CX\to YX$
+$YX\to YC$
+$YC\to BC$
+$bB \to bb$
+$cC \to cc$
+$bC \to bc$
+$aB \to ab$
+Dopo sul libro c'è la spiegazione delle monotone e degli alberi di derivazione, che a noi non ci importa perché all'esame non lo chiede. (Pag 92-98)
+### 6.4.1 Regular Language
+Come abbiamo visto prima la regola deve essere di questo tipo:
+$$A\to a \qquad A\to aB$$
+Il nostro linguaggi sarà di questo tipo:
+$$L=\{ a^{n}b^{m} \ | \ n,m ≥ 1 \}$$
+Quindi le produzioni come:
+$$S\to aS \ | \ aA \qquad A \to b \ | \ bA$$
+le possiamo rappresentare tramite **automi a stati finiti**, che sono di questi tipi:
+
+![[automa-deterministic.png]]
+Gli stati finali sono cerchiati due volte
+![[Screenshot 2025-04-29 at 12.28.38.png]]
+Dove ad ogni automa assegniamo un linguaggio e diremmo che quest'ultimo è **accettato dall'automa**, questo sopra non rappresenta il nostro linguaggio, ora qui sotto rappresenteremo l'automa del linguaggio $L=\{ a^{n}b^{m} \ | \ n,m ≥ 1 \}$:
+![[Screenshot 2025-04-29 at 12.32.44.png]]
+automa è **deterministico**, quando per ogni stato non esistono due archi che transiscono in due stati, ma sceglie solo un cammino.
+>[!warning] **IMPORTANTE**
+>Ci sono dei concetti che ho saltato, perché all'esame non lo mette, anche se sono importanti, se li volete vedere, vedete il libro a pagina, 92-98.
+>
+### 6.5 Automa with finite-states
+>[!info] **N.B**
+>Diremmo che la funzione è parziale tramite la simbologia della freccia:
+>$$\mapsto$$
+>Invece la funzione è totale, con la freccia che sarà senza stanghetta a sinistra:
+>$$\rightarrow$$
+Con la definizione di funzione di questo tipo.
+#### 6.5.1 Automa not deterministic 
+Prendiamo la definizione:
+>[!quote] **Definizione Automa a Stati Finiti Non Deterministico**
+>Un automa a stati finiti **non deterministico** (ASFND) è una quintupla $(Q,A,\delta, q_{0},F)$, dove avremmo quindi:
+>- $Q$ insieme finito di stati come le macchine di Turing.
+>- $A$ insieme finito non vuoto di simboli dell'alfabeto $\{ a,b,c,d,\dots \}$
+>- $\delta$ è una funzione totale che associa ad ogni coppia $(q,a)$ cioè detto anche a $Q,A$ un insieme di stati $q'\in Q$:
+>$$\delta: Q \times A \to 2^{Q}$$
+>come la macchina di Turing [[Fundamentals of Computer Science#4.7 Universal Turing Machine|macchina di turing universale]]
+>- $q_{0}$ stato iniziale
+>- $F$ che è $F\subset Q$ che sarebbe l'insieme degli stati finale dell'automa, cioè ne possono avere $1$ come anche più di uno.
+
+Esempio come abbiamo qui per mostrare i nostri insiemi, con la funzione.
+![[autom-determ.png]]
+riportando un insieme di stati, dove possiamo anche trovare anche il vuoto $\emptyset$, cosa che nel **deterministico non c'è**:
+![[Screenshot 2025-05-13 at 10.21.20.png]]
+
+Quando un automa è a stati finiti e non è deterministico, avremmo questo esempio di stato di automa, dove avremmo non solo uno stato come prima, ma abbiamo la possibilità di transitare, in più possibili stati.
+![[autom-not-detm.png]]
+Prendiamo un esempio in questione, per quello che abbiamo detto:
+>[!example] **Prendiamo un ASFND**
+>Ad esempio avremmo l'insieme $M=(Q,A,\delta,q_{0},F)$, con la funzione parziale di questo tipo, come abbiamo detto prima:
+>$$\delta: Q\times A\to 2^{Q}$$
+>Come definiremmo il linguaggio per tale insieme? $L(M)$, cioè:
+>$$\delta':Q\times A^{*}\to 2^{Q}$$
+>Avremmo la funzione che ci da ad esempio:
+>$$\delta'(q,w)=\begin{cases} 
+ \{q\}\qquad \space se \space w = \lambda \ (|w|=0) \\ \\ \ \cup_{q_{k}\in \delta(q,w)} \delta'(q_{k},w') \qquad   w\not=\lambda \ e \ w=aw' 
+\end{cases}$$
+avremmo in questo caso che:
+$L(M)=\{ w\in A^{*}\ | \ \delta '(q_{0},w) \cap F \not= \emptyset\}$
+#### 6.5.2 Automa deterministic
+>[!quote] **Definizione Automa a Stati Finiti Deterministico**
+>Un automa a stati finiti **deterministico** (ASFD) è una quintupla $(Q,A,\delta, q_{0},F)$, dove avremmo quindi:
+>- $Q$ insieme finito di stati come le macchine di Turing.
+>- $A$ insieme finito non vuoto di simboli dell'alfabeto $\{ a,b,c,d,\dots \}$
+>- $\delta$ è una funzione totale che associa ad ogni coppia $(q,a)$ cioè detto anche a $Q,A$ un insieme di stati $q'\in Q$:
+>$$\delta: Q \times A \mapsto {Q}$$
+>- $q_{0}$ stato iniziale
+>- $F$ che è $F\subset Q$ che sarebbe l'insieme degli stati finale dell'automa, cioè ne possono avere $1$ come anche più di uno.
+
+Avremmo quindi la funzione totale $\delta$ che sarà della forma:
+![[Screenshot 2025-05-13 at 10.23.48.png]]
+Viene considerata una funzione parziale perché può ritornare un risultato oppure un valore vuoto, cioè che non ritorna niente:
+![[Screenshot 2025-05-13 at 10.25.30.png]]
+
+Prendiamo un esempio come illustrato nel libro:
+>[!example] **Prendiamo un ASFD**
+>Ad esempio avremmo l'insieme $M=(Q,A,\delta,q_{0},F)$, con la funzione parziale di questo tipo, come abbiamo detto prima:
+>$$\delta: Q\times A\mapsto Q$$
+>Dove avremmo anche la stringa $w$ che appartiene all'insieme delle stringhe $w\in A^{*}$, e diremmo che la nostra stringa verrà accettato da un linguaggio $M$ con questa simbologia $w\in L(M)$, ci estraiamo una funzione, che chiameremmo $\delta'$, di questo tipo:
+>$$\delta': Q\times A^{*} \mapsto Q$$
+>Che ci da un risultato in base alla stringa che prendiamo in input $w$ che $\in$ ad $A$ e se riporta ad uno stato di $F$ **cioè l'insieme degli stati finali**.
+>
+>$$\delta'(q,w)=\begin{cases} 
+ q\qquad \space se \space w = \lambda \\ \\ \delta'(\delta(q,a),w') \qquad altrimenti \space w=aw' 
+\end{cases}$$
+![[Screenshot 2025-05-13 at 11.09.15.png]]
+
+Se nel nostro caso $M$ è un automa a stati finiti deterministico, il linguaggio accettato da $M$, sarà:
+$$L(M)=\{ w\in A^{*}\ | \ \delta '(q_{0},w) \in F \}$$
+Il nostro linguaggio prende una stringa nell'insieme delle stringhe $A^{*}$ e prendere la funzione che abbiamo definito prima ($\delta'$), e ci ridà uno stato finale $F$.
+
+>[!quote] **Teorema 7.1**
+>Per ogni automa a stati finiti **non deterministico** ne esiste uno anche **deterministico** equivalente, cioè $$L(M) = L(M')$$
+
+Possiamo anche definire un'altro teorema che viene presentato:
+>[!quote] **Teorema 7.2**
+>Dato un automa a stati finiti deterministico $M$, esiste una grammatica regolare $G$ equivalente; cioè che $L(M)=L(G)$.
+>
+
+![[Screenshot 2025-05-13 at 12.15.34.png]]
+### 6.6 Espressioni regolari
+Un'espressione regolare è una grammatica generata in questo modo:
+$$E::= 0 | 1 | a |  e.e| e+e| e^{*} \qquad a\in A $$
+Ogni espressione regolare denota una linguaggio di questo tipo
+$$E \to^{[|.|]} L \subseteq A^{*}$$![[Screenshot 2025-05-13 at 12.25.28.png]]
+
+### 6.7 Pumping Lemma for Regular Languages
+>[!quote] **Pumping Lemma**
+>Si $L$ un linguaggio regolare su un alfabeto $T$ (dandocelo per assunzione, sappiamo già che sarà regola, in questo caso se non lo fosse non lo si può applicare).
+>Allora $\exists$ una costante $p\in\mathbb N$ che dipende da $L$, tale che per ogni $z\in L$ tale che la sua lunghezza è $|z|≥p$, esistono tre stringhe $u,v,w\in A^{*}$, tale per cui $z=uvw$ e valgono le seguenti proprietà:
+>- $|v|≥1$;
+>- $|uv|≤p$;
+>-  $uv^{i}w\in L, \ \forall i≥0$
+
+Proviamo questo teorema che abbiamo appena citato:
+>[!example] **Esempio**
+> $L$ è regolare come da teorema, e sia  $M=(Q,A,\delta, q_{0},F)$ e l'automa a stati finiti (deterministico o no non importa), accetta $L(M)=L$, dove fissiamo la nostra $p=|Q|$, prendiamo adesso la nostra $z$ che appartiene a $\in L$, dove si ha che la $|z|≥p$, consideriamo un cammino sull'automa che parte e riconosce $z$.
+
+### 6.8 Pumping Lemma for Languages Open from the Context
+>[!quote] **Pumping Lemma Per Linguaggi Liberi dal Contesto**
+>Si $L$ un linguaggio regolare su un alfabeto $T$ (dandocelo per assunzione, sappiamo già che sarà regola, in questo caso se non lo fosse non lo si può applicare).
+>Allora $\exists$ una costante $p\in\mathbb N$ che dipende da $L$, tale che per ogni $z\in L$ tale che la sua lunghezza è $|z|≥p$, esistono tre stringhe $u,v,w,x,y\in A^{*}$, tale per cui $z=uvwxy$ e valgono le seguenti proprietà:
+>- $|vx|≥1$;
+>- $|vwx|≤p$;
+>-  $uv^{i}wx^{i}y\in L, \ \forall i≥0, i\in \mathbb N$
+
+Esempio di applicazione del pumping lemma, per i linguaggi liberi dal contesto.
+>[!example] **Esempio di applicazione del pumping lemma**
+>Prendiamo ad esempio il linguaggio $L$.
+>$$L=\{a^{n}b^{n}c^{n}\ | \ n ≥ 1\}$$
+>La domanda che ci chiede all'esame, per quanto riguarda l'esame, sarà: 
+>*"A quale classe nella gerarchia di Chomsky appartiene il linguaggio?"*
+>
+>Si ha queste produzioni, che lo possiamo mostrare in questo modo:
+>$$S\to \  ab \ | \ aSb$$
+>In questo esempio, non ci basta solo applicare le produzioni $P$, ma dobbiamo mostrarlo tramite il pumping lemma per i linguaggi liberi dal contesto, per mostrare che **non è libero dal contesto**, cioè non che sia libero dal contesto.
+>
+>Sembra confusionario, ma ora vediamo il concetto applicandolo e capendolo al dettaglio.
+>
+>Prendiamo una $p\in\mathbb N$ dipendente dal linguaggio che abbiamo, in questo caso $L$, ed una stringa del linguaggio $z\in L$, tale che la lunghezza di $|z| ≥ p$, questo lo mostriamo come $z=a^{p}b^{p}c^{p}$, allora abbiamo che $|z| = 3p≥p$.
+>Allora esistono $\exists u,v,w,x,y$ tali che $z=uvwxy$ e valgono a),b),c).
+>
+>La suddivisione della stringa sarà:
+>
+![[Screenshot 2025-05-27 at 10.46.40.png]] oppure ci sono dei casi  che non sono ammissibili, come sopra visto, oppure anche, come questo esempio.
+![[Screenshot 2025-05-27 at 10.54.36.png]], non è **LIBERA DAL CONTESTO**, perché non possiamo utilizzare un automa a pila.
+
+# 7.0 Linguaggio WHILE
+---
+```
+PROGRAM ::= begin end | begin SEQCOMMAND end
+SEQPROGRAM ::= COMMAND | SEQPROGRAM;COMMAND
+COMMAND ::= ASSIGNMENT | while TEST do COMMAND
+ASSIGNMENT := VAR := 0 | VAR := PD(VAR) | VAR:= S(VAR) 
+TEST ::= VAR ≠ VAR
+VAR ::= LETTERA | VAR LETTERA | VAR CIFRA
+LETTERA ::= A | B | C | ... | Z
+CIFRA ::= 0 | 1 | 2 | .... | 9
+```
+
+>[!info] **N.B**
+>Le macro che andremmo ad illustrare saranno, solo utilizzate per la teoria, non dovremmo fare così all'esame (per fortuna se no già è difficile l'esame in se).
+
+
+Estensione del linguaggio WHILE, come ad esempio vediamo:
+$$X:=Y$$
+Questo significa che prendiamo il valore della variabile di $Y$ lo incrementiamo e lo salviamo in $Y$, ad esempio:
+$$X:=s(Y)$$
+Poi riprendiamo la stessa variabile e la decrementiamo, in modo ch possiamo avere il valore della variabile.
+$$X:=pd(X)$$
+
+Prendiamo ad esempio la sommatoria, come ad esempio.
+$$Z:=X+Y$$
+Possederà come macro, in questo caso come ad esempio: 
+```pascal
+begin
+	Z:=X;
+	U:=0;
+	while U ≠ Y do
+		begin
+			Z := s(Z);
+			U := s(U);
+		end
+begin
+```
+
+Poi le altre macro non so se servano veramente, ma all'esame state certi che per fare la somma non dovete fare tutto sto pippone.
+
+# Reference 
 [^1]: **palindromo**: viene definito palindromo quelle parole, numeri o sequence di lettere che possono essere lette da entrambi i versi, sia da sinistra a destra, che da destra fino a sinistra ad esempio: 3663, radar, 12321, ecc..
 
 [^2]: Direi personalmente che sarebbe un sotto-insieme delle possibili quintuple, questa è una mia supposizione, da prendere come vera o falsa sta a voi. 
 
 [^3]: **congettura**: supposizione di un idea, basata su apparenze probabili, in parole povere si può tradurre in "ipotesi". 
-- [ ] 

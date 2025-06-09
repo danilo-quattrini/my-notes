@@ -1,33 +1,29 @@
+---
+share_link: https://share.note.sx/n6tun7hi#uqOMd9PsiOEO7jBrOjVXNSsxDajLcaBmFFe+42qOoBw
+share_updated: 2025-06-04T19:51:10+02:00
+---
 2025-02-10 13:47
 
 Status: #baby 
  
 Tags: [[Graphic]], [[General Knowledge]] 
 
-Materials: *Carlo Cumo* [drive](https://drive.google.com/drive/folders/1gYV_iV4ZdvOdPTejDotNQbWdhdY36XQH?usp=drive_link), Link lezioni [lezioni](https://docs.google.com/spreadsheets/d/1E9QQElXXp4xzKx77zBk0K_yoTRNwNhXYlfaL9Ybex98/edit?gid=0#gid=0)
+Materials: *Carlo Cumo* [drive](https://drive.google.com/drive/folders/1gYV_iV4ZdvOdPTejDotNQbWdhdY36XQH?usp=drive_link)
 
----
-# 0.0 Index
----
-- [1.1 Homo Ludens](#1.1%20Homo%20Ludens)
-- [1.2 Man, Play and Game](#1.2%20Man,%20Play%20and%20Game)
-- [1.3 Reality is broken](#1.3%20Reality%20is%20broken)
-- [1.4 MDA, Mechanism, Dynamics and Aesthetics](#1.4%20MDA,%20Mechanism,%20Dynamics%20and%20Aesthetics)
-- [2.1 The history of the videogame](#2.1%20The%20history%20of%20the%20videogame)
-- [2.2 Video games stars](#2.2%20Video%20games%20stars)
-- [2.3 Phases of the video games](#2.3%20Phases%20of%20the%20video%20games)
-- [2.4 Graphic Evolution](#2.4%20Graphic%20Evolution)
-	- [2.4.1 Prospective inside the videogames](#2.4.1%20Prospective%20inside%20the%20videogames)
-	- [2.4.2 Dynamics inside the videogames in the pixel era](#2.4.2%20Dynamics%20inside%20the%20videogames%20in%20the%20pixel%20era)
-	- [2.4.3 The born of the 3D era](#2.4.3%20The%20born%20of%20the%203D%20era)
+Link lezioni [lezioni](https://docs.google.com/spreadsheets/d/1E9QQElXXp4xzKx77zBk0K_yoTRNwNhXYlfaL9Ybex98/edit?gid=0#gid=0)
+# Index
 
----
+-  [[#1.0 What's the Game?|1.0 What's the Game?]]
+- [[#2.0 Video Game|2.0 Video Game]]
+- [[#3.0 Industry of the videogames|3.0 Industry of the videogames]]
+- [[#4.0 Game Design|4.0 Game Design]]
+- [[#Reference|Reference]]
 # 1.0 What's the Game?
 ---
 Il gioco viene considerato come quell'attività che viene svolta in gruppo o singolarmente, praticata sia da adulti che da bambini, consiste in una serie di attività volte allo svago e al divertimento, portando anche allo sviluppo di capacità intellettive, manuali e fisiche.
 
 Vengono presentate quattro teorie riguardanti al concetto di gioco:
-- [[#1.1 Homo Ludens|Homo Ludens]] - _ Johan Huizinga_ [^1] 
+- [[#1.1 Homo Ludens|Homo Ludens]] - _Johan Huizinga_ [^1] 
 - [[#1.2 Man, Play and Game|Man, Play and Games]] - Roger Caillos[^2]
 - [[#1.3 Reality is broken|Reality is broken]] - Jane McGonigal
 - [[#1.4 MDA, Mechanism, Dynamics and Aesthetics|MDA, Mechanism, Dynamics and Aesthetics]] MDA framework [^3]
@@ -83,7 +79,7 @@ Vediamo nel dettaglio le singole proprietà:
 Non parlerò di tutti quelli inventati, ma solo quelli importanti, cioè quelli che hanno fatto la storia.
 
 ![[ENIAC-OXO.png]]
-Il primo videogioco che è stato creato nel **1952** e girava sul primo computer inventato cioè [ENIAC](https://en.wikipedia.org/wiki/ENIAC), si chiamava OXO in gergo comprensibile _Tic-Tac-Toe_, non avevano una grafica eccezionale e girava molto lentamente, ma almeno funzionava!
+Il primo videogioco che è stato creato nel **1952** e girava sul primo computer inventato cioè [ENIAC](https://en.wikipedia.org/wiki/ENIAC), si chiamava OXO in gergo comprensibile _Tic-Tac-Toe_, non avevano una grafica eccezionale e girava molto lentamente, ma almeno funzionava! ^355f1c
 
 ![[Pasted image 20250211134536.png]]
 Gioco rivoluzionario troviamo [PONG](https://en.wikipedia.org/wiki/Pong), inventato dal co-founder della Atari nel **1972**, anno anche dove il **mondo del videogioco diventava industriale**, cioè esisteva la possibilità da parte di tutte le persone di accedere al mondo dei videogiochi, Allan Alcorn, il gioco consisteva in una simulazione del ping-pong a due dimensioni, dove chi raggiungeva prima gli 11 punti vinceva.
@@ -114,7 +110,7 @@ Nel **1983** nasce il vero **[Mario Bros](https://en.wikipedia.org/wiki/Mario_Br
 Capolavoro, Caporlavoro, lo ripeto due volte perché è così nel **1985** esce il grandissimo videogioco **Super Mario Bros**, ormai conosciuto da tutto il mondo, semplicemente il giocatore era **Mario** oppure suo fratello **Luigi** nella parte del multiplayer, che dovranno attraversare il regno dei funghi per salvare la principessa Peach, che nel gioco veniva chiamata [Princess Toadstool](https://en.wikipedia.org/wiki/Princess_Peach "Princess Peach"), dal cattivo che sarebbe King Koopa, che dopo nel corso degli anni viene chiamato [Bowser](https://en.wikipedia.org/wiki/Bowser).
 ![【格安人気】 THE LEGEND OF ZELDA -COLLECTOR'S EDITION 豊富なセール](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.themarysue.com%2Fwp-content%2Fuploads%2F2022%2F08%2Fzelda-party.jpeg&f=1&nofb=1&ipt=e40bb4afd9081aa4d457e8ff310542d16a38adb4e750b512f3a6647006f73357&ipo=images)
 
-Poi nel **1986** nasce **[The Legend of Zelda](https://en.wikipedia.org/wiki/The_Legend_of_Zelda_(video_game))** gioco sempre inventato dallo stesso videogame designer [Shigeru Miyamoto](https://en.wikipedia.org/wiki/Shigeru_Miyamoto), rilasciato e sviluppato dalla Nintendo, il gioco si ambienta in questo regno magico di nome *Hyrule* e il nostro protagonista sarebbe questo elfo di nome [Link](https://en.wikipedia.org/wiki/Link_\(The_Legend_of_Zelda\) "Link (The Legend of Zelda)"), che dovrà collezionare gli otto frammenti del [Triforce of Wisdom](https://en.wikipedia.org/wiki/Triforce_of_Wisdom "Triforce of Wisdom") in modo da salvare la principessa **[Princess Zelda](https://en.wikipedia.org/wiki/Princess_Zelda "Princess Zelda")** dal cattivo [Ganon](https://en.wikipedia.org/wiki/Ganon "Ganon").
+Poi nel **1986** nasce **[The Legend of Zelda](https://en.wikipedia.org/wiki/The_Legend_of_Zelda_(video_game))** gioco sempre inventato dallo stesso videogame designer [Shigeru Miyamoto](https://en.wikipedia.org/wiki/Shigeru_Miyamoto), rilasciato e sviluppato dalla Nintendo, il gioco si ambienta in questo regno magico di nome *Hyrule* e il nostro protagonista sarebbe questo elfo di nome [Link](https://en.wikipedia.org/wiki/Link_\(The_Legend_of_Zelda\) "Link (The Legend of Zelda)"), che dovrà collezionare gli otto frammenti del [Triforce of Wisdom](https://en.wikipedia.org/wiki/Triforce_of_Wisdom "Triforce of Wisdom") in modo da salvare la principessa **[Princess Zelda](https://en.wikipedia.org/wiki/Princess_Zelda "Princess Zelda")** dal cattivo [Ganon](https://en.wikipedia.org/wiki/Ganon "Ganon"). ^5cc874
 
 ## 2.3 Phases of the video games
 Ora elencheremmo le fasi dello sviluppo dei vari videogiochi nel tempo, partendo da:
@@ -304,13 +300,103 @@ Per sviluppare un videogioco si devono seguire questi punti importanti:
 - **Game Design e Level Design**: considerate come le meccaniche di gioco, le dinamiche e i livelli di gioco (esempio prima o terza persona, livelli a strati, oppure scenari che cambiano ecc..).
 - **Script Writing**: tipologie di dialoghi che vogliamo inserire nel gioco, come anche le sceneggiature.
 - **Design**: intesa come la parte relativa al Concept, Character l'Enviornment le armi, L'UI (User Interface), Layout ecc.
-- **Storyboard e Animatics**
-# Reference
----
- 
+- **Storyboard e Animatics**: le animatics sono delle storyboard in movimento.
+- **Graphics:** UI/GUI/ 2D e 3D.
+- **Coding**
+- **Sound:**
+- **Localization:**
+- **QA and Testing:**
+- **Marketing:**
+- **Publishing**
+>[!info] **Develop Your Personal Game**
+>Per poter cominciare a sviluppare l'**idea del gioco** è importante capire che cosa bisogna fare. Svolgendo l'[[#1.4 MDA, Mechanism, Dynamics and Aesthetics|MDA]] di giochi semplici, per esempio come esercizio, possiamo razionalizzare il gioco del [[#^355f1c|Tic-Tac-Toe]].
+>
+>Parlando ad esempio dalla scomposizione delle regole, cioè:
+>- Si gioca in 2 giocatori.
+>- Ogni giocare possiede uno dei due simbolo "X" o "O"
+>- Il campo da gioco è una griglia 3x3.
+>- Ad ogni turno il giocare inserisce il simbolo che possiede in una casella della griglia.
+>- Il giocatore avversario non potrà scrivere lo stesso simbolo del suo avversario.
+>- Il giocatore non può inserire il simbolo, in suo possesso, nella posizione occupata dall'avversario.
+>- *ecc..*
 
+## 4.2 Basics to for the Game Design
+Prima che abbiamo discusso dei principi, cioè le fasi di sviluppo del videogioco, in potenziali idee di design, ora andiamo a erigere degli statuti (basi del Game Design).
+- **Brand Identity**: Logo, nome, mood o core che possono essere definiti.
+- **Slogan**: (Non è la frase che fa effetto, cioè lo sloga dei designer), possiamo intenderlo, come la **frase che identifica il tuo gioco** (vesti i panni di un assassino e sconfiggi i templari) *Assissin's Creed* cioè creiamo associazione Gioco $\to$ Slogan.
+- **Scheda**: Decidere il Titolo, il Genere (%%DA VEDERE DOPO%%), il Target (15-30 anni), prezzo vendita, la Trama.
+- **Concept**: Definiamo descrizione breve del gioco, Descrizione lunga e la Trama.
+- **Gameplay**: Cosa può fare il giocatore? (Sparare, Risolvere Enigmi, Saltare, Nascondersi, Raggiungere Obbiettivi).
+- **StoryTelling**: Trama e Dialoghi nel gioco.
+- **ArtWork**: Componenti Grafiche. (Bozze grafiche che mostrano un esempio del gioco e dei personaggi).
+- **Controlli / Comandi**: Come il giocatore interagirà col gioco. (Controller, Tastiera, Touch-Screen, ecc..).
+- **Competitor / Reference**: Chi sono i miei avversari che sono in contrasto con il mio videogioco, le reference dove prendiamo esempi da altri giochi e le implementiamo nei nostri (Voglio Implementare la Grafica di [[#^5cc874|The Legend Of Zelda]] e gli enigmi alla [The Bind Of Isaac](https://en.wikipedia.org/wiki/The_Binding_of_Isaac_(video_game))).
+- **USP** - *Unique Selling Points*: **Quali sono le cose che lo rendono unico**, aggiungere preso esempio da altri giochi o inventati, CO-OP.
+- **Team**: componenti del team.
+- **Strategie di renumerazione**: come intendiamo vendere il gioco. (Free, Payed oppure con le Ads).
+- **Costo & Business & Marketing**
+## 4.3 Documents for the Game Design
+Per far tutto ciò che abbiamo appena citato possiamo utilizzare i documenti che adesso citeremmo:
+- **Abstract**: documento di design molto sintetico che possiamo buttarci giù, le idee che vogliamo.
+- **Casi d'uso**: esempio di utilizzo dell'utente e le sue interazioni con le cose (Vedere concetto presente anche in [[UML#5.0 Use case base mechanism|Ingegneria del Software]]), elenco delle operazioni svolte dal giocatore durante la fase di gioco.
+- **Pitch**: Presentazione, con qualsiasi strumenti software (PowerPoint, Canva, ecc..), necessaria per raccontare la storia del nostro gioco, in maniera molto veloce.
+- **GDD** (Game Design Document): documento che lo possono comprendere tutti, **includendo tutte le informazioni** che servono per progettare un videogioco.
+- **GD** Diary: Sotto-forma di GDD, ma viene illustrato come diario, partono da un idea embrionale, adattandoci delle nuove idee.
+- **Prototyping**:
+	- **Concettuale**: Prototipo del concetto alla base del videogioco 
+	- **Funzionale**: Pre Alpha che ci fa vedere le caratteristiche grafiche e meccaniche del gioco.
+	- **Evolutivo**: Pre Alpha con stile grafico incerto, non sono sicuro se sarà quella oppure no.
+- **Playtesting**: Testing di un prototipo, idea che ho per vedere come avviene il suo funzionamento.
+## 4.4 Difficulty Graph
+Nella **Curva** delle difficoltà del gioco, abbiamo due parametri presente nel grafico, nelle ascisse (cioè l'asse delle x abbiamo il livello della difficoltà del gioco, mentre l'asse delle ordinate si viene a rappresentare le capacità del giocatore.
+![[Pasted image 20250604194137.png]]
+Queste son divise in due categorie:
+1. **Occidentale**: in questa modalità si parte da una base bilanciata cioè possiamo equiparare la difficoltà del gioco con le abilità del giocatore. Cioè ci sono momenti in cui il gioco comincia ad essere semplice, poi con le abilità che si acquisisce con il tempo diventa difficile, ma può ritornare anche ad essere nuovamente semplice, alternando tra l'alto e il basso.
+2. **Orientale**: gioco che parte dal semplice fino ad arrivare all'impossibile quasi fuori dalla portata del giocatore ("Esempio possiamo parlare di Undertale, dove il final boss cioè Sans diventa quasi *"impossibile"* da battere").
+## 4.5 Gamer's Profile
+Possiamo classificare i giocatori sulla base dei propri profili, era stato inventato per gli *NPCs*[^6] a suo tempo ora lo possiamo applicare ai giocatori del nostro gioco, ne sono 4 principalmente, e ci servono perché possiamo spingere più meccaniche che altre in base alla fetta di mercato che ci interessa.
+- **Explorer:** curioso, che esplora le mappe, cioè fa il possibile per scoprire la dinamica del mondo e tutto quello che nasconde (qui in questo caso si posson mettere più easter-eggs).
+- **Achiever**: colui che vuole completare la storia al 100%, fare le quest secondarie e un must e non è contento se non finisce il gioco (E' un giocatore attivo che agiste nell'ambiente di gioco **Action** e **World**).
+- **Socializer**: socializzare e conoscere sono le sue basi di vita, vuole conoscere le persone, interagendo con gli altri.
+- **Killer**: colui che vuole vincere sempre a tutti i cosi anche per beffa degli altri. (vuole vincere cioè **Azione** a discapito degli altri **Persone**).
+![[Screenshot 2025-06-04 at 19.58.25.png]]
+Spieghiamo ora cosa sono le quattro fecce che puntano alle diverse categorie che vediamo sull'immagine:
+- **Acting**: dinamica di interazione verso qualcuno o qualcosa.
+- **Ambient**: ambiente del gioco in cui ci troviamo
+- **Players:** giocatori presente nel gioco.
+- **Interacting**: chi vuole svolgere più enigmi e risolvere problemi.
+# 5.0 Video Games Genders
+
+| **Genere**                                                 | **Caratteristica**                                                                             | [[Game Design#^dcc869\|USP]] (Unique Selling Point)                 |
+| ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| Arcade                                                     | Curva orientale, Sistema a punteggi o<br>livelli, Stile pixel art/retrò                        | Nostalgia, target old-gen                                           |
+| GDR/RPG                                                    | Immedesimazione, Sistema di quest, Sistema di grinding                                         | Statistiche e abilità, profonda personalizzazione e narrativa       |
+| Shooter-FPS                                                | Visuale first-person, Frenetico,<br>Competitivo                                                | Skill elevata, cooperativo, mappe ben strutturate                   |
+| Picchia Duro a scorrimento o a incontri                    | Combattimento 1vs1 personaggi caratteristici                                                   | Competizione Skill Elevate                                          |
+| Sport                                                      | Simulativi e Sfida                                                                             | Per appassionati, Realistici, Costantemente aggiornati              |
+| Guida                                                      | Guidare veicolo, Seguire un percorso, competizione diretta                                     | Per amanti del genere, personalizzare il veicolo.                   |
+| Puzzle/Rompicapo                                           | Sviluppo a livelli, Lunga longevità, Gameplay lento e riflessivo                               | Alto engagement, Stimola capacità logica, benefici alle risoluzioni |
+| Tower Defense                                              | Gestione risorse, Gestione spazi di gioco, pressochè automatico                                | Tattico ma facile,<br>Gameplay rapido e<br>diretto                  |
+| Platform                                                   | Livelli a scorrimento, Trama semplice, Curva occidentale                                       | User-friendly con<br>pochi controlli e la<br>scelta è fondamentale  |
+| Simulazione                                                | Estremamente realistico, lunghi, manageriali/gestionali/simulatori                             | Alto contenuto formativo, alto engagement                           |
+| God Game, tutti quei giochi dove tu sei una certa divinità | Libertà di controllo, Molti senza una vera fine                                                | Senso di onnipotenza e controllo diretto                            |
+| Hack & Slash                                               | Combattimento con armi bianche, Frenetico                                                      | Combo system vario, Alta rigiocabilità                              |
+| Action tutti i giochi basati sull’azione                   |                                                                                                |                                                                     |
+| MMO (massively<br>multiplayer online)                      | Open-world, caratterizzazione e personalizzazione, classifiche                                 | Aggiornamenti costanti, longevi, collaborazione                     |
+| Moba (multiplayer online battle arena) tipo LOL            | Sessioni brevi, arena circoscritta, fog of war perpetua (tu vedi solo ciò che hai in un range) | Varietà di personaggi, Elevata competitività                        |
+| Endless Run                                                | Regole dei casual game, tendenzialmente mobile                                                 | Regole dei casual game, tendenzialmente mobile                      |
+| Party Games                                                | Multiplayer nello stesso luogo, console con più controller, 2+ player                          | Alto engagement cooperativo, stimola competizione.                  |
+| Avventura Grafica                                          | Singleplayer, Alto Story telling, Lento e riflessivo.                                          | Trama elaborata, Taglio cinematografico.                            |
+| Visual Novel                                               | Narrativo, Scelta dialoghi come interazione, target lettori.                                   | Divulgazione e Education, sviluppa storytelling.                    |
+|                                                            |                                                                                                |                                                                     |
+|                                                            |                                                                                                |                                                                     |
+|                                                            |                                                                                                |                                                                     |
+
+
+# Reference
 [^1]: _Homo Ludens_: https://en.wikipedia.org/wiki/Homo_Ludens
 [^2]: _Man, Play and Games:_ https://en.wikipedia.org/wiki/Man,_Play_and_Games
 [^3]: MDA framework: https://en.wikipedia.org/wiki/MDA_framework
 [^4]: QA: l'acronimo sta per Quality Assurance, sono quelle aziende che controllano se sono presenti bug nel gioco, controllando la qualità e le performance del gioco.
 [^5]: revenue: viene tradotta dall'inglese all'italiano come entrate e sono i soldi che un governo o un azienda riceve regolarmente.
+[^6]: NPCs: (Non-Player-Characters) sono dei personaggi importanti per il nostro gioco, perché possono popolare il nostro mondo, dare quest o darci informazioni importanti nel gioco.
