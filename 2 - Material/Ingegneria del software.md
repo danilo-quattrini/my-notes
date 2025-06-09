@@ -38,7 +38,7 @@ Ora andremmo a dare dei concetti (potrebbero servire come no idk) che sono la ba
 ---
 Le quattro 4 o (detto in inglese per fare il figo four's P) sono un insieme di componenti o persone che sono presenti quando si viene a creare un progetto per la prima volta e sono:
 
-- **People – Project stakeholders**: nello sviluppo di un software complesso sono coinvolte molte persone (Business e Project Management, Development Team,Customers, End Users);
+- **People – Project stakeholders**: nello sviluppo di un software complesso sono coinvolte molte persone (Business e Project Management, Development Team, Customers, End Users);
 
 - **Product – La [[Programming Knowledge#^8837ca|codebase]] e relativi artefatti:** è l’obbiettivo finale e risponde alla domanda “cosa si vuole costruire?” di fatti l’obiettivo dell’IDS è quello di fornire metodi e strumenti affinché la qualità di ogni artefatto risulti massima e comprensibili per future elaborazioni. ==L’obiettivo dell’ingegneria del software non è quello di produrre documentazione!==
 
@@ -51,7 +51,6 @@ Le quattro 4 o (detto in inglese per fare il figo four's P) sono un insieme di c
 Quando si parla di ciclo di vita e di processo sviluppo, si va nel dettaglio e si parla prima della definizione di **_ciclo di vita_** di un prodotto, esso ==viene definito come una serie di stati che sono stati compiuti da un ente(o prodotto) nella sua vita a partire dalla sua nascita, fino alla dimissione (o se vogliamo dire rimanendo in tema "morte")==.
 
 Il **_processo di sviluppo_** invece viene definito come tutti quei passi che vengono scelti ed adottati durante il ciclo di vita di un prodotto, ciò ==si intende che strategie si sono usate per compiere determinate azione== e chi deve fare cosa per poter raggiungere tali obbiettivi.
-
 ### 2.1 Parti in causa
 Quando si viene a sviluppare o ad usare un software, ci sono molte persone che partecipano al loro concepimento ed è fondamentale tener conto dei loro ruoli, esigenze e rapporti reciproci all'interno della progettazione.
 
@@ -63,17 +62,16 @@ I ruoli che andremmo ad elencare sono principalmente 4:
 - **Produttore**: viene intesa come un'organizzazione che produce un software, lo *sviluppatore* è colui che fa parte di tale organizzazione (cioè dipendete del produttore).
 - **Committente**: persona o organizzazione che richiede al *produttore* che software bisogna creare.
 - **Utente**: persona che utilizza il software.
-
 ### 2.2 Specifica e Implementazione
 Dal punto di vista del progettista, cioè colui che viene a svolgere un determinato progetto, ha diversi _requisiti_, che sono questi?
 
-Essi sono degli obblighi imposti dall’esterno (e quindi facente parte della specifica) mentre l’implementazione è il risultato di una serie di scelte che vengono svolte ed infine applicate.
+Essi sono degli obblighi imposti dall’esterno (e quindi facente parte della specifica) mentre l’*implementazione* è il risultato di una serie di scelte che vengono svolte ed infine applicate.
 
 > [!info] **Che cos'è il progetto?**
 > Il **progetto** è inteso come una serie di documentazioni che servono a descrivere come andremmo a realizzare il nostro sistema.
 
 > [!quote] **Che cos'è il vincolo?**
-> Il **vincolo** viene inteso come quella condizione che un determinato sistema deve soddisfare, che sono imposte da esigenze dovute a cause di tipo ambientali (fisiche, economiche, sociali) oppure da limiti tecnologici
+> Il **vincolo** viene inteso come quella condizione che un determinato sistema deve soddisfare, che sono imposte da esigenze dovute a cause di tipo ambientali (fisiche, economiche, sociali) oppure da limiti tecnologici.
 > 
 
 >[!warning] N.B
@@ -208,12 +206,13 @@ Questo sistema viene indicato maggiormente, quando si viene a trovare difficolt�
 
 ##### 2.5.4.2 Sviluppo a spirale
 In queso metodo di sviluppo si viene ad introdurre il concetto di **gestione dei rischi** su ogni *iterazione*, importante perché, si verrà ad identificare di che tipo di pericolo si parla valutandolo e definendone i vari metodi per la sua gestione, optando se necessità o no di un'ulteriore iterazione.
+![[Software-Life-Cycle.png]]
 
 I punti chiavi di questo modello di sviluppo consistono in:
-- pianificare
-- analizzare i rischi
-- sviluppo 
-- verifica
+- Definire l'obbiettivo della nuova iterazione e i rischi che si corrono, nel svolgerla **(PLAN)**.
+- Comprendere il rischio che si corre valutando le tecniche che si possono usare per la gestione di quest'ultimo **(RISK ANALYSIS)**.
+- Si procede allo sviluppo dell'iterazione e alla sua validazione, cioè testando quello che si sta creando. **(ENGINEERING)**
+- Si valuta se dopo questa iterazione, c'é la necessità di doverne svolgere un'altra, oppure no. **(EVALUATE)**
 I tempi sono ristretti, si passa da una fase di testing a quella di pianificazione in caso si voglia apportare ulteriori modifiche e correzioni al risultato dello sviluppo.
 
 #### 2.5.5 Model Driven Development
