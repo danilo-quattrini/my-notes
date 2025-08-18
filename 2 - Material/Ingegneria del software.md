@@ -29,20 +29,34 @@ Tags: [[Programming]], [[Software Engineering]]
 ---
 Ora andremmo a dare dei concetti (potrebbero servire come no idk) che sono la base dell'ingegneria del software, spiegandone cosa sono in dettaglio:
 
-- **Software**: è ==programma che specifica le istruzioni che un calcolatore dovrà eseguire al fine di raggiungere uno scopo== Identificandone anche tutti i documenti che lo descrivono e che sono stati messi a punto durante le varie fasi della produzione del sistema
+- **Software**: è ==programma che specifica le istruzioni che un calcolatore dovrà eseguire al fine di raggiungere uno scopo== Identificandone anche tutti i documenti che lo descrivono e che sono stati messi a punto durante le varie fasi della produzione del sistema.
 
 - **Ingegneria del software**: disciplina che studia le varie fasi e processi che portano alla produzione di uno specifico software. Consiste nell’applicazione di un approccio sistematico, disciplinato e quantificabile nello sviluppo, funzionamento e manutenzione del software.
   %%ci diventi dopo aver studiato come un'animale%%
-- **Ingegnere** : ==colui  che ha strumenti e competenze matematiche per descrivere le caratteristiche del prodotto, separatamente da quelle del progetto==. Si appoggia più sull’esperienza e sul giudizio personale che su tecniche matematiche.
+- **Ingegnere** : ==colui  che ha strumenti e competenze matematiche per descrivere le caratteristiche del prodotto, separatamente da quelle del progetto==. Si appoggia più sull’esperienza e sul giudizio personale che su tecniche matematiche. ^383c21
+## 0.1 Definizioni di "Ingegneria del Software"
+- **IEEE**: Applicazione di un approccio sistematico, disciplinato e quantificabile allo sviluppo, supporto e manutenzione del software.
+  
+- **Sommerville:** Definisce l'ingegneria del software come una **disciplina che riguarda tutti gli aspetti della produzione in se per se del software.** Colui che viene definito [[#^383c21|ingegnere]] del software è in grado di organizzare il lavoro in modo sistematico ed ordinato, utilizzando le tecniche più appropriate e gli strumenti in suo possesso, in base alle esigenze dei cliente ai problemi da risolvere i vincoli che si incontrano durante il cammino e le risorse disponibili.
+
+- Ghezzi, Jazayeri, Mandrioli: Definiscono l'ingegneria del Software come una branca della scienza dell'informazione, dove involve principalmente lo sviluppo di sistemi software di grandi dimensioni, dove si necessita l'aiuto di un team. Differenziano il concetto di **Programmare**, come un'attività personale, cioè del singolo, da quello dell'Ingegneria del Software che prende le basi da un team e non dal singolo.
+ 
 ## 1.0 The 4's P
 ---
 Le quattro 4 o (detto in inglese per fare il figo four's P) sono un insieme di componenti o persone che sono presenti quando si viene a creare un progetto per la prima volta e sono:
 
-- **People – Project stakeholders**: nello sviluppo di un software complesso sono coinvolte molte persone (Business e Project Management, Development Team, Customers, End Users);
-
-- **Product – La [[Programming Knowledge#^8837ca|codebase]] e relativi artefatti:** è l’obbiettivo finale e risponde alla domanda “cosa si vuole costruire?” di fatti l’obiettivo dell’IDS è quello di fornire metodi e strumenti affinché la qualità di ogni artefatto risulti massima e comprensibili per future elaborazioni. ==L’obiettivo dell’ingegneria del software non è quello di produrre documentazione!==
+- **People – Project stakeholders**: nello sviluppo di un software complesso sono coinvolte molte persone (Business e Project Management, Development Team, Customers, End Users).
+  
+- **Product – La [[Programming Knowledge#^8837ca|codebase]] e relativi artefatti:** è l’obbiettivo finale e risponde alla domanda “cosa si vuole costruire?” di fatti l’obiettivo dell’IDS è quello di fornire metodi e strumenti affinché **la qualità di ogni artefatto risulti massima e comprensibili per future elaborazioni** (e.g. introduzione delle tecniche di programmazione orientata agli oggetti). ==L’obiettivo dell’ingegneria del software **NON** è quello di produrre documentazione!==
 
 - **Project – le attività messe in campo per la produzione del prodotto:** sono tutte quelle attività da svolgere per realizzare il prodotto finale. Oltre  alla comunicazione rivolta al consumer e allo sviluppatore e l’ingegneria dei requisiti, ovvero lo studio di fattibilità, elicitazione[^1], specifica, analisi e validazione dei requisiti.
+  Regola del (PRDITM) possiamo ricordarlo come **predict** in inglese:
+	- Planning
+	- Requirements
+	- Design
+	- Implementation
+	- Testing
+	- Maintenance
 
 - **Process – come procedere nella produzione di un software:** definisce quali sono le attività da mettere in atto nello sviluppo di un prodotto software e come organizzarle. L’Ingegneria del Software ha definito diversi processi dalle diverse qualità adatte più o meno bene ai diversi ambiti di sviluppo, che vedremmo durante questo documento uno ad uno.
 
@@ -73,6 +87,8 @@ Essi sono degli obblighi imposti dall’esterno (e quindi facente parte della sp
 > [!quote] **Che cos'è il vincolo?**
 > Il **vincolo** viene inteso come quella condizione che un determinato sistema deve soddisfare, che sono imposte da esigenze dovute a cause di tipo ambientali (fisiche, economiche, sociali) oppure da limiti tecnologici.
 > 
+> Un **vincolo è quindi un requisito** indipendente dalla volontà dell’utente.
+> 
 
 >[!warning] N.B
 > La ***specifica*** sarebbe un insieme che contiene una serie di requisiti, questi ne descrive in dettaglio le sue caratteristiche, spiegandone il suo utilizzo e in che sistema fa parte.
@@ -82,7 +98,7 @@ Essi sono degli obblighi imposti dall’esterno (e quindi facente parte della sp
 ### 2.3 Process Perspective
 Il processo di sviluppo che abbiamo precedentemente discusso, possiede diverse tipologie di prospettive, che queste conducono alla produzione di un artefatto finale, tramite l'esecuzione di diverse attività:
 
-- ***Activities Perspective***: definisce di quali attività si compone un processo;
+-  ***Activities Perspective***: definisce di quali attività si compone un processo;
 
 -  ***Workflow Perspective***: sono le relazioni temporali tra le attività che devono essere svolte e le possibili condizioni necessarie per verificare e poter avviare un’attività;
 
@@ -101,7 +117,7 @@ Questi si distinguono in base alla organizzazione delle differenti attività del
    
 	- **studio della fattibilità**: comprendere le funzionalità fondamentali che il sistema deve implementare; 
 	  
-	- **elicitazione dei requisiti e analisi**: è il processo di raccolta e identificazione dei requisiti di un sistema software o di un prodotto i requisiti sono fondamentali perché definiscono cosa  deve fare e come deve comportarsi un sistema, per soddisfare le esigenze degli utenti;
+	- **elicitazione[^1] dei requisiti e analisi**: è il processo di raccolta e identificazione dei requisiti di un sistema software o di un prodotto i requisiti sono fondamentali perché definiscono cosa  deve fare e come deve comportarsi un sistema, per soddisfare le esigenze degli utenti;
 	
 	- **specifica dei requisiti**: i requisiti raccolti vengono formalizzati e descritti in dettaglio in un documento; 
 	
@@ -131,7 +147,7 @@ I modelli che andremmo a discutere saranno i seguenti:
 #### 2.5.2 Modello a Cascata
 Il **modello a cascata** consiste nell'==esecuzione a sequenza dei diversi passi== dello sviluppo software, dove ad ogni passo si viene a produrre dei **semilavorati** che sono dei documenti inerenti al processo o degli elaborati del codice sorgente o compilato, che verranno rielaborati e modificati nei passi successivi.
 
-Nella prima fase si va a creare i requisiti che il software dovrà soddisfare e un piano temporale dettagliato. Poi si prosegue con la modellazione e viene creato un progetto completo del software, si passa alla programmazione, alla quale seguono verifica e rilascio del software. 
+Nella prima fase si va a creare i requisiti che il software dovrà soddisfare e un piano temporale dettagliato. Poi si prosegue con la modellazione e viene creato un progetto  ', si passa alla programmazione, alla quale seguono verifica e rilascio del software. 
 
 La particolarità di questo modello è che la **conclusione di una fase, implica l'inizio di quella successiva** e che la **produzione dei semilavorati sia unidirezionale**, che cosa vuol dire? Si intende che alla conclusione di una fase i risultati di quest'ultima sono il punto di partenza di quella successiva e pertanto non possono influenzare passi precedenti.
 
@@ -142,16 +158,19 @@ Se si vengono a scoprire degli errori od omissioni nel progetto o nelle specific
 
 Questa problematica rende il **modello inefficiente** e viene associato ad una **percentuale elevata di fallimenti**, per via del fatto che le specifiche definite inizialmente non vengono più modificate una volta stabilite.
 #### 2.5.3 Modello Evolutivo
-Il modello cerca di prevalere su quello a cascata, discusso in precedenza e questo come?
+Il modello cerca di prevalere su quello a cascata, discusso in precedenza, questo come?
 
-Attraverso l'utilizzo di **prototipi** cioè delle versioni semplici di un sistema informativo, con la quale possiamo sperimentare diverse funzionalità. 
+Attraverso l'utilizzo di **prototipi**
+
+> [!info] Che cosa sono i **prototipi**?
+> Sono delle versioni semplici di un sistema informativo, con la quale possiamo sperimentare diverse funzionalità. 
 
 Ogni prototipo che si viene a creare, viene **valutato** e il risultato di tale valutazione, andrà a determinare il passo successivo finché non si arriverà alla creazione del prodotto, adottandosi alla richiesta finale del cliente, l'elaborato risulta completo e soddisfa ogni requisito, almeno fino a quando non viene richiesto un futuro update.
 
 Questo comporta a diverse conseguenze:
-
-- **Organizzazione del sistema poco efficiente** a causa dei continui cambiamenti.
-- **Difficoltà nella manutenzione** del prodotto nel tempo.
+>[!error] Problemi del modello evolutivo
+>- **Organizzazione del sistema poco efficiente** a causa dei continui cambiamenti.
+>- **Difficoltà nella manutenzione** del prodotto nel tempo.
 
 Il nostro **prototipo** è una rappresentazione dell'ideale applicazione, che andremmo a creare, non sarà completa di tutte le funzionalità che dovremmo implementare, ma per l'analisi dei requisiti è importante valutare che fine farà il nostro prototipo:
 
@@ -216,8 +235,11 @@ I punti chiavi di questo modello di sviluppo consistono in:
 I tempi sono ristretti, si passa da una fase di testing a quella di pianificazione in caso si voglia apportare ulteriori modifiche e correzioni al risultato dello sviluppo.
 
 #### 2.5.5 Model Driven Development
+Questa tipologia di modello di sviluppo si basa su un modello software già esistente, cioè che ogni singola operazione di team, si basa sul **perfezionamento** e **continuazione** di un progetto già esistente.
 
-## ?.? Processo Unificato
+Si parte da una base molto forte, cioè dei modelli completi e di alto livello, (cioè già fatti da qualcuno altro) e su questi ci si lavora sopra per poterci adattare ai requisiti e i vincoli richiesti, generando codice sorgente, documentazione a altri artefatti.
+
+## 3.0 Processo Unificato
 ---
 Lo **Unified Process (UP)** è un ==processo iterativo standardizzato per lo sviluppo del
 software per la costruzione di sistemi orientati agli oggetti== questo è un 
@@ -671,5 +693,4 @@ Verificare il funzionamento dei sottosistemi, ci son delle strategie di integraz
 # Reference
 ---
 [^1]: L’**elicitazione** è il processo di estrazione di **informazioni**, conoscenze o requisiti da una fonte, solitamente attraverso tecniche di intervista, osservazione o brainstorming, for more info go there [definizione elicitazione](https://www.edizionigoree.it/significato-elicitazione-definizione-etimologia/)
-
 [^2]: **Pareto principle**: regola dell'80/20 dove l'80 percento delle conseguenze vengono dal 20 percento delle cause for more go to here [Pareto Priciple](https://en.wikipedia.org/wiki/Pareto_principle) 

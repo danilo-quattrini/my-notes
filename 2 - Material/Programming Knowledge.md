@@ -58,6 +58,8 @@ I'm struggling to remember all the name in english of all the characters but now
 - **GitHub**: is the website where you are going to host all your repository, to organize your work with other people and show them to get hired.
 
 - **Repository**: different from the term of *Directory* it is the folder where you are going to keep your project  ^21112b
+
+- **Dependencies**: when a piece of software relies on another one, simply put, if Program A requires Program B to be able to run, Program A is dependent on Program B. This makes Program B a dependency of Program A.
 ## Method signature
 ---
 In Java programming, a method signature ==refers to the unique identifier of a method==. It ==consists of the method name and its parameter list==. The signature helps differentiate one method from another and allows the Java compiler to match method calls with their corresponding definitions. The method signature includes the following components:

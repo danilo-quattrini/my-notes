@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6 - The Real Notes/Fundamentals of Computer Science.md",
+                "file": "2 - Material/Ingegneria del software.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fundamentals of Computer Science"
+              "title": "Ingegneria del software"
             }
           }
         ]
@@ -805,19 +805,168 @@
             "id": "9c59a7b48a4dfe1d",
             "type": "leaf",
             "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "f0801e0506815154",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "135114fbdc489b7d",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "885aaff54be41020",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "a0bcef359ddc976a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "d39e9a357b9007e6",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "37849d685d88d031",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "b093780ba2198b1f",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "9c45443925797ec1",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "352f026b042d2fd6",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "a94c20522cb27100",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "62e6809b2cac33ce",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "33db8fe4141ed8ae",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "523a6e3260e2ad7d",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "bbfcf0ef9bb962a5",
+            "type": "leaf",
+            "state": {
               "type": "Saved Queries View",
               "state": {},
               "icon": "feather-mouse-pointer",
               "title": "Saved Queries"
             }
+          },
+          {
+            "id": "c01723f7a0ac4de8",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 69
+        "currentTab": 84
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 423.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -827,46 +976,47 @@
       "graph:Open graph view": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "4bf59fb5d70f259a",
   "lastOpenFiles": [
+    "2 - Material/UML.md",
+    "2 - Material/Programming Knowledge.md",
+    "2 - Material/Programming/Design Pattern.md",
+    "2 - Material/Ingegneria del software.md",
+    "2 - Material/Digitalization and Valorization of a local farming company..md",
+    "grandetti-use-case-2.png",
     "2 - Material/Game Design.md",
+    "6 - The Real Notes/Basics of Math.md",
     "6 - The Real Notes/Fundamentals of Computer Science.md",
     "6 - The Real Notes/Functions.md",
+    "6 - The Real Notes/Git.md",
+    "6 - The Real Notes/Mongo DB.md",
+    "6 - The Real Notes/Politecnico Master Degree.md",
+    "1 - Rough Notes/Risposte alle domande..md",
+    "1 - Rough Notes/Welcome to the Rough Notes.md",
+    "1 - Rough Notes/VLSM (NON ESISTONO LE CLASSI).md",
+    "7 - Images/Pasted image 20250612160204.png",
+    "6 - The Real Notes/🇬🇧 CAE Preparation.md",
+    "7 - Images/Screenshot 2025-06-12 at 12.49.43.png",
+    "Pasted image 20250612103307.png",
+    "README.md",
+    "Pasted image 20250612124701.png",
+    "6 - The Real Notes/!Orizzontale.md",
     "7 - Images/Screenshot 2025-06-04 at 19.58.25.png",
     "7 - Images/Pasted image 20250604194137.png",
     "Pasted image 20250604195814.png",
     "7 - Images/Screenshot 2025-05-27 at 10.54.36.png",
-    "2 - Material/Programming/Design Pattern.md",
-    "2 - Material/Ingegneria del software.md",
     "7 - Images/Software-Life-Cycle.png",
-    "2 - Material/Programming Knowledge.md",
-    "2 - Material/Digitalization and Valorization of a local farming company..md",
-    "2 - Material/UML.md",
-    "7 - Images/Screenshot 2025-05-27 at 10.46.40.png",
-    "1 - Rough Notes/VLSM (NON ESISTONO LE CLASSI).md",
-    "1 - Rough Notes/Risposte alle domande..md",
-    "1 - Rough Notes/Welcome to the Rough Notes.md",
-    "6 - The Real Notes/Politecnico Master Degree.md",
-    "6 - The Real Notes/Mongo DB.md",
-    "6 - The Real Notes/Git.md",
-    "6 - The Real Notes/🇬🇧 CAE Preparation.md",
     "6 - The Real Notes/Untitled 1.md",
     "6 - The Real Notes/Untitled.md",
-    "7 - Images/Screenshot 2025-05-13 at 10.25.30.png",
-    "7 - Images/Screenshot 2025-05-13 at 12.25.28.png",
-    "7 - Images/Screenshot 2025-05-13 at 10.29.50.png",
-    "7 - Images/Screenshot 2025-05-13 at 11.09.15.png",
     "6 - The Real Notes/Untitled 3.md",
     "6 - The Real Notes/Untitled 2.md",
     "6 - The Real Notes/GERUND.md",
-    "6 - The Real Notes/Basics of Math.md",
     "5 - Templates/Full Note.md",
     "3 - Tags/Software Engineering.md",
-    "6 - The Real Notes/Church-Turing.md",
-    "3 - Tags/School.md",
     "Sotto reti.pdf",
     "Untitled.canvas",
     "Trabalho_Pratico_Grupo_2024_2025_ISLA_EN.pdf",
