@@ -187,7 +187,7 @@ class Employee extends Sunstar {
 	} 
 }   
 ```
-In this example u see that we declare an abstract class and implemented like an interface into another class (in this case its own subclass). **
+In this example u see that we declare an abstract class and implemented like an interface into another class (in this case its own subclass).
 
 For see the difference between Interface and Abstract class see this link [Abstract vs Interface](https://www.geeksforgeeks.org/difference-between-abstract-class-and-interface-in-java/)
 ## What is an API

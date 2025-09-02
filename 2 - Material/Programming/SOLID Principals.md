@@ -39,7 +39,7 @@ Ora grazie all'interfaccia `Shipping` possiamo derivare le varie classi che impl
 >[!quote] Definition
 >Quando una classe è estesa da una sua sottoclasse, la sottoclasse dovrebbe poter essere utilizzata al posto della classe genitore senza rompere o modificare il funzionamento del codice esistente.
 
-Ciò vuol dire che quando estendiamo una classe, la sottoclasse deve avere gli stessi comportamenti della classe genitore (superclasse), cioè quando si sovrascrive un metodo della superclasse, questo ultimo non deve essere sostituito interamente con qualcos'altro ma solo modificato in parte.
+Ciò vuol dire che quando estendiamo una classe, la sottoclasse deve avere gli stessi comportamenti della classe genitore (super-classe), cioè quando si sovrascrive un metodo della super-classe, questo non deve essere sostituito interamente con qualcos'altro ma solo modificato in parte.
 
 Questo principio contiene delle checklist da rispettare  affinché venga rispettato pienamente (non possiede libera interpretazione), vediamoli insieme:
 

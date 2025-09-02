@@ -1,8 +1,10 @@
 {
   "cssTheme": "",
-  "baseFontSize": 18,
-  "baseFontSizeAction": false,
+  "baseFontSize": 20,
+  "baseFontSizeAction": true,
   "enabledCssSnippets": [
     "style"
-  ]
+  ],
+  "accentColor": "#007bc7",
+  "translucency": true
 }
