@@ -1,3 +1,8 @@
 .obsidian/plugins
 .obsidian/themes/Things
 .obsidian/snippets
+.DS_STORE
+
+.vscode/
+
+.idea/
