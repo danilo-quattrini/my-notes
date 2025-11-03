@@ -8,11 +8,10 @@ Tags:
 # Index
 ---
 
----
+
 # {{Title}}
 ---
 
-**
 # Reference
-
+---
 

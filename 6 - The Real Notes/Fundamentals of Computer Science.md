@@ -1,12 +1,12 @@
 ---
 share_link: https://share.note.sx/kpt7zdpy#SFVgtoBmnCXdpbKyaR8bKF6HApBqtzbx8i2+TwLIjJQ
-share_updated: 2025-07-23T10:53:31+02:00
+share_updated: 2025-11-03T09:28:14+01:00
 ---
 2025-03-04 16:26
 
 Status: #completed
 
-Tags: [[Programming]], [[General Knowledge]], [[Math]]
+Tags: [[Programming]], [[Math]], [[School]]
 
 Other notes: *[click here](https://francescopalozzi.notion.site/Appunti-39bc6581d2c9426280d354c261187919)*
 

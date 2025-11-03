@@ -2,7 +2,7 @@
 
 Status: #baby 
 
-Tags: [[Programming Knowledge]]
+Tags: [[Programming Knowledge]], [[OOP]], [[3 - Tags/Java]]
 
 ---
 # SOLID Principals

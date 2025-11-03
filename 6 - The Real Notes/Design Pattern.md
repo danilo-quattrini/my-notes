@@ -1,29 +1,18 @@
 ---
-share_link: https://share.note.sx/mlyeikio#KL/1j2iPkchuJXQszkeNjtdKFazHDjXiTEm6FafDpTw
-share_updated: 2024-11-20T11:58:39+00:00
+share_link: https://share.note.sx/4b53fo9v#KL/1j2iPkchuJXQszkeNjtdKFazHDjXiTEm6FafDpTw
+share_updated: 2025-09-15T11:34:05+02:00
 ---
 2024-10-07 11:20
 
 Status: #devoleped
 
-Tags: [[Programming]] [[Software Engineering]]
+Tags: [[Programming]], [[Software Engineering]], [[School]], [[3 - Tags/Java]]
 
 ---
 # Design Pattern
 
 ## 0.0 Index
 ---
-- [0.0 Index](#0.0%20Index)
-- [1.0 Introduction of OOP](#1.0%20Introduction%20of%20OOP)
-- [2.0 Class hierarchies](#2.0%20Class%20hierarchies)
-- [3.0 OOP pillars](#3.0%20OOP%20pillars)
-- [4.0 Relation between objects](#4.0%20Relation%20between%20objects)
-- [5.0 SOLID principals](#5.0%20SOLID%20principals)
-- [6.0 Design Pattern](#6.0%20Design%20Pattern)
-- [6.3 Category of Design pattern](#6.3%20Category%20of%20Design%20pattern)
-- [6.4 Creational pattern](#6.4%20Creational%20pattern)
-- [7.0 Structural Design Patterns](#7.0%20Structural%20Design%20Patterns)
-- [8.0 Behavioral Design Patterns](#8.0%20Behavioral%20Design%20Patterns)
 
 ## 1.0 Introduction of OOP
 ---
@@ -168,15 +157,21 @@ Li puoi trovare qui sulle note [[SOLID Principals]], oppure se vuoi in dettaglio
 --- 
 Il **design pattern** così chiamato, sono delle ==strutture ideate per risolvere dei problemi che si presentano==, sono aperti ed estendibili, nel senso che possono essere utilizzate per risolvere più problemi e si possono migliorare nel tempo, adattandoli ai problemi che riscontriamo, si possono incrociare multipli design patterns se si vuole.
 
+>[!important] **KEY CONCEPT**
+>I design patter sono delle linee guida dove noi andremmo a seguire i vari passi che sono presenti, in tale guida, solo che sta a noi decidere dove applicarli e in che ordine possiamo usare questi design.
+
+![[Pasted image 20250925102144.png]]
 ### 6.1 What Problem we are talking about?
 ---
 #### 6.1.1 Generic Problems
 Ci possono essere problemi legati alla gerarchia delle classi, questo cosa vuol dire?
 Date tot classi che risolvono un problema software, andremmo a creare la soluzione più adatta, per gestire la loro gerarchia.
-La soluzione a tale problema è l'utilizzo delle _interfacce_ queste se sono stabili e ben progettate, si potrà gestire bene la comunicazione con gli oggetti di una determinata classe.
 
-Se tali interfacce sono gestite correttamente si risolverà il problema, che si può riscontrare solitamente se non si crea un buon progetto, cioè **minimizzare le dipendenze**, cosa vuol dire?
-Far in modo che gli oggetti di una classe non richiamino se stessi, ma che questo compito venga gestito dall' interfaccia stessa.
+La soluzione a tale problema è l'utilizzo delle [[Programming Knowledge#Interface|interfacce]] queste se sono stabili e ben progettate, si potrà gestire bene la comunicazione con gli oggetti di una determinata classe.
+
+Se tali interfacce sono gestite correttamente si risolverà il problema, che si può riscontrare solitamente se non si crea a un buon progetto, cioè **minimizzare le dipendenze**.
+>[!question]- **Cosa vuol dire?**
+Minimizzare una dipendenza vuol dire, far in modo che gli oggetti di una classe non richiamino se stessi, ma che questo compito venga gestito dall'interfaccia stessa.
 
 Se tali soluzioni vengono applicate per ogni problema, si produrrà del **codice estendibile nel tempo**.
 #### 6.1.2 Specific problems
@@ -187,15 +182,16 @@ Oppure come posso **separare la gestione delle interfaccia da quella dell'implem
 
 Come **implementare lo stesso codice/algoritmo su più classi, senza doverlo duplicare più volte**?
 
-I design pattern complicano il codice nel tempo, ma questo però a fin di bene perché avremmo in cambio **estendibilità** e la **compatezza** del codice nel tempo.
+I design pattern complicano il codice nel tempo, ma questo però a fin di bene perché avremmo in cambio **estendibilità** e la **compatezza** del codice.
 ### 6.2 Structure of Design Pattern
 ---
-![[ExampleDesignPatternState.png | center]]
+![[ExampleDesignPatternState.png |Design Pattern State]]
+
 Questo è un esempio di Design pattern chiamato **State**, ogni design pattern è composto da diversi elementi da considerare:
 
 - **Nome del pattern**: questo per conoscere che problema andremmo a risolvere, le sue soluzioni e cosa comporta usare un determinato design pattern invece che un altro.
 
-- **Problema**: conosceremmo il problema per la quale si va ad applicare lo specifico design pattern scelto.
+- **Problema**: conosceremo il problema per la quale si va ad applicare lo specifico design pattern scelto.
 
 - **Soluzioni**: comporta descrivere ogni elemento del design pattern le sue relazioni, responsabilità e le collaborazioni.
  
@@ -209,18 +205,26 @@ Sono soluzioni che sono state adottate nel campo, quindi meglio sempre **prender
 Conoscere un problema in anticipo vuol dire, saper battere la concorrenza, ecco perché molti dei design pattern sono generici, per far sì che si possano applicare a soluzioni già esistenti, senza ulteriore perdita di tempo.
 
 Far in modo che sia **comprensibile e chiaro** il codice o progetto è lavoro del design pattern, nel caso mettessimo mano ad un progetto dopo mesi che non ci lavoriamo, si possono riscontrare problematiche di comprensione e lettura, se quest'ultimo non è ben descritto.
-Come un "**vocabolario**" il design pattern oltre ad essere comprensibile a noi, deve esserlo per gli altri progettisti software in gioco nel nostro progetto.
+
+>[!example]- **Esempio**
+>Come un "**vocabolario**" il design pattern oltre ad essere comprensibile a noi, deve esserlo per gli altri progettisti software in gioco nel nostro progetto.
 
 Ultimo ma non meno importante, **il design pattern permette di rendere il codice ed  il progetto più snello e comprensibile**
 
-> [!help]
-> **Refactoring**: stravolgere il progetto e il codice nel caso non si possa fare niente per risolvere un determinato problema già in uno stato avanzato.
+> [!help]- **Refactoring**:
+>  Stravolgere il progetto e il codice nel caso non si possa fare niente per risolvere un determinato problema già in uno stato avanzato.
 
 Questo lo si può fare tramite sempre l'utilizzo di design pattern ben studiati solo per il refactoring (_for see more [refactoring.guru](https://refactoring.guru/refactoring)_).
 
-## 6.3 Category of Design pattern
+### 6.3 Category of Design pattern
 ---
-In base al loro _ruolo_ si vengono a differenziare i suoi vari tipi.
+Ogni categoria di design pattern varia in base alla sua complessità e al suo utilizzo, possiamo classificare i Design Patter in 2 Macro categorie:
+
+- *Idioms*: sono quei design pattern che si **possono applicare solo ad un linguaggio di programmazione**, forse perché possiede delle proprietà che non tutti i linguaggio hanno.
+  
+- *architectural*:  sono invece **applicabili ad ogni linguaggio di programmazione**, sono quindi liberi da ogni vincolo e si possono utilizzare per sviluppare un'intera applicazione.
+
+In base al loro _ruolo_ si vengono a differenziare in 3 tipi.
 --- start-multi-column: ID_fy5j
 ```column-settings
 Number of Columns: 3
@@ -262,41 +266,209 @@ Largest Column: standard
 - Presenti nel caso di **situazioni dinamiche** gli oggetti possono cambiare il loro stato durante l'esecuzione e si viene ad usare la [[#4.3 Composition|composizione]]
 
 --- end-multi-column
-## 6.4 Creational pattern
+#### 6.3.1 Benefits of a Good Design
+Andremmo a discutere di quello che dovremmo raggiungere quando sviluppiamo un'architettura software e quello che dobbiamo evitare.
+
+##### 6.3.1.1 Code Reuse
+Per entrare nel mercato subito c'è bisogno di **minimizzare i tempi di produzione e i costi**, di quando si va a creare un prodotto software, in questo caso abbiamo la possibilità di Creare del **Codice Riutilizzabile**
+
+**Codice Riutilizzabile**: L'idea è semplice, perché non si prende qualcosa di già fatto da qualcun altro invece di rifarlo da capo? Bhe non è così semplice, ci sono degli aspetti del codice che ci rendono la vita complicata, ad esempio svolgere delle [[#4.2 Dipendence|dipendenze]] in una classe concreta invece che ad una interfaccia, relazioni troppo strette fra i componenti e così via, questo ci porta ad avere problemi nella flessibilità del codice.
+
+I design pattern sono una soluzione per risolvere a queste problematiche, ma vengono direttamente con un costo molto elevato, la **complessità del codice**
+##### 6.3.1.2 Estendibilità
+Nel mondo della programmazione, abbiamo sempre delle nuove richieste da parte del cliente che dobbiamo soddisfare:
+- Abbiamo fatto un gioco in Windows? Bene ora il cliente vuole che lo si fa pure su macOS.
+- Ha svolto un bottone che ha i bordi quadrati, ma dopo mesi il cliente li vuole rotondi?
+Le problematiche principali sono 3:
+1. Si cresce come persona, il progetto che abbiamo sviluppato all'inizio se lo andremmo a rivisitare, noteremmo che ci saranno molti errori e sbagli **comprendendo che ci sono aspetti del problema che prima non avevi fatto caso**.
+2. Qualcosa **che non è sotto il tuo controllo è cambiato**.
+3. La versione del prodotto che mosti al cliente, dopo un pò di tempo che lo utilizza vede delle migliorie o delle piccolezze che si possono fare o che ha notato che mancavano, in questo caso **è un bene perché significa che il cliente ci tiene al nostro lavoro**.
+
+#### 6.3.2 Design Principle
+Come facciamo a capire se abbiamo creato un buon software oppure no? Che strategia possiamo applicare in modo che siamo sicuri che abbiamo fatto bene il nostro lavoro? Bene a queste domande non ci sono delle risposte specifiche, ma ci sono dei principi o delle regole che possiamo seguire, in modo che andremmo a creare un software di ottima qualità.
+
+Molti di questi principi sono presenti nei design pattern che andremmo a illustrare.
+- [[#6.3.2.1 Isola la componente che varia|Isolare la componente che varia]]
+- [[#6.3.2.2 Dipendere dalle interfacce e non dalle implementazioni|dipendere dalle interfacce e non dalle impelementazioni]]
+- [[#6.3.2.3 Favorire la 4.3 Composition Composizione che l'Ereditarietà |Favorire la composizione che l'erditarietà]]
+##### 6.3.2.1 Isola la componente che varia
+>[!warning] **Obbiettivo**
+>Durante la programmazione, individua la variabile o la componente del tuo software che ha delle variazioni ed isola dal codice, cioè fa in modo che il comportamento sia isolato e separato dal resto che rimane uguale.
+
+Lo scopo è quello di far in modo di minimizzare i cambiamenti drastici del codice e farli in modo che siano separati e proteggere il codice principale. 
+
+Cioè far in modo **che il comportamento di un oggetto non vada a disturbare o intaccare l'intero sistema centrale.**
+
+A livello di metodo semplicemente se ad esempio abbiamo un sito e-commerce che ci calcola il totale della spesa `getOrderTotal(Product product)` e dentro abbiamo anche la possibilità di calcolare la tasse, violeremmo il [[SOLID Principals#S - ingle responsibility|principio di singola responsabilità]] dei [[SOLID Principals|SOLID]].
+```java
+public class Cart{
+... // more code before
+	public double getOrderTotal(Product product, int quantity){
+		double totalAmount = 0.0
+		for(Product p: product){
+			totalAmount += p.getPrice() * quantity
+		}
+		if (product.country() == "US")
+			totalAmount += totalAmount * 0.07 // US tax
+		else if(product.country == "EU"):
+			totalAmount += totalAmount * 0.20 // European VAT
+	
+		return totalAmount
+	}
+}
+```
+>[!info] _BEFORE: tax calculation code is mixed with the rest of the method’s code._
+
+Il modo più semplice è quello di estrarre la componente che cambia e fare il calcolo in un'altro metodo.
+```java
+public class Cart{
+... // more code before
+	public double getOrderTotal(Product product, int quantity){
+		double totalAmount = 0.0
+		for(Product p: product){
+			totalAmount += p.getPrice() * quantity 
+		}
+		totalAmount += totalAmount * getTax(product)
+		return totalAmount
+	}
+	
+	public double getTax(Product product){
+		if (product.country() == "US") return 0.07 // US tax
+		else if(product.country == "EU") return 0.20 // European VAT
+		else return 0.0
+	}
+}
+```
+
+Invece a livello di classe andremmo a fare delle separazioni, cioè se una classe contiene un metodo o molti metodi che fanno cose differenti e sono comportamenti diversi dalla classe  definiamo, conviene creare una classe nuova dove poter salvare tali comportamenti e la colleghiamo alla classe precedentemente modificata.
+
+Prendiamo la classe `Order` che prima stavamo analizzando.
+![[Screenshot 2025-09-12 at 12.43.02.png|Classe `Order` prima della modifica]]
+ 
+ Vediamo che al suo interno avrà un metodo, per il calcolo delle tasse, ma se sappiamo che la **classe calcola solo il totale e non fa altro**, allora possiamo semplicemente, delegare il compito del calcolo delle tasse ad un'altra classe.
+ ![[Screenshot 2025-09-12 at 12.44.14.png|Aggiunta della classe `TaxCalculator` che sarà aggregato a Order]]
+Abbiamo creato un'altra classe che gestirà tale ruolo, che sarà [[#4.4 Aggregation|aggregata]] alla classe che prima aveva anche il compito di calcolare le tasse.
+
+##### 6.3.2.2 Dipendere dalle interfacce e non dalle implementazioni
+
+>[!info] **Definizione**
+>Far dipendere il tuo codice da un'interfaccia e non dalla sua implementazione completa, cioè far in modo che il codice venga implementato da un astrazione.
+
+Questo principio si avvicina molto all'idea di [[SOLID Principals#I - nterface Segregation]], cioè che quando andremmo a implementare una classe come ad esempio `Cat`, questo non per forza dovrà dipendere dei comportamenti della classe che andrà a dipendere, in questo esempio `Sausage`.
+![[Screenshot 2025-09-12 at 12.53.45.png|Classe prima della modifica con `Cat` che dipende da `Sausage`]]
+Cioè in questo caso sappiamo che il gatto non per forza magerà solo la salsiccia, ma potrà anche cibarsi di qualcos'altro.
+
+Per risolvere a questo problema semplicemente andiamo a riflettere per un secondo:
+- **Q: Che cosa ci serve dalla classe che andremmo a dipendere?**
+  A: Ci serve solamente ad esempio il metodo `getNutrition()` che potrà essere implementato nel `Cat`.
+- **Q: Come facciamo ad isolare solo quel singolo metodo che ci serve, senza doverlo implementare direttamente in `Cat`?**
+  A: Basta creare un [[Programming Knowledge#Interface|interfaccia]] per gestire solo quella singola operazione e farla implementare alla classe `Cat`.
+  
+Vediamo l'esempio mostrato in figura di come ha fatto tale soluzione
+![[Screenshot 2025-09-12 at 16.13.28.png|Prima e dopo aver fatto l'estrazione del metodo]]
+In questa parte sembra non sia cambiato niente ma quando andremmo a vedere il [[#6.4.1 Factory pattern]] capiremmo che in realtà far dipendere la classe dalle interfacci che invece dalle classi concrete è molto meglio.
+
+##### 6.3.2.3 Favorire la [[#4.3 Composition|Composizione]] che l'Ereditarietà
+In questo caso si parla molto di violare il principio di [[SOLID Principals#SOLID Principals#L - iskov Substitution [ 1]|principio di  Liskov]], cioè che in questo caso noi dopo aver svolto il nostro codice ed aver ereditato una superclasse, ci ritroveremmo a delle problematice:
+- **Una sotto classe dovrà OBBLIGATORIAMENTE implementare i metodi della super classe**, cioè non saremmo in grado di separare i vari comportamenti delle classi che erediteremmo da quella superiore, costringendoci ad utilizzare metodi che non sono compatibili, con il concetto della classe che abbiamo inteso.
+  
+- **Bisogna assicurarsi che i metodi che implementiamo nella sottoclasse ritornano un sotto-tipo o lo stesso tipo del metodo della super classe**, quando facciamo l'`@Override` del metodo di una sottoclasse dobbiamo esser certi che il suo tipo di ritorno sia una sotto tipo o lo stesso tipo della super classe.
+>[!tip]-
+>Questa è una chicca del professore Loreti che mi ricordo che ha spiegato una volta a lezione di modellazione *Tac* prendetevi sta ciola.
+- **Ogni cambiamento della super-classe comporterà un cambiamento nella sua sotto-classe**, sono legate tra di loro tramite un contratto, se il contratto verrà modificato o distrutto, ci saranno delle ripercussioni sui suoi figli.
+  
+- **L'ereditarietà romperà il concetto di incapsulamento**,  cioè cosa vuol dire che se noi estendiamo una variabile di una super-classe ad una sotto classe con il `protected` solo possiamo fare questa cosa, possiamo accedere ai valor interni della super-classe.
+```java
+public class Balance(){
+	protected double balance;
+	
+	public Balance(double balance){
+		this.balance = balance;
+	}
+}
+
+public class Customer extends Balance{
+	public void increaseBalance(){
+		balance += 50;
+	}
+}
+```
+Vediamo che quando andremmo ad utilizzare il modificatore di accesso [[Programming Knowledge#`protected`|protected]] andremmo ad estendere la classe, saremmo in grado di poter accedere ai suoi valori, cosa che non andrebbe bene.
+
+Altro esempio invece al livello inverso se la super-classe vuole svolgere delle operazioni con le classi che ha esteso dovrà utilizzare dei typecheck, cioè dovrà scoperchiare (se possiamo dirlo così che tipo di classe vogliamo) ad esempio
+```java
+public class Bank{
+	List<Customers> customer = new ArrayList<>();
+	public void setCustomer(Customers customer){
+		this.customer.add(customer)
+	}
+	public void setAmount(double amount){
+		for(Customers c: customer){
+			if(c instanceof Pro)
+				c.setBalance(50)
+			else if(c instanceof Gold)
+				c.setBalance(25)
+				
+		}
+	}
+}
+
+```
+Dalla riga `7-12` andremmo a rompere il principio solid [[SOLID Principals#O - pen/ closed|Open/Closed]], perché ora il padre delle sotto-classi saprà dell'esistenza dei suoi figli andandone a modificare il loro comportamento, rendendo l'ereditarietà molto stretta tra il padre e il figlio, **diminuendo quindi le possibile future estensioni**.
+### 6.4 Creational pattern
 ---
 Sono quei ==pattern che permettono di astrarre la generazione di istanze di una classe==, in modo da far si che si creano sistemi indipendenti da come i suoi oggetti sono composti, creati e rappresentati.
 Gli oggetti vengono creati da delle specifiche _strutture_. 
 
-### 6.4.1 Factory pattern
+#### 6.4.1 Factory pattern
 Questo pattern ci permette di creare nuovi oggetti per estendere l'utilizzo della nostra ==applicazione utilizzando questo meccanismo di creazione di  oggetti che siano simili tra loro== (cioè che implementano la stessa interfaccia), senza dover specificare le loro classi  concrete.
 
 Questo pattern creare dei _veri e propri prodotti_ e permette anche di far in modo che le sottoclassi possano modificare gli oggetti restituiti dal factory method, non solo si riesce anche a cambiare completamente la logica della creazione senza dover metter mano sul codice intero.
+
+![[Screenshot 2025-09-15 at 11.41.36.png]]
+Cioè in questo caso ci sembra di aver spostato il metodo di `createTransport()` dal metodo sopra alle sue sottoclassi, ma in realtà abbiamo fatto ben oltre, ora possiamo implementare ogni sottoclasse di `Logistic` in modo completamente differente, cioè andremmo a creare degli oggetti, cioè delle istanze delle classi, completamente differenti tra di loro.
+
+>[!info] 
+>Nella super-classe noi siamo creando degli oggetti che sono di tipo `Transport` che dopo andremmo a spiegare come si andranno a definire. 
+
+Se vedi nell'immagine ci facciamo nella sotto-classe `Road-Logistic` un implementazione del metodo `createTransport()`, che ci ritorna un oggetto di tipo `Truck()`.
+
+Invece nel `Sea-Logistics` ci stiamo ritornando un oggetto differente, che sarà in questo caso `Ship()`, ma sempre che prendiamo il metodo della super-classe `createTransport()`.
+
+L'unico vincolo che dobbiamo soddisfare è quello di creare un interfaccia o una classe astratta del tipo di oggetto che vogliamo creare, nell'esempio sopra abbiamo bisogno di creare degli oggetti che sono dei mezzi di trasporto, bene allora diremmo.
+
+*"Definiamo un interfaccia o una classe che ci rappresenta l'oggetto che vogliamo creare."*
 ![[FactoryMethod.png]]
->[!done] Vantaggi 
+
+Eccolo qui, abbiamo `<<interface>> Transport` che sarebbe gli oggetti che noi stiamo creando, cioè dei mezzi di trasporto, sotto invece abbiamo le classi che implementeranno un comportamento comune che hanno tutti i mezzi di trasporto, cioè fare le consegne `deliver`.
+
+Ma la particolarità è che noi possiamo definire ogni singola classe nel modo che più preferiamo, senza dover esser vincolati a dei comportamenti che non ci sono di interesse (ad esempio se noi sappiamo che il `Truck` fa una consegna con una tassa e lo `Ship` invece no, basta creare un metodo solo sul Truck che sullo ship non esisterà).
+
+>[!done] **Vantaggi** 
 >- Il client non dipende dalla classe concreta del prodotto, ma dalla sua interfaccia permettendone la sua estendibilità
 >- Gli oggetti sono trattati come astratti.  
-#### 6.4.1.1 Factory method structure
->[!info] Consiglio esame
+##### 6.4.1.1 Factory method structure
+>[!info]- Consiglio esame
 >All'esame chiederà la sua struttura e la sua descrizione.
 
 ![[StrutturaFactoryMethod.png]]
 La struttura del _design pattern factory_ è composto da questi 4 metodi:
 
-1. ***Product***: interfaccia comune utilizzata da tutti gli oggetti che verranno creati dalla classe ***Creator*** e dalle sue corrispettive sottoclassi.
+1. ***Product***: interfaccia comune utilizzata da tutti gli oggetti che verranno creati dalla classe ***Creator*** e dalle sue sottoclassi.
    
-2. ***Concrete Products***: sono le implementazioni dell'interfaccia sopra citata ***Product***.
+2. ***Concrete Products***: sono le  differenti implementazioni fatte dell'interfaccia sopra citata ***Product*** (vedere l'esempio di prima se non si è capito).
    
-3. ***Creator:*** è ==colui che crea gli oggetti== tramite la dichiarazione, del metodo factory `createProduct()` che creerà oggetti  di tipo `<<interface>> Product` che possono essere o il `ProductA` o `ProductB`.
+3. ***Creator:*** è ==colui che crea gli oggetti== tramite la dichiarazione, del metodo factory `createProduct()` che creerà oggetti  di tipo `<<interface>> Product` che possono essere o il `ProductA` o `ProductB` .
 ^e3e396
 4. ***Concrete Creator***: son metodi che sovrascrivono il **Creator** che restituiranno uno specifico prodotto.
    
 > [!tip] Ricorda
 > Tutti i prodotti sono basati sull'interfaccia, che sarà il tipo di ritorno del metodo factory che abbiamo citato prima cioè ***Creator***
 
-#### 6.4.1.2 When we use it?
+##### 6.4.1.2 When we use it?
 Si possono utilizzare i factory method in 3 casi specifici:
 
-1. ***Unknown types***: quando non conosciamo i tipi di metodi che andremmo a generare, separandoci dalla creazione di ogni suo oggetto dal suo utilizzo, _così facendo si può estendere il codice_.
+1. ***Unknown types***: quando non conosciamo i tipi di metodi che andremmo a generare, separandoci dalla creazione di ogni suo oggetto dal suo utilizzo, _così facendo si può estendere il codice.
    
 2. ***Extends Library or Framework***: estendere librerie o framework, come ad esempio [[Programming Knowledge#Overriding (sovrascritto)|sovrascritto]] un metodo di una classe per fargli fare diverse funzionalità.
    
@@ -307,7 +479,9 @@ Per implementare tale design pattern bisogna prima di tutto:
 
 - ==Implementare un'interfaccia che dichiarerà dei metodi comuni che questi verranno ad essere utilizzati== da ogni prodotto. 
   
-- Poi si andrà a creare un metodo _factory_ vuoto dentro alla classe astratta [[#^e3e396|Creator]], da tener d'occhio che il tipo di ritorno di tale metodo sia lo stesso dell'interfaccia prodotto.
+- Poi si andrà a creare un metodo _factory_ vuoto dentro alla classe astratta [[#^e3e396|Creator]], da tener d'occhio che il tipo di ritorno di tale metodo sia lo stesso dell'interfaccia prodotto 
+>[!info]- in Java?
+>`Creator` in java è una classe astratta e `createProduct()` sarà un metodo della classe che dovremmo mettere come astratto .
   
 - Sostituire i costruttori con il metodo _factory_ che abbiamo creato in precedenza (nel caso creare un parametro che controlli il tipo di ritorno del metodo).
   
@@ -325,21 +499,38 @@ Per implementare tale design pattern bisogna prima di tutto:
 >- **More complexity:** può introdurre più complessità, nel caso si andrebbe ad aggiungere sempre nuove sottoclassi per ogni prodotto.
 >- **Optimal scene:** funziona meglio quando viene introdotto in una gerarchia di classi _[[#^e3e396|creator]]_ già presente.
 
-### 6.4.2 Abstract  Pattern
-Permette di raggruppare famiglie di oggetti, lo scopo è lo stesso  del factory cioè creare degli oggetti solo che si va anche a creare delle famiglie di oggetti specifici.
-[^1]: ![[AbstractFactory.png]]
-Come vediamo qui sull'immagine abbiamo diverse famiglie di diversi oggetti, gli oggetti sono la `Chair`, `Sofa`, `Coffe Table` sono poi categorizzati in diverse famiglie, l'abstract ci permette di far si che si viene ad inserire un nuovo mobile, si potrà applicare le stesse famiglie di quelle precedenti. ^f2083e
+#### 6.4.1.5 Relations with the other patterns
+- Molti sistemi cominciamo con il design pattern Factory poi si evolvono in [[#6.4.2 Abstract Pattern|Abstract Factory]], [[#6.4.3 Builder Pattern|Builder]] o [[#6.4.4 Prototype pattern|prototype]] pattern.
+- L'[[#6.4.2 Abstract Pattern|Abstract Factory]] si basa sull'insieme di Factory Methods, ma si possono anche usare i pattern [[#6.4.4 Prototype pattern|prototype]], per poter comporre i metodi delle classi dell'abstract.
+- Il Factory Pattern servirà da base per il pattern Template Pattern %% Aggiungere il riferimento al pattern Template%%
+#### 6.4.2 Abstract  Pattern
+Permette di **raggruppare famiglie di oggetti in diverse categorie**, lo scopo è lo stesso  del factory cioè creare degli oggetti solo che si va anche a creare delle famiglie di cui fanno parte e delle categorie specifici **senza dover specificare le loro classi concrete**.
+
+---
+	Prendiamo per esempio un negozio di Arredamento Casalingo, abbiamo in questo caso una **famiglia di oggetti**, che sono `Chair`, `Sofa`, `CoffeTable` e **le categorie** che accomunano ogni oggetto, `Victorian`,`Modern` e `Art Deco`.
+
+Vediamo un esempio dall'immagine qui sottostante.
+[^1]: ![[AbstractFactory.png]]l'Abstract ci permette di far si che si viene a creare un nuovo mobile in base alla categoria che abbiamo bisogno, in questo caso se il cliente vuole un `Sofa` con la categoria `Victorian`, grazie all'Abstract saremmo in grado di poterlo fare. ^f2083e
 
 >[!tip] Scope
 >Lo scopo dell'abstract factory è quello di creare un'interfaccia che va a creare delle famiglie di oggetti che sono correlati o dipendenti, senza conoscerne la sua classe concreta.
 #### 6.4.2.1 Abstract Factory Solution
 1. **Phase:**
-	   Per applicare tale design pattern, bisogna prima di tutto creare le interfacce per ogni famiglia di oggetti che vogliamo creare ad esempio (sedia, sofa, tavolo) e per ognuna di loro un'interfaccia che corrisponda alla tipologia/variante dell oggetto (sediaVittoriana, sediaModerna ecc..).
+	   Per applicare tale design pattern, bisogna prima di tutto creare le interfacce per ogni famiglia di oggetti che vogliamo creare ad esempio (sedia, sofa, tavolo) e per ognuna di loro creeiamo la classe che corrisponda alla tipologia/variante dell oggetto (sediaVittoriana, sediaModerna ecc..) ed implementiamo l'interfaccia che abbiamo dichiarato prima.![[Screenshot 2025-09-21 at 15.58.49.png|Prima l'oggetto che vogliamo categorizzare poi la famiglia]]
 	   
 2. **Phase:**
-	   Si va a creare l'**Abstract Factory** che dovrà implementare dei metodi la creazione della famiglia di oggetti come createChair(); createTable(); e così via che _ritorneranno prodotti astratti_ che abbiamo definito nell'interfaccia. 
+	   Si va a creare l'**Abstract Factory** che dovrà implementare dei metodi la creazione della famiglia di oggetti come `createChair()`; `createTable()`; e così via che _ritorneranno prodotti astratti_ che abbiamo definito con l'interfaccia precedentemente.
+> [!info]- **Come si fa in Java?** 
+> Si crea una classe `abstract` o un `interface` che andrà a definire i metodi per la creazione di un oggetto della famiglia che vogliamo.
+> ```java
+> public abstract class AbstracFactory(){
+> 		public abstract Chair createChair();
+> 		public abstract Sofa createSofa();
+> 		public abstract CoffeTable createCoffeTable();
+> }
+> ```
 3. **Phase:**
-	   Si va a creare la **factory concreta** per ogni variante cioè che vuol dire, la parte nella quale si crea ogni classe che genererà una specifica tipologia di stile di  forniture ad esempio _ModernFornitureFactory_  creerà solo `ModernChair`, `ModernSofa` e `ModernCoffeTable`
+	   Si va a creare la **factory concreta** per ogni variante cioè che vuol dire, la parte nella quale si crea ogni classe che genererà una specifica tipologia di stile di  forniture, questa classe però dovrà estendere o implementare l'**Abstract Factory**  che abbiamo prima definito, ad esempio`ModernFornitureFactory`  creerà solo `ModernChair`, `ModernSofa` e `ModernCoffeTable` e implementerà l'interfaccia che andrà a creare i singoli oggetti `Chair`, `Sofa`, ecc..
 
 ![[AbstractFactoryConcept.png]] ^fd1c79
 #### 6.4.2.2 Abstract Factory Structure
@@ -371,7 +562,7 @@ Infine sostituire le chiamate dirette ai costruttori di prodotti, con chiamate h
 >[!fail] ## Cons
 >- **More complexity:** può introdurre più complessità, nel caso si andrebbe ad aggiungere sempre nuove classi ed interfaccie per ogni prodotto.
 
-### 6.4.3 Builder  Pattern
+#### 6.4.3 Builder  Pattern
 Ci permette di creare oggetti complessi step-by-step , cioè questi ultimi  richiedono inizializzazioni dettagliate che spesso sono nidificati nei costruttori, cioè ==si possono rappresentare differenti rappresentazioni di un oggetto usando lo stesso costrutto==. Un esempio che possiamo illustrare è quello della casa che può essere una semplice abitazione oppure una più complessa, compresa di giardino, sistema di riscaldamento ed impianto idraulico.
 ![[ExampleOfBuilderProblem.png]]
 Questo lo si fa con un costruttore, che però quando alcuni parametri non servono, rimangono `null` ed inutilizzati.
@@ -423,7 +614,7 @@ Infine viene per la creazione di oggetti assai complessi, garantendo la complete
 >[!fail] ## Cons
 >- **More complexity:** può introdurre più complessità, nel caso si andrebbe ad aggiungere sempre nuove classi ed interfaccie per ogni prodotto.
 
-### 6.4.4 Prototype pattern
+#### 6.4.4 Prototype pattern
 Il design pattern in questione, serve a far si che si possa creare un'esatta copia di un oggetto che già esiste, se volessimo farlo senza l'utilizzo del design pattern, si dovrebbe creare lo stesso oggetto nella stessa classe e copiargli i valori interni, cosa non sempre possibile su tutti i campi dato che ==alcuni possono essere privati o non visibili==, oppure ci sono ==oggetti che sono dipendenti dalla classe e non possono essere modificati==. 
 
 #### 6.4.4.1 Prototype Solution
@@ -465,7 +656,7 @@ Oppure possiamo utilizzarlo quando vogliamo che non si creano troppe sottoclassi
 > - **Cloning circular objects**: La clonazione di oggetti complessi con riferimenti circolari[^2] può essere complicata.
 > 	
 
-### 6.4.5 Singleton pattern
+#### 6.4.5 Singleton pattern
 Con il singleton risolviamo due comuni problemi nella programmazione, violando però il [[SOLID Principals#S - ingle responsibility| principio di singola responsabilità]]:
 1. **Ensure that a class has a single instance**: perché controlliamo quante istanze ha una classe? Fondamentale controllare le istanze di una classe quando si parla di controllo degli accessi a delle risorse come i DB o i file, quindi ci assicuriamo che la classe ne possieda solo una. Permettendo a una sola istanza di esistere, si riduce la possibilità di duplicati non necessari, sprechi di memoria o problemi di sincronizzazione
 
@@ -547,11 +738,11 @@ class Singleton{
 > - **Special treatment**: per il multithreading si possono rischiare incombenze con la creazione di oggetti dello stesso tipo, dovendo gestire tale problematica a parte.   
 > 
 
-## 7.0 Structural Design Patterns
+### 7.0 Structural Design Patterns
 ---
 I pattern strutturali sono quelli che ci permettono di combinare oggetti e classi, per creare grandi strutture, mantenendole flessibili ed efficienti nel tempo.
 
-### 7.1 Adapter pattern
+#### 7.1 Adapter pattern
 Il _design pattern adapter_ ha la funzione di poter prendere in input una specifica interfaccia, incomprensibile per la classe, rendendola accessibile.
 #### 7.1.1 Adapter solution
 Come funziona questo design? Come fa a rendere disponibile tali interfacce a classe che non sono compatibili?
@@ -628,14 +819,14 @@ Per implementare il design pattern Adapter possiamo seguire i seguenti passi:
 >[!fail] ## Cons
 >- **More complexity:** La complessità del codice aumenta per via dell’introduzione di nuove interfacce e classi. Talvolta è più semplice modificare direttamente la classe di servizio per renderla compatibile.
 
-### 7.2 Bridge Pattern
+#### 7.2 Bridge Pattern
 Il _design pattern bridge_ prende in input una classe e lo ==divide in due insiemi di classi separate chiamate astrazione e implementazione== dove ognuno di loro sarà implementato in maniera differente.
-Vediamo un esempio di qu
-### 7.? Design Pattern Composite
+Vediamo un esempio di qui
+#### 7.? Design Pattern Composite
 Il pattern composite ci permette di gestire oggetti aggregati, con l'utilizzo di un interfaccia comune che sia applicabile su tutta la struttura.
 Con questo design pattern si va ad esplorare in profondità all'interno di un albero di oggetti, senza dover conoscere l'oggetto stesso ma li tratteremmo con lo stesso metodo indifferentemente dal tipo di metodo che abbiamo.
 #### ?.? Composite Structure
-![[Screenshot 2024-10-30 at 14.31.42.png]]
+
 1. **`Interface` Component**:
 2. **Leaf**:
 3. **Composite**:
@@ -643,7 +834,7 @@ Con questo design pattern si va ad esplorare in profondità all'interno di un al
 
 ****## 8.0 Behavioral Design Patterns
 
-### 8.1 Command Pattern
+#### 8.1 Command Pattern
 Il _design pattern command_ serve per gestire la parte della ridondanza del codice, facendo parte del principio di separazione di responsabilità o detto anche [[#S - ingle responsibility|single responsibilty]], creare ogni bottone per ogni operazione, che contengono i dettagli della richiesta, eliminando le sottoclassi e riducendo le ridondanze
 ![[ButtonImage.png]]
 #### 8.1.1 Command Structure

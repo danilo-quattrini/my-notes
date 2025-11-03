@@ -2,7 +2,7 @@
 
 Status: #baby 
 
-Tags:  [[Math]], [[Fundamentals of Computer Science]]
+Tags:  [[Math]], [[Fundamentals of Computer Science]], [[School]]
 
 ---
 # 0.0 Index

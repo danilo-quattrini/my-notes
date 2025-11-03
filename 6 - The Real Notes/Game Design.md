@@ -6,7 +6,7 @@ share_updated: 2025-06-12T19:36:16+02:00
 
 Status: #completed 
  
-Tags: [[Graphic]], [[General Knowledge]] 
+Tags: [[Graphic]], [[General Knowledge]], [[School]]
 
 Materials: *Carlo Cumo* [drive](https://drive.google.com/drive/folders/1gYV_iV4ZdvOdPTejDotNQbWdhdY36XQH?usp=drive_link)
 
