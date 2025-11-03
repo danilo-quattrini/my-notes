@@ -1,12 +1,12 @@
 ---
 share_link: https://share.note.sx/kpt7zdpy#SFVgtoBmnCXdpbKyaR8bKF6HApBqtzbx8i2+TwLIjJQ
-share_updated: 2025-06-02T11:23:04+02:00
+share_updated: 2025-11-03T09:28:14+01:00
 ---
 2025-03-04 16:26
 
 Status: #completed
 
-Tags: [[Programming]], [[General Knowledge]], [[Math]]
+Tags: [[Programming]], [[Math]], [[School]]
 
 Other notes: *[click here](https://francescopalozzi.notion.site/Appunti-39bc6581d2c9426280d354c261187919)*
 
@@ -147,7 +147,7 @@ Nei $linguaggi$ possiamo anche trovare anche la tipologia che fa parte dell'insi
 ---
 Per analizzare il concetto di funzione andremmo a vedere appunti che sono presenti qui:
 [[Functions]]
-
+Link: [Funzioni versione web](https://share.note.sx/rjro2t70#TvSm6SD2eeJwSS/5GUFSpdi/BCJ9muBVFkLcI9R9pR0)
 # 3.0 Definition of Algorithm
 ---
 Ci saranno dieci punti che verranno illustrati e spiegati nella maniera più comprensibile all'essere umano, delle regole che un algoritmo deve seguire per chiamarsi tale, le elencheremmo qui sotto:

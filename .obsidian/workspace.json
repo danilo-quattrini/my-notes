@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0f73bc1b3f3d4572",
+        "id": "65e895c9eb773cd0",
         "type": "tabs",
         "children": [
           {
-            "id": "4bf59fb5d70f259a",
+            "id": "b0c57f8afd892a9e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "6 - The Real Notes/Git.md",
+                "file": "6 - The Real Notes/UML.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Git"
+              "title": "Backlinks for UML"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "6 - The Real Notes/Foundaments of Computer Science.md",
+                "file": "2 - Material/IDS-FLASHCARD.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Foundaments of Computer Science"
+              "title": "Outline of IDS-FLASHCARD"
             }
           },
           {
@@ -162,127 +162,17 @@
             }
           },
           {
-            "id": "247301e4fc7daf3b",
+            "id": "c01723f7a0ac4de8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
-            "id": "25bf9c6023a1a1d9",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
-            "id": "1290135f6eae5653",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
-            "id": "6f431c07f383da2d",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
-            "id": "af149fe718164e1a",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
-            "id": "2e7251862db3e35b",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
-            "id": "1b571b0362079bfc",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
-            "id": "a1c30534d82be9f8",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
-            "id": "bf2ba8f9f1faf2f4",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
-            "id": "749c0c60e6b3e146",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
-            "id": "fbff2ca895d00b1b",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
-            "id": "af32a65826ee2151",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
+              "type": "git-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           },
           {
-            "id": "15037d1fd330fb3c",
+            "id": "f84785ca0232b27d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -292,7 +182,7 @@
             }
           },
           {
-            "id": "7a6bc5ebbca1a984",
+            "id": "72a5912282272476",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -302,7 +192,7 @@
             }
           },
           {
-            "id": "a6ed833de3a01caf",
+            "id": "5573811a154c305e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -312,7 +202,7 @@
             }
           },
           {
-            "id": "e6912d4112162340",
+            "id": "9c0feba459f8eacd",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -322,7 +212,7 @@
             }
           },
           {
-            "id": "a22ab098db4e3c16",
+            "id": "6a47d6ece29ec92e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -332,7 +222,7 @@
             }
           },
           {
-            "id": "44c4bfa8ef44638a",
+            "id": "1152291aa54690f2",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -342,7 +232,7 @@
             }
           },
           {
-            "id": "edce4d10643880fb",
+            "id": "b754700233df6e6a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -352,7 +242,7 @@
             }
           },
           {
-            "id": "fd090e136ac5396c",
+            "id": "ab5c5bb68b1099c5",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -362,7 +252,7 @@
             }
           },
           {
-            "id": "5887e46a7a7c9d2d",
+            "id": "01020fad9e232196",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -372,7 +262,7 @@
             }
           },
           {
-            "id": "92478baacc946652",
+            "id": "72f65bfad91c01b6",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -382,7 +272,7 @@
             }
           },
           {
-            "id": "4d4de9e87f2c76ae",
+            "id": "3130b1b9ea838b4e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -392,7 +282,7 @@
             }
           },
           {
-            "id": "bcc2efa941b4e9cd",
+            "id": "86079b342f0ba2f7",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -402,7 +292,7 @@
             }
           },
           {
-            "id": "86a3071bb82e053e",
+            "id": "82aa0edc3f5acb64",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -412,7 +302,7 @@
             }
           },
           {
-            "id": "4a164923fb5e0645",
+            "id": "cba273d4b9ae6c59",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -422,7 +312,7 @@
             }
           },
           {
-            "id": "7419a7eaf582f68a",
+            "id": "eba6f557524a4102",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -432,7 +322,7 @@
             }
           },
           {
-            "id": "27a49c861716a329",
+            "id": "2407805438dd45d2",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -442,7 +332,7 @@
             }
           },
           {
-            "id": "42958d647a643804",
+            "id": "962cde4c67eb761a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -452,7 +342,7 @@
             }
           },
           {
-            "id": "a0aa71fbf2c36a87",
+            "id": "c7c01c38443549f3",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -462,7 +352,7 @@
             }
           },
           {
-            "id": "2b67503371899d86",
+            "id": "69f45817dc67ec80",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -472,7 +362,7 @@
             }
           },
           {
-            "id": "54b4a61402bf7f09",
+            "id": "83a7a71222463dc4",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -482,7 +372,7 @@
             }
           },
           {
-            "id": "b65707be22a49683",
+            "id": "77ea4cde3b04d325",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -492,7 +382,7 @@
             }
           },
           {
-            "id": "3916f418f4570160",
+            "id": "00cd1e9400633d8a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -502,7 +392,7 @@
             }
           },
           {
-            "id": "adb986c2b7214aeb",
+            "id": "2665aef5235ab5ab",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -512,7 +402,7 @@
             }
           },
           {
-            "id": "b6a0771946d6573c",
+            "id": "26bebfa7971aa800",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -522,7 +412,7 @@
             }
           },
           {
-            "id": "1e3ac99571a20e94",
+            "id": "29d0508a900e6936",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -532,7 +422,7 @@
             }
           },
           {
-            "id": "c820d79e6cff4ca0",
+            "id": "88e43bb770151050",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -542,7 +432,7 @@
             }
           },
           {
-            "id": "196d7803c259da0e",
+            "id": "adf25b225cbef6b3",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -552,7 +442,7 @@
             }
           },
           {
-            "id": "c406a619b651a190",
+            "id": "f50120a7d1661585",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -562,7 +452,7 @@
             }
           },
           {
-            "id": "c1c87d37f4112a83",
+            "id": "1de26c57e40294a4",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -572,7 +462,7 @@
             }
           },
           {
-            "id": "ff05bfaddb0b5879",
+            "id": "379afd553e7e5402",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -582,7 +472,7 @@
             }
           },
           {
-            "id": "33789494195885a1",
+            "id": "69a81083f07beb65",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -592,7 +482,7 @@
             }
           },
           {
-            "id": "e57098f5b00b9c31",
+            "id": "26300239ae83bc65",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -602,7 +492,7 @@
             }
           },
           {
-            "id": "97d98b9a3ff61870",
+            "id": "f3090e5d3503c325",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -612,7 +502,7 @@
             }
           },
           {
-            "id": "7aaec8f0a571dca4",
+            "id": "db14159d2fc284e0",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -622,7 +512,7 @@
             }
           },
           {
-            "id": "d7769f0b83744333",
+            "id": "43168b5a52de1b62",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -632,7 +522,7 @@
             }
           },
           {
-            "id": "03e82bcdd41a077d",
+            "id": "dd50ad0ed1396c85",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -642,7 +532,7 @@
             }
           },
           {
-            "id": "2e4576d0034fb004",
+            "id": "40b60d4961a6f634",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -652,7 +542,7 @@
             }
           },
           {
-            "id": "64fb5d2d13826193",
+            "id": "f9b072a277998538",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -662,7 +552,7 @@
             }
           },
           {
-            "id": "4c3deab996902cad",
+            "id": "955c645e05c87093",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -672,7 +562,7 @@
             }
           },
           {
-            "id": "0d8967af18993099",
+            "id": "062578389b62a87f",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -682,7 +572,7 @@
             }
           },
           {
-            "id": "e4fd2ba3fb55ac41",
+            "id": "a01d5356ae2fed02",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -692,7 +582,7 @@
             }
           },
           {
-            "id": "63af40abcd0dcfaf",
+            "id": "ecaeb315993c9691",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -702,7 +592,7 @@
             }
           },
           {
-            "id": "876bc6cd359a8a00",
+            "id": "caea058c2815e5bc",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -712,7 +602,7 @@
             }
           },
           {
-            "id": "ccaac7b2697ef2f4",
+            "id": "27a0decc33a65983",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -722,7 +612,7 @@
             }
           },
           {
-            "id": "ce0be7269acdcec3",
+            "id": "d21350f3d4897265",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -732,7 +622,7 @@
             }
           },
           {
-            "id": "757674b3dfeffa02",
+            "id": "85b3e057b7de5224",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -742,7 +632,7 @@
             }
           },
           {
-            "id": "ac57bfabb9a43187",
+            "id": "521abf976c340b3d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -752,7 +642,7 @@
             }
           },
           {
-            "id": "6b6e885ab4451b63",
+            "id": "7a04cdc65d535977",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -762,7 +652,7 @@
             }
           },
           {
-            "id": "87f95ca7ec17988b",
+            "id": "c031025f9ee4d371",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -772,7 +662,7 @@
             }
           },
           {
-            "id": "12fdcbb3ea8bf437",
+            "id": "b89e23fff10dd1a6",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -782,7 +672,7 @@
             }
           },
           {
-            "id": "67b5ce0980b7ea4b",
+            "id": "f7bc9d9bf228abe7",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -792,7 +682,7 @@
             }
           },
           {
-            "id": "aff34468f8e16442",
+            "id": "852b75e255eb8f6b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -802,7 +692,7 @@
             }
           },
           {
-            "id": "9c59a7b48a4dfe1d",
+            "id": "45414eb324b20320",
             "type": "leaf",
             "state": {
               "type": "Saved Queries View",
@@ -812,72 +702,77 @@
             }
           }
         ],
-        "currentTab": 69
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 326.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "graph:Open graph view": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-git:Open Git source control": false,
+      "callout-manager:Insert Callout": false,
+      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "4bf59fb5d70f259a",
+  "active": "c01723f7a0ac4de8",
   "lastOpenFiles": [
-    "2 - Material/Game Design.md",
-    "6 - The Real Notes/Fundamentals of Computer Science.md",
-    "6 - The Real Notes/Functions.md",
-    "7 - Images/Screenshot 2025-06-04 at 19.58.25.png",
-    "7 - Images/Pasted image 20250604194137.png",
-    "Pasted image 20250604195814.png",
-    "7 - Images/Screenshot 2025-05-27 at 10.54.36.png",
-    "2 - Material/Programming/Design Pattern.md",
-    "2 - Material/Ingegneria del software.md",
-    "7 - Images/Software-Life-Cycle.png",
-    "2 - Material/Programming Knowledge.md",
-    "2 - Material/Digitalization and Valorization of a local farming company..md",
-    "2 - Material/UML.md",
-    "7 - Images/Screenshot 2025-05-27 at 10.46.40.png",
-    "1 - Rough Notes/VLSM (NON ESISTONO LE CLASSI).md",
-    "1 - Rough Notes/Risposte alle domande..md",
-    "1 - Rough Notes/Welcome to the Rough Notes.md",
-    "6 - The Real Notes/Politecnico Master Degree.md",
-    "6 - The Real Notes/Mongo DB.md",
-    "6 - The Real Notes/Git.md",
-    "6 - The Real Notes/🇬🇧 CAE Preparation.md",
-    "6 - The Real Notes/Untitled 1.md",
-    "6 - The Real Notes/Untitled.md",
-    "7 - Images/Screenshot 2025-05-13 at 10.25.30.png",
-    "7 - Images/Screenshot 2025-05-13 at 12.25.28.png",
-    "7 - Images/Screenshot 2025-05-13 at 10.29.50.png",
-    "7 - Images/Screenshot 2025-05-13 at 11.09.15.png",
-    "6 - The Real Notes/Untitled 3.md",
-    "6 - The Real Notes/Untitled 2.md",
-    "6 - The Real Notes/GERUND.md",
-    "6 - The Real Notes/Basics of Math.md",
-    "5 - Templates/Full Note.md",
-    "3 - Tags/Software Engineering.md",
-    "6 - The Real Notes/Church-Turing.md",
-    "3 - Tags/School.md",
-    "Sotto reti.pdf",
-    "Untitled.canvas",
-    "Trabalho_Pratico_Grupo_2024_2025_ISLA_EN.pdf",
-    "www.geeksforgeeks.org",
+    "6 - The Real Notes/Design Pattern.md",
+    "1 - Rough Notes/Thesis IDEA.md",
+    "7 - Images/Screenshot 2025-10-22 at 22.31.57.png",
+    "7 - Images/Screenshot 2025-10-22 at 22.26.38.png",
+    "7 - Images/Screenshot 2025-10-22 at 22.18.53.png",
+    "7 - Images/Pasted image 20251022221215.png",
+    "7 - Images/Pasted image 20251022221122.png",
+    "Pasted image 20251022221215.png",
+    "Screenshot 2025-10-22 at 22.18.53.png",
+    "Pasted image 20251022221122.png",
+    "Screenshot 2025-10-22 at 22.31.57.png",
+    "Screenshot 2025-10-22 at 22.26.38.png",
+    "README.md",
+    "1 - Rough Notes/Password Random.md",
+    "6 - The Real Notes/PHP.md",
+    "6 - The Real Notes/Java/Java.md",
+    "6 - The Real Notes/Programming Knowledge.md",
+    "6 - The Real Notes/MVC.md",
+    "6 - The Real Notes/Java/Java Records.md",
+    "6 - The Real Notes/Java",
+    "6 - The Real Notes/Untitled 2.base",
+    "6 - The Real Notes/Untitled 1.base",
+    "6 - The Real Notes/Untitled.base",
+    "6 - The Real Notes/26-09-2025.md",
+    "6 - The Real Notes/Full Stack/CSS.md",
+    "6 - The Real Notes/Full Stack/HTML.md",
+    "6 - The Real Notes/JavaScript.md",
+    "3 - Tags/Programming.md",
+    "6 - The Real Notes/SPRING BOOT.md",
+    "6 - The Real Notes/Ingegneria del software.md",
+    "6 - The Real Notes/Agile Framework.md",
+    "2 - Material/Flash Cards/02-IDS-FLASHCARDS.md",
+    "2 - Material/Flash Cards/03-IDS-FLASHCARD.md",
+    "6 - The Real Notes/UML.md",
+    "Untitled 3.canvas",
+    "Untitled 2.canvas",
     "Untitled 1.canvas",
-    " 1",
-    "7 - Images",
-    "6 - The Real Notes",
-    "5 - Templates",
-    "4 - Indexes",
-    "3 - Tags",
-    "1 - Rough Notes"
+    "Untitled.canvas",
+    "5 - Templates/Full Note.md",
+    "2 - Material/Flash Cards/UML-FLASHCARDS.md",
+    "6 - The Real Notes/Git.md",
+    "6 - The Real Notes/SOLID Principals.md",
+    "6 - The Real Notes/Untitled 4.base",
+    "6 - The Real Notes/Untitled 3.base",
+    "3 - Tags/Software Engineering.md",
+    "2 - Material/Docs",
+    "2 - Material/Flash Cards",
+    "6 - The Real Notes/Full Stack",
+    "7 - Images/image-gallery.base"
   ]
 }

@@ -2,7 +2,7 @@
 
 Status: #baby 
 
-Tags: [[General Knowledge]]
+Tags: [[General Knowledge]], [[English]]
 
 ---
 # Index

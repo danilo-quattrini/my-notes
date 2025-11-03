@@ -1,21 +1,32 @@
 ---
-share_link: https://share.note.sx/ogoh8vwg#YrwnwHRe4ioRoI1p8Yn5/Bh7vqT7l53q8Rghey3YWyw
-share_updated: 2025-01-23T10:42:53+00:00
+share_link: https://share.note.sx/zj86yira#YrwnwHRe4ioRoI1p8Yn5/Bh7vqT7l53q8Rghey3YWyw
+share_updated: 2025-09-19T11:09:05+02:00
 ---
- 2024-10-14 10:38
+2024-10-14 10:38
 
 Status: #devoleped 
 
-Tags: [[Programming]] [[Software Engineering]]
+Tags: [[Programming]], [[Software Engineering]]
 
 ---
 # UML
+---
+>[!warning] **IMPORTANTISSIMO**
+>**UML** non è un linguaggio di programmazione!!!! Ma è un modo per strutturare e generare dei modelli grafici da seguire (in inglese chiamati [blueprints](https://dictionary.cambridge.org/dictionary/english/blueprint)), per generare codice.
 ## 1.0 What is UML?
 ---
-UML (Unified Modeling Language) è un linguaggio per la progettazione, visualizzazione e documentazione di sistemi software.
-Era stato progettato all'inizio per catturare solo i comportamenti di software complessi e non, ora ha un utilizzo più ampio e viene utilizzato su più sistemi, anche quelli di processi manifatturieri.
+UML (Unified Modeling Language) è un linguaggio per la progettazione, visualizzazione e documentazione di sistemi software e non.
 
-UML non è considerato un linguaggio di programmazione, ma ==un linguaggio figurativo== cioè utilizza solo immagini per descriversi con sintassi formale, cioè che segue delle regole, che conferma la sua correttezza. Per questo si è trovato un modello comune per tutti i tipi di linguaggi comuni, ==questo tramite l'utilizzo dei diagrammi== cioè una rappresentazione grafica di quello che dobbiamo fare.
+Era stato progettato all'inizio per catturare solo i comportamenti di software complessi e non, ora ha un utilizzo più ampio e si utilizza in più sistemi, anche quelli di processi manifatturieri.
+
+UML non è considerato un linguaggio di programmazione, ma ==un linguaggio figurativo== cioè utilizza solo immagini per descriversi con sintassi formale, cioè che segue delle regole e conferma la sua correttezza. 
+
+Per questo si è trovato un modello comune per tutti i tipi di linguaggi e ==questo tramite l'utilizzo dei diagrammi== cioè una rappresentazione grafica di quello che dobbiamo fare.
+![Purpose of UML](https://www.tutorialspoint.com/uml/images/purpose_of_uml.jpg)
+Un diagramma **UML ci aiuta anche a capire le relazioni che sono presenti negli oggetti del nostro sistema**, cioè come interagiscono tra di loro durante il loro [[Ingegneria del software#2.0 Ciclo di vita & processo di sviluppo|ciclo di vita]], con l'intero sistema.
+
+>[!info]- **Che cos'è un Oggetto?**
+>L'oggetto è un entità che possiede dei dati, ma ha anche delle funzionalità per accedere e manipolare i dati stessi.
 ### 1.1 How we can use UML?
 Può essere usato secondo diversi approcci al progetto:
 
@@ -29,16 +40,21 @@ Può essere usato secondo diversi approcci al progetto:
 
 -  **struttura (statica)**: elementi necessari a modellare il sistema e come sono correlati;
 
--  **comportamento (dinamico)**: ciclo di vita degli oggetti e specifica delle collaborazioni che e intercorrono tra gli oggetti per fornire le funzionalità richieste.
-### 1.2 The Structure
+-  **comportamento (dinamico)**: ciclo di vita degli oggetti e specifica delle collaborazioni che ci sono tra gli oggetti per fornire le funzionalità richieste.
+### 1.2 Perspective and Views of UML
 Per la creazione del nostro UML è fondamentale concentrarsi su diverse tipi di prospettive e viste, in base al modello del mondo reale che andiamo a creare.
 
 - [[UML#2.0 Conceptual model|punto di vista concettuale]]: diagrammi scritti e interpretati come descrizioni di oggetti del mondo reale o del dominio di interesse;
 
 - **punto di vista software**: i diagrammi descrivono astrazioni o componenti software come implementazioni SW con riferimento a una particolare tecnologia o specifiche e interfacce di componenti software indipendentemente dalla implementazione.
+![[Screenshot 2025-09-26 at 10.07.13.png]]
+
+Il primo esempio rappresenta un **punto di vista concettuale** cioè una rappresentazione della realtà di come sarà il nostro sistema.
+Il secondo invece viene definito **punto di vista software**, perché andremmo a illustrare concetti software come le classi, con i suoi metodi e attributi.
 ## 2.0 Conceptual model 
 ---
 Il modello concettuale è una struttura nella quale si rappresentano i concetti e le loro relazioni, ed è uno dei primi step prima di disegnare il modello UML, questo perché riesce a far si che si possa capire quali saranno le entità del mondo reale e come interagiranno tra loro.
+
 Cose _importanti_ da sapere per il modello concettuale:
 
 - Costruire i [[#4.0 UML building blocks|blocchi UML]]
@@ -47,7 +63,7 @@ Cose _importanti_ da sapere per il modello concettuale:
 ## 3.0 Object-Oriented concepts
 ---
 Un oggetto contiene dei dati e dei metodi che quest'ultimi controllano e gestiscono tali dati.
-Tali oggetti descrivono una gerarchia di modelli del mondo reale che esistono intorno a noi, come ad esempio l'[[Design Pattern#3.1 Abstraction|astrazione]], l'[[Design Pattern#Encapsulate|incapsulamento]] , l'[[Design Pattern#3.3 Inheritance (ereditarietà)|ereditarietà]] e il [[Design Pattern#3.4 Polymorphism|polimorfismo]] che possono essere tutti rappresentati in UML.
+Tali oggetti descrivono una gerarchia di modelli del mondo reale che esistono intorno a noi, come ad esempio l'[[Design Pattern#3.1 Abstraction|astrazione]], l'[[Design Pattern#3.2 Encapsulation|incapsulamento]] , l'[[Design Pattern#3.3 Inheritance (ereditarietà)|ereditarietà]] e il [[Design Pattern#3.4 Polymorphism|polimorfismo]] che possono essere tutti rappresentati in UML.
 ### 3.1 Analysis and Design of OO
 Viene definito la OO (_object-oriented_) come un investigatore di oggetti e il design aiuta/collabora per identificare tale oggetti.
 Il concetto principale dell'analisi della OO è quello di identificare i sistemi da dover progettare/sviluppare, analisi svoltasi anche nel caso di oggetti già esistenti.
@@ -58,18 +74,35 @@ I passi principali della OO analysis son:
 - Identificare le loro relazioni.
 - Creare un design per far in modo di renderlo convertibile in un OO language. 
 ### 3.2 Phase of the analysis
-1. La cosa fondamentale dell'analisi è quello di ==identificare gli oggetti e descriverli nella maniera appropriata==, questi devono essere identificati con le loro responsabilità, ma cosa sono quest'ultime? Sono delle azioni che svolgono, in sostanza delle task che devono soddisfare, se le responsabilità degli oggetti collaborassero tra loro si creerebbe un sistema completo.
+```bash
+OO Analysis -> OO Desing -> OO Implementation using OO languages
+```
+1. La cosa fondamentale dell'analisi è quello di ==identificare gli oggetti e descriverli nella maniera appropriata==, questi devono essere identificati con le loro responsabilità.
+   >[!info]- **Che cosa sono le responsabilità?**
+   >Sono  delle task che devono soddisfare, se le responsabilità degli oggetti collaborassero tra loro si creerebbe un sistema completo.
 
 2. Si passa poi al design, che consiste nel far in modo che i vari oggetti collaborino per completare le loro responsabilità, mettendo enfasi su quest'ultime durante il processo. 
 
 3. L'ultimo step consiste nell'implementare il design creato nei linguaggi di programmazione ad OO come Java o C++.
+### 3.3 Real Word use of UML
+Possiamo usare i diagrammi UML per lo sviluppo di applicazioni web, creando un software che vada a soddisfare i requisiti che sono richiesti dal cliente.
+
+UML ci fornisce dei diagrammi già pre impostati che possiamo utilizzare all'interno del nostro progetto:
+>[!example] **Esempio di diagrammi predifinitivi**
+>- Web app use case models
+>- Web app implementation model
+>- Web app deployment model
+>- Web app security model
+>- Web app site map
+
+Ci aiuta anche a distinguere le varie azioni che si possono svolgere in ambito front-end e back-end, definendo le interazioni che andrà a svolgere l'utente con le varie connessioni alle pagine presenti nella nostra applicazione web, ad esempio mostrare gli [[HTML#0.1 hyperlink|hyperlinks]] presenti nella pagina.
 ## 4.0 UML building basics
 ---
 Le basi della struttura di UML è composta da ben 3 elementi fondamentali:
 
-- **I blocchi fondanti dell UML** che  possono essere definiti come un'insieme di [[#4.1 Things|oggetti]], [[UML#4.2 Relation|relazioni]] e [[UML#4.3 Diagrams|diagrammi]].
+- **I blocchi fondanti dell UML** che  possono essere definiti come un'insieme di [[#4.1 Things (entities)|oggetti]], [[UML#4.2 Relation|relazioni]] e [[UML#4.3 Diagrams|diagrammi]].
   
-- Poi ci sono i vari **meccanismi comuni** che servono  di tecniche comuni (che cazzo vuol dire tecniche comuni?) cioè metodi, strategie o processi frequentemente usati per conseguire certi risultati e raggiungere specifici obbiettivi (ah ecco).  
+- Poi ci sono dei **meccanismi** che  si servono di tecniche comuni  cioè metodi, strategie o processi frequentemente usati per conseguire certi risultati e raggiungere specifici obbiettivi.  
 
 - **L'architettura**: cioè come UML esprime la struttura di un sistema.
 ### 4.1 Things (entities)
@@ -82,23 +115,36 @@ Gli oggetti a loro volta sono classificati in diversi tipi:
 >[!note]
 >Gli **oggetti strutturali** sono parti statiche del modello che rappresentano gli elementi fisici e concettuali.
 
+#### 4.1.1 Structure Things
 Eccone alcuni diagrammi  _strutturali_ da sapere.
 ![[EsempioDiOggetti strutturali.png]]
+
+#### 4.1.2 Behavioral Things
 Poi ci sono le entità _comportamentali_ che sono la parte dinamica dell'UML e sono i seguenti:
 ![[Behavioral.png]]
-##### Package
+#### 4.1.3 Package Things
 Le entità di _gruppo_ sono quelle che vengono utilizzate principalmente per raggruppare elementi di un modello UML (classi o oggetti).
 ![[Groupthing.png]]
-##### Annotational things
+#### 4.1.4 Annotational Things
 L'ultima entità sarebbe quella di annotazione che contiene solo una descrizione o commento di un modello UML
 ![[AnnotationThing.png]]
 ### 4.2 Relation
-Relazione è un sottoinsieme del prodotto cartesiano di due insiemi, **nell'UML le relazioni creano un sottoinsieme delle possibile combinazioni di un prodotto tra due insiemi**. ![[RelazioneDisegno.png]]
+Relazione è un sottoinsieme del prodotto cartesiano di due insiemi, **nell'UML le relazioni creano un sottoinsieme delle possibile combinazioni di un prodotto tra due insiemi**. 
+
+Cioè in parole povere:
+>[!info] Che cos'è una relazione?
+>La relazione viene intesa come tutte le connessioni che ci sono tra gli elementi/oggetti, cioè come sono correlati gli elementi e che proprietà devono rispettarsi a vicenda.
+
+
+![[RelazioneDisegno.png]]
+
+Per info maggiori sulle relazioni, vedere la parte di [[Design Pattern#4.0 Relation between objects|relazioni tra gli oggetti]]
 ### 4.3 Diagrams
 Il _diagramma_ sarebbero una ==vista o detta anche semplicemente, la parte visiva e grafica del nostro sistema che vogliamo modellare==, mostrandone le entità (concetti), le relazioni che abbiamo visto precedentemente e i  vari vincoli esistenziali.
 
 Sono ben 13 i diagrammi che possiede UML, non so se li vedremmo tutti, ma meglio di niente è.
 ![[UML diagrams.png]]
+
 ## 5.0 Use case base mechanism
 ---
 Approccio _user driven_ cioè che si interagisce con l'utente per ottenere principalmente i requisiti che servono al nostro sistema.

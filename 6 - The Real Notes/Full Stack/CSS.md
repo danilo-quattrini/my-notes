@@ -1,89 +1,12 @@
- 2024-10-02 21:01
+2025-09-06 19:39
 
-Status: #devoleped 
+Status: #baby 
 
-Tags: [[Web Programming]] 
+Tags: [[Full Stack]] ,[[Front-end]], [[Programming]], [[Graphic]]
 
 ---
-# Roots of HTML file
-
-### 1. **Tag HTML**
-The `<html>` tag is the root element of an HTML document. It encapsulates all other HTML elements, and it defines the beginning and end of the document.
-
-Example:
-```html
-<html>
-  <!-- All other HTML code goes here -->
-</html>
-```
-
-### 2. **Tag Head vs Tag Body**
-
-**`<head>` tag**: The `<head>` section contains metadata and links to external resources, like stylesheets, scripts, and information about the document (such as its title and encoding). It does not display anything directly on the page.
-  
-  Example:
-  ```html
-  <head>
-    <title>My Page</title>
-    <meta charset="UTF-8">
-    <!-- Here you are going to add a style file into html file -->
-    <link rel="stylesheet" href="style.css">
-  </head>
-  ```
-
-**`<body>` tag**: The `<body>` section contains all the content that will be displayed to the user in the browser, such as text, images, videos, forms, and any interactive elements.
-  
-  Example:
-  ```html
-  <body>
-    <h1>Welcome to My Page</h1>
-    <p>This is the content displayed in the browser.</p>
-  </body>
-  ```
-
-### 3. **Tags do Head**
-
-Let's dive into the key elements inside the `<head>` tag:
-**`<title>`**: Specifies the title of the HTML document, which is displayed on the browser tab. It is important for SEO and user experience.
-  
-  Example:
-```html
-  <title>My Website Title</title>
-```
-
-Contains internal CSS (Cascading Style Sheets) to apply styles directly to the webpage. This is an alternative to linking an external stylesheet.
-
-Example:
-``` html
-<style>
-  body { font-family: Arial; background-color: lightgrey; }
-</style>
-```
-
-Embeds or links to JavaScript, which controls the behavior of the webpage. It can be placed in the `<head>` or `<body>` section, depending on when the script should run.
-
-Example:
-```html 
-<script>
-  alert('Hello, world!');
-</script>
-```
-
-# How format properly  a HTML document
-
-To avoid problems in future we need to organize our HTML code in the way that in future, we are not going to find any difficulties. For doing that , here some tips that we should follow every time we create a new code.
-
-### 1. Put the best title for make your page meaningful
-The `<title>` tag should be easy and friendly to understand, because all the text inside the tags will appears in the Google's search engine and also the user find easier to click on your website after wrote the key words.
-
-```html
-<title>Six Revisions - Web Development and Design Information</title>
-```
-
-This title is longer to find in the search bar of browser, but it have all the main purpose for understand what is the content inside the website, later we are going to see how to put specifics tags for find easier your website.
-
-# CSS 
-
+# CSS
+---
 ## 1. How to implement the style?
 
 ### Inline CSS:
@@ -125,6 +48,37 @@ Advantages:
 Disadvantages:
   - Requires additional HTTP requests to load external files, which can increase initial load times (mitigated by caching).
   - Not ideal for small websites or single-page projects due to the overhead of maintaining multiple files.
+### 1.1 CSS Units
+Length it's used with these following properties: 
+- `margin`
+- `padding`
+- `font-size`
+- `width`
+- `heigth`
+There are two different type of unit in CSS:
+- [[#1.2 Absolute|Absolute ]]
+- [[Relative]]
+#### 1.2 Absolute
+They are fixed length, and all the length are exactly that size,  we use them for printing, **it's not good for differente devices** see more there [table of absolute size](https://www.w3schools.com/cssref/css_units.php)
+
+#### 1.3 Relative
+This length it's relative to another length property, and it's good to use when we want to scale your website with different viewports.
+[table of the size are there](https://www.w3schools.com/cssref/css_units.php).
+
+The most important one are these following:
+- **em:** this is relative to the font size of the element for instance if we use the 3em units, it means that we are scaling the font 3 times of the element.
+- **rem** this is the size of the relative font of the root element (the root element it's the `<html>` tag,).
+> [!info] **Note**:
+> > The font size of the root element it's `16px` by default, but we can change it by assign the attribute to the root element:
+> > ```html
+> > <html style="font-size: 10px">
+> > </html>
+> > ```
+>> In this case if we use the attribute `font-size: 3rem;` we are saying the font should be `3 * 10 ` times of the root element, so 30 px.
+
+>[!info] **Viewport**
+the browser window size. If the viewport is 50cm wide, 
+$$1vw = 0.5cm.$$
 ## 2. Margin vs padding
 
 **Margin** and **padding** are two CSS properties used to create space around elements, but they serve different purposes and behave differently:
@@ -177,15 +131,16 @@ height: auto; /* Height is automatically adjusted to fit the content */
 
 
 --- end-multi-column
-## Float
+### 3.1 Float Rules
 Positions elements to the left or right of their container, allowing text and other elements to wrap around them.
 
-• float: left; Aligns the element to the left.
+• `float: left;` Aligns the element to the left.
 
-• float: right; Aligns the element to the right.
+•` float: right`; Aligns the element to the right.
 
-• float: none; The element does not float (default behavior)
+• `float: none; `The element does not float (default behavior)
 
+### 3.2 display
 ## 4. Hierarchy of styles in CSS
 ### 4.1 Source Order (Cascade)
 - **Definition**: When multiple CSS rules have the same specificity, the one that appears **later in the code** wins.
@@ -257,7 +212,6 @@ div {
 In this case you are going to start with the color red then with the keyframe we define before, we are going to add the animation  trought the `animation-name: "name of animation"`, in this case we gave as an example like the name of animation.
 With `animation-duration: seconds` we are saying how much time we should make the animation working on it .
 
-# References
+# Reference
 ---
- - How properly format  your html document:
-   https://www.webfx.com/blog/web-design/20-html-best-practices-you-should-follow/ 
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS)

@@ -1,3 +1,7 @@
+---
+share_link: https://share.note.sx/rjro2t70#TvSm6SD2eeJwSS/5GUFSpdi/BCJ9muBVFkLcI9R9pR0
+share_updated: 2025-07-03T10:34:32+02:00
+---
 2025-03-06 15:40
 
 Status: #baby 

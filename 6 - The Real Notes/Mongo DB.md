@@ -2,7 +2,7 @@
 
 Status: #baby 
 
-Tags: [[Web Programming]]
+Tags: [[Web Programming]], [[Full Stack]], [[Back-End]]
 
 ---
 # Mongo DB
