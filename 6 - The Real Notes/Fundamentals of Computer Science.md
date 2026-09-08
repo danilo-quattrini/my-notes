@@ -1,7 +1,19 @@
 ---
 share_link: https://share.note.sx/kpt7zdpy#SFVgtoBmnCXdpbKyaR8bKF6HApBqtzbx8i2+TwLIjJQ
-share_updated: 2025-11-03T09:28:14+01:00
+share_updated: 2026-01-11T13:50:31+01:00
 ---
+## **LEGGI PRIMA QUESTO**
+>[!warning]- Aprimi 🥰
+>Questo **materiale è condiviso gratuitamente**, ci terrei se mi faresti una piccola donazione per supportare il mio lavoro, non chiedo molto (mi sembro quelli della metro che chiede i soldi), però mi farebbe piacere un piccolo pensiero 🙏😊.
+>
+>Grazie ancora!
+>
+>Il tuo parere conta tantissimo
+>![[Pasted image 20260111134240.png]]
+>
+>https://buymeacoffee.com/danilo.quattrini
+
+
 2025-03-04 16:26
 
 Status: #completed

@@ -1,0 +1,2 @@
+- **Metadata** (or **metainformation**) is [data](https://en.wikipedia.org/wiki/Data "Data") that defines and describes the characteristics of other data. It often helps to describe, explain, locate, or otherwise make data easier to retrieve, use, or manage, for more check out the [link](https://en.wikipedia.org/wiki/Metadata#History).
+- **Granular Data**: fine detailed data take from different source and explained in sophisticated words.

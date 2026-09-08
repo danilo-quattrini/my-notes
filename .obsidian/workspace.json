@@ -4,24 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "65e895c9eb773cd0",
+        "id": "0152bcf1dffd8f1d",
         "type": "tabs",
         "children": [
           {
-            "id": "b0c57f8afd892a9e",
+            "id": "410ae366853e96da",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6 - The Real Notes/Fundamentals of Computer Science.md",
+                "file": "6 - The Real Notes/PoliTO/System Architecture/CPU.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fundamentals of Computer Science"
+              "title": "CPU"
+            }
+          },
+          {
+            "id": "f14fadd58cd1d07f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6 - The Real Notes/PoliTO/Cybersecurity/IP.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "IP"
+            }
+          },
+          {
+            "id": "76d1a5ce3586bc35",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6 - The Real Notes/PoliTO/System Architecture/Memory.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Memory"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -41,7 +70,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -69,7 +100,10 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
@@ -94,9 +128,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "6 - The Real Notes/UML.md",
                 "collapseAll": true,
-                "extraContext": false,
+                "extraContext": true,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
@@ -104,7 +137,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for UML"
+              "title": "Backlinks"
             }
           },
           {
@@ -113,12 +146,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "6 - The Real Notes/Foundaments of Computer Science.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Foundaments of Computer Science"
+              "title": "Outgoing links"
             }
           },
           {
@@ -137,42 +169,22 @@
             }
           },
           {
-            "id": "66ed048169814dc9",
+            "id": "f1f5fb5b7f3fd32f",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "2 - Material/IDS-FLASHCARD.md",
+                "file": "6 - The Real Notes/PoliTO/Cybersecurity/IP.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of IDS-FLASHCARD"
+              "title": "Outline"
             }
           },
           {
-            "id": "d104f56b342e99df",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
-            }
-          },
-          {
-            "id": "c01723f7a0ac4de8",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
-          },
-          {
-            "id": "f84785ca0232b27d",
+            "id": "3bf78580b420c065",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -182,7 +194,7 @@
             }
           },
           {
-            "id": "72a5912282272476",
+            "id": "ffc7518081d2e1f7",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -192,7 +204,7 @@
             }
           },
           {
-            "id": "5573811a154c305e",
+            "id": "beb167f5f73ce383",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -202,7 +214,7 @@
             }
           },
           {
-            "id": "9c0feba459f8eacd",
+            "id": "485ad0c1e701d03c",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -212,7 +224,7 @@
             }
           },
           {
-            "id": "6a47d6ece29ec92e",
+            "id": "0098a5e25681084c",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -222,7 +234,7 @@
             }
           },
           {
-            "id": "1152291aa54690f2",
+            "id": "246ae26e9978beec",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -232,7 +244,7 @@
             }
           },
           {
-            "id": "b754700233df6e6a",
+            "id": "f390451691c5910e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -242,7 +254,7 @@
             }
           },
           {
-            "id": "ab5c5bb68b1099c5",
+            "id": "d6b0643fd27c95df",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -252,7 +264,7 @@
             }
           },
           {
-            "id": "01020fad9e232196",
+            "id": "8f9c0ce9476ff18a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -262,7 +274,7 @@
             }
           },
           {
-            "id": "72f65bfad91c01b6",
+            "id": "705b77131f577135",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -272,7 +284,7 @@
             }
           },
           {
-            "id": "3130b1b9ea838b4e",
+            "id": "d4fcdb0e48775183",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -282,7 +294,7 @@
             }
           },
           {
-            "id": "86079b342f0ba2f7",
+            "id": "025d0a4e68dce75b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -292,7 +304,7 @@
             }
           },
           {
-            "id": "82aa0edc3f5acb64",
+            "id": "41c665f0ae6678e7",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -302,7 +314,7 @@
             }
           },
           {
-            "id": "cba273d4b9ae6c59",
+            "id": "6f2640e53a9093a8",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -312,7 +324,7 @@
             }
           },
           {
-            "id": "eba6f557524a4102",
+            "id": "21801b5ecf5d800f",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -322,7 +334,7 @@
             }
           },
           {
-            "id": "2407805438dd45d2",
+            "id": "ae86ba3d84634e20",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -332,7 +344,7 @@
             }
           },
           {
-            "id": "962cde4c67eb761a",
+            "id": "14d63a64d774ed18",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -342,7 +354,7 @@
             }
           },
           {
-            "id": "c7c01c38443549f3",
+            "id": "cb0531036ef06a95",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -352,7 +364,7 @@
             }
           },
           {
-            "id": "69f45817dc67ec80",
+            "id": "22672556eec1d35a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -362,7 +374,7 @@
             }
           },
           {
-            "id": "83a7a71222463dc4",
+            "id": "d26c7d039e1fd5f1",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -372,7 +384,7 @@
             }
           },
           {
-            "id": "77ea4cde3b04d325",
+            "id": "5ad7d16f045ce06e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -382,7 +394,7 @@
             }
           },
           {
-            "id": "00cd1e9400633d8a",
+            "id": "0b7dd8aacf1025dc",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -392,7 +404,7 @@
             }
           },
           {
-            "id": "2665aef5235ab5ab",
+            "id": "5fa8750d81cb9993",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -402,7 +414,7 @@
             }
           },
           {
-            "id": "26bebfa7971aa800",
+            "id": "f48c50444e5aafed",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -412,7 +424,7 @@
             }
           },
           {
-            "id": "29d0508a900e6936",
+            "id": "695ee846800d4051",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -422,7 +434,7 @@
             }
           },
           {
-            "id": "88e43bb770151050",
+            "id": "cae95e6ed292b61f",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -432,7 +444,7 @@
             }
           },
           {
-            "id": "adf25b225cbef6b3",
+            "id": "096d2acbe7e07cd7",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -442,7 +454,7 @@
             }
           },
           {
-            "id": "f50120a7d1661585",
+            "id": "27bd3a8fe78ea751",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -452,7 +464,7 @@
             }
           },
           {
-            "id": "1de26c57e40294a4",
+            "id": "3d8041ce19f851f6",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -462,7 +474,7 @@
             }
           },
           {
-            "id": "379afd553e7e5402",
+            "id": "cc6c750e32f72b6b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -472,7 +484,7 @@
             }
           },
           {
-            "id": "69a81083f07beb65",
+            "id": "67e50042a31429bc",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -482,7 +494,7 @@
             }
           },
           {
-            "id": "26300239ae83bc65",
+            "id": "a2f9d3c5bad8c76f",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -492,7 +504,7 @@
             }
           },
           {
-            "id": "f3090e5d3503c325",
+            "id": "7808b0290e2ac457",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -502,7 +514,7 @@
             }
           },
           {
-            "id": "db14159d2fc284e0",
+            "id": "0afd6e3f68af7281",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -512,7 +524,7 @@
             }
           },
           {
-            "id": "43168b5a52de1b62",
+            "id": "3871c262a95f7d1b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -522,7 +534,7 @@
             }
           },
           {
-            "id": "dd50ad0ed1396c85",
+            "id": "2e6462132b687aa3",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -532,7 +544,7 @@
             }
           },
           {
-            "id": "40b60d4961a6f634",
+            "id": "29bab14501a2ee91",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -542,7 +554,7 @@
             }
           },
           {
-            "id": "f9b072a277998538",
+            "id": "b5ad540ee4d2d700",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -552,7 +564,7 @@
             }
           },
           {
-            "id": "955c645e05c87093",
+            "id": "16d4f1ebe442f16e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -562,7 +574,7 @@
             }
           },
           {
-            "id": "062578389b62a87f",
+            "id": "d4ee9b8b4b55cf6b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -572,7 +584,7 @@
             }
           },
           {
-            "id": "a01d5356ae2fed02",
+            "id": "c3dc1d5646ae7714",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -582,7 +594,7 @@
             }
           },
           {
-            "id": "ecaeb315993c9691",
+            "id": "bfbf0eb687c0d202",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -592,7 +604,7 @@
             }
           },
           {
-            "id": "caea058c2815e5bc",
+            "id": "5a28638624604ccf",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -602,7 +614,7 @@
             }
           },
           {
-            "id": "27a0decc33a65983",
+            "id": "1e8961ebb9f4d9f5",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -612,7 +624,7 @@
             }
           },
           {
-            "id": "d21350f3d4897265",
+            "id": "84d8ae3bbeeb7e6b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -622,7 +634,7 @@
             }
           },
           {
-            "id": "85b3e057b7de5224",
+            "id": "e92d5b805b43c98d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -632,7 +644,7 @@
             }
           },
           {
-            "id": "521abf976c340b3d",
+            "id": "3d6edacb7ef30bdc",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -642,7 +654,7 @@
             }
           },
           {
-            "id": "7a04cdc65d535977",
+            "id": "03ce8ffbe160ab6d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -652,7 +664,7 @@
             }
           },
           {
-            "id": "c031025f9ee4d371",
+            "id": "bb62e37f6705ff38",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -662,7 +674,7 @@
             }
           },
           {
-            "id": "b89e23fff10dd1a6",
+            "id": "320c4fc534677eaa",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -672,7 +684,7 @@
             }
           },
           {
-            "id": "f7bc9d9bf228abe7",
+            "id": "cec8670a9a48c41d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -682,7 +694,7 @@
             }
           },
           {
-            "id": "852b75e255eb8f6b",
+            "id": "63cfeee02ff02558",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -692,7 +704,297 @@
             }
           },
           {
-            "id": "45414eb324b20320",
+            "id": "ae07c5d521e473f6",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "d99672ae5646619b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "130c1532b7d328ff",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "d9d7ab0d2b0c17e9",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "d35d1804d2d93f80",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "24b5f0a4d2c0886c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "e47ea6344baf270f",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "918c1b02fa20ecac",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "f4bd4e48c7f3521b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "36bde3ee58ece093",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "e09bb6f070e14595",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "2317bdf19389883b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "37f2b18f97583c19",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "00648d46cad938ee",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "3de10cd65b1f6c7e",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "502b4ae84d2fdf51",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "50722240f16b9fc6",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "47d7a0a6ee639f87",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "c62f12fde00fe3fd",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "67c7550a9e261bc2",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "a33dc2048dfa2064",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "55a057a9bb7687c4",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "4449290524f79f02",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "8dcdd763d782f95e",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "5212fd9d0e4a074c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "8088799cef6328f1",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "7a0d129214dc35d0",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "bf0f4a2bc1776f0a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "8bfce0c63bcc7907",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "30de389b7086fdf6",
             "type": "leaf",
             "state": {
               "type": "Saved Queries View",
@@ -700,13 +1002,23 @@
               "icon": "feather-mouse-pointer",
               "title": "Saved Queries"
             }
+          },
+          {
+            "id": "a68a17d030a56c47",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 86
       }
     ],
     "direction": "horizontal",
-    "width": 326.5
+    "width": 226.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -720,59 +1032,61 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-git:Open Git source control": false,
       "callout-manager:Insert Callout": false,
-      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
+      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
+      "system3-relay:Relay": false
     }
   },
-  "active": "c01723f7a0ac4de8",
+  "active": "f14fadd58cd1d07f",
   "lastOpenFiles": [
-    "6 - The Real Notes/Design Pattern.md",
-    "1 - Rough Notes/Thesis IDEA.md",
-    "7 - Images/Screenshot 2025-10-22 at 22.31.57.png",
-    "7 - Images/Screenshot 2025-10-22 at 22.26.38.png",
-    "7 - Images/Screenshot 2025-10-22 at 22.18.53.png",
-    "7 - Images/Pasted image 20251022221215.png",
-    "7 - Images/Pasted image 20251022221122.png",
-    "Pasted image 20251022221215.png",
-    "Screenshot 2025-10-22 at 22.18.53.png",
-    "Pasted image 20251022221122.png",
-    "Screenshot 2025-10-22 at 22.31.57.png",
-    "Screenshot 2025-10-22 at 22.26.38.png",
+    "Pasted image 20260908125157.png",
+    "Pasted image 20260908124338.png",
+    "Pasted image 20260908110909.png",
+    "Pasted image 20260908105937.png",
+    "6 - The Real Notes/PoliTO/System Architecture/Calculator Arithmetic.md",
+    "6 - The Real Notes/PoliTO/Cybersecurity/IP.md",
+    "6 - The Real Notes/PoliTO/Cybersecurity",
+    "6 - The Real Notes/PoliTO/System Architecture/CPU.md",
+    "6 - The Real Notes/PoliTO/System Architecture/Flynns Taxonomy.md",
+    "6 - The Real Notes/PoliTO/System Architecture/Memory.md",
+    "6 - The Real Notes/PoliTO/System Architecture/Computer architecture.md",
+    "6 - The Real Notes/PoliTO/System Architecture/Base Architecture of a Microprocessore.md",
+    "Screenshot 2026-09-07 at 10.28.25.png",
+    "Screenshot 2026-09-07 at 10.07.16.png",
+    "6 - The Real Notes/PoliTO/System Architecture/Instruction Set Architecture.md",
+    "6 - The Real Notes/PoliTO/System Architecture/Legenda.md",
+    "6 - The Real Notes/PoliTO/Data Science/Regole Di Associazione.md",
+    "6 - The Real Notes/PoliTO/Data Science/Categorie Di Dati.md",
+    "7 - Images/Pasted image 20260831114502.png",
+    "7 - Images/Pasted image 20260903122946.png",
     "README.md",
-    "1 - Rough Notes/Password Random.md",
-    "6 - The Real Notes/PHP.md",
-    "6 - The Real Notes/Java/Java.md",
-    "6 - The Real Notes/Programming Knowledge.md",
-    "6 - The Real Notes/MVC.md",
-    "6 - The Real Notes/Java/Java Records.md",
-    "6 - The Real Notes/Java",
-    "6 - The Real Notes/Untitled 2.base",
-    "6 - The Real Notes/Untitled 1.base",
-    "6 - The Real Notes/Untitled.base",
-    "6 - The Real Notes/26-09-2025.md",
-    "6 - The Real Notes/Full Stack/CSS.md",
-    "6 - The Real Notes/Full Stack/HTML.md",
-    "6 - The Real Notes/JavaScript.md",
-    "3 - Tags/Programming.md",
-    "6 - The Real Notes/SPRING BOOT.md",
-    "6 - The Real Notes/Ingegneria del software.md",
-    "6 - The Real Notes/Agile Framework.md",
+    "7 - Images/Pasted image 20260902094209.png",
+    "7 - Images/Pasted image 20260903095022.png",
+    "6 - The Real Notes/PoliTO/Data Science/Tecniche del Data Science.md",
+    "6 - The Real Notes/PoliTO/Data Science/Knowledge Discovery Process.md",
+    "6 - The Real Notes/Untitled.md",
+    "6 - The Real Notes/PoliTO/Data Science/Modello Predittivo.md",
+    "6 - The Real Notes/PoliTO/Data Science/Acquisizione Dei Dati.md",
+    "2 - Material/Flash Cards/Computer Architecture/Introduction.md",
+    "2 - Material/Flash Cards/Data Science/Introduction.md",
+    "2 - Material/Flash Cards/Computer Architecture",
+    "6 - The Real Notes/PoliTO/Data Science/Legenda.md",
     "2 - Material/Flash Cards/02-IDS-FLASHCARDS.md",
-    "2 - Material/Flash Cards/03-IDS-FLASHCARD.md",
-    "6 - The Real Notes/UML.md",
+    "2 - Material/Flash Cards/Data Science",
+    "Screenshot 2026-08-30 at 23.27.11.png",
+    "6 - The Real Notes/PoliTO/System Architecture/RISC.md",
+    "2 - Material/New Words.md",
+    "6 - The Real Notes/Learning System.md",
+    "6 - The Real Notes/TODO Notes.md",
+    "6 - The Real Notes/PoliTO/Big Data",
+    "6 - The Real Notes/PoliTO/System Architecture",
+    "6 - The Real Notes/PoliTO/Achi",
+    "6 - The Real Notes/PoliTO/Data Science",
+    "6 - The Real Notes/PoliTO",
+    "6 - The Real Notes/Full Stack/PHP",
+    "6 - The Real Notes/AI",
     "Untitled 3.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
-    "Untitled.canvas",
-    "5 - Templates/Full Note.md",
-    "2 - Material/Flash Cards/UML-FLASHCARDS.md",
-    "6 - The Real Notes/Git.md",
-    "6 - The Real Notes/SOLID Principals.md",
-    "6 - The Real Notes/Untitled 4.base",
-    "6 - The Real Notes/Untitled 3.base",
-    "3 - Tags/Software Engineering.md",
-    "2 - Material/Docs",
-    "2 - Material/Flash Cards",
-    "6 - The Real Notes/Full Stack",
-    "7 - Images/image-gallery.base"
+    "Untitled.canvas"
   ]
 }

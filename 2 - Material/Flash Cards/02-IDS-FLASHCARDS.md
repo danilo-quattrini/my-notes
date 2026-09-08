@@ -129,7 +129,7 @@ Front: Si elenchino e si discutano le  differenti prospettive che servono a defi
 Back: Le prospettive che sono necessarie a definire un processo di sviluppo software sono le seguenti:
 - **Activity Flow Perspective**: sono le prospettive che vanno a definire le attività che un processo di sviluppo dovrà possedere.
 - **Role/ Action Perspective**: andranno a indirizzare i vari componenti del nostro team, chiamatesi anche risorse, ad una specifica attività che abbiamo definito precedentemente, cioè l'assegnamento dei ruoli al nostro team.
-END
+- **Data Flow Perspective**: prospettiva del processo di sviluppo dove si va ad identificare quali artefatti si andranno a generare ad ogni fase e quello che si produrrà alla fine del progetto.
 
 ---
 
@@ -263,7 +263,9 @@ Basic
 
 Front: Quali sono i due approcci principali alla modellazione del software?
 
-Back: 1) Metodologia agile (flessibilità, collaborazione, rapidità). 2) Metodi strutturati (sequenziali e gerarchici, es. modello a cascata).
+Back:
+1. Metodologia agile (flessibilità, collaborazione, rapidità). 
+2. Metodi strutturati (sequenziali e gerarchici, es. modello a cascata).
 <!--ID: 1757671388678-->
 END
 
@@ -301,7 +303,10 @@ Basic
 
 Front: Quali sono i tre tipi principali di manutenzione del software?
 
-Back: 1) Correttiva (risolvere problemi), 2) Perfettiva (aggiungere funzionalità), 3) Adattiva (portabilità).
+Back: 
+1. Correttiva (risolvere problemi), 
+2. Perfettiva (aggiungere funzionalità)
+3. Adattiva (portabilità).
 <!--ID: 1757671388684-->
 END
 

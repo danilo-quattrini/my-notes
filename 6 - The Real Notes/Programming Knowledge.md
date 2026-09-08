@@ -70,15 +70,19 @@ see more here: [click here](https://www.geeksforgeeks.org/computer-science-funda
 
 - **Fetch**: it's the action of retrive datas from a server or a resource (an API for instance).
 
-- **MVC** (*Model - View - Controller*): it's an architecture design used by most of the frameworks, like Laravel, Spring, Django and so on, to explicit show content to the user with the **View**, Manage **Models** with the **Controller** and define Models with classes.
-- ![[mvc-example-img.png]]
+- 
+
+- **MVC** (*Model - View - Controller*): it's an architecture design used by most of the frameworks, like Laravel, Spring, Django and so on, to explicit show content to the user with the **View**, Manage **Models** with the **Controller** and define Models with classes.![[mvc-example-img.png]]
 ## How to structure your code
 Before we talk about how to structure your code, let's cover these two main software design principle:
-- **Cohesion**:  
-- **Coupling**:
+- **Coupling**: we intend as the ability to a model or a class to depend to other concretes, we should avoid the coupling because it can be a problem if we need to re-use the class in other context. 
+  If we have a module that's tightly couple with other modules, we would have difficulty when we make a change, because we could risk to break the entire system, that's hard to maintain and scale if it's hardly coupled with other modules.
+  
+- **Cohesion**: that means we have a class or a module that have a well defined single purpose, which enhances readability, maintainability, and reusability.
+
 ## What is an API
 
-API stand for **A**pplication **P**rogramming **I**nterface and can mean a lot of different things but a _web API_ is a collection of predefined ways of, or rules for, interacting with a web application’s data, often through an HTTP request-response cycle.
+*API* stand for( ***A**pplication **P**rogramming **I**nterface*) and can mean a lot of different things but a _web API_ is a collection of predefined ways of, or rules for, interacting with a web application’s data, often through an HTTP request-response cycle.
 
 ![[ExampleWEBAPI.png]]
 In this case the web API is reading data from the website db and it can also delete, update and create new field.
@@ -141,3 +145,4 @@ Without a VCS is literally hard to understand who made a change inside the code 
 ---
 [Structure Your Code](https://medium.com/@minadev/how-to-structure-our-code-b5e7b1c32c21).
 [MVC (Model-View-Controller)](https://www.codecademy.com/article/mvc-architecture-model-view-controller)
+

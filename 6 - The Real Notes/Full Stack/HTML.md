@@ -1,4 +1,4 @@
- 2024-10-02 21:01
+	 2024-10-02 21:01
 
 Status: #devoleped 
 
@@ -20,7 +20,7 @@ The attribute inside the HTML tag is useful when we want to set a behavior to ou
 <element attribute="value"></element>
 ```
 
-# 0.1 hyperlink 
+# 0.1 Hyperlink 
 This attribute `href` is useful when we want to include a link of a URL inside the element of our html tag:
 ```html
 <a href="https://www.example-website.com">Visit our website</a>
@@ -244,6 +244,14 @@ We should declare the basics property for our web page, at least: `og:type`, `og
 ```
 
 The `type` property is used to represent the type of content being shared on social media. Examples of this content include articles, websites, videos, or music.
+# 1.0 Headings and Paragraphs
+>[!note] Heading structure
+>The structure of headings into a web page it's important to give a hierarchy to the page, for instance we use the `h1` element to represent the title of the story (web page title) and a `h2` element to represent their chapter
+## Note taking
+ - Preferably, you should use a single `<h1>` per page—this is the top level heading, and all others sit below this in the hierarchy
+- **Use only three headings per page**, don't go over the third level, it's better to create a separate page for that.
+- Use headings in the correct order inside the hierarchy, for instance don't use `h3` tag before an `h2`.
+
 # 4.0 How format properly  a HTML document
 
 To avoid problems in future we need to organize our HTML code in the way that in future, we are not going to find any difficulties. For doing that , here some tips that we should follow every time we create a new code.

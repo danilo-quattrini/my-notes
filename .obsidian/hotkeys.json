@@ -34,22 +34,24 @@
       "key": "0"
     }
   ],
+  "workspace:next-tab": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "ArrowRight"
+    }
+  ],
+  "app:go-forward": [],
   "workspace:previous-tab": [
     {
       "modifiers": [
-        "Ctrl",
+        "Alt",
         "Mod"
       ],
       "key": "ArrowLeft"
     }
   ],
-  "workspace:next-tab": [
-    {
-      "modifiers": [
-        "Ctrl",
-        "Mod"
-      ],
-      "key": "ArrowRight"
-    }
-  ]
+  "app:go-back": []
 }

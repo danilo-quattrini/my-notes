@@ -31,22 +31,6 @@ Let's see the main commands:
 
 - For connect you db you need to open the terminal and type `mongosh` (if you have it install ofc).
 - For see all the databases that we have in our mongo server type:
-  ```bash
-show dbs
-	```
-- For use it one you should type the command, that can also create a db.
-	```bash
-use <name of the db u want to use>
-	```
-- For create the first [[#1.1 Collection|collection]].
-```bash
-db.createCollectio("nameOfCollection")
-
-or 
-
-db.nameOfDB.insertOne("nameOfCollection")
-```
-
 ### 1.1 Collection
 MongoDB stores documents in collections. Collections are analogous to tables in relational databases
 ![[crud-annotated-collection.bakedsvg.svg]]

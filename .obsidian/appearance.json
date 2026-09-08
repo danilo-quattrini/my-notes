@@ -1,10 +1,13 @@
 {
-  "cssTheme": "",
-  "baseFontSize": 17,
+  "cssTheme": "Minimal",
+  "baseFontSize": 20,
   "baseFontSizeAction": true,
   "enabledCssSnippets": [
     "style"
   ],
   "accentColor": "#007bc7",
-  "translucency": true
+  "translucency": false,
+  "textFontFamily": "SF Pro",
+  "monospaceFontFamily": "JetBrainsMonoNL Nerd Font",
+  "interfaceFontFamily": "SF Pro"
 }
