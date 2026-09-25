@@ -32,7 +32,7 @@ Processor are falling in this category of computer architecture, the characteris
 - It has more than one ALU, so the same instruction passed from the control it's shared with different Operator.
 ![[Screenshot 2026-08-30 at 23.19.20.png]]
 
-In the example above the ALU's interact with the same memory but they retrive different data and return different results. SIMD model are well suited to scientific computing since they involve lots of vector and matrix operations
+In the example above the ALU's interact with the same memory but they retrive different data and return different results. SIMD model are well suited to scientific computing since they involve lots of vector and matrix operations. It exploits the [[Computer Design Introduction#^07e7ee|data-parallelism]], to execute the same operation into multiple data
 
 ## MISD (Multiple Instruction Single Data)
 The system performs different operations on the same data set. Machines built using the MISD model are not useful in most of the application, a few machines are built, but none of them are available commercially.
@@ -44,7 +44,7 @@ These are known as multi processor machines where, there are different processor
 MIMD machines are classified into ***shared-memory*** and ***distributed-memory*** models depending on how processors connect to memory. In the example above we are in the scenario of a shared memory, where a change made from one instruction from a CPU it's visible from another CPU too. Where the **distributed memory** every processor has its own local memory were it works on and comunicate with each other through interconnection network.
 
 >[!question] Why that?
->Shared-memory systems are easier to program but harder to scale and more vulnerable to failures, since a fault can affect the whole system. In contrast, distributed-memory systems are more scalable and fault-tolerant, since each processor is independent. For real-world use, distributed-memory MIMD is generally considered ****superior for large-scale and high-performance computing****, due to their scalability, reliability, and ability to handle complex tasks efficiently
+>Shared-memory systems are easier to program but harder to scale and more vulnerable to failures, since a fault can affect the whole system. In contrast, distributed-memory systems are more scalable and fault-tolerant, since each processor is independent. For real-world use, distributed-memory MIMD is generally considered **superior for large-scale and high-performance computing**, due to their scalability, reliability, and ability to handle complex tasks efficiently
 
 # Reference
 ---

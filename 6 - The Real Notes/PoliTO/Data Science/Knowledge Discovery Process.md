@@ -16,11 +16,11 @@ Il **Knowledge Discovery Process** (KDD) è un framework / processo iterativo ch
 ## Fasi de KDD
 
 Gli step del KDD sono i seguenti:
-1.  **Data Selection (Selezione):** Dal magazzino dati centrale (Database o qualcos'altro), isoli solo la porzione o le variabili rilevanti per il tuo obiettivo (es. consideri solo gli ultimi 2 anni di vendite).
+1.  **Data Selection (Selezione):** Dal magazzino dati centrale (Database o qualcos'altro), isoli solo la porzione o le variabili rilevanti **per il tuo obiettivo** (es. consideri solo gli ultimi 2 anni di vendite).
     
-2. **Data Preprocessing (Pulizia e Integrazione):** [[#Rimozione del Rumore|Rimuovi il rumore]], gestisci i dati mancanti e integri sorgenti diverse armonizzando i metadati per garantire la qualità dei dati.
+2. **Data Preprocessing (Pulizia e Integrazione):** [[#Rimozione del Rumore|Rimuovi il rumore]], gestisci i dati mancanti e integri sorgenti diverse armonizzando i [[#Metadata|metadati]] per garantire la qualità dei dati.
     
-3. **Data Transformation (Trasformazione):** Prepari i dati per gli algoritmi (es. riducendo le dimensioni o normalizzando le scale numeriche tra 0 e 1).
+3. **Data Transformation (Trasformazione):** Prepari i dati per gli algoritmi (es. riducendo le dimensioni o normalizzando le scale numeriche tra 0 e 1), vedremo che questo ci è utile per algoritmi come le [[Regole Di Associazione]].
     
 4. **Data Mining (Estrazione dei Pattern):** Applichi algoritmi di Machine Learning (es. Alberi di Decisione, Clustering, Regressioni) per estrarre schemi nascondi (_pattern_).
     
@@ -28,6 +28,10 @@ Gli step del KDD sono i seguenti:
 
 ![[Pasted image 20260902094209.png]]
 
+## Preprocessing
+Ci soffermiamo Nella fase del **Data Preprocessing**, dove ci si vanno a definire due micro-fasi:
+- **Data Cleaning** micro-fase in cui si vanno a svolgere operazione di pulizia dei dati, rimuovendone il rumore, gli outliers e risolvere le inconsistenze (valori che non seguono una stessa linea d'onda) presenti
+- **Data Integration**: la fase in cui si vanno a riconciliare i dati che provengono da diversi fonti, aggiungendo dei [[#Metadata|metadati]] che descrivono la natura del dato e infine risolvere i conflitti tra dati di diverse fonti.
 ### Rumore (Data Noise)
 >[!info] 
 >In Data Science il **rumore** (noise) sono tutti quei dati errati, corrotti o fluttazioni anomale che **distorcono la vera natura del fenomeno** che si vuole studiare.
@@ -47,7 +51,7 @@ Vediamo degl'esempii di come si può rimuovere il rumore da un'insieme di dati:
 ### Metadata
 I metadati sono dati che descrivono altri dati, cioè dei label (etichette) che definiamo ai dati per descrivere la loro natura, esempio di metadato può essere: tipo di dato (int, string, float, bool), unità di misura (kg, g, hg, m), la valuta di una moneta (euro, dollari, yen, ecc.)
 
-Perché si utilizzano i metadati? L'utilizzo dei metadati server per far si che i dati siano tradotti con un linguaggio universale, questo perché i dati possono venire da fonti differenti e hanno la necessità di essere tradotti tutti in un'unico formato.
+Perché si utilizzano i metadati? L'utilizzo dei metadati serve per far si che i dati siano tradotti con un linguaggio universale, questo perché i dati possono venire da fonti differenti e hanno la necessità di essere tradotti tutti in un'unico formato.
 
 >[!example]
 >Significa creare un dizionario comune per far capire agli algoritmi che due dati apparentemente diversi sono la stessa cosa.

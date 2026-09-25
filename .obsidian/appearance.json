@@ -1,6 +1,6 @@
 {
   "cssTheme": "Minimal",
-  "baseFontSize": 20,
+  "baseFontSize": 22,
   "baseFontSizeAction": true,
   "enabledCssSnippets": [
     "style"

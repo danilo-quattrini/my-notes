@@ -7,14 +7,21 @@ topics:
   - "[[School]]"
 author: Danilo Quattrini
 ---
-# Computer architecture
+# Computer Architecture
 ---
 **Computer architecture** is the conceptual design and operational structure of a [computer](https://en.wikipedia.org/wiki/Computer "Computer") system that define how component parts are organized and interact to execute [programs](https://en.wikipedia.org/wiki/Computer_program "Computer program") efficiently.
 
 It has two part:
 1. The [[Instruction Set Architecture|Instruction Set Architecture]], that's how the machine language program, interact with the computer.
-2. Hardware System Architecture, that's deal wit the hardware component we are going to see below in the image. It also deal with how data / instruction are transfer within components.
-
+2. **Organization**: how the components interacts to each other, I could have a module with real number, and I should have an organization to perform the module operation.
+3. Hardware System Architecture, that's deal wit the hardware component we are going to see below in the image. It also deal with how data / instruction are transfer within components.
+There are some must that  a computer architecture design must include:
+- Functional requirements
+- Price
+- Power
+- Performance
+- Dependability
+  
 It's a general description that avoid to go in more further detail of the concept, but it's relative to [instruction set architecture](https://en.wikipedia.org/wiki/Instruction_set_architecture "Instruction set architecture"), [CPU microarchitecture](https://en.wikipedia.org/wiki/Microarchitecture "Microarchitecture"), [memory](https://en.wikipedia.org/wiki/Computer_memory "Computer memory"), and [input/output systems](https://en.wikipedia.org/wiki/Input/output "Input/output").
 
 ![[Pasted image 20260828114901.png|748]]
@@ -25,10 +32,12 @@ This above it's an example of **computer architecture**, with a single **CPU**, 
 When we are talking about computer organization, we are referring to the structural relationship within the components, where the CPU, Memory, I/O Devices are linked together with a **System Bus**.
 
 >[!info] Architecture VS Design
->The difference from the terminology of **Computer Organization** and **Computer Architecture**, it's how they deal with components it self. The first one it just put the major focus on how the hardware it's layout and organized. In the Architecture manner instead we just cover the **Design Implementation** for the various parts of the computer
+>The difference from the terminology of **Computer Organization** and **Computer Architecture**, it's how they deal with components it self. The first one it just put the major focus on how the hardware it's layout and organized. In the Architecture manner instead we just cover the **System Design Implementation** for the various parts of the computer
 
 The architecture that we saw above, take the name of [Von Neumann](https://en.wikipedia.org/wiki/Von_Neumann_architecture)  that's how the architecture of a computer / how computer it's organized internally. But we are going to see that's not the only one we can describe how internally it's made a PC
 
+## Computer Design
+Determinate which attribute are important for our device designing a machine which maximizes performance and matches cost and power constraints.
 ## Classification
 We can classify a computer architecture in two distinct families:
 ### Von Neumann Architecture (Princeton Architecture).
@@ -37,7 +46,7 @@ It has 3 basics hardware sub-system, **CPU, Memory and Input / Output device**s,
 
 What does it means a store program computer?
 
-It means that the **Main Memory** (Memory Unit) **should store the program that control the computer operation and the computer it self can manipulate this program it self too.** (Cioè le operazioni che il computer dovrà svolgere sono salvate in programma presente nella memoria principale, inoltre tale programma può essere gestito dal computer stesso). 
+It means that the **Main Memory** (Memory Unit) **should store data, the program that control the computer operation where the computer it self can manipulate too.** (Cioè le operazioni che il computer dovrà svolgere sono salvate in programma presente nella memoria principale, inoltre tale programma può essere gestito dal computer stesso). 
 
 Also the main memory carry each operation that the CPU should perform **sequentially one operation at time**. The only thing this architecture lack it's the separation of buses for the different operation the CPU should perform.
 
@@ -47,6 +56,13 @@ In the Von Neumann architecture **there is only one System Bus from the CPU to t
 > All the data and the operation live in the same hardware memory component, so there's no separation of concern about memory that save data and memory that save operation.
 
 In the end this is a bottleneck and a [CPU](https://en.wikipedia.org/wiki/Central_processing_unit "Central processing unit") cannot simultaneously read an instruction and read or write data from or to the memory, but it should perform each operation one at time.
+
+To summarize:
+- Von Neumann Architecture it's simply to understand
+- It has only on bus from the CPU to the Main Memory and to other component.
+- It execute one instruction at time.
+- A computer to be a Von Neumann Architecture it should be a **store program** that as the name says, it should store data, program and also manipulate this program to perform operations.
+- Problem with the Von Neumann, it has only one bust to fetch instruction or data from the memory, that results into slow performance and a big bottleneck in this architecture.
 ### Non - Von Neumann Architecture (Harvard and Modified Harvard).
 ![[Pasted image 20260829231221.png]]
 

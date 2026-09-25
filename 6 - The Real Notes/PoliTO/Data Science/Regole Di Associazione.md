@@ -45,9 +45,9 @@ $$
 \text{Supporto}(X \implies Y) = P(X \cap Y) = \frac{\text{count}(X \cup Y)}{N} • 100
 $$
 >[!info]
->**Significato:** È la percentuale (o frazione) di transazioni totali che contengono sia $X$ che $Y$.
+>**Significato:** È la percentuale (o frazione) di transazioni totali che contengono sia $X$ che $Y$
 
-### Confidenza (Confidence
+### Confidenza (Confidence)
 Misura la forza dell'implicazione, cioè la probabilità condizionata che si verifichi $Y$ dato che si è verificato $X$
 $$\text{Confidence}(X \implies Y) = P(Y \mid X) = \frac{\text{Supporto}(X \implies Y)}{\text{Supporto}(X)} = \frac{\text{count}(X \cup Y)}{\text{count}(X)}$$
 >[!info]
@@ -61,6 +61,13 @@ $$\text{Lift}(X \implies Y) = \frac{\text{Confidenza}(X \implies Y)}{\text{Suppo
 - $\text{Lift} = 1$: $X$ e $Y$ sono indipendenti (nessuna associazione).
 - $\text{Lift} > 1$: Associazione positiva ($X$ invoglia/aumenta l'acquisto di $Y$).
 - $\text{Lift} < 1$: Associazione negativa (la presenza di $X$ rende meno probabile $Y$).
+## Quale tipo di regola è più interessante?
+
+In generale, le regole con **lift significativamente > 1** sono più interessanti, perché indicano una **vera associazione** oltre la semplice frequenza
+
+Regole con lift ≈ 1 o < 1 possono comunque essere utili se:
+- la confidenza è molto alta,
+- e l’item Y ha un margine di guadagno elevato.
 # Reference
 ---
 

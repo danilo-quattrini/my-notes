@@ -20,5 +20,3 @@ La differenza dipende da **chi prende l'iniziativa** nel trasferimento del dato 
 | **Push-based** _(A spinta)_            | **La Fonte (il mittente) -> Data Center** | La fonte invia ("spinge") continuamente i dati verso il Data Center non appena vengono prodotti.   | Una **telecamera di videosorveglianza** che invia un flusso video continuo (_stream_), oppure il tracciamento dei click di un utente (_clickstream_) inviato istantaneamente a ogni click. |
 # Reference
 ---
-
-	

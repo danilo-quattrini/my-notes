@@ -11,7 +11,7 @@ author: Danilo Quattrini
 # Modello Predittivo
 ---
 >[!info]
->Il modello predittivo è un algoritmo matematico o statistico che analizza i dati storici storicizzati per identificare pattern (grafici) e relazioni, con l'obiettivo di stimare il valore di una variabile futura o sconosciuta su nuovi dati.
+>Il modello predittivo è un algoritmo matematico o statistico che analizza i dati storici per identificare pattern (grafici) e relazioni, con l'obiettivo di stimare il valore di una variabile futura o sconosciuta su nuovi dati.
 
 Nella fase di **Analisi** del processo di Data Science, si colloca subito dopo la _Descrizione analitica_ (che spiega cosa è successo) e serve da base per l' _Analisi prescrittiva_ (che suggerisce quale azione intraprendere).
 

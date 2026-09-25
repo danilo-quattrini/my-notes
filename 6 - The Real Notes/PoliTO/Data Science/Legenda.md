@@ -18,6 +18,10 @@ author: Danilo Quattrini
 - Processo di data science
 - Algoritmi di machine learning: classificazione, clustering ed estrazione di regole di associazione 
 - Analisi di casi di studio mediante esercitazioni in aula e in laboratorio sugli argomenti trattati a lezione
+## Seguire gli appunti
+---
+- [[Introduzione]]
+- [[Processo Della Data Science]]
 # Reference
 ---
 

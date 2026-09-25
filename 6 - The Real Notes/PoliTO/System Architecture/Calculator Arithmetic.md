@@ -50,7 +50,6 @@ It's just like the addition with two number the only difference it's that we sho
 - $1 + 1 = 0$ with the rest of  operation on top of the next number, like in operation before
 - $1 + 0 = 1$
 - $0 + 0 = 0$
-
 ### Subtraction
 
 With the subtraction instead if we have two numbers $A$ and $B$ and we would like to subtract  $B$ from $A$, we should be converte $B$ into the Two's Complement format (Complemento a Due) and then perform the addition operation, what does it means? Why we are doing this conversion without simply use the subtraction operand?
@@ -62,6 +61,7 @@ $$A - B = A + (-B)$$
 - **No "Double Zero":** Alternative methods (like Sign-Magnitude) result in two representations for zero ($+0$ and $-0$). Two's complement yields exactly one zero (`0000 0000`).
     
 - **Unambiguous Sign:** The Most Significant Bit (MSB—the leftmost bit) acts as the sign bit: `0` for positive, `1` for negative.
+
 ## Two's Complement
 
 To represent a negative number in binary (e.g., $-5$ using 8 bits):
@@ -84,6 +84,11 @@ Add $1$ to the inverted value:
 
 `1111 1010` + `0000 0001` = `1111 1011`
 
+
+![[Screenshot 2026-09-09 at 10.46.47.png]]
+
+Below this is an example of how to perform addition and subtraction, the subtraction it's just an addition where the summer it's perform a sum of a number from register B converted in [[#Two's Complement]].  The inverter its just a component that change the nature of the number from register B to be able to change the value to be substract (additioned) from the summer
+
 ### Multiplication
 Binary multiplication uses the exact same "shift and add" method taught in grade-school decimal arithmetic, but simplified because binary digits are only `0` or `1`.
 
@@ -92,11 +97,21 @@ Binary multiplication uses the exact same "shift and add" method taught in grade
 
 **Step-by-Step Example: $6 \times 5 = 30$**
 
-- $6_{10} = 0110_2$ (Multiplicand)
+- $6_{10} = 0110_2$ (Multiplicand => Moltiplicando)
     
-- $5_{10} = 0101_2$ (Multiplier)
+- $5_{10} = 0101_2$ (Multiplier => Moltiplicatore)
 
 $$\begin{array}{rl} \phantom{\times 00}0110 & (\text{Multiplicand } = 6) \\ \times\phantom{00}0101 & (\text{Multiplier } = 5) \\ \hline 0110 & (\text{LSB is } 1 \rightarrow \text{copy } 0110) \\ 0000\phantom{0} & (\text{Bit 1 is } 0 \rightarrow \text{shift left, add zeros}) \\ 0110\phantom{00} & (\text{Bit 2 is } 1 \rightarrow \text{shift left twice, copy } 0110) \\ +\ 0000\phantom{000} & (\text{Bit 3 is } 0 \rightarrow \text{shift left 3 times}) \\ \hline 0001\ 1110 & (\text{Sum } = 16 + 8 + 4 + 2 = 30) \end{array}$$
+The product of 2 number of $n$ bit will return as result a number with the double of the bit $2n$, from the example below the multiplier and the multiplicand they where with $4$ bits and their product it's a result of $8$ bits.
+
+The perform a multiplication the operation perform it's the following one. 
+
+There are 3 register $A$,$Q$,$M$ where we find $Q$ it's the multiplier and $M$ it's the multiplicand. $A$ it's a register where we perform the operation of the sum if the bit of the number in the $Q$ register it's $1$. The flow diagram it's the following one below
+![[Screenshot 2026-09-09 at 11.46.02.png]]
+
+- If the multiplier as the bit to $1$ then we add the multiplicand to the register $A$ 
+- if the multiplier it's 0 then we just go to the next operation
+- At the end it will be perform a right [shift of the bits](https://www.geeksforgeeks.org/cpp/left-shift-right-shift-operators-c-cpp/) from the registers $C$,$A$ and $Q$, where the $C$ bit will be placed in the MSB(Most Significant Bit) of the register $A$ in position $A_{n-1}$ and the LSB(Less Significant Bit) of $A_{0}$ will be place in the MSB of the register $Q_{n-1}$.
 # Reference
 ---
 

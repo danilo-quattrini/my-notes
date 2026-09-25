@@ -4,49 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "0152bcf1dffd8f1d",
+        "id": "173f88ace75e1033",
         "type": "tabs",
         "children": [
           {
-            "id": "410ae366853e96da",
+            "id": "37dd1f861db66a51",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6 - The Real Notes/PoliTO/System Architecture/CPU.md",
+                "file": "6 - The Real Notes/PoliTO/System Architecture/ARM/Basics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CPU"
+              "title": "Basics"
             }
           },
           {
-            "id": "f14fadd58cd1d07f",
+            "id": "7d9e400133404872",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6 - The Real Notes/PoliTO/Cybersecurity/IP.md",
+                "file": "6 - The Real Notes/PoliTO/System Architecture/Instruction Set Architecture.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IP"
-            }
-          },
-          {
-            "id": "76d1a5ce3586bc35",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "6 - The Real Notes/PoliTO/System Architecture/Memory.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Memory"
+              "title": "Instruction Set Architecture"
             }
           }
         ],
@@ -112,7 +98,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 262.16030502319336,
+    "collapsed": true
   },
   "right": {
     "id": "9cd5f3aae730b20b",
@@ -174,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "6 - The Real Notes/PoliTO/Cybersecurity/IP.md",
+                "file": "6 - The Real Notes/PoliTO/System Architecture/Computer Design Introduction.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -997,10 +984,10 @@
             "id": "30de389b7086fdf6",
             "type": "leaf",
             "state": {
-              "type": "Saved Queries View",
+              "type": "empty",
               "state": {},
-              "icon": "feather-mouse-pointer",
-              "title": "Saved Queries"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           },
           {
@@ -1011,6 +998,116 @@
               "state": {},
               "icon": "git-pull-request",
               "title": "Source Control"
+            }
+          },
+          {
+            "id": "8d7aa43d9c057e9b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "06c015637fa04e81",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "078e2d7685e49844",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "920aa4c408c79db6",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "cbf0dc4b6a8d4b70",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "decec4cb80ef4852",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "c7714d10ef058a6b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "8f82340ccfb882dc",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "9a28bc6e55a435fc",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "df9e664d2b3338ec",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "03cddf232550f2d6",
+            "type": "leaf",
+            "state": {
+              "type": "Saved Queries View",
+              "state": {},
+              "icon": "feather-mouse-pointer",
+              "title": "Saved Queries"
             }
           }
         ],
@@ -1036,54 +1133,54 @@
       "system3-relay:Relay": false
     }
   },
-  "active": "f14fadd58cd1d07f",
+  "active": "7d9e400133404872",
   "lastOpenFiles": [
-    "Pasted image 20260908125157.png",
-    "Pasted image 20260908124338.png",
-    "Pasted image 20260908110909.png",
-    "Pasted image 20260908105937.png",
-    "6 - The Real Notes/PoliTO/System Architecture/Calculator Arithmetic.md",
-    "6 - The Real Notes/PoliTO/Cybersecurity/IP.md",
-    "6 - The Real Notes/PoliTO/Cybersecurity",
-    "6 - The Real Notes/PoliTO/System Architecture/CPU.md",
-    "6 - The Real Notes/PoliTO/System Architecture/Flynns Taxonomy.md",
-    "6 - The Real Notes/PoliTO/System Architecture/Memory.md",
-    "6 - The Real Notes/PoliTO/System Architecture/Computer architecture.md",
-    "6 - The Real Notes/PoliTO/System Architecture/Base Architecture of a Microprocessore.md",
-    "Screenshot 2026-09-07 at 10.28.25.png",
-    "Screenshot 2026-09-07 at 10.07.16.png",
+    "Screenshot 2026-09-25 at 10.56.12.png",
+    "6 - The Real Notes/PoliTO/System Architecture/Control Unit (CU).md",
+    "6 - The Real Notes/PoliTO/System Architecture/ARM/Basics.md",
     "6 - The Real Notes/PoliTO/System Architecture/Instruction Set Architecture.md",
-    "6 - The Real Notes/PoliTO/System Architecture/Legenda.md",
-    "6 - The Real Notes/PoliTO/Data Science/Regole Di Associazione.md",
-    "6 - The Real Notes/PoliTO/Data Science/Categorie Di Dati.md",
-    "7 - Images/Pasted image 20260831114502.png",
-    "7 - Images/Pasted image 20260903122946.png",
-    "README.md",
-    "7 - Images/Pasted image 20260902094209.png",
-    "7 - Images/Pasted image 20260903095022.png",
+    "Screenshot 2026-09-25 at 10.50.48.png",
+    "Screenshot 2026-09-25 at 10.46.08.png",
+    "Screenshot 2026-09-25 at 10.44.23.png",
+    "Screenshot 2026-09-25 at 10.41.45.png",
+    "Screenshot 2026-09-25 at 10.35.57.png",
+    "Screenshot 2026-09-25 at 10.33.54.png",
+    "Screenshot 2026-09-25 at 10.31.02.png",
+    "Screenshot 2026-09-25 at 10.28.00.png",
+    "Screenshot 2026-09-25 at 10.27.38.png",
+    "Screenshot 2026-09-25 at 10.24.41.png",
+    "6 - The Real Notes/PoliTO/System Architecture/Computer Design Introduction.md",
+    "6 - The Real Notes/PoliTO/System Architecture/Introduzione Corso.md",
+    "6 - The Real Notes/PoliTO/Cybersecurity/IP.md",
+    "6 - The Real Notes/PoliTO/Cybersecurity/Legenda.md",
+    "6 - The Real Notes/PoliTO/Data Science/Data Warehouse/Data Warehouse.md",
+    "6 - The Real Notes/PoliTO/Data Science/Data Warehouse/Analisi Data Warehouse.md",
     "6 - The Real Notes/PoliTO/Data Science/Tecniche del Data Science.md",
-    "6 - The Real Notes/PoliTO/Data Science/Knowledge Discovery Process.md",
-    "6 - The Real Notes/Untitled.md",
-    "6 - The Real Notes/PoliTO/Data Science/Modello Predittivo.md",
-    "6 - The Real Notes/PoliTO/Data Science/Acquisizione Dei Dati.md",
-    "2 - Material/Flash Cards/Computer Architecture/Introduction.md",
-    "2 - Material/Flash Cards/Data Science/Introduction.md",
-    "2 - Material/Flash Cards/Computer Architecture",
+    "3 - Tags/AI.md",
+    "6 - The Real Notes/PoliTO/Data Science/Data Warehouse",
+    "6 - The Real Notes/PoliTO/Cybersecurity/CIDR.md",
+    "6 - The Real Notes/PoliTO/System Architecture/Energia Vs Potenza.md",
+    "6 - The Real Notes/PoliTO/System Architecture/Legenda.md",
+    "6 - The Real Notes/PoliTO/System Architecture/Flynns Taxonomy.md",
+    "6 - The Real Notes/PoliTO/System Architecture/Computer Architecture.md",
+    "6 - The Real Notes/PoliTO/System Architecture/CPU Components.md",
+    "6 - The Real Notes/PoliTO/System Architecture/CPU.md",
+    "6 - The Real Notes/PoliTO/System Architecture/Calculator Arithmetic.md",
     "6 - The Real Notes/PoliTO/Data Science/Legenda.md",
-    "2 - Material/Flash Cards/02-IDS-FLASHCARDS.md",
-    "2 - Material/Flash Cards/Data Science",
-    "Screenshot 2026-08-30 at 23.27.11.png",
-    "6 - The Real Notes/PoliTO/System Architecture/RISC.md",
+    "6 - The Real Notes/PoliTO/Data Science/Processo Della Data Science.md",
+    "6 - The Real Notes/PoliTO/Data Science/Acquisizione Dei Dati.md",
+    "6 - The Real Notes/PoliTO/Data Science/Regole Di Associazione.md",
     "2 - Material/New Words.md",
-    "6 - The Real Notes/Learning System.md",
-    "6 - The Real Notes/TODO Notes.md",
-    "6 - The Real Notes/PoliTO/Big Data",
-    "6 - The Real Notes/PoliTO/System Architecture",
-    "6 - The Real Notes/PoliTO/Achi",
-    "6 - The Real Notes/PoliTO/Data Science",
-    "6 - The Real Notes/PoliTO",
-    "6 - The Real Notes/Full Stack/PHP",
-    "6 - The Real Notes/AI",
+    "6 - The Real Notes/PoliTO/Data Science/Knowledge Discovery Process.md",
+    "6 - The Real Notes/Untitled.base",
+    "6 - The Real Notes/Untitled 1.base",
+    "6 - The Real Notes/PoliTO/System Architecture/ARM",
+    "6 - The Real Notes/PoliTO/System Architecture/Bus",
+    "6 - The Real Notes/PoliTO/Cybersecurity/OSI & TCP",
+    "6 - The Real Notes/PoliTO/System Architecture/Memory",
+    "6 - The Real Notes/PoliTO/Cybersecurity",
+    "2 - Material/Flash Cards/Computer Architecture",
+    "2 - Material/Flash Cards/Data Science",
     "Untitled 3.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",

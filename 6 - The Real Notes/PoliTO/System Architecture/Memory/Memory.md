@@ -14,10 +14,6 @@ author: Danilo Quattrini
 
 Increase the size of the memory doesn't mean that it's faster to access data, but it's slower to access to it, due to the size of it.
 
-How calculate the speed of a processor with frequency? Like how to know the time of the processor speed. Let's first consider the table below.![[Screenshot 2026-09-07 at 10.07.16.png]]
-
-That it can be translated to $\frac{1}{2} * 10^{-9}$  that's $\frac{1}{2}$nanoseconds a CPU can perform a task. Not all the tasks are performed in the CPU but it relies in two different types of memory.
-
 - **Primary Memory**: this one it's reserved to perform immediate tasks
 - **Secondary Memory**: the memory to store information and data permanently.
 
@@ -38,10 +34,9 @@ The secondary memory it's design for storing large amount of data and keep them 
 - **Non-Sequential Access:** Hard disks allow data to be accessed in a non-sequential manner. This means that users can retrieve information from various locations on the disk without having to read through all the data in order.
 
 - **Mechanical Components**: Unlike RAM, which is purely electronic and provides true random access, hard disks contain mechanical parts. These components, such as spinning platters and read/write heads, can introduce delays in accessing certain data locations.
+
 # Reference
 ---
-
-
 [^1]: A transistor is a device that controls an electrical current by acting as an amplifier or a switch. As an amplifier, a transistor can increase the electrical output, even if the input is small. As a switch, a transistor can alternate between ‘on’ and ‘off’ phases to [manage the electrical current](https://builtin.com/hardware/emp). These abilities have made transistors important for everyday applications, ranging from computers to space satellites, for more check either this [link](https://builtin.com/hardware/transistor).
 
 [^2]: A capacitor is a basic electronic component that stores electric charge in an electric field.
