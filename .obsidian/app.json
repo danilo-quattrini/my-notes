@@ -7,7 +7,7 @@
     "pageSize": "A4",
     "landscape": false,
     "margin": "0",
-    "downscalePercent": 100
+    "downscalePercent": 50
   },
   "promptDelete": false,
   "spellcheckDictionary": [
@@ -16,5 +16,6 @@
     "of",
     "semidicidible"
   ],
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "7 - Images"
 }

@@ -42,9 +42,22 @@ $$
 $$
 Where we have the:
 - $\omega$ that's the standard variation result
-- $x_{i}$ elements in the population
+- $x_{i}$ the *i-est* element in the population
 - $\bar{x}$ the population mean (media)
 - $N$ The size of the set
+
+# Z-Score
+>[!quote] Formula
+>$$Z = \frac{x_{i}-\bar{x}}{\sigma}$$
+
+2. |$Z$| > 2 is considered unusual or statistically significant, while |Z| > 3 is typically flagged as an outlier, extremely far from the mean.
+
+3.  $Z$-scores follow the Empirical Rule in a [normal distribution](https://www.geeksforgeeks.org/maths/normal-distribution/):
+
+	- 68% of data points have a Z-score between -1 and 1.
+	- 95% of data points have a Z-score between -2 and 2.
+	- 99% of data points have a Z-score between -3 and 3
+
 # Reference
 ---
 

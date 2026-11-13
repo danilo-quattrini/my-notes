@@ -8,7 +8,7 @@ topics:
   - "[[School]]"
 author: Danilo Quattrini
 ---
-# Data Warehouse
+# Che cos'e?
 ---
 Oggi le aziende medio-grandi, sono composte da un sistema informativo, che gestiscono varie aspetti dell'azienda, come ad esempio: contratti, utenti, transazioni e altre informazioni utili. Tali basi di dati servono per l'operatività dell'azienda, ma si necessitano anche di delle strategie per mantenere tale basi di dati.
 
@@ -36,8 +36,6 @@ Viene utilizzata una basi di dati separata da quella aziendale per motivi di:
 
 >[!warning] N.B
 >Il Data Warehouse non serve per “far funzionare l’azienda oggi”, ma per **capire com’è andata l’azienda nel tempo** e supportare decisioni strategiche
-
-
 ## Rappresentazione di una Data Warehouse
 È possibile rappresentare un data warehouse in due modi:
 
@@ -56,12 +54,6 @@ Viene utilizzata una basi di dati separata da quella aziendale per motivi di:
 > Nell'immagine sopra abbiamo la tabella centrale che è quella dei fatti che sarebbe `Vendite` che avrà ideologicamente le chiavi come `id_negozio`, `id_tempo`, `id_prodotto` e altri attributi, mentre `Negozio`, `Tempo` e `Prodotti` sono tabelle delle dimensioni che sono attributi della tabella dei fatti.
 
 La **tabella dei fatti** contiene le **misure** (numeri da analizzare), mentre le **tabelle delle dimensioni** contengono le **descrizioni** (contesto delle misure).
-## Strumenti di Analisi
-È possibile analizzare i dati secondo diverse tecniche:
-
-- [[Analisi Data Warehouse#Analisi OLAP|Analisi OLAP]]
-
-![[Screenshot 2026-09-24 at 11.20.24.png]]
 # Reference
 ---
 

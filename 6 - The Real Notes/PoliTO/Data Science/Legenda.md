@@ -22,6 +22,33 @@ author: Danilo Quattrini
 ---
 - [[Introduzione]]
 - [[Processo Della Data Science]]
+- [[Knowledge Discovery Process]]
+- [[Data Warehouse]]
+	- [[Analisi Data Warehouse]] 
+	- [[Elementi di una Data Warehouse]]
+	- [[Business Dimensional Lifecycle]]
+	- [[Progettazione Concettuale]] 
+	- [[Progettazione Logica]]
+	- [[Analisi Dei Dati]]
+	- [[Progettazione Fisica & Viste]]
+	- [[Alimentazione del DW]]
+	- [[Data Warehouse Oracle]]
+	- [[Esercizio Progettazione DW]] -> da completare
+- [[Data Mining Processing|Data Mining Processing]]
+- [[Data Pre-Processing|Data Pre-Processing]]
+- [[Data Preparation]]
+- [[Data Lakes]]
+- [[Similarità e Dissimilarità]] -> da completare
+- [[Regole Di Associazione]]
+- [[Classificazione]] -> da completare
+- [[Distributed Data Management System]] -> da completare
+- [[Elastic Search]] -> da completare
+- [[Clustering]] -> da completare.
+
+## Esercitazioni Laboratorio
+- [[Esercizio Operatore Telefonico]]
+- [[Esercizio Viste Materializzate]]
+- [[SQL Trigger]]
 # Reference
 ---
 

@@ -9,22 +9,35 @@ topics:
   - BigData
 author: Danilo Quattrini
 ---
-# Knowledge Discovery Process
+Knowledge Discovery Process
 ---
+## Questions
+### Introduzione
+- Che cos'è il KDD?
+- Come funziona?
+- Da quante fasi è composto?
+### Definizioni
+- Che cos'è un meta-dato
+- Che cosa si intede per outliers e rumore?
+
+---
+## Introduzione
 Il **Knowledge Discovery Process** (KDD) è un framework / processo iterativo che consiste nell'analizzare una porzione di dati da un dataset (dati grezzi), eseguire degli algoritmi su di essi (pulizia / intersezione dei dati) ed infine estrapolano informazioni nascoste, che possono rimanere utili per un'analisi futura. **Trasforma dati grezzi in conoscenza utile**.
 
 ## Fasi de KDD
 
 Gli step del KDD sono i seguenti:
-1.  **Data Selection (Selezione):** Dal magazzino dati centrale (Database o qualcos'altro), isoli solo la porzione o le variabili rilevanti **per il tuo obiettivo** (es. consideri solo gli ultimi 2 anni di vendite).
+1.  **Data Selection (Selezione):** Dal magazzino dati centrale (Database o qualcos'altro), isoli solo la porzione o le variabili rilevanti **per il tuo obiettivo** (es. consideri solo gli ultimi 2 anni di vendite), questo è possibile quando si ha una grande collezione di dati.
     
 2. **Data Preprocessing (Pulizia e Integrazione):** [[#Rimozione del Rumore|Rimuovi il rumore]], gestisci i dati mancanti e integri sorgenti diverse armonizzando i [[#Metadata|metadati]] per garantire la qualità dei dati.
     
-3. **Data Transformation (Trasformazione):** Prepari i dati per gli algoritmi (es. riducendo le dimensioni o normalizzando le scale numeriche tra 0 e 1), vedremo che questo ci è utile per algoritmi come le [[Regole Di Associazione]].
+3. **Data Transformation (Trasformazione):** Prepari i dati per gli algoritmi (es. riducendo le dimensioni o normalizzando le scale numeriche tra 0 e 1), vedremo che questo ci è utile per algoritmi come le [[Regole Di Associazione]]. 
+   >[!info] N.B
+   >Pre-processing e Transformation sono separati o messi insiemi perché fanno la stessa cosa, anche se in realtà uno ripulisce i dati mentre l'altra invece li trasforma per gli algoritmi di data mining.
     
-4. **Data Mining (Estrazione dei Pattern):** Applichi algoritmi di Machine Learning (es. Alberi di Decisione, Clustering, Regressioni) per estrarre schemi nascondi (_pattern_).
+4. **Data Mining (Estrazione dei Pattern):** Applichi algoritmi di Machine Learning (es. Alberi di Decisione, Clustering, Regressioni) per estrarre schemi nascondi (_pattern_), il pattern eredita le limitazioni dei dati in input, i limiti del dato sono portati in modo nativo sul modello.
     
-5. **Interpretation / Evaluation (Valutazione):** Esamini i pattern ottenuti insieme agli esperti di dominio per capire se la conoscenza prodotta è **valida, nuova, utile e comprensibile**.
+5. **Interpretation / Evaluation (Valutazione):** Esamini i pattern ottenuti insieme agli esperti di dominio per capire se la conoscenza prodotta è **valida, nuova, utile e comprensibile**, si utilizzano le tecniche di *explainable AI*, rendendo interpretabile l'algoritmo che viene utilizzato per estrarre il valore.
 
 ![[Pasted image 20260902094209.png]]
 
@@ -36,21 +49,25 @@ Ci soffermiamo Nella fase del **Data Preprocessing**, dove ci si vanno a definir
 >[!info] 
 >In Data Science il **rumore** (noise) sono tutti quei dati errati, corrotti o fluttazioni anomale che **distorcono la vera natura del fenomeno** che si vuole studiare.
 
-Con il termine di "rimozione del rumore" si intende quella fase del processo del [[Knowledge Discovery Process|KDD]] in cui si vanno a **rimuovere dati che sono considerati fuori dal comune** o che non sono inerenti con la realtà del dominio di studio.
+Con il termine di "*rimozione del rumore*" si intende la fase del processo del [[Knowledge Discovery Process|KDD]] in cui si vanno a **rimuovere dati che sono considerati fuori dal comune** o che non sono inerenti con la realtà del dominio di studio.
 
 >[!example]
 >- Un sensore di temperatura registra: `20°C`, `21°C`, `20.5°C`, `-999°C` _(errore tecnico)_, `22°C`, `180°C` _(sbalzo di tensione)_. I valori `-999` e `180` sono rumore/outlier. Se l'algoritmo non li ignora, calcolerà una media errata e produrrà modelli sbagliati.
 
-Vediamo degl'esempii di come si può rimuovere il rumore da un'insieme di dati:
+#### Tecniche per rimuovere il rumore
+Vediamo degli esempi di come si può rimuovere il rumore da un'insieme di dati:
 
 - **Binning (Cestinatura):** Si ordinano i dati e si dividono in intervalli (bin), sostituendo poi ogni valore con la media o la mediana del suo intervallo per "smussare" le fluttuazioni erratiche.
     
 - **Regressione:** Si adatta una funzione matematica (es. una retta) ai dati per identificare la tendenza reale e scartare i punti totalmente fuori traccia.
     
 - **Clustering / Filtraggio degli Outlier:** Algoritmi di raggruppamento identificano i dati isolati dal resto della popolazione per eliminarli o correggerli.
+
+![[Screenshot 2026-10-19 at 18.43.51.png]]
 ### Metadata
 I metadati sono dati che descrivono altri dati, cioè dei label (etichette) che definiamo ai dati per descrivere la loro natura, esempio di metadato può essere: tipo di dato (int, string, float, bool), unità di misura (kg, g, hg, m), la valuta di una moneta (euro, dollari, yen, ecc.)
 
+#### A che cosa servono i metadati?
 Perché si utilizzano i metadati? L'utilizzo dei metadati serve per far si che i dati siano tradotti con un linguaggio universale, questo perché i dati possono venire da fonti differenti e hanno la necessità di essere tradotti tutti in un'unico formato.
 
 >[!example]

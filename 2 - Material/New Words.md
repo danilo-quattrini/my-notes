@@ -3,3 +3,5 @@
 - **Slope**: ground with an incline (significa pendenza in italiano) ^d4dfce
 - **Pipeline**: 
 	  - **Pipeline di dati**: è una catena di trasformazioni o di passaggi che fanno passare dei dati o dei materiali da una fase all’altra, con l’obiettivo di trasformarli, organizzarli o intregarli in un formato utile
+
+- **Overhead**: quando qualcosa è complicato e difficile da comprendere ^0dbe8f

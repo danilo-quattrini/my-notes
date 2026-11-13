@@ -140,7 +140,8 @@ Mostly used by all the programmers to track, save documents changes during their
 
 Without a VCS is literally hard to understand who made a change inside the code or not, creating confusion and problematics inside the team, that's why we use the VCS to track all the changes during your workflow.
 
-
+## offset
+The offset is a file zero base positioning used to identify where a character is placend into a file
 # Reference
 ---
 [Structure Your Code](https://medium.com/@minadev/how-to-structure-our-code-b5e7b1c32c21).

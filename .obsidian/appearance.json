@@ -1,6 +1,6 @@
 {
   "cssTheme": "Minimal",
-  "baseFontSize": 22,
+  "baseFontSize": 26,
   "baseFontSizeAction": true,
   "enabledCssSnippets": [
     "style"
@@ -9,5 +9,6 @@
   "translucency": false,
   "textFontFamily": "SF Pro",
   "monospaceFontFamily": "JetBrainsMonoNL Nerd Font",
-  "interfaceFontFamily": "SF Pro"
+  "interfaceFontFamily": "SF Pro",
+  "showRibbon": true
 }
