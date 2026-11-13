@@ -13,20 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6 - The Real Notes/PoliTO/Computer Architecture/ARM/ARM Legenda.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "ARM Legenda"
-            }
-          },
-          {
-            "id": "dcac695bce741a61",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "6 - The Real Notes/PoliTO/Computer Architecture/Legenda.md",
                 "mode": "source",
                 "source": false
@@ -36,7 +22,7 @@
             }
           },
           {
-            "id": "3af37f47066705db",
+            "id": "d910698b18e620d9",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -50,7 +36,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -112,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 308.6953125,
-    "collapsed": true
+    "width": 308.6953125
   },
   "right": {
     "id": "9cd5f3aae730b20b",
@@ -1699,53 +1684,54 @@
       "system3-relay:Relay": false
     }
   },
-  "active": "3af37f47066705db",
+  "active": "d910698b18e620d9",
   "lastOpenFiles": [
-    "6 - The Real Notes/PoliTO/Computer Architecture/ARM/ARM Stack and Subroutines.md",
-    "7 - Images/6 - The Real Notes/PoliTO/Computer Architecture/ARM/ARM Stack and Subroutines/IMG-ARM Stack and Subroutines-20261113-6.png",
-    "7 - Images/6 - The Real Notes/PoliTO/Computer Architecture/ARM/ARM Stack and Subroutines/IMG-ARM Stack and Subroutines-20261113-5.png",
-    "7 - Images/6 - The Real Notes/PoliTO/Computer Architecture/ARM/ARM Stack and Subroutines/IMG-ARM Stack and Subroutines-20261113-4.png",
-    "7 - Images/6 - The Real Notes/PoliTO/Computer Architecture/ARM/ARM Stack and Subroutines/IMG-ARM Stack and Subroutines-20261113-3.png",
-    "7 - Images/6 - The Real Notes/PoliTO/Computer Architecture/ARM/ARM Stack and Subroutines/IMG-ARM Stack and Subroutines-20261113-2.png",
-    "7 - Images/6 - The Real Notes/PoliTO/Computer Architecture/ARM/ARM Stack and Subroutines/IMG-ARM Stack and Subroutines-20261113-1.png",
-    "7 - Images/6 - The Real Notes/PoliTO/Computer Architecture/ARM/ARM Stack and Subroutines",
-    "7 - Images/6 - The Real Notes/PoliTO/Computer Architecture/ARM/ARM Stack and Subroutines/IMG-ARM Stack and Subroutines-20261113.png",
     "6 - The Real Notes/PoliTO/Computer Architecture/Legenda.md",
-    "6 - The Real Notes/PoliTO/Computer Architecture/ARM/ARM Legenda.md",
-    "6 - The Real Notes/PoliTO/Computer Architecture/ARM/Sections.md",
-    "6 - The Real Notes/PoliTO/Computer Architecture/ARM/LDR, STR.md",
-    "6 - The Real Notes/PoliTO/Computer Network/Legenda.md",
-    "6 - The Real Notes/PoliTO/Computer Network/Optical networks.md",
-    "7 - Images/6 - The Real Notes/PoliTO/Computer Network/Optical networks/IMG-Optical networks-20261112-2.png",
-    "7 - Images/6 - The Real Notes/PoliTO/Computer Network/Optical networks/IMG-Optical networks-20261112-1.png",
-    "7 - Images/6 - The Real Notes/PoliTO/Computer Network/Optical networks",
-    "7 - Images/6 - The Real Notes/PoliTO/Computer Network/Optical networks/IMG-Optical networks-20261112.png",
-    "6 - The Real Notes/PoliTO/Computer Network/IPv6.md",
-    "6 - The Real Notes/PoliTO/Computer Network/Virtual Private Networks (VPN).md",
-    "6 - The Real Notes/Untitled.md",
-    "6 - The Real Notes/PoliTO/Computer Network/IPv4 to IPv6.md",
-    "6 - The Real Notes/IPV.md",
-    "6 - The Real Notes/PoliTO/Data Science/Legenda.md",
-    "6 - The Real Notes/PoliTO/Data Science/Clustering.md",
-    "7 - Images/6 - The Real Notes/PoliTO/Computer Network/Virtual Private Networks (VPN)",
-    "6 - The Real Notes/PoliTO/Computer Network/Multimedia Networking & Quality of Service.md",
-    "7 - Images/6 - The Real Notes/PoliTO/Computer Network/Multimedia Networking & Quality of Service",
-    "6 - The Real Notes/Quality of service on IP networks.md",
-    "6 - The Real Notes/PoliTO/Data Science/Similarità e Dissimilarità.md",
-    "6 - The Real Notes/PoliTO/Data Science/Data Preparation.md",
-    "6 - The Real Notes/PoliTO/Data Science/Data Mining Processing.md",
+    "6 - The Real Notes/PoliTO/Computer Architecture/ARM/ARM Stack and Subroutines.md",
+    "README.md",
+    "7 - Images/wolfestein-3d.png",
+    "7 - Images/wine-company.png",
+    "7 - Images/waterfall-model.png",
+    "7 - Images/virtual-fighter3d.png",
+    "7 - Images/touring-machine.png",
+    "7 - Images/total-function.png",
+    "7 - Images/surjective-function.png",
+    "7 - Images/structure-UP.png",
+    "7 - Images/statistic-vs-parameter.png",
+    "7 - Images/second-function-definition.png",
+    "7 - Images/6 - The Real Notes/PoliTO/Data Science/Regole Di Associazione",
+    "7 - Images/6 - The Real Notes/PoliTO/Data Science/Elastic Search",
     "7 - Images/6 - The Real Notes/PoliTO/Data Science/Clustering",
-    "6 - The Real Notes/TODO Notes.md",
-    "6 - The Real Notes/PoliTO/Data Science/Tecniche del Data Science.md",
-    "6 - The Real Notes/PoliTO/Computer Network/LAN & VLAN.md",
+    "7 - Images/6 - The Real Notes/PoliTO/Data Science/Classificazione",
     "7 - Images/6 - The Real Notes/PoliTO/Computer Network/LAN & VLAN",
+    "7 - Images/6 - The Real Notes/PoliTO/Computer Network/Virtual Private Networks (VPN)",
+    "7 - Images/6 - The Real Notes/PoliTO/Computer Network/Optical networks",
+    "7 - Images/6 - The Real Notes/PoliTO/Computer Network/Multimedia Networking & Quality of Service",
     "7 - Images/6 - The Real Notes/PoliTO/Computer Network",
-    "6 - The Real Notes/PoliTO/Data Science/Classificazione.md",
+    "7 - Images/6 - The Real Notes/PoliTO/Computer Architecture/VLIW Processors",
+    "6 - The Real Notes/TODO Notes.md",
+    "6 - The Real Notes/Software Engineering/UML.md",
+    "6 - The Real Notes/Software Engineering/SOLID Principals.md",
+    "6 - The Real Notes/Software Engineering/Ingegneria del software.md",
+    "6 - The Real Notes/Software Engineering/Design Pattern.md",
+    "6 - The Real Notes/Software Engineering/Agile Framework.md",
+    "6 - The Real Notes/Redis.md",
+    "6 - The Real Notes/Quattrini Colori Docs/Inspirational Phrases.md",
+    "6 - The Real Notes/Quattrini Colori Docs/Improvement Plan.md",
+    "6 - The Real Notes/Quattrini Colori Docs/04_zero_to_hero_roadmap.md",
+    "6 - The Real Notes/Quattrini Colori Docs/03_seo_and_discoverability.md",
+    "6 - The Real Notes/Quattrini Colori Docs/02_design_and_ux_guidelines.md",
+    "6 - The Real Notes/Quattrini Colori Docs/01_project_overview.md",
+    "6 - The Real Notes/Programming Knowledge.md",
+    "6 - The Real Notes/PoliTO/Data Science/Data Warehouse/Data Warehouse Oracle.md",
     "6 - The Real Notes/PoliTO/Data Science/Esercizi Laboratorio/SQL Trigger.md",
     "6 - The Real Notes/PoliTO/Data Science/Esercizi Laboratorio/Esercizio Viste Materializzate.md",
-    "7 - Images/6 - The Real Notes/PoliTO/Computer Architecture/ARM Branches",
-    "7 - Images/6 - The Real Notes/PoliTO/Computer Architecture/Accessing Memory",
-    "7 - Images/6 - The Real Notes/PoliTO/Computer Architecture/ARM/ARM Directive",
+    "6 - The Real Notes/PoliTO/Data Science/Esercizi Laboratorio/Esercizio Operatore Telefonico.md",
+    "6 - The Real Notes/PoliTO/Data Science/Data Warehouse/Progettazione Logica.md",
+    "6 - The Real Notes/PoliTO/Data Science/Data Warehouse/Progettazione Fisica & Viste.md",
+    "6 - The Real Notes/PoliTO/Data Science/Data Warehouse/Progettazione Concettuale.md",
+    "6 - The Real Notes/PoliTO/Data Science/Data Warehouse/Esercizio Progettazione DW.md",
+    "6 - The Real Notes/PoliTO/Data Science/Data Warehouse/Esempio Pipeline ETL & OLAP.md",
     "Untitled 3.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
